@@ -7,3 +7,21 @@ This is an example in which direction we go:
 
 Our goal is to have kids draw parts of the labyrinth (inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
+
+Motivation
+----------
+
+In the past two years, we created [Flappy SVG](http://fossasia.github.io/flappy-svg/)
+We had problems coordinating because this is all one SVG file.
+This time, we can allow kids to work independently on a level and coordination comes with embedding.
+
+It is possible to extend the level in various ways: Keys, Asking characters in the game, animation, moving through the game, multiple levels.
+Also, we can create apps, credit pages and various other timgs with it.
+
+Implementation
+--------------
+
+This will be a html/JS only site, Jekyll is really needed.
+Levels can be created by a csv file wich plugs together the different tiles.
+We can retrieve the csv file from github pages (possibly file://, too) with ajax.
+
