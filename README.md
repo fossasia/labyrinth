@@ -14,6 +14,9 @@ Motivation
 In the past two years, we created [Flappy SVG](http://fossasia.github.io/flappy-svg/)
 We had problems coordinating because this is all one SVG file.
 This time, we can allow kids to work independently on a level and coordination comes with embedding.
+This allows remixing of each other's work and thus collaboration in new ways:
+- Adding your tile to an existing labyrinth
+- Creating your own labyrinth from other tiles.
 
 It is possible to extend the level in various ways: Keys, Asking characters in the game, animation, moving through the game, multiple levels.
 Also, we can create apps, credit pages and various other timgs with it.
