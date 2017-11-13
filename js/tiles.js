@@ -28,6 +28,7 @@ window.addEventListener("load", function()
 
 function loadLevel(level, container)
 {
+  var minY = 0;
   for (var y = 0; y < level.length; y += 1)
   {
     var row = level[y];
@@ -46,6 +47,9 @@ function loadLevel(level, container)
       embed.style.top = position.y + "px";
       embed.style.zIndex = -x + y;
       container.appendChild(embed);
+      minY = position.y < minY ? position.y : minY;
     }
   }
+  container.classList.add("tileContainer");
+  container.style.top = -minY + "px";
 }

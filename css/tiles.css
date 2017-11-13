@@ -2,3 +2,7 @@
 .tile {
   position: absolute;
 }
+
+.tileContainer {
+  position: absolute;
+}
