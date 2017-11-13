@@ -1,6 +1,8 @@
 Labyrinth
 =========
 
+[**Play Now**](https://coderdojopotsdam.github.io/labyrinth)
+
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
 ![](vision-example.jpg)
