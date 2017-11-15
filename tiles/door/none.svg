@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="door-left.svg">
+   sodipodi:docname="none.svg">
   <defs
      id="defs4">
     <inkscape:perspective
@@ -33,7 +33,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="168.10102"
+     inkscape:cx="169.11117"
      inkscape:cy="150.5455"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -41,7 +41,7 @@
      inkscape:object-nodes="true"
      inkscape:window-width="1920"
      inkscape:window-height="1036"
-     inkscape:window-x="0"
+     inkscape:window-x="4"
      inkscape:window-y="44"
      inkscape:window-maximized="0"
      showguides="true"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -143,7 +143,7 @@
        sodipodi:nodetypes="ccccccccc"
        inkscape:connector-curvature="0"
        id="path6053"
-       d="m 268.92677,581.25 205.43749,122.59375 0,68 -93.81249,-55.96875 -0.03,-55.19417 -37.15625,-22.1875 0.03,55.16292 L 268.92677,649.25 z"
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
+       d="m 268.92677,581.25 205.43749,122.59375 0,68 -93.81249,-55.96875 0,0 -37.15625,-22.1875 0,-0.0312 L 268.92677,649.25 z"
+       style="fill:#f2f2f2;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
   </g>
 </svg>

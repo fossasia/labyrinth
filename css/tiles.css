@@ -1,8 +1,27 @@
 
-.tile {
-  position: absolute;
+
+.tile.visited {
+  display: inline-block;
+}
+
+.tile.current {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  filter: grayscale(0%);
 }
 
 .tileContainer {
   position: absolute;
+}
+
+.tile {
+  position: absolute;
+  -webkit-filter: grayscale(80%);
+  -moz-filter: grayscale(80%);
+  -ms-filter: grayscale(80%);
+  -o-filter: grayscale(80%);
+  filter: grayscale(80%);
+  display: none;
 }
