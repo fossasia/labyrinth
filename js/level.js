@@ -6,10 +6,13 @@ function Level(specification)
 {
   this.scale = 0.5;
   this.specification = specification;
-  this.indexToPosition = function(x, y) {
+  this.indexToPosition = function(position) {
     return {
-      "x": tileWidth * (x + y) * this.scale,
-      "y": tileHeight * (-x + y) * this.scale
+      "x": tileWidth * (position.x + position.y) * this.scale,
+      "y": tileHeight * (-position.x + position.y) * this.scale,
+      "scale": this.scale,
+      "tileWidth" : tileWidth * this.scale,
+      "tileHeight" : tileHeight * this.scale,
     }
   };
   this.showIn = function(container){
@@ -17,10 +20,10 @@ function Level(specification)
     var minY = 0;
     this.tiles.forEach(function(row, y){
       row.forEach(function(tile, x){
-        const pixelPosition = me.indexToPosition(x, y);
+        const position = {"x": x, "y": y};
+        const pixelPosition = me.indexToPosition(position);
         minY = pixelPosition.y < minY ? pixelPosition.y : minY;
         minX = pixelPosition.x < minX ? pixelPosition.x : minX;
-        const position = {"x": x, "y": y};
         return tile.showIn(container);
       });
     });

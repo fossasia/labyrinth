@@ -8,6 +8,10 @@ const NullTile = {
   placeAtIn: function(){return this},
   showIn: function() {},
   visit: function() {},
+  viewFromTheTop: function() {},
+  viewFromTheLeft: function() {},
+  viewFromTheRight: function() {},
+  viewFromTheBottom: function() {},
 }
 
 function PlayerStartsAt(tileSpecification) {
@@ -20,40 +24,80 @@ function PlayerStartsAt(tileSpecification) {
   }
 }
 
+function ImageCollection(position, pixelPosition) {
+  this.position = position;
+  this.pixelPosition = pixelPosition;
+  this.container = document.createElement("div");
+  this.container.classList.add("tile");
+  this.container.style.left = pixelPosition.x + "px";
+  this.container.style.top = pixelPosition.y + "px";
+  this.container.style.zIndex = -position.x + position.y;
+};
+ImageCollection.prototype.addImage = function(file) {
+  var embed = document.createElement("embed");
+  embed.id = "tile-" + this.position.x + "-" + this.position.y;
+  embed.src = file;
+  embed.type = "image/svg+xml";
+  embed.style.width = this.pixelPosition.tileWidth; // this scales down everything
+  embed.classList.add("image");
+  this.container.appendChild(embed);
+  return {
+    hide: function() {
+      embed.classList.add("hidden");
+    },
+    show: function() {
+      embed.classList.remove("hidden");
+    },
+  };
+};
+ImageCollection.prototype.showIn = function(container) {
+  container.appendChild(this.container);
+};
+ImageCollection.prototype.playerEnters = function(player) {
+  this.container.classList.add("current");
+};
+ImageCollection.prototype.playerLeaves = function(player) {
+  this.container.classList.remove("current");
+};
+
+
+
 function PlacedTile(movementStrategy, position, level) {
   this.movementStrategy = movementStrategy;
   this.position = position;
   this.level = level;
-  this.image = movementStrategy.createImage(position.x, position.y, level);
-  this.showIn = function(container) {
-    container.appendChild(this.image);
-  };
-  this.canLeaveToTheLeft = movementStrategy.canLeaveToTheLeft;
-  this.canLeaveToTheRight = movementStrategy.canLeaveToTheRight;
-  this.canLeaveToTheTop = movementStrategy.canLeaveToTheTop;
-  this.canLeaveToTheBottom = movementStrategy.canLeaveToTheBottom;
-  this.canEnterFromTheRight = movementStrategy.canEnterFromTheRight;
-  this.canEnterFromTheLeft = movementStrategy.canEnterFromTheLeft;
-  this.canEnterFromTheBottom = movementStrategy.canEnterFromTheBottom;
-  this.canEnterFromTheTop = movementStrategy.canEnterFromTheTop;
-  this.playerLeaves = movementStrategy.playerLeaves;
-  this.playerEnters = movementStrategy.playerEnters;
-  this.tileToTheBottom = function(){
-    return this.level.getTileAt(this.position.x, this.position.y + 1);
-  };
-  this.tileToTheTop = function(){
-    return this.level.getTileAt(this.position.x, this.position.y - 1);
-  };
-  this.tileToTheRight = function(){
-    return this.level.getTileAt(this.position.x + 1, this.position.y);
-  };
-  this.tileToTheLeft = function(){
-    return this.level.getTileAt(this.position.x - 1, this.position.y);
-  };
-  this.visit = function() {
-    this.image.classList.add("visited");
-  }
-}
+  Object.assign(this, movementStrategy);
+  this.images = new ImageCollection(position, level.indexToPosition(position));
+  this.createImages();
+};
+PlacedTile.prototype.showIn = function(container) {
+  this.images.showIn(container);
+};
+PlacedTile.prototype.tileToTheBottom = function(){
+  return this.level.getTileAt(this.position.x, this.position.y + 1);
+};
+PlacedTile.prototype.tileToTheTop = function(){
+  return this.level.getTileAt(this.position.x, this.position.y - 1);
+};
+PlacedTile.prototype.tileToTheRight = function(){
+  return this.level.getTileAt(this.position.x + 1, this.position.y);
+};
+PlacedTile.prototype.tileToTheLeft = function(){
+  return this.level.getTileAt(this.position.x - 1, this.position.y);
+};
+PlacedTile.prototype.createImage = function(file) {
+  var image = this.images.addImage(file);
+  image.hide();
+  return image;
+};
+PlacedTile.prototype.playerEnters = function(player) {
+  this.images.playerEnters(player);
+  this.whenPlayerEnters(player);
+};
+PlacedTile.prototype.playerLeaves = function(player) {
+  this.images.playerLeaves(player);
+  this.whenPlayerLeaves(player);
+};
 
 const OpenDoors = {
   // public
@@ -65,30 +109,38 @@ const OpenDoors = {
   canLeaveToTheBottom: function(player) {return true;},
   canLeaveToTheRight: function(player) {return true;},
   canLeaveToTheLeft: function(player) {return true;},
-  playerLeaves: function(player){
-    this.image.classList.remove("current");
+  viewFromTheTop: function(player) {
+    this.wallTop.show();
   },
-  playerEnters: function(player){
-    this.image.classList.add("current");
+  viewFromTheLeft: function(player) {
+  },
+  viewFromTheRight: function(player) {
+    this.wallRight.show();
+  },
+  viewFromTheBottom: function(player) {
+  },
+  whenPlayerLeaves: function(player){
+  },
+  whenPlayerEnters: function(player){
     this.visit();
+    this.tileToTheLeft().viewFromTheRight();
+    this.tileToTheRight().viewFromTheLeft();
+    this.tileToTheTop().viewFromTheBottom();
+    this.tileToTheBottom().viewFromTheTop();
   },
-  getImageFile: function() {return "tiles/door/both.svg"},
+  visit: function() {
+    this.wallTop.show();
+    this.wallRight.show();
+    this.ground.show();
+  },
+  createImages: function() {
+    this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+    this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    this.ground = this.createImage("tiles/rooms/floor/caro.svg");
+  },
   // private
   placeAtIn: function(position, level) {
     return new PlacedTile(this, position, level);
-  },
-  createImage: function(x, y, level) {
-    var embed = document.createElement("embed");
-    embed.id = "tile-" + x + "-" + y;
-    embed.src = this.getImageFile(x, y);
-    embed.type = "image/svg+xml";
-    embed.classList.add("tile");
-    embed.style.width = tileWidth; // this scales down everything
-    var position = level.indexToPosition(x, y);
-    embed.style.left = position.x + "px";
-    embed.style.top = position.y + "px";
-    embed.style.zIndex = -x + y;
-    return embed;
   },
 };
 
@@ -97,35 +149,30 @@ const door = {
   right: Object.assign({}, OpenDoors, {
     canEnterFromTheTop: function(player) {return false;},
     canLeaveToTheTop: function(player) {return false;},
-    getImageFile: function() {return "tiles/door/right.svg";},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/caro.svg");
+    },
   }),
   top: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
-    getImageFile() {return "tiles/door/top.svg";},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/caro.svg");
+    },
   }),
   none: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
-    getImageFile() {return "tiles/door/none.svg";},
-  })
-}
-
-const Wall = Object.assign({}, OpenDoors, {
-  canEnterFromTheTop: function(player) {return false;},
-  canEnterFromTheBottom: function(player) {return false;},
-  canEnterFromTheRight: function(player) {return false;},
-  canEnterFromTheLeft: function(player) {return false;},
-  canLeaveToTheTop: function(player) {return false;},
-  canLeaveToTheBottom: function(player) {return false;},
-  canLeaveToTheRight: function(player) {return false;},
-  canLeaveToTheLeft: function(player) {return false;},
-  getImageFile: function() {return "tiles/wall/top.svg";},
-});
-
-const wall = {
-  right: Wall,
-  top: Object.assign({}, Wall, {
-    getImageFile() {return "tiles/wall/right.svg";},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/caro.svg");
+    },
   })
 }
