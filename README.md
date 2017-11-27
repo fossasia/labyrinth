@@ -1,6 +1,8 @@
 Labyrinth
 =========
 
+[![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [**Play Now**](https://fossasia.github.io/labyrinth/index.html)
 
 This is a labyrinth software which can be edited by you.
