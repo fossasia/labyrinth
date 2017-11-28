@@ -28,6 +28,5 @@ Also, we can create apps, credit pages and various other timgs with it.
 Implementation
 --------------
 
-This will be a html/JS only site, Jekyll is really needed.
-Levels can be created by a csv file wich plugs together the different tiles.
-We can retrieve the csv file from github pages (possibly file://, too) with ajax.
+This will be a html/JS only site.
+Levels can be created by editing a table specification.
