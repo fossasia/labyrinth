@@ -1,0 +1,16 @@
+dist: trusty
+
+language: generic
+
+cache:
+  directories:
+  - .coala-cache
+
+services: docker
+
+
+script:
+  - >
+    docker run --volume=$(pwd)/.coala-cache:/root/.local/share/coala --volume=$(pwd):/app --workdir=/app coala/base:0.11 /bin/bash -c
+    "coala --apply-patches --no-orig;
+    coala --non-interactive"
