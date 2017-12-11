@@ -13,7 +13,7 @@ function Level(specification)
       "scale": this.scale,
       "tileWidth" : tileWidth * this.scale,
       "tileHeight" : tileHeight * this.scale,
-    }
+    };
   };
   this.showIn = function(container){
     var minX = 0;
@@ -36,13 +36,13 @@ function Level(specification)
       return NullTile;
     }
     return this.tiles[y][x];
-  }
+  };
   this.setStartTile = function(startTile) {
     this.startTile = startTile;
-  }
+  };
   this.addPlayer = function(player) {
     player.startAt(this.startTile);
-  }
+  };
   this.visit = function() {
     this.tiles.forEach(function(row){
       row.forEach(function(tile){
@@ -58,7 +58,7 @@ function Level(specification)
       return tileSpecification.placeAtIn(position, me);
     });
   });
-  if (this.startTile == null) {
+  if (this.startTile === null) {
     this.startTile = this.tiles[0][0];
   }
 }

@@ -40,8 +40,8 @@ function Player() {
   };
   this.startAt = function(tile) {
     this.enter(tile);
-  }
+  };
   this.logPosition = function() {
     console.log("Player position:", this.currentTile.position);
-  }
+  };
 }
