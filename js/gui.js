@@ -15,32 +15,32 @@ window.addEventListener("load", function()
 var keyHandlers = {
   "ArrowLeft" : function() {
     if (player.canMoveLeft()) {
-      player.moveLeft()
-    };
+      player.moveLeft();
+    }
     player.logPosition();
   },
   "ArrowRight" : function() {
     if (player.canMoveRight()) {
-      player.moveRight()
-    };
+      player.moveRight();
+    }
     player.logPosition();
   },
   "ArrowUp" : function() {
     if (player.canMoveUp()) {
-      player.moveUp()
-    };
+      player.moveUp();
+    }
     player.logPosition();
   },
   "ArrowDown" : function() {
     if (player.canMoveDown()) {
-      player.moveDown()
-    };
+      player.moveDown();
+    }
     player.logPosition();
   },
   "a" : function() {
     level.visit();
   },
-}
+};
 
 window.addEventListener("keydown", function(event) {
   var handler = keyHandlers[event.key];
