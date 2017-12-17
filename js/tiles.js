@@ -12,7 +12,7 @@ const NullTile = {
   viewFromTheLeft: function() {},
   viewFromTheRight: function() {},
   viewFromTheBottom: function() {},
-}
+};
 
 function PlayerStartsAt(tileSpecification) {
   return {
@@ -22,7 +22,7 @@ function PlayerStartsAt(tileSpecification) {
       return tile;
     }
   }
-}
+};
 
 function ImageCollection(position, pixelPosition) {
   this.position = position;
@@ -32,7 +32,7 @@ function ImageCollection(position, pixelPosition) {
   this.container.style.left = pixelPosition.x + "px";
   this.container.style.top = pixelPosition.y + "px";
   this.container.style.zIndex = -position.x + position.y;
-};
+}
 ImageCollection.prototype.addImage = function(file) {
   var embed = document.createElement("embed");
   embed.id = "tile-" + this.position.x + "-" + this.position.y;
