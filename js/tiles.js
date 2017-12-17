@@ -175,4 +175,4 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
     },
   })
-}
+};
