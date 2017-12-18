@@ -46,7 +46,7 @@ function Level(specification)
   this.visit = function() {
     this.tiles.forEach(function(row){
       row.forEach(function(tile){
-        tile.visit();
+        tile.visit();z
       });
     });
   };
