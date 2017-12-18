@@ -21,10 +21,15 @@ function PlayerStartsAt(tileSpecification) {
       level.setStartTile(tile);
       return tile;
     }
+<<<<<<< HEAD
   }
 };
 
 
+=======
+  };
+}
+>>>>>>> 9783aa0... Solved Few Lint Bugs
 
 function ImageCollection(position, pixelPosition) {
   this.position = position;
