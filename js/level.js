@@ -58,7 +58,7 @@ function Level(specification)
       return tileSpecification.placeAtIn(position, me);
     });
   });
-  if (this.startTile == null) {
+  if (this.startTile === null) {
     this.startTile = this.tiles[0][0];
   }
 }
