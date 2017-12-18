@@ -12,7 +12,7 @@ const NullTile = {
   viewFromTheLeft: function() {},
   viewFromTheRight: function() {},
   viewFromTheBottom: function() {},
-}
+};
 
 function PlayerStartsAt(tileSpecification) {
   return {
@@ -21,7 +21,7 @@ function PlayerStartsAt(tileSpecification) {
       level.setStartTile(tile);
       return tile;
     }
-  }
+  };
 }
 
 function ImageCollection(position, pixelPosition) {
@@ -32,7 +32,7 @@ function ImageCollection(position, pixelPosition) {
   this.container.style.left = pixelPosition.x + "px";
   this.container.style.top = pixelPosition.y + "px";
   this.container.style.zIndex = -position.x + position.y;
-};
+}
 ImageCollection.prototype.addImage = function(file) {
   var embed = document.createElement("embed");
   embed.id = "tile-" + this.position.x + "-" + this.position.y;
@@ -69,7 +69,7 @@ function PlacedTile(movementStrategy, position, level) {
   Object.assign(this, movementStrategy);
   this.images = new ImageCollection(position, level.indexToPosition(position));
   this.createImages();
-};
+}
 PlacedTile.prototype.showIn = function(container) {
   this.images.showIn(container);
 };
@@ -175,4 +175,4 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
     },
   })
-}
+};

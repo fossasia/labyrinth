@@ -46,7 +46,7 @@ function Level(specification)
   this.visit = function() {
     this.tiles.forEach(function(row){
       row.forEach(function(tile){
-        tile.visit();
+        tile.visit();z
       });
     });
   };
@@ -58,7 +58,7 @@ function Level(specification)
       return tileSpecification.placeAtIn(position, me);
     });
   });
-  if (this.startTile === null) {
+  if (this.startTile == null) {
     this.startTile = this.tiles[0][0];
   }
 }
