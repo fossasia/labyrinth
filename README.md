@@ -40,7 +40,15 @@ This is an Open Source project and we would be happy to see contributors who rep
 
 Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details. Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
 
+<<<<<<< HEAD
 We have the following branch   
+=======
+We have the following branches   
+ * **development**   
+   All development goes on in this branch. If you're making a contribution,
+   you are supposed to make a pull request to _development_.
+   PRs to master must pass a build check and a unit-test check on Travis.
+>>>>>>> 47c573d... Added Documentation regarding Contributing
  * **master**   
    This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update, and make a release.
 
@@ -53,3 +61,7 @@ If you like to join developing,
 - you can find/create [issues](https://github.com/fossasia/labyrinth/issues) and solve them.
   - When you solve an issue, you do not own it. Share your progress via a Pull-Requst as soon as possible.
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
+<<<<<<< HEAD
+=======
+.
+>>>>>>> 47c573d... Added Documentation regarding Contributing
