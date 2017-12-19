@@ -21,8 +21,9 @@ function PlayerStartsAt(tileSpecification) {
       level.setStartTile(tile);
       return tile;
     }
-  };
-}
+  }
+};
+
 
 function ImageCollection(position, pixelPosition) {
   this.position = position;
