@@ -24,6 +24,7 @@ function PlayerStartsAt(tileSpecification) {
   }
 };
 
+
 function ImageCollection(position, pixelPosition) {
   this.position = position;
   this.pixelPosition = pixelPosition;
@@ -69,7 +70,7 @@ function PlacedTile(movementStrategy, position, level) {
   Object.assign(this, movementStrategy);
   this.images = new ImageCollection(position, level.indexToPosition(position));
   this.createImages();
-};
+}
 PlacedTile.prototype.showIn = function(container) {
   this.images.showIn(container);
 };
