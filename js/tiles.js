@@ -22,6 +22,7 @@ function PlayerStartsAt(tileSpecification) {
       return tile;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
   }
 };
 
@@ -30,6 +31,11 @@ function PlayerStartsAt(tileSpecification) {
   };
 }
 >>>>>>> 9783aa0... Solved Few Lint Bugs
+=======
+  }
+};
+
+>>>>>>> a2cc000... Fixed 5 code lint errors (#9)
 
 function ImageCollection(position, pixelPosition) {
   this.position = position;
