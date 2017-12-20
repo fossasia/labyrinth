@@ -31,3 +31,26 @@ Implementation
 
 This will be an HTML/JS only site.
 Levels can be created by editing a table specification.
+
+Contributions, Bug Reports, Feature Requests
+--------------
+This is an Open Source project and we would be happy to see contributors who report bugs and file feature requests by submitting pull requests as well. Please report issues in the [GitHub tracker](https://github.com/fossasia/labyrinth/issues/new).
+
+## Issue and Branch Policy
+
+Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details. Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
+
+We have the following branch   
+ * **master**   
+   This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update, and make a release.
+
+
+Also read [CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/development/CONTRIBUTING.md)
+
+If you like to join developing,
+
+- you can [chat on gitter][gitter], mentioning the maintainers.
+- you can find/create [issues](https://github.com/fossasia/labyrinth/issues) and solve them.
+  - When you solve an issue, you do not own it. Share your progress via a Pull-Requst as soon as possible.
+  - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
+.
