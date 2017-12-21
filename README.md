@@ -67,9 +67,47 @@ If you like to join developing,
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 .
 >>>>>>> 47c573d... Added Documentation regarding Contributing
 =======
 .
 >>>>>>> 0872e38... Update README.md
+=======
+
+Contributing to Tiles
+--------------
+
+## Create an animated tile
+
+- Download and install [Inkscape](https://inkscape.org/en/)
+- Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
+- Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ...
+- While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/flappy-svg/issues).
+- Create a pull-request and have it merged
+
+## Create tiles for a landscape
+
+- Download and install [Inkscape](https://inkscape.org/en/)
+- Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
+- Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
+- Create a pull-request and have it merged
+
+## Create a hand-drawn landscape
+
+- Download and install [Inkscape](https://inkscape.org/en/)
+- Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
+	1. Draw one tile on a sheet of paper
+	2. Scan it or photograph it
+	3. make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
+- Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyrinth.
+- Create a pull-request and have it merged.
+
+Solve an Issue
+--------------
+The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Please improve the game by solving an issue.
+
+- Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
+- Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
+>>>>>>> 997edf8... Documentation regarding Contributing to Tiles and Solving Issues
