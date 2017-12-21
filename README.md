@@ -54,6 +54,7 @@ If you like to join developing,
   - When you solve an issue, you do not own it. Share your progress via a Pull-Requst as soon as possible.
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
 
+
 Contributing to Tiles
 --------------
 
@@ -88,3 +89,4 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
+

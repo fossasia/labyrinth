@@ -25,7 +25,6 @@ function PlayerStartsAt(tileSpecification) {
 };
 
 
-
 function ImageCollection(position, pixelPosition) {
   this.position = position;
   this.pixelPosition = pixelPosition;
