@@ -1,3 +1,13 @@
+// defined in /js/tiles.js
+/* global NullTile */
+/* global door */
+/* global PlayerStartsAt */
+
+// defined in /js/level.js
+/* global Level */
+
+// createTestLevel is used in /js/gui.js ignoring the error
+// ignore JSHintBear
 function createTestLevel()
 {
   return new Level([
