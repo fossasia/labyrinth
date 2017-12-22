@@ -90,3 +90,5 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
 
+## Maintainers
+- [Nicco Kunzmann](https://github.com/niccokunzmann)
