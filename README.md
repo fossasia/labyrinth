@@ -61,7 +61,7 @@ Also read [CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/developme
 
 If you like to join developing,
 
-- you can [chat on gitter][gitter], mentioning the maintainers.
+- you can [chat on gitter](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge), mentioning the maintainers.
 - you can find/create [issues](https://github.com/fossasia/labyrinth/issues) and solve them.
   - When you solve an issue, you do not own it. Share your progress via a Pull-Requst as soon as possible.
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
