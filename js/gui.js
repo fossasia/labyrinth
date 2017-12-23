@@ -1,4 +1,9 @@
 
+// defined in /js/player.js
+/* global newPlayer */
+
+// defined in /js/levels.js
+/* global createTestLevel */
 
 var player;
 var level;

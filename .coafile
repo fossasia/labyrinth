@@ -19,6 +19,7 @@ ignore = **.min.css
 bears = JSHintBear
 files = **.js
 ignore = **.min.js
+es_version = 6
 environment_jquery = True
 javascript_strictness = implied
 

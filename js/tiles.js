@@ -1,11 +1,13 @@
 
+// PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
+// ignore JSHintBear
 const NullTile = {
   canEnterFromTheTop: function(player) {return false;},
   canEnterFromTheBottom: function(player) {return false;},
   canEnterFromTheRight: function(player) {return false;},
   canEnterFromTheLeft: function(player) {return false;},
   playerLeaves: function(player){},
-  placeAtIn: function(){return this},
+  placeAtIn: function(){return this;},
   showIn: function() {},
   visit: function() {},
   viewFromTheTop: function() {},
@@ -14,6 +16,8 @@ const NullTile = {
   viewFromTheBottom: function() {},
 };
 
+// PlayerStartsAt is used in /js/levels.js ignoring the error
+// ignore JSHintBear
 function PlayerStartsAt(tileSpecification) {
   return {
     placeAtIn: function(position, level) {
@@ -21,9 +25,8 @@ function PlayerStartsAt(tileSpecification) {
       level.setStartTile(tile);
       return tile;
     }
-  }
-};
-
+  };
+}
 
 function ImageCollection(position, pixelPosition) {
   this.position = position;
@@ -145,6 +148,8 @@ const OpenDoors = {
   },
 };
 
+// door is used in /js/levels.js ignoring the error
+// ignore JSHintBear
 const door = {
   both: OpenDoors,
   right: Object.assign({}, OpenDoors, {
