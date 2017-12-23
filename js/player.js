@@ -1,4 +1,8 @@
+// defined in /js/tiles.js
+/* global NullTile */
 
+// Level is used in /js/levels.js ignoring the error
+// ignore JSHintBear
 function newPlayer() {
   return new Player();
 }
