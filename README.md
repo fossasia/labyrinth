@@ -40,19 +40,7 @@ This is an Open Source project and we would be happy to see contributors who rep
 
 Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details. Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 We have the following branch   
-=======
-We have the following branches   
- * **development**   
-   All development goes on in this branch. If you're making a contribution,
-   you are supposed to make a pull request to _development_.
-   PRs to master must pass a build check and a unit-test check on Travis.
->>>>>>> 47c573d... Added Documentation regarding Contributing
-=======
-We have the following branch   
->>>>>>> 0872e38... Update README.md
  * **master**   
    This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update, and make a release.
 
@@ -65,16 +53,7 @@ If you like to join developing,
 - you can find/create [issues](https://github.com/fossasia/labyrinth/issues) and solve them.
   - When you solve an issue, you do not own it. Share your progress via a Pull-Requst as soon as possible.
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-.
->>>>>>> 47c573d... Added Documentation regarding Contributing
-=======
-.
->>>>>>> 0872e38... Update README.md
-=======
+
 
 Contributing to Tiles
 --------------
@@ -110,4 +89,4 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
->>>>>>> 997edf8... Documentation regarding Contributing to Tiles and Solving Issues
+
