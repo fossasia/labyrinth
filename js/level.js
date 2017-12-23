@@ -1,7 +1,12 @@
 
+// defined in /js/tiles.js
+/* global NullTile */
+
 const tileWidth = 429.544; // px, real width
 const tileHeight = 256.314; // px
 
+// Level is used in /js/levels.js ignoring the error
+// ignore JSHintBear
 function Level(specification)
 {
   this.scale = 0.5;
