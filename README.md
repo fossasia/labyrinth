@@ -108,5 +108,42 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 <a href = "https://stackoverflow.com/users/1320237/user"><img src = "http://www.iconninja.com/files/1024/340/40/overflow-stackoverflow-stack-icon.svg" width="36" height="36"/></a>
 </p>
 </td>
-</tr>
-</table>
+
+<td>
+     <img src="https://avatars3.githubusercontent.com/u/1583873?v=4&s=150"/>
+     
+     Mario Behling
+
+<p align="center">
+<a href = "https://github.com/mariobehling"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://twitter.com/mariobehling"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
+<a href = "https://www.linkedin.com/in/mariobehling/de"><img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/></a>
+</p>
+</td>
+
+<td>
+     <img src="https://avatars1.githubusercontent.com/u/4529442?v=4&s=150" />
+     
+     Harsh Lathwal
+
+<p align="center">
+<a href = "https://github.com/xeon-zolt"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://twitter.com/xeon_zolt"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
+<a href = "https://www.linkedin.com/in/harsh-lathwal-75371276/"><img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/></a>
+</p>
+</td>
+
+<td>
+     <img src="https://avatars0.githubusercontent.com/u/15213246?v=4&s=150"/>
+     
+     Tarun Kumar
+
+<p align="center">
+<a href = "https://github.com/meets2tarun"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "mailto:xeon.harsh@gmail.com"><img src = "http://www.iconninja.com/files/827/990/382/gmail-mail-google-icon.svg" width="36" height="36"/></a>
+<a href = "https://www.linkedin.com/in/meets2tarun/"><img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/></a>
+</p>
+</td>
+
+</tr> 
+  </table>
