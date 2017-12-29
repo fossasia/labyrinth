@@ -56,9 +56,6 @@ If you like to join developing,
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
 
 
-How to add new tiles
---------------
-
 ## How to add new tiles
 
 Labyrinth allows you to add your tiles by customizing the required javascript and svg files. There are various types of svg files which are available
