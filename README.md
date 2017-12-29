@@ -5,6 +5,7 @@ Labyrinth
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
 
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html)
+[**Learn How to Play**](HOW-TO-PLAY.md)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
