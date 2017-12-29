@@ -45,7 +45,7 @@ We have the following branch
    This contains shipped code. After significant features/bugfixes are accumulated on development, we make a version update, and make a release.
 
 
-Also read [CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/development/CONTRIBUTING.md)
+Also read [CONTRIBUTING.md](CONTRIBUTING.md)
 
 If you like to join developing,
 
