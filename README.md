@@ -56,10 +56,46 @@ If you like to join developing,
   - Discuss with others who work on the issue about the best solution. It is your responsibility, not the maintainer's to choose the best solution.
 
 
-Contributing to Tiles
+How to add new tiles
 --------------
 
-## Create an animated tile
+## How to add new tiles
+
+Labyrinth allows you to add your tiles by customizing the required javascript and svg files. There are various types of svg files which are available
+such as doors, floors etc.
+
+Currently the tiles are svg images which are embedded into a div via javascript. Floor tiles have a dimension of about 429.544 x 256.314 px (wxh)
+Tiles are present in the `tiles` folder within subdirectories corresponding to particular tiles such as door, floor etc.
+
+To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
+and saved as a svg file with the speccified dimensions.
+
+After creating tiles add them to the specific sub folder inside tiles.
+
+Now, we will move on to the javascript part.
+Each tile's attributes and specifications along with it's declaration is done in the `js/tiles.js` file. You may edit this file defining attributes
+such as how you could enter and exit out of the tile and so on. You can also specify the door it takes, it's closed exit paths etc.
+A sample Implementation should go into the already defined `door` class like:
+
+```javascript
+tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
+```
+
+After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
+Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
+
+## Hints for GCI students
+
+### Adding animated tiles
 
 - Download and install [Inkscape](https://inkscape.org/en/)
 - Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
@@ -67,14 +103,14 @@ Contributing to Tiles
 - While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/flappy-svg/issues).
 - Create a pull-request and have it merged
 
-## Create tiles for a landscape
+### Adding tiles for landscape
 
 - Download and install [Inkscape](https://inkscape.org/en/)
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
 - Create a pull-request and have it merged
 
-## Create a hand-drawn landscape
+### Creating a hand-drwan landscape
 
 - Download and install [Inkscape](https://inkscape.org/en/)
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
