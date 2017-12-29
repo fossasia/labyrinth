@@ -201,8 +201,12 @@ const door = {
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/goal.svg");
     },
+    /* Override the function */
     visit: function() {
       alert("You have won the game");
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
     },
   }),
 };
