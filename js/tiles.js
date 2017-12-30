@@ -222,6 +222,21 @@ const door = {
       this.ground.show();
     },
   }),
+   banner: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/banner-1.svg");
+    },
+    visit: function() {
+    	// would show a message onto screen.
+    	// left open for future because no output div in hand
+      alert("All Hail Fossasia");
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+    },
+  }),
 };
 
 
