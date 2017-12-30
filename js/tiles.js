@@ -195,6 +195,19 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+    aboutToFinish: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/caro.svg");
+    },
+      visit: function() {
+        alert("Pretty close. Keep going!!");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();      
+      },
+  }),
   goal: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
