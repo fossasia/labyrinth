@@ -1,3 +1,7 @@
+https://codein.withgoogle.com/dashboard/tasks/5993269697708032/
+
+---
+
 # Labyrinth: Improve the Code Quality
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth. To keep the game easy to contribute in the future, please improve the code quality.
