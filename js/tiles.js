@@ -216,7 +216,7 @@ const door = {
     },
     /* Override the function */
     visit: function() {
-      alert("You have won the game");
+      alert("Yay! You have won the game");
       this.wallTop.show();
       this.wallRight.show();
       this.ground.show();

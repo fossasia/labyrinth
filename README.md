@@ -107,7 +107,7 @@ Something like `door.tile_name` since we have added it (our object) to the door 
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
 - Create a pull-request and have it merged
 
-### Creating a hand-drwan landscape
+### Creating a hand-drawn landscape
 
 - Download and install [Inkscape](https://inkscape.org/en/)
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
