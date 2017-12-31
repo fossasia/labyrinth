@@ -16,7 +16,7 @@ function createTestLevel()
     [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top],
     [door.none, door.top, door.both, door.both, door.both, door.top],
     [door.none, door.top, door.both, door.both, door.both, door.top],
-    [door.none, door.top, door.both, door.both, door.both, door.top],
+    [door.none, door.top, door.both, door.both, door.drawn, door.top],
     [NullTile, door.none, door.none, door.none, door.none, door.none],
   ]);
 }
