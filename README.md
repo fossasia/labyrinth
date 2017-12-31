@@ -11,7 +11,7 @@ This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
 ![](vision-example.jpg)
 
-Our goal is to have kids draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
+Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
 
 Motivation
@@ -19,7 +19,7 @@ Motivation
 
 In the past two years, we created [Flappy SVG](http://fossasia.github.io/flappy-svg/).
 We had problems coordinating because this is all one SVG file.
-This time, we can allow kids to work independently on a level and coordination comes with embedding.
+This time, we can allow contributors to work independently on a level and coordination comes with embedding.
 This allows remixing of each other's work and thus collaboration in new ways such as:
 - Adding your tile to an existing labyrinth
 - Creating your own labyrinth from other tiles.
