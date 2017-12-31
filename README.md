@@ -4,8 +4,8 @@ Labyrinth
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
 
-[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html)
-[**Learn How to Play**](HOW-TO-PLAY.md)
+[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
+[**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
