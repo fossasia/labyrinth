@@ -1,7 +1,12 @@
-### Expected results
 
-### Actual results
+**I'm submitting a ...**
+- [ ] bug report
+- [ ] feature request
 
-### Steps to reproduce the issue
+**Current behavior:**
+<!-- How the bug manifests. -->
 
-## Would you like to work on this
+**Expected behavior:**
+<!-- Behavior would be without the bug. -->
+
+**Steps to reproduce:**
