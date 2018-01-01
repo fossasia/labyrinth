@@ -60,7 +60,7 @@ ImageCollection.prototype.showIn = function(container) {
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
 };
-ImageCollection.prototype.playerLeaves = function(player) {
+ImageCollection.prototype.playerLeaves = function(player) {top (copy)
   this.container.classList.remove("current");
 };
 
@@ -205,7 +205,7 @@ const door = {
         alert("Pretty close. Keep going!!");
         this.wallTop.show();
         this.wallRight.show();
-        this.ground.show();      
+        this.ground.show();
       },
   }),
   goal: Object.assign({}, OpenDoors, {
@@ -222,12 +222,39 @@ const door = {
       this.ground.show();
     },
   }),
+  chessMate: Object.assign({}, OpenDoors, {
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
+          this.wallRight = this.createImage("tiles/rooms/door/rightChess.svg");
+          this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
+      },
+      visit: function() {
+          alert("Checkmate");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  chessStale: Object.assign({}, OpenDoors, {
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
+          this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
+      },
+      visit: function() {
+          alert("Stalemate");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
    banner: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/banner-1.svg");
     },
+
     visit: function() {
     	// would show a message onto screen.
     	// left open for future because no output div in hand
@@ -238,5 +265,3 @@ const door = {
     },
   }),
 };
-
-
