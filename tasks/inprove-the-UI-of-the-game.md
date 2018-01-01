@@ -5,7 +5,7 @@
 # Labyrinth: Build/Inprove the UI of the game
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
-To extent the labyrinth, please add a new level.
+To enable the game on many devices (Tablets, Phones, Laptop) and make it more beautiful, please improve the user interface.
 
 Requirements:
 - Add the basic UI elements (zoom in, zoom out, pan etc, reset, etc) to the game / Improve( in terms on compatibility, ease of access, solve bugs) if they already exist.
