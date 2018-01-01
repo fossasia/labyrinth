@@ -1,4 +1,4 @@
-<!-- https://codein.withgoogle.com/dashboard/tasks/4946505678979072/ -->
+https://codein.withgoogle.com/dashboard/tasks/6127840191840256/
 
 ---
 
@@ -12,7 +12,8 @@ Requirements:
 - Develop / Enhance the on-screen controls.
 
 Expected Outcome:
-- A systematic (uniform) UI elements that match the overall design of the game.
+- systematic (uniform) UI elements that match the overall design of the game.
+- a merged pull request and resolved bug issues created from the pull request.
 
 Hints:
 - If someone wants to work with you, let them do that. You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.
