@@ -19,4 +19,7 @@ function createTestLevel()
     [door.none, door.top, door.both, door.both, door.both, door.top],
     [NullTile, door.none, door.none, door.none, door.none, door.none],
   ]);
+  /*return new Level([
+    [PlayerStartsAt(door.chessMate),door.chessStale]
+]);*/
 }

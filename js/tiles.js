@@ -236,6 +236,10 @@ const door = {
       }
   }),
   chessStale: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {return false;},
+      canLeaveToTheRight() {return false;},
+      canEnterFromTheTop: function(player) {return false;},
+      canLeaveToTheTop: function(player) {return false;},
       createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
