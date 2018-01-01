@@ -60,7 +60,7 @@ ImageCollection.prototype.showIn = function(container) {
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
 };
-ImageCollection.prototype.playerLeaves = function(player) {top (copy)
+ImageCollection.prototype.playerLeaves = function(player) {
   this.container.classList.remove("current");
 };
 
