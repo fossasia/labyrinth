@@ -216,7 +216,10 @@ const door = {
       this.ground = this.createImage("tiles/animations/caro.svg");
     },
       visit: function() {
-        alert("Pretty close. Keep going!!");
+        swal({
+          type: 'info',
+          title: 'Pretty close. Keep going!!',
+        });
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();      
@@ -230,7 +233,11 @@ const door = {
     },
     /* Override the function */
     visit: function() {
-      alert("Yay! You have won the game");
+      swal({
+        type: 'success',
+        title: 'You win!',
+        text: "Yay! You have won the game"
+      });
       this.wallTop.show();
       this.wallRight.show();
       this.ground.show();
@@ -245,7 +252,10 @@ const door = {
     visit: function() {
     	// would show a message onto screen.
     	// left open for future because no output div in hand
-      alert("All Hail Fossasia");
+      swal({
+        type: 'info',
+        title: 'All Hail Fossasia!',
+      });
       this.wallTop.show();
       this.wallRight.show();
       this.ground.show();
