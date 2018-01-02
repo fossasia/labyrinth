@@ -5,10 +5,11 @@ function newPlayer() {
 
 function Player() {
   this.currentTile = NullTile;
+  this.moves = 0;
   this.enter = function(tile) {
-    this.currentTile.playerLeaves(this);
-    this.currentTile = tile;
-    this.currentTile.playerEnters(this);
+  this.currentTile.playerLeaves(this);
+  this.currentTile = tile;
+  this.currentTile.playerEnters(this);
   };
   this.canMoveLeft = function() {
     return this.currentTile.canLeaveToTheLeft(this) &&
@@ -28,20 +29,25 @@ function Player() {
   };
   this.moveRight = function() {
     this.enter(this.currentTile.tileToTheRight());
+    this.moves++;
   };
   this.moveLeft = function() {
     this.enter(this.currentTile.tileToTheLeft());
+    this.moves++;
   };
   this.moveUp = function() {
     this.enter(this.currentTile.tileToTheTop());
+    this.moves++;
   };
   this.moveDown = function() {
     this.enter(this.currentTile.tileToTheBottom());
+    this.moves++;
   };
   this.startAt = function(tile) {
     this.enter(tile);
   };
   this.logPosition = function() {
     console.log("Player position:", this.currentTile.position);
+    $("#playerMoves").html(this.moves);
   };
 }
