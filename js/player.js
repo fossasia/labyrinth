@@ -22,9 +22,9 @@ function Player() {
   this.hasInInventory  = function(item) {
     for (var i = this.inventory.length - 1; i >= 0; i--) {
       if(this.inventory[i] === item){
-        return 1;
+        return true;
       }else{
-        return 0;
+        return false;
       }
     }
   };
