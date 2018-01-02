@@ -273,6 +273,46 @@ const door = {
           this.ground.show();
       }
   }),
+  treasure: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {return false;},
+      canLeaveToTheRight() {return false;},
+      canEnterFromTheLeft() {return false;},
+      canLeaveToTheLeft() {return false;},
+      canEnterFromTheTop: function(player) {return false;},
+      canLeaveToTheTop: function(player) {return false;},
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
+      },
+      visit: function() {
+          swal({
+	        type: 'success',
+	        title: 'You got the treasure !',
+	        text: "there's more to find !"
+	      });
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  treasureKey: Object.assign({}, OpenDoors, {
+	createImages: function() {
+      this.ground = this.createImage("tiles/rooms/floor/treasureKey.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/treasureWall.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    },
+    visit: function() {
+          swal({
+	        type: 'info',
+	        title: 'You got something !',
+	        text: "Explore More ! Let's see what can find ..."
+	      });
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+   }),
   batcave: Object.assign({}, OpenDoors, {
     canEnterFromTheLeft() {return false;}, 
     canLeaveToTheLeft() {return false;},
