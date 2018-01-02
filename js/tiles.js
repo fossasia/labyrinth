@@ -273,6 +273,16 @@ const door = {
           this.ground.show();
       }
   }),
+  batcave: Object.assign({}, OpenDoors, {
+    canEnterFromTheLeft() {return false;}, 
+    canLeaveToTheLeft() {return false;},
+   
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/batcave.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
    banner: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
