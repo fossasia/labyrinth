@@ -10,6 +10,23 @@ function Player() {
   this.currentTile.playerLeaves(this);
   this.currentTile = tile;
   this.currentTile.playerEnters(this);
+  this.inventory = [];
+  };
+
+  // INVENTORY SYSTEM
+  // add item to players inventory
+  this.addToInventory = function(item) {
+    this.inventory.push(item);
+  };
+  // check for item in players inventory
+  this.hasInInventory  = function(item) {
+    for (var i = this.inventory.length - 1; i >= 0; i--) {
+      if(this.inventory[i] === item){
+        return 1;
+      }else{
+        return 0;
+      }
+    }
   };
   this.canMoveLeft = function() {
     return this.currentTile.canLeaveToTheLeft(this) &&
