@@ -161,6 +161,19 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
     },
   }),
+  scene: Object.assign({}, OpenDoors, {
+  createImages: function() {
+     this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+     this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+     this.ground = this.createImage("tiles/rooms/floor/live.svg");
+    },
+    visit: function() {
+      alert(Good luck! For the labyrinth)
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+    },
+  }),
   top: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
@@ -209,6 +222,7 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/live.svg");
     },
   }),
+    
     aboutToFinish: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -233,11 +247,7 @@ const door = {
     },
     /* Override the function */
     visit: function() {
-      swal({
-        type: 'success',
-        title: 'You win!',
-        text: "Yay! You have won the game"
-      });
+      alert()
       this.wallTop.show();
       this.wallRight.show();
       this.ground.show();
@@ -266,12 +276,6 @@ const door = {
           this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
-      visit: function() {
-          alert("Stalemate");
-          this.wallTop.show();
-          this.wallRight.show();
-          this.ground.show();
-      }
   }),
   treasure: Object.assign({}, OpenDoors, {
       canEnterFromTheRight() {return false;},
