@@ -1,0 +1,81 @@
+<svg version="1.1" id="rJgOAzvCW" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;">
+    <style>
+        #Sk-gOCGPAZ{fill: #445875;}#BkMg_CGDRb{fill: #445875;}#r17lO0zP0b{fill: #FFF0CC;}@keyframes rJel_AGDA-Animation {
+	60% {
+		transform: translate(0px, 0px);
+	}
+	66.67% {
+		transform: translate(0px, -20px);
+	}
+	70% {
+		transform: translate(0px, 0px);
+	}
+	73.33% {
+		transform: translate(0px, -10px);
+	}
+	76.67% {
+		transform: translate(0px, 0px);
+		opacity: 1;
+	}
+	78.89% {
+		transform: translate(0px, -5px);
+	}
+	81.11% {
+		transform: translate(0px, 0px);
+	}
+	82.22% {
+		transform: translate(0px, -3px);
+	}
+	83.33% {
+		transform: translate(0px, 0px);
+	}
+	96.67% {
+		opacity: 0;
+	}
+}
+
+#rJel_AGDA- {
+	transform-origin: 50% 50% !important;
+	animation: rJel_AGDA-Animation 3s;
+}
+
+@keyframes Sk-gOCGPAZAnimation {
+	30% {
+		transform: translate(0px, 0px);
+	}
+	33.33% {
+		transform: translate(0px, 12px);
+	}
+	36.67% {
+		transform: translate(0px, 0px);
+	}
+}
+
+#Sk-gOCGPAZ {
+	transform-origin: 50% 50% !important;
+	animation: Sk-gOCGPAZAnimation 3s;
+}
+
+@keyframes r17lO0zP0bAnimation {
+	33.33% {
+		transform: rotate(0deg);
+	}
+	60% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+#r17lO0zP0b {
+	transform-origin: 50% 50% !important;
+	animation: r17lO0zP0bAnimation 3s;
+}
+    </style>
+    <g id="rJel_AGDA-">
+        <path id="Sk-gOCGPAZ" class="st0" d="M169.3,38.9h-38.5c-1.9,0-3.3,1.5-3.3,3.3v5.6c0,1,0.8,1.8,1.8,1.8h8.7c1.4,0,2.6,1.2,2.6,2.6&#10;&#9;&#9;v26.8h19.1V52.3c0-1.4,1.2-2.6,2.6-2.6h8.7c1,0,1.8-0.8,1.8-1.8v-5.6C172.6,40.5,171.1,38.9,169.3,38.9z"/>
+        <path id="BkMg_CGDRb" class="st0" d="M237.1,119.9l3.9-1.7c1.8-0.7,2.5-3,1.5-4.6l-8-13.8c-1.1-1.8-3.3-2.3-4.9-1.1l-3.3,2.4&#10;&#9;&#9;c-2.8-3.8-5.9-7.5-9.2-10.9l2.9-2.9c1.4-1.3,1.3-3.7-0.2-4.9l-12.5-9.9c-1.5-1.2-3.8-0.8-4.9,0.8l-2.1,3.3&#10;&#9;&#9;c-14.6-9.2-31.8-14.5-50.4-14.5c-52.3,0-94.6,42.4-94.6,94.6c0,52.3,42.4,94.6,94.6,94.6c52.3,0,94.6-42.4,94.6-94.6&#10;&#9;&#9;C244.6,143.8,241.9,131.3,237.1,119.9z"/>
+        <path id="r17lO0zP0b" class="st1" d="M150,79.1c-43,0-77.8,34.8-77.8,77.8s34.8,77.8,77.8,77.8s77.8-34.8,77.8-77.8S193,79.1,150,79.1z&#10;&#9;&#9; M153.8,156.5c0,2.1-1.8,3.8-3.8,3.8c-2.1,0-3.8-1.8-3.8-3.8V99c0-2.1,1.8-3.8,3.8-3.8s3.8,1.7,3.8,3.8V156.5z"/>
+    </g>
+</svg>
