@@ -342,4 +342,18 @@ const door = {
       this.ground.show();
     },
   }),
+      new: Object.assign({}, OpenDoors, {
+  createImages: function() {
+    this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+    this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    this.ground = this.createImage("tiles/rooms/floor/new.svg");
+  },
+}),
+plain: Object.assign({}, OpenDoors, {
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/plain.svg");
+},
+}),
 };
