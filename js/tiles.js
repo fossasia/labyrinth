@@ -153,9 +153,9 @@ const OpenDoors = {
 const door = {
   both: OpenDoors,
   right: Object.assign({}, OpenDoors, {
-    canEnterFromTheTop: function(player) {return false;},
-    canLeaveToTheTop: function(player) {return false;},
-    createImages: function() {
+    canEnterFromTheTop: function (player) { return false; },
+    canLeaveToTheTop: function (player) { return false; },
+    createImages: function () {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
@@ -348,6 +348,24 @@ const door = {
       this.wallRight.show();
       this.ground.show();
     },
+  }),
+  outdoor: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() { return false; },
+    canLeaveToTheRight() { return false; },
+    createImages: function () {
+      this.wallRight = this.createImage("tiles/rooms/wall/outwall.svg");
+      this.ground = this.createImage("tiles/rooms/floor/out.svg");
+	this.wallTop = this.createImage("tiles/rooms/door/out.svg");
+    },
+	visit: function() {
+          swal({
+        	type: 'question',
+        	title: "Do you like to go to outdoor?"
+          });
+          this.wallRight.show();
+          this.wallTop.show();
+          this.ground.show();
+      }
   }),
       new: Object.assign({}, OpenDoors, {
   createImages: function() {
