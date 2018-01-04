@@ -161,6 +161,19 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
     },
   }),
+  scene: Object.assign({}, OpenDoors, {
+  createImages: function() {
+     this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+     this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+     this.ground = this.createImage("tiles/rooms/floor/live.svg");
+    },
+    visit: function() {
+      alert(Good luck! For the labyrinth)
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+    },
+  }),
   top: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
@@ -239,17 +252,12 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/goal.svg");
     },
     /* Override the function */
-    visit: function() {
-      swal({
+      visit: function() {
+        swal({
         type: 'success',
         title: 'You win!',
         text: "Yay! You have won the game"
-      });
-      this.wallTop.show();
-      this.wallRight.show();
-      this.ground.show();
-    },
-  }),
+    });
   chessMate: Object.assign({}, OpenDoors, {
       createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
