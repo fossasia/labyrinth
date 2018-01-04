@@ -19,7 +19,16 @@ function createTestLevel()
     [door.none, door.top, door.both, door.treasureKey, door.drawn, door.top],
     [NullTile, door.none, door.none, door.none, door.none, door.none],
   ]);
-  /*return new Level([
-    [PlayerStartsAt(door.chessMate),door.chessStale]
-]);*/
+  return new Level([
+    [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
+    [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
+    [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
+    [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top]
+    [door.none, door.top, door.both, door.both, door.both, door.top, door.top, door.left, door.right],
+    [door.none, door.top, door.wheel, door.both, door.both, door.wheel, door.right, door.top, door.top],
+    [door.none, door.top, door.both, door.wheel, door.both, door.top, door.none, door.right, door.top, door.both],
+    [door.none, door.none, door.none, door.none, door.none, door.none, door.both, door.right, door.top, door.none],
+    [door.left, door.top, door.,none, door.,right, door.none, door.wheel, door.none, door.none, door.none],
+    [NullTile, door.none, door.none, door.none, door.none, door.none, door.,left, door.top, door.right, door.top]
+]);
 }
