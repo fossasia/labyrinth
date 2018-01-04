@@ -1,0 +1,37 @@
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="152.824px" height="98.723px" viewBox="0 0 152.824 98.723" enable-background="new 0 0 152.824 98.723" xml:space="preserve">
+<path id="pulledtail" fill="#C3E6F9" stroke="#000000" d="M11.814,2.294 45.314,75.294 74.314,64.294">
+	<animate dur="1.4s" repeatCount="indefinite" attributeName="d" values="
+	M11.814,2.294 45.314,75.294 74.314,64.294Z;
+	M2.064,16.044 45.314,75.294 74.314,64.294Z;	
+	M11.814,2.294 45.314,75.294 74.314,64.294Z;"/>
+</path>
+<path id="body" fill="#C3E6F9" stroke="#000000" d="M74.314,29.794 109.814,68.794 45.314,75.294Z"/>
+<path id="beak" fill="#C3E6F9" stroke="#000000" d="M135.314,14.294 140.814,26.794 128.314,17.794Z">
+	<animate dur="1.4s" repeatCount="indefinite" attributeName="d" values="
+	M135.314,14.294 140.814,26.794 128.314,17.794Z;
+	M149.865,27.685 152.038,41.168 142.209,29.308Z;	
+	M135.314,14.294 140.814,26.794 128.314,17.794Z;"/>
+</path>
+<path id="neck" fill="#C3E6F9" stroke="#000000" d="128.064,13.794 135.939,13.794 109.814,68.794 66.601,73.149Z">
+	<animate dur="1.4s" repeatCount="indefinite" attributeName="d" values="
+	M128.064,13.794 135.939,13.794 109.814,68.794 66.601,73.149Z;
+	M142.064,26.794 149.939,26.794 109.814,68.794 66.601,73.149Z;	
+	M128.064,13.794 135.939,13.794 109.814,68.794 66.601,73.149Z;"/>
+</path>
+<path id="flappywing" fill="#C3E6F9" stroke="#000000" d="M41.314,62.794 98.814,31.794 129.814,97.794Z">
+	<animate dur="1.4s" repeatCount="indefinite" attributeName="d" values="
+	M41.314,62.794 98.814,31.794 129.814,97.794Z;
+	M41.314,62.794 98.814,47.544 110.814,26.794Z;
+	M41.314,62.794 98.814,31.794 129.814,97.794Z;"/>
+	<animate dur="1.4s" repeatCount="indefinite" attributeName="fill" values="
+	#C3E6F9;
+	#C3E6F9;
+	#C3E6F9;
+	#FFFFFF;
+	#444444;
+	#FFFFFF;
+	#C3E6F9;
+	#C3E6F9;
+	#C3E6F9;"/>
+</path>
+</svg>
