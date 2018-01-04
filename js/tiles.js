@@ -281,7 +281,7 @@ const door = {
           this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
-      visit: function(){
+      visit: function() {
           alert("Stalemate");
           this.wallTop.show();
           this.wallRight.show();
