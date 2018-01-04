@@ -407,4 +407,21 @@ visit: function() {
       this.ground.show();
   }
 }),
+  newYear: Object.assign({}, OpenDoors, {
+    canLeaveToTheTop: function(player) {return true;},
+    canLeaveToTheLeft: function(player) {return true;},
+    canEnterFromTheTop: function(player) {return true;},
+    canEnterFromTheLeft: function(player) {return true;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/topNewYear.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightNewYear.svg");
+      this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
+    },
+    visit: function(player) {
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+      swal('Happy 2018!', 'It\'s new year already! Don\'t waste your time and explore!');
+    }
+  }),
 };
