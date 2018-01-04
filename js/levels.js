@@ -12,7 +12,7 @@ function createTestLevel()
 {
   return new Level([
     [door.none, door.right, door.right, door.right, door.goal, door.none],
-    [door.none, door.top, door.both, door.chessMate, door.both, door.chessStale],
+    [door.none, door.top, door.sofa, door.chessMate, door.both, door.chessStale],
     [door.none, door.top, PlayerStartsAt(door.black), door.green, door.banner, door.top],
     [door.none, door.top, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.top, door.treasure, door.top, door.top],

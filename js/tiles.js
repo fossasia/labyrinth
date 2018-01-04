@@ -363,4 +363,23 @@ createImages: function() {
   this.ground = this.createImage("tiles/rooms/floor/plain.svg");
 },
 }),
+sofa: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/topSofa.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/rightSofa.svg");
+  this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
+},
+visit: function() {
+      swal({
+      type: 'info',
+      title: 'Get out!',
+      text: "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room."
+    });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
 };
