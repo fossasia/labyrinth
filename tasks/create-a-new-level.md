@@ -5,7 +5,7 @@ https://codein.withgoogle.com/dashboard/tasks/4946505678979072/
 # Labyrinth: Add a level
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
-To extent the labyrinth, please add a new level.
+To extend the labyrinth, please add a new level.
 
 Requirements:
 - The level should be at least 7x7 tiles big. You do not need to create a compact level. You can also make long walks.
