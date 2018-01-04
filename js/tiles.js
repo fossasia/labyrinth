@@ -209,6 +209,13 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/live.svg");
     },
   }),
+    fabricate: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/fabricate.svg");
+    },
+  }),
     aboutToFinish: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -273,6 +280,56 @@ const door = {
           this.ground.show();
       }
   }),
+  treasure: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {return false;},
+      canLeaveToTheRight() {return false;},
+      canEnterFromTheLeft() {return false;},
+      canLeaveToTheLeft() {return false;},
+      canEnterFromTheTop: function(player) {return false;},
+      canLeaveToTheTop: function(player) {return false;},
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
+      },
+      visit: function() {
+          swal({
+	        type: 'success',
+	        title: 'You got the treasure !',
+	        text: "there's more to find !"
+	      });
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  treasureKey: Object.assign({}, OpenDoors, {
+	createImages: function() {
+      this.ground = this.createImage("tiles/rooms/floor/treasureKey.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/treasureWall.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    },
+    visit: function() {
+          swal({
+	        type: 'info',
+	        title: 'You got something !',
+	        text: "Explore More ! Let's see what can find ..."
+	      });
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+   }),
+  batcave: Object.assign({}, OpenDoors, {
+    canEnterFromTheLeft() {return false;}, 
+    canLeaveToTheLeft() {return false;},
+   
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/batcave.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
    banner: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
@@ -310,4 +367,37 @@ const door = {
           this.ground.show();
       }
   }),
+      new: Object.assign({}, OpenDoors, {
+  createImages: function() {
+    this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+    this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    this.ground = this.createImage("tiles/rooms/floor/new.svg");
+  },
+}),
+plain: Object.assign({}, OpenDoors, {
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/plain.svg");
+},
+}),
+sofa: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/topSofa.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/rightSofa.svg");
+  this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
+},
+visit: function() {
+      swal({
+      type: 'info',
+      title: 'Get out!',
+      text: "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room."
+    });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
 };

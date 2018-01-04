@@ -14,3 +14,12 @@
 * If you would like to work on an issue, drop in a comment at the issue. If it is already assigned to someone, but there is no sign of any work being done, please free to drop in a comment so that the issue can be assigned to you if the previous assignee has dropped it entirely.
 
 Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia).
+
+**Licensing Code**  
+We recommend you add code and work which you did yourself. By adding this code to the repository, you put it under the [AGPL license](LICENSE).  
+If you embed other work, you need to be compatible with the current license. Licenses compatible are e.g. MIT, GPL, AGPL, LGPL, BSD. **In almost no case is it legal to just copy the code/files without license.**
+- Embedding MIT: You need to keep the license close to the code:
+  - CSS/HTML/Javascript: embed it into the code, it is not that long
+  - binary files e.g. fonts: create a file with the same name next to the binary file with `.license` in the end and copy the license in there.
+- Stackoverflow: Link to the answer or question.
+- ... append in the future.

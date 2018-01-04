@@ -1,89 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
-   id="svg2"
-   version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="wall-top.svg">
-  <defs
-     id="defs4">
-    <inkscape:perspective
-       sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
-       id="perspective2985" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="170.12132"
-     inkscape:cy="150.5455"
-     inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:object-nodes="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1036"
-     inkscape:window-x="4"
-     inkscape:window-y="44"
-     inkscape:window-maximized="0"
-     showguides="true"
-     inkscape:guide-bbox="true"
-     units="mm"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-53.643411,-569.625)">
-    <path
-       inkscape:connector-curvature="0"
-       id="path3910"
-       d="m 268.90809,570.13899 9.31999,5.5358 -9.3125,5.5625 -0.007,-0.005 -205.437503,122.59375 -0.0312,0 -9.2813,-5.5625 z"
-       style="fill:#d7d7f4;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       sodipodi:nodetypes="cccccccc" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path3914"
-       d="m 278.22808,575.67479 0,68 -214.773143,128.15685 0,-68 z"
-       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       sodipodi:nodetypes="ccccc" />
-    <path
-       inkscape:connector-curvature="0"
-       id="path3916"
-       d="m 54.143677,698.27581 0,68 9.31126,5.55583 0,-68 z"
-       style="fill:#f2f2f2;stroke:#000000;stroke-width:1px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.48.5 r10040" sodipodi:docname="wall-top.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="430.543px"
+	 height="325.295px" viewBox="0 0 430.543 325.295" enable-background="new 0 0 430.543 325.295" xml:space="preserve">
+<defs>
+	
+	
+		<inkscape:perspective  sodipodi:type="inkscape:persp3d" inkscape:vp_x="0 : 526.18109 : 1" inkscape:vp_y="0 : 1000 : 0" inkscape:vp_z="744.09448 : 526.18109 : 1" id="perspective2985" inkscape:persp3d-origin="372.04724 : 350.78739 : 1">
+		</inkscape:perspective>
+</defs>
+<sodipodi:namedview  units="mm" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:zoom="1.979899" inkscape:cx="170.12132" inkscape:cy="150.5455" showgrid="false" showguides="true" fit-margin-top="0" fit-margin-left="0" id="base" inkscape:document-units="mm" inkscape:current-layer="layer1" inkscape:object-nodes="true" inkscape:window-width="1920" inkscape:window-height="1036" inkscape:window-x="4" inkscape:window-y="44" inkscape:window-maximized="0" inkscape:guide-bbox="true" fit-margin-right="0" fit-margin-bottom="0" inkscape:pageopacity="0.0" inkscape:pageshadow="2">
+	</sodipodi:namedview>
+<g id="layer1" transform="translate(-53.643411,-569.625)" inkscape:label="Layer 1" inkscape:groupmode="layer">
+	<path id="path3910" inkscape:connector-curvature="0" sodipodi:nodetypes="cccccccc" fill="#D7D7F4" d="M268.908,570.139
+		l9.32,5.536l-9.313,5.563l-0.007-0.005L63.471,703.826H63.44l-9.281-5.563L268.908,570.139z"/>
+	<path id="path3914" inkscape:connector-curvature="0" sodipodi:nodetypes="ccccc" fill="#B3B3B3" d="M278.228,575.675v68
+		L63.455,771.831v-68L278.228,575.675z"/>
+	<path id="path3916" inkscape:connector-curvature="0" fill="#F2F2F2" d="M54.144,698.276v68l9.311,5.555v-68L54.144,698.276z"/>
+</g>
 </svg>
