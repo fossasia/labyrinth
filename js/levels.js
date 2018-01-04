@@ -28,7 +28,7 @@ function createTestLevel()
     [door.none, door.top, door.wheel, door.both, door.both, door.wheel, door.right, door.top, door.top],
     [door.none, door.top, door.both, door.wheel, door.both, door.top, door.none, door.right, door.top, door.both],
     [door.none, door.none, door.none, door.none, door.none, door.none, door.both, door.right, door.top, door.none],
-    [door.left, door.top, door.,none, door.,right, door.none, door.wheel, door.none, door.none, door.none],
-    [NullTile, door.none, door.none, door.none, door.none, door.none, door.,left, door.top, door.right, door.top]
+    [door.left, door.top, door.none, door.right, door.none, door.wheel, door.none, door.none, door.none],
+    [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top]
 ]);
 }
