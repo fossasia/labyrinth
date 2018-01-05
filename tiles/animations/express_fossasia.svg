@@ -510,8 +510,8 @@ FFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFAH/9k=
      
      <style>
      svg{
-     width:429.544px;
-     height:256.314px;
+     width:100px;
+     height:50px;
       animation-name: example;
     animation-duration: infinte;
      }
