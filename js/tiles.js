@@ -300,11 +300,17 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
       },
       visit: function() {
-          swal({
-	        type: 'success',
-	        title: 'You got the treasure !',
-	        text: "there's more to find !"
-	      });
+          if(player.inventory.has('Key')){
+              swal({
+            type: 'success',
+            title: 'You got the treasure !',
+            text: "there's more to find !"
+            });
+           player.inventory.remove('Key');
+         }else
+         {
+          swal("You Need a Key !");
+         }
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -322,6 +328,8 @@ const door = {
 	        title: 'You got something !',
 	        text: "Explore More ! Let's see what can find ..."
 	      });
+          // add item to inventory
+          player.inventory.add(['Key','key.png']);
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
