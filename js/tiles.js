@@ -225,6 +225,13 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/live.svg");
     },
   }),
+    star: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/self_made.svg");
+    },
+  }),
     fabricate: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
