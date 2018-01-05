@@ -1,4 +1,3 @@
-
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -37,6 +36,7 @@ function ImageCollection(position, pixelPosition) {
   this.container.style.top = pixelPosition.y + "px";
   this.container.style.zIndex = -position.x + position.y;
 }
+
 ImageCollection.prototype.addImage = function(file) {
   var embed = document.createElement("embed");
   embed.id = "tile-" + this.position.x + "-" + this.position.y;
@@ -264,7 +264,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Checkmate");
+          swal({
+            type: 'info',
+            title: 'Checkmate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -281,7 +284,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Stalemate");
+          swal({
+            type: 'info',
+            title: 'Stalemate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -300,11 +306,17 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
       },
       visit: function() {
-          swal({
-	        type: 'success',
-	        title: 'You got the treasure !',
-	        text: "there's more to find !"
-	      });
+          if(player.inventory.has('Key')){
+              swal({
+            type: 'success',
+            title: 'You got the treasure !',
+            text: "there's more to find !"
+            });
+           player.inventory.remove('Key');
+         }else
+         {
+          swal("You Need a Key !");
+         }
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -322,6 +334,8 @@ const door = {
 	        title: 'You got something !',
 	        text: "Explore More ! Let's see what can find ..."
 	      });
+          // add item to inventory
+          player.inventory.add(['Key','key.png']);
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -349,7 +363,7 @@ const door = {
     	// left open for future because no output div in hand
       swal({
         type: 'info',
-        title: 'All Hail Fossasia!',
+        title: 'All hail FOSSASIA!',
       });
       this.wallTop.show();
       this.wallRight.show();

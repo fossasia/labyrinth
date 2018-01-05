@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- UI Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <!-- Include Font Awesome Stylesheet -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- @0x48piraj custom social section stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <!-- Engine Scripts -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/tilesForest.js"></script>
+    <script type="text/javascript" src="js/levelsForest.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
+    <script type="text/javascript" src="js/level.js"></script>
+    <link rel="stylesheet" href="css/tiles.css">
+    <title>Labyrinth</title>
+  </head>
+<body>
+<div class="navbar-fixed">
+	<nav>
+	  <div class="nav-wrapper">
+	    <a href="https://github.com/fossasia/labyrinth" class="brand-logo center">Labyrinth</a>
+	    <ul class="right hide-on-med-and-down">
+	      <!-- Sample link -->
+        <li><a href="index.html">Back to Lv.1</a></li>
+	      <li><a href="howtoplay.html">How to Play</a></li>
+	    </ul>
+	  </div>
+	</nav>
+</div>
+
+<!-- Data Card -->
+<div class="row">
+    <div class="col m4 s8">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">Statistics</span>
+          <p>Player Moved : <span id="playerMoves">0</span> Times</p>
+          <p></i>Lv.2 Forest by Ploypiti | Vectors by freepik</i></p>
+        </div>
+        <div class="card-action">
+          <a href="http://github.com/yashkumarverma/">UI by Yash Kumar Verma</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Control Buttons -->
+<div class="fixed-action-btn toolbar">
+	<a class="btn-floating btn-large red">
+	  <i class="large material-icons">directions_run</i>
+	</a>
+	<ul>
+	  <li class="waves-effect waves-light"><a id="upKey"><i class="material-icons">arrow_upward</i></a></li>
+	  <li class="waves-effect waves-light"><a id="leftKey"><i class="material-icons">arrow_back</i></a></li>
+	  <li class="waves-effect waves-light"><a id="rightKey"><i class="material-icons">arrow_forward</i></a></li>
+	  <li class="waves-effect waves-light"><a id="downKey"><i class="material-icons">arrow_downward</i></a></li>
+	</ul>
+</div>
+
+<!-- Game Tiles  -->
+<div id="tiles"></div>
+<div class="footer-social-icons">
+    <h4 class="_14">Follow us on</h4>
+    <ul class="social-icons">
+        <li><a target="_blank" href="http://facebook.com/fossasia" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a target="_blank" href="http://twitter.com/fossasia" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a target="_blank" href="https://www.flickr.com/photos/fossasia" class="social-icon"> <i class="fa fa-rss"></i></a></li>
+        <li><a target="_blank" href="https://www.youtube.com/fossasiaorg" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a target="_blank" href="https://plus.google.com/108920596016838318216" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+</div>
+</body>
+<script type="text/javascript" src="js/gui.js"></script>
+</html>
