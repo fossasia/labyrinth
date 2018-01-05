@@ -264,7 +264,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Checkmate");
+          swal({
+            type: 'info',
+            title: 'Checkmate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -281,7 +284,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Stalemate");
+          swal({
+            type: 'info',
+            title: 'Stalemate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
