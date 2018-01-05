@@ -28,99 +28,47 @@ h6 {
 ._14 {
     font-size: 1.4em;
 }
+.top-row {
+    padding: 0 30px;
+}
 ul {
     padding:0;
     list-style: none;
 }
-.footer-social-icons {
-    width: 350px;
-    display:block;
-    margin: 0 auto;
-}
-.social-icon {
-    color: #fff;
-}
-ul.social-icons {
-    margin-top: 10px;
+.social-icons {
+    margin-top: 5px;
 }
 .social-icons li {
-    vertical-align: top;
-    display: inline;
-    height: 100px;
+    margin: 0 10px;
+}
+.social-container {
+    display: table;
+    margin: auto;
+}
+.fa {
+    color: #fff;
+}
+.social-icons li {
+    display: inline-block;
 }
 .social-icons a {
-    color: #fff;
-    text-decoration: none;
+    transition: background-color 0.5s;
 }
-.fa-facebook {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+.social-icons a.flickr:hover {
+    background-color: #ff0084 !important;
 }
-.fa-facebook:hover {
-    background-color: #3d5b99;
+.social-icons a.facebook:hover {
+    background-color: #0084FF !important;
 }
-.fa-twitter {
-    padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+.social-icons a.twitter:hover {
+    background-color: #1DA1F2 !important;
 }
-.fa-twitter:hover {
-    background-color: #00aced;
+.social-icons a.googleplus:hover {
+    background-color: #DB4437 !important;
 }
-.fa-rss {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
+.social-icons a.linkedin:hover {
+    background-color: #0077B5 !important;
 }
-.fa-rss:hover {
-    background-color: #eb8231;
-}
-.fa-youtube {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-youtube:hover {
-    background-color: #e64a41;
-}
-.fa-linkedin {
-    padding:10px 14px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-linkedin:hover {
-    background-color: #0073a4;
-}
-.fa-google-plus {
-    padding:10px 9px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-    background-color: #322f30;
-}
-.fa-google-plus:hover {
-    background-color: #e25714;
+.social-icons a.youtube:hover {
+    background-color: #ff0000 !important;
 }
