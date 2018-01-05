@@ -25,6 +25,7 @@ Requirements:
 Expected outcome:
 - The pull requests are merged and the issue is closed.
 - All issues resulting from your pull-requests are resolved. This is important: You may create new issues and we tend to merge fast and allow several pull requests to be submitted for one issue
+- The theme can be reached by the player.
 
 Hints:
 - If someone wants to work with you, let them do that. You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.

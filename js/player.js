@@ -72,4 +72,7 @@ function Player() {
     document.getElementById("player").style.left = xcordinate + "px";
     document.getElementById("player").style.top = ycordinate + "px";
   };
+  this.changeCharacter = function(character_src) {
+    document.getElementById("player").src = character_src;
+  }
 }

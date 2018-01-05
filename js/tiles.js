@@ -211,6 +211,13 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+    fossasiaBullet: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/fossasia_bullet.svg");
+    },
+  }),
   blue: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -223,6 +230,13 @@ const door = {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/live.svg");
+    },
+  }),
+    star: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/self_made.svg");
     },
   }),
     fabricate: Object.assign({}, OpenDoors, {
@@ -350,6 +364,15 @@ const door = {
           this.ground.show();
       }
    }),
+  yellowBoxes: Object.assign({}, OpenDoors, {
+  canEnterFromTheRight() {return false;},
+  canLeaveToTheRight() {return false;},
+  createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
+    }
+  }),  
   batcave: Object.assign({}, OpenDoors, {
     canEnterFromTheLeft() {return false;}, 
     canLeaveToTheLeft() {return false;},
