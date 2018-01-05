@@ -90,6 +90,25 @@ tile_name: Object.assign({}, OpenDoors, {
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
 
+## How to add a new character
+
+Labyrinth allows you to add your characters by customizing the required javascript and svg files.
+
+Currently the characters are svg images which are embedded into a div via javascript. Characters have a dimension of about 55 x 60 px (wxh)
+Characters are present in the `characters` folder.
+
+To create a character you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
+and saved as a svg file with the speccified dimensions.
+
+After creating characters add them to the `characters` folder.
+
+Now, we will move on to the javascript part.
+Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`
+Follow the format while adding to gui.js (To be precise add it to the swal box input values collection)
+```javascript
+"character_src": "character_name",
+```
+
 ## Hints for GCI students
 
 ### Adding animated tiles

@@ -8,8 +8,8 @@ The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to c
 
 Requirements:
 - Create an SVG or PNG character (200x200 pixels) for the game
-- Add the character to the characters folder **TODO: Link**
-- Modify the characters.js file **TODO: Link** to load your character.
+- Add the character to the characters folder (/characters)
+- Modify the gui file to prompt your character to be picked.
 - The character MUST be your own work.
 
 Expected Outcome:
