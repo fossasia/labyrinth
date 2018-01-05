@@ -11,7 +11,7 @@
 function createTestLevel()
 {
   return new Level([
-    [door.none, door.right, door.right, door.right, door.goal, door.none],
+    [door.none, door.right, door.minecraft, door.none, door.goal, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.both, door.chessStale],
     [door.none, door.top, PlayerStartsAt(door.black), door.green, door.banner, door.top],
     [door.none, door.top, door.new, door.wheel, door.plain, door.top],
