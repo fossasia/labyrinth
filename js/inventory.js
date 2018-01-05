@@ -31,8 +31,7 @@ function inventory()
 		};
 
 		// Allow only one item of one name
-		// Collision
-		if(collisionCheck(itemStr,this.itemCollision))
+		if(collisionCheck(itemStr.name,this.itemCollision))
 		{
 			this.items.push(itemStr);
 			this.itemCollision.push(itemStr.name);
