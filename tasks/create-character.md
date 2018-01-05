@@ -7,7 +7,7 @@
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth. To allow players to choose between different characters, please add a character.
 
 Requirements:
-- Create an SVG or PNG character (200x200 pixels) for the game
+- Create an SVG or PNG character (55px wide and 60 px high) for the game
 - Add the character to the characters folder (/characters)
 - Modify the gui file to prompt your character to be picked.
 - The character MUST be your own work.
