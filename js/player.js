@@ -1,4 +1,3 @@
-
 function newPlayer() {
   return new Player();
 }
@@ -6,28 +5,16 @@ function newPlayer() {
 function Player() {
   this.currentTile = NullTile;
   this.moves = 0;
+
+  // Create inventory instance
+  this.inventory = new inventory();
+  
   this.enter = function(tile) {
   this.currentTile.playerLeaves(this);
   this.currentTile = tile;
   this.currentTile.playerEnters(this);
-  this.inventory = [];
   };
 
-  // INVENTORY SYSTEM
-  // add item to players inventory
-  this.addToInventory = function(item) {
-    this.inventory.push(item);
-  };
-  // check for item in players inventory
-  this.hasInInventory  = function(item) {
-    for (var i = this.inventory.length - 1; i >= 0; i--) {
-      if(this.inventory[i] === item){
-        return true;
-      }else{
-        return false;
-      }
-    }
-  };
   this.canMoveLeft = function() {
     return this.currentTile.canLeaveToTheLeft(this) &&
            this.currentTile.tileToTheLeft().canEnterFromTheRight(this);
@@ -61,10 +48,28 @@ function Player() {
     this.moves++;
   };
   this.startAt = function(tile) {
+    this.addPlayer(tile);
     this.enter(tile);
   };
   this.logPosition = function() {
     console.log("Player position:", this.currentTile.position);
     $("#playerMoves").html(this.moves);
+  };
+  this.addPlayer = function(tile) {
+    var embed = document.createElement("embed");
+    embed.id = "player";
+    embed.src = "characters/robo.svg";
+    embed.type = "image/svg+xml";
+    embed.style.width = "55px";
+    embed.style.height = "60px";
+    embed.classList.add("image");
+    embed.style.position = "absolute";
+    embed.style.zIndex = "10000";
+    var container = document.getElementById("tiles");
+    container.appendChild(embed);
+  };
+  this.setPosition = function(xcordinate, ycordinate){
+    document.getElementById("player").style.left = xcordinate + "px";
+    document.getElementById("player").style.top = ycordinate + "px";
   };
 }

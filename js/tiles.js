@@ -1,4 +1,3 @@
-
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -37,6 +36,7 @@ function ImageCollection(position, pixelPosition) {
   this.container.style.top = pixelPosition.y + "px";
   this.container.style.zIndex = -position.x + position.y;
 }
+
 ImageCollection.prototype.addImage = function(file) {
   var embed = document.createElement("embed");
   embed.id = "tile-" + this.position.x + "-" + this.position.y;
@@ -59,6 +59,8 @@ ImageCollection.prototype.showIn = function(container) {
 };
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
+  /* 214.772 is half of the tile width while 128.157 is half the height of the tile */
+  player.setPosition(this.pixelPosition.x+214.772, this.pixelPosition.y+128.157);
 };
 ImageCollection.prototype.playerLeaves = function(player) {
   this.container.classList.remove("current");
@@ -181,6 +183,13 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/caro.svg");
     },
   }),
+  scene: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/live.svg");
+    },
+  }),
   black: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -200,6 +209,13 @@ const door = {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/animations/wheel.svg");
+    },
+  }),
+  blue: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/drawing.svg");
     },
   }),
     green: Object.assign({}, OpenDoors, {
@@ -257,7 +273,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Checkmate");
+          swal({
+            type: 'info',
+            title: 'Checkmate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -274,7 +293,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Stalemate");
+          swal({
+            type: 'info',
+            title: 'Stalemate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -293,11 +315,17 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
       },
       visit: function() {
-          swal({
-	        type: 'success',
-	        title: 'You got the treasure !',
-	        text: "there's more to find !"
-	      });
+          if(player.inventory.has('Key')){
+              swal({
+            type: 'success',
+            title: 'You got the treasure !',
+            text: "there's more to find !"
+            });
+           player.inventory.remove('Key');
+         }else
+         {
+          swal("You Need a Key !");
+         }
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -315,6 +343,8 @@ const door = {
 	        title: 'You got something !',
 	        text: "Explore More ! Let's see what can find ..."
 	      });
+          // add item to inventory
+          player.inventory.add(['Key','key.png']);
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -342,7 +372,7 @@ const door = {
     	// left open for future because no output div in hand
       swal({
         type: 'info',
-        title: 'All Hail Fossasia!',
+        title: 'All hail FOSSASIA!',
       });
       this.wallTop.show();
       this.wallRight.show();
@@ -400,4 +430,39 @@ visit: function() {
       this.ground.show();
   }
 }),
+minecraft: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/rightMinecraft.svg");
+  this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
+},
+visit: function() {
+      swal({
+      type: 'info',
+      title: 'You have stumbled upon the world of Minecraft!',
+    });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
+  newYear: Object.assign({}, OpenDoors, {
+    canLeaveToTheTop: function(player) {return true;},
+    canLeaveToTheLeft: function(player) {return true;},
+    canEnterFromTheTop: function(player) {return true;},
+    canEnterFromTheLeft: function(player) {return true;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/topNewYear.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightNewYear.svg");
+      this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
+    },
+    visit: function(player) {
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+      swal('Happy 2018!', 'It\'s new year already! Don\'t waste your time and explore!');
+    }
+  }),
 };
