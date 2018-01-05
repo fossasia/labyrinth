@@ -1,4 +1,3 @@
-
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -37,6 +36,7 @@ function ImageCollection(position, pixelPosition) {
   this.container.style.top = pixelPosition.y + "px";
   this.container.style.zIndex = -position.x + position.y;
 }
+
 ImageCollection.prototype.addImage = function(file) {
   var embed = document.createElement("embed");
   embed.id = "tile-" + this.position.x + "-" + this.position.y;
@@ -264,7 +264,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Checkmate");
+          swal({
+            type: 'info',
+            title: 'Checkmate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -281,7 +284,10 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
       },
       visit: function() {
-          alert("Stalemate");
+          swal({
+            type: 'info',
+            title: 'Stalemate',
+          });
           this.wallTop.show();
           this.wallRight.show();
           this.ground.show();
@@ -357,7 +363,7 @@ const door = {
     	// left open for future because no output div in hand
       swal({
         type: 'info',
-        title: 'All Hail Fossasia!',
+        title: 'All hail FOSSASIA!',
       });
       this.wallTop.show();
       this.wallRight.show();
