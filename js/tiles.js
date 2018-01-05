@@ -59,6 +59,8 @@ ImageCollection.prototype.showIn = function(container) {
 };
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
+  /* 214.772 is half of the tile width while 128.157 is half the height of the tile */
+  player.setPosition(this.pixelPosition.x+214.772, this.pixelPosition.y+128.157);
 };
 ImageCollection.prototype.playerLeaves = function(player) {
   this.container.classList.remove("current");
