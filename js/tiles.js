@@ -202,6 +202,13 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+   fossasia_bullet: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/fossasia_bullet.svg");
+    },
+  }),
     green: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
