@@ -209,6 +209,13 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+   fossasia_bullet: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/fossasia_bullet.svg");
+    },
+  }),
     green: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -341,6 +348,16 @@ const door = {
           this.ground.show();
       }
    }),
+  batcave: Object.assign({}, OpenDoors, {
+    canEnterFromTheLeft() {return false;}, 
+    canLeaveToTheLeft() {return false;},
+   
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/batcave.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
   batcave: Object.assign({}, OpenDoors, {
     canEnterFromTheLeft() {return false;}, 
     canLeaveToTheLeft() {return false;},
