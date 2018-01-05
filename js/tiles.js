@@ -421,6 +421,24 @@ visit: function() {
       this.ground.show();
   }
 }),
+minecraft: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/rightMinecraft.svg");
+  this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
+},
+visit: function() {
+      swal({
+      type: 'info',
+      title: 'You have stumbled upon the world of Minecraft!',
+    });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
   newYear: Object.assign({}, OpenDoors, {
     canLeaveToTheTop: function(player) {return true;},
     canLeaveToTheLeft: function(player) {return true;},
