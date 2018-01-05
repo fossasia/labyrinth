@@ -13,8 +13,24 @@ window.addEventListener("load", function()
   var container = document.getElementById("tiles");
   level = createTestLevel();
   level.showIn(container);
+  
+  var inputOptionsPromise = new Promise(function (resolve) {
+    // input your character here in the form, "src_url": "character_name",
+    resolve({
+      "characters/robo.svg": "Robo",
+    });
+  });
   player = newPlayer();
   level.addPlayer(player);
+
+  swal({
+    input: 'select',
+    inputOptions: inputOptionsPromise,
+    /* This is a way to get data quickly from swal */
+    inputValidator: function (value) {
+      player.changeCharacter(value);
+    }
+  });
 });
 
 var keyHandlers = {

@@ -59,6 +59,8 @@ ImageCollection.prototype.showIn = function(container) {
 };
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
+  /* 214.772 is half of the tile width while 128.157 is half the height of the tile */
+  player.setPosition(this.pixelPosition.x+214.772, this.pixelPosition.y+128.157);
 };
 ImageCollection.prototype.playerLeaves = function(player) {
   this.container.classList.remove("current");
@@ -209,6 +211,13 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+    fossasiaBullet: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/fossasia_bullet.svg");
+    },
+  }),
   blue: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -221,6 +230,13 @@ const door = {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/live.svg");
+    },
+  }),
+    star: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/self_made.svg");
     },
   }),
     fabricate: Object.assign({}, OpenDoors, {
