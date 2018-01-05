@@ -364,6 +364,15 @@ const door = {
           this.ground.show();
       }
    }),
+  yellowBoxes: Object.assign({}, OpenDoors, {
+  canEnterFromTheRight() {return false;},
+  canLeaveToTheRight() {return false;},
+  createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
+    }
+  }),  
   batcave: Object.assign({}, OpenDoors, {
     canEnterFromTheLeft() {return false;}, 
     canLeaveToTheLeft() {return false;},
