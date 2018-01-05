@@ -379,6 +379,54 @@ const door = {
       this.ground.show();
     },
   }),
+  river: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {return player.inventory.has('Boat');},
+      canLeaveToTheRight() {return false;},
+      canEnterFromTheLeft() {return false;},
+      canLeaveToTheLeft() {return false;},
+      canEnterFromTheTop: function(player) {return false;},
+      canLeaveToTheTop: function(player) {return false;},
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/river.svg");
+      },
+      visit: function() {
+          if(player.inventory.has('Boat')){
+              swal({
+              type: 'success',
+              title: 'You got the treasure !',
+              text: "there's more to find !"
+              });
+           player.inventory.remove('Boat');
+         }else
+         {
+          swal("You Need a Boat!");
+         }
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  boat: Object.assign({}, OpenDoors, {
+	createImages: function() {
+      this.ground = this.createImage("tiles/rooms/floor/boat.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+    },
+    visit: function() {
+          swal({
+	        type: 'info',
+	        title: 'You found a boat !',
+	        text: "Keep it it might come handy"
+	      });
+          // add item to inventory
+          player.inventory.add(['Boat','boat.png']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+   }),
   outdoor: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() { return false; },
     canLeaveToTheRight() { return false; },
