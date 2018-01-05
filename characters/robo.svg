@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="55"
+   height="60"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="robo.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6742">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6738" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop6740" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6718"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop6716" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective2985" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6742"
+       id="linearGradient6746"
+       x1="242.03687"
+       y1="755.51904"
+       x2="295.57495"
+       y2="755.51904"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.0273061,0,0,1.0209531,-194.77301,96.276658)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.6"
+     inkscape:cx="28.726876"
+     inkscape:cy="31.795501"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="703"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     units="mm"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-53.643411,-834.92014)">
+    <text
+       id="text4363"
+       style="line-height:0%">xml:space=&quot;preserve&quot; style=&quot;font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none&quot; x=&quot;176.81064&quot; y=&quot;781.44983&quot; id=&quot;text1093&quot;&gt;<tspan
+   sodipodi:role="line"
+   id="tspan1091"
+   x="0"
+   y="0"
+   style="line-height:1.25;fill:#ff0000">Labyrinth</tspan>
+</text>
+    <ellipse
+       style="opacity:1;fill:#e6e6e6;fill-opacity:1;stroke:url(#linearGradient6746);stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4443"
+       cx="81.372932"
+       cy="867.62616"
+       rx="27.5"
+       ry="27.329937" />
+    <ellipse
+       style="opacity:1;fill:#000000;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       id="path6750"
+       cx="81.388649"
+       cy="-864.01654"
+       rx="27.484264"
+       ry="2.5782945"
+       transform="scale(1,-1)" />
+    <g
+       id="g6845"
+       transform="matrix(1.027306,0,0,1.0209531,-194.77301,96.276663)"
+       style="stroke-width:0.97644359">
+      <rect
+         transform="rotate(-30)"
+         ry="0"
+         rx="5.3767009"
+         y="750.276"
+         x="-149.588"
+         height="12.5"
+         width="3.7500005"
+         id="rect6790"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <ellipse
+         transform="matrix(0.86088359,-0.50880197,0.49124937,0.87101898,0,0)"
+         ry="0.69652605"
+         rx="1.8931642"
+         cy="760.32745"
+         cx="-140.04271"
+         id="path6841"
+         style="opacity:1;fill:#000000;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    </g>
+    <g
+       transform="matrix(0.51365304,0.88417136,-0.88967317,0.51047657,619.28521,247.10884)"
+       id="g6845-5"
+       style="stroke-width:0.97644359">
+      <rect
+         transform="rotate(-30)"
+         ry="0"
+         rx="5.3767009"
+         y="750.276"
+         x="-149.588"
+         height="12.5"
+         width="3.7500005"
+         id="rect6790-3"
+         style="opacity:1;fill:#ffffff;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+      <ellipse
+         transform="matrix(0.86088359,-0.50880197,0.49124937,0.87101898,0,0)"
+         ry="0.69652605"
+         rx="1.8931642"
+         cy="760.32745"
+         cx="-140.04271"
+         id="path6841-5"
+         style="opacity:1;fill:#000000;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal" />
+    </g>
+  </g>
+</svg>
