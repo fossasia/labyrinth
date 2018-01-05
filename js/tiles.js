@@ -209,6 +209,13 @@ const door = {
       this.ground = this.createImage("tiles/animations/wheel.svg");
     },
   }),
+  blue: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/animations/drawing.svg");
+    },
+  }),
     green: Object.assign({}, OpenDoors, {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/door/top.svg");
