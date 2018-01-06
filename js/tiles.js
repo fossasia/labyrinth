@@ -99,11 +99,24 @@ PlacedTile.prototype.createImage = function(file) {
 PlacedTile.prototype.playerEnters = function(player) {
   this.images.playerEnters(player);
   this.whenPlayerEnters(player);
+  this.scrollToCenter();
 };
 PlacedTile.prototype.playerLeaves = function(player) {
   this.images.playerLeaves(player);
   this.whenPlayerLeaves(player);
 };
+PlacedTile.prototype.scrollToCenter = function() {
+  const $element = $(this.images.container).children();
+  const offset = $element.offset();
+  // calculate the top and left offsets in order for the tile to be centered
+  const centerTop = window.innerHeight / 2 - 128.157;
+  const centerLeft = window.innerWidth / 2 - 214.772;
+  // animate the browser's scroll to center the tile
+  $("html, body").animate({
+    scrollTop: offset.top - centerTop,
+    scrollLeft: offset.left - centerLeft
+  });
+}
 
 const OpenDoors = {
   // public
