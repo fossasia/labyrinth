@@ -20,6 +20,7 @@ window.addEventListener("load", function()
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
       "characters/santa.svg": "Santa Clause",
+      "characters/detective.svg":"Agent X"  
     });
   });
   player = newPlayer();
