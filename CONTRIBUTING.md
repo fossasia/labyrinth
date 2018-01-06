@@ -16,6 +16,12 @@
 
 Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia).
 
+**Hosting Assets**
+Usage of CDNs and other online hosts for assets used in the Labyrinth is not recommended. 
+We want users to be able to play the game without an active internet connection. CDNs slow down the page by collecting analytics data. And who wants bots monitoring what you do? 
+
+Make sure you keep them in their respective folders in the Github Repository.
+
 **Licensing Code**  
 We recommend you add code and work which you did yourself. By adding this code to the repository, you put it under the [AGPL license](LICENSE).  
 If you embed other work, you need to be compatible with the current license. Licenses compatible are e.g. MIT, GPL, AGPL, LGPL, BSD. **In almost no case is it legal to just copy the code/files without license.**
