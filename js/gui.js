@@ -20,6 +20,8 @@ window.addEventListener("load", function()
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
+      "characters/monster.svg": "Monster",
+      "characters/elephant.svg": "Elephant",
       "characters/shadowman.svg": "Shadowman",
       "characters/santa.svg": "Santa Clause",
     });
