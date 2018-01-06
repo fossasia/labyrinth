@@ -1,13 +1,21 @@
-This pull request is related to issue # <!-- insert the issue number behind the # or delete the line -->
+## Don't delete anything without explicit instructions from a maintainer.
+### When you change [things like this in brackets] please remember to delete brackets after you change it.
+
+# This pull request is related to issue(s), 
+<!-- If you fully fixed/improved some isuue(s), please insert the issue number(s) behind the # or if you are not fixed/improved some isuue(s) completly, but only some of step(s) in issue(s) please insert the issue number(s) with step number(s) hind the #-->
 
 <!-- please summarize the problem you faced -->
-The problem I want to solve is:[Mention the bug/problem solved]
+<!-- Please remove unwanted words in following topic -->
+# The problem(s) I want to solve or The facilitie(s) I want to improve is/are,
+[Mention the bug/facilitie solved/improved]
 
 <!-- Please summarize the solution you chose -->
-My steps to solve it:
-Changes: [Mention the files changed. Add what changes you have done.] 
+### My steps to solve it,
+[Mention the files changed. Add what changes you have done.] 
 
-Screenshots/Links:[Deploy/Preview Links: http://rawgit.com/USERNAME/labyrinth/BRANCH-NAME/index.html]
-<!-- Please replace USERNAME with your GitHub user name and
-     BRANCH-NAME with your branch name e.g. master -->
+### Screenshots,
+[If any]
 
+### Links
+<!-- Please replace USERNAME with your GitHub user name and BRANCH-NAME with your branch name e.g. master -->
+[http://rawgit.com/USERNAME/labyrinth/BRANCH-NAME/index.html]
