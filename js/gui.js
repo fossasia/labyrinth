@@ -19,6 +19,8 @@ window.addEventListener("load", function()
     resolve({
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
+	  "characters/monster.svg": "Monster",
+	  "characters/elephant.svg": "Elephant",
       "characters/santa.svg": "Santa Clause",
     });
   });
