@@ -33,8 +33,10 @@ function Level(specification)
       });
     });
     container.classList.add("tileContainer");
-    container.style.left = -minX + "px";
-    container.style.top = -minY + "px";
+    // add width of left column to prevent its elements from overlapping tiles
+    container.style.left = (-minX + $('.left-column').width()) + "px";
+    // add height of top navbar to prevent it from overlapping tiles
+    container.style.top = (-minY + $('.navbar-fixed').height()) + "px";
   };
   this.getTileAt = function(x, y){
     if (x < 0 || y < 0 || y >= this.tiles.length || x >= this.tiles[y].length) {
