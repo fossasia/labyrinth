@@ -17,10 +17,15 @@ window.addEventListener("load", function()
   var inputOptionsPromise = new Promise(function (resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
+      "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
+      "characters/monster.svg": "Monster",
+      "characters/elephant.svg": "Elephant",
+      "characters/shadowman.svg": "Shadowman",
       "characters/santa.svg": "Santa Clause",
       "characters/Geekomoji.svg": "Geekomoji",
+      "characters/detective.svg":"Agent X"  
     });
   });
   player = newPlayer();

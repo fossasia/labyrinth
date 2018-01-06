@@ -137,6 +137,22 @@ under the `resolve` sub class.)
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyrinth.
 - Create a pull-request and have it merged.
 
+### Add a new Pull request after solving a issue
+
+- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth). 
+- Go to the [issue tab](https://github.com/fossasia/labyrinth/issues) and find a issue that you want to resolve or improve.
+- Resolve/improve that issue and push those changes into your repo.
+- Copy the issue number from issue tab.
+- Go to your forked repository.
+- Go to Pull Reqest tab.
+- Click on New pull request.
+- See there all files changes are ready or not(If not not follow next steps, please add your changes before proceed).
+- Select base fork and head fork if it isn't not selected automatically.
+- Click on Create Pull request.
+- Change PR topic and message as instructions on it.
+- Then click on create pull request.
+<b>Now your pull request is ready!</b> See on [Pull requests](https://github.com/fossasia/labyrinth/pulls)
+
 Solve an Issue
 --------------
 The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Please improve the game by solving an issue.
