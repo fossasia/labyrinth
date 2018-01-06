@@ -115,7 +115,7 @@ PlacedTile.prototype.scrollToCenter = function() {
   $("html, body").animate({
     scrollTop: offset.top - centerTop,
     scrollLeft: offset.left - centerLeft
-  });
+  }, 250);
 }
 
 const OpenDoors = {

@@ -29,8 +29,9 @@ h6 {
 ._14 {
     font-size: 1.4em;
 }
-.top-row {
-    padding: 0 30px;
+.left-column {
+    width: 30%;
+    margin: 0;
 }
 ul {
     padding:0;
