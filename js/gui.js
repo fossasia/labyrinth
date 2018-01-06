@@ -24,6 +24,7 @@ window.addEventListener("load", function()
       "characters/elephant.svg": "Elephant",
       "characters/shadowman.svg": "Shadowman",
       "characters/santa.svg": "Santa Clause",
+      "characters/detective.svg":"Agent X"  
     });
   });
   player = newPlayer();
