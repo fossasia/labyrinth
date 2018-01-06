@@ -17,6 +17,7 @@ window.addEventListener("load", function()
   var inputOptionsPromise = new Promise(function (resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
+      "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
     });
   });
