@@ -18,6 +18,7 @@ window.addEventListener("load", function()
     // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/robo.svg": "Robo",
+      "characters/swammy.svg": "Swammy",
     });
   });
   player = newPlayer();
