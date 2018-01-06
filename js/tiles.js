@@ -537,3 +537,57 @@ visit: function() {
     }
   }),
 };
+
+const forest = {
+  both: OpenDoors,
+  right: Object.assign({}, OpenDoors, {
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  top: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  none: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  start: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Monster.svg");
+    },
+    visit: function() {
+        swal({
+          type: 'info',
+          title: 'Hi there',
+          text: "I'm a nameless monster, welcome to my forest. You may find something interesting or equally horrific, let's rely on your fate.",
+        });
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
+  }),
+};
