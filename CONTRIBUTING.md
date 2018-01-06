@@ -9,6 +9,8 @@
 
 **Feature Requests and Bug Reports**
 * When you file a feature request or when you are submitting a bug report to the [issue tracker](https://github.com/fossasia/labyrinth/issues), make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
+* Please have a look if someone else suggested something similar and see it a new issue is necessary.
+* Please follow the issue template as it focusses on the motivation and how life and the game is improved. This can not be reflected by code as well. 
 
 **Join the development**
 * Before you join development, please set up the project on your local machine, run it and go through the application completely. Press on any button you can find and see where it leads to. Explore. (Don't worry ... Nothing will happen to the app or to you due to the exploring :wink: Only thing that will happen is, you'll be more familiar with what is where and might even get some cool ideas on how to improve various aspects of the app.)

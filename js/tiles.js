@@ -532,6 +532,24 @@ visit: function() {
       this.ground.show();
   }
 }),
+highLow: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/highLow.svg");
+},
+visit: function() {
+      swal({
+        type: 'info',
+        title: 'Everyone has highs and lows that they have to learn from.',
+      });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
   newYear: Object.assign({}, OpenDoors, {
     canLeaveToTheTop: function(player) {return true;},
     canLeaveToTheLeft: function(player) {return true;},
@@ -548,5 +566,59 @@ visit: function() {
       this.ground.show();
       swal('Happy 2018!', 'It\'s new year already! Don\'t waste your time and explore!');
     }
+  }),
+};
+
+const forest = {
+  both: OpenDoors,
+  right: Object.assign({}, OpenDoors, {
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  top: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  none: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+    },
+  }),
+  start: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
+      this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Monster.svg");
+    },
+    visit: function() {
+        swal({
+          type: 'info',
+          title: 'Hi there',
+          text: "I'm a nameless monster, welcome to my forest. You may find something interesting or equally horrific, let's rely on your fate.",
+        });
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
   }),
 };
