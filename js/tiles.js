@@ -68,9 +68,8 @@ ImageCollection.prototype.showIn = function(container) {
     container.appendChild(this.container);
 };
 ImageCollection.prototype.playerEnters = function(player) {
-    this.container.classList.add("current");
-    /* 214.772 is half of the tile width while 128.157 is half the height of the tile */
-    player.setPosition(this.pixelPosition.x + 214.772, this.pixelPosition.y + 128.157);
+  this.container.classList.add("current");
+  player.setPosition(this.pixelPosition.x + tileWidth/2, this.pixelPosition.y + tileHeight/2);
 };
 ImageCollection.prototype.playerLeaves = function(player) {
     this.container.classList.remove("current");
@@ -107,13 +106,25 @@ PlacedTile.prototype.createImage = function(file) {
     return image;
 };
 PlacedTile.prototype.playerEnters = function(player) {
-    this.images.playerEnters(player);
-    this.whenPlayerEnters(player);
+  this.images.playerEnters(player);
+  this.whenPlayerEnters(player);
+  this.scrollToCenter();
 };
 PlacedTile.prototype.playerLeaves = function(player) {
     this.images.playerLeaves(player);
     this.whenPlayerLeaves(player);
 };
+PlacedTile.prototype.scrollToCenter = function() {
+  const offset = $(this.images.container).children().offset();
+  // calculate the top and left offsets in order for the tile to be centered
+  const centerTop = window.innerHeight / 2 - tileHeight / 2;
+  const centerLeft = window.innerWidth / 2 - tileWidth / 2;
+  // animate the browser's scroll to center the tile
+  $("html, body").animate({
+    scrollTop: offset.top - centerTop,
+    scrollLeft: offset.left - centerLeft
+  }, 250);
+}
 
 const OpenDoors = {
     // public
