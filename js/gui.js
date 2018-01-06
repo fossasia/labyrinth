@@ -19,6 +19,7 @@ window.addEventListener("load", function()
     resolve({
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
+      "characters/shadowman.svg": "Shadowman",
     });
   });
   player = newPlayer();
