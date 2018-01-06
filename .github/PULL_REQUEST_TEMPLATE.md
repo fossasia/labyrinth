@@ -1,4 +1,4 @@
-## Dont delete anything without explicit instruction s from a maintainer.
+## Don't delete anything without explicit instructions from a maintainer.
 ### When you change [things like this in brackets] please remember to delete brackets after you change it.
 
 # This pull request is related to issue(s), 
@@ -6,7 +6,7 @@
 
 <!-- please summarize the problem you faced -->
 <!-- Please remove unwanted words in following topic -->
-# The problem(s) I want to solve or The facilitie(s) I want to improve isd/are,
+# The problem(s) I want to solve or The facilitie(s) I want to improve is/are,
 [Mention the bug/facilitie solved/improved]
 
 <!-- Please summarize the solution you chose -->
