@@ -519,6 +519,24 @@ visit: function() {
       this.ground.show();
   }
 }),
+highLow: Object.assign({}, OpenDoors, {
+canEnterFromTheRight() {return false;},
+canLeaveToTheRight() {return false;},
+createImages: function() {
+  this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+  this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+  this.ground = this.createImage("tiles/rooms/floor/highLow.svg");
+},
+visit: function() {
+      swal({
+        type: 'info',
+        title: 'Everyone has highs and lows that they have to learn from.',
+      });
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+  }
+}),
   newYear: Object.assign({}, OpenDoors, {
     canLeaveToTheTop: function(player) {return true;},
     canLeaveToTheLeft: function(player) {return true;},
