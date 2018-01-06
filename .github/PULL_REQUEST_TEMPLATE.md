@@ -1,5 +1,5 @@
-## Don't delete anything without give instructions for you to delete it and don't change any thing without words those you have to change.
-### When you change [things like this in brackets] please remember to delete brackets after change it.
+## Dont delete anything without explicit instruction s from a maintainer.
+### When you change [things like this in brackets] please remember to delete brackets after you change it.
 
 # This pull request is related to issue(s), 
 <!-- If you fully fixed/improved some isuue(s), please insert the issue number(s) behind the # or if you are not fixed/improved some isuue(s) completly, but only some of step(s) in issue(s) please insert the issue number(s) with step number(s) hind the #-->
