@@ -141,12 +141,12 @@ under the `resolve` sub class.)
 
 - Go to the labyrinth [repository](https://github.com/fossasia/labyrinth). 
 - Go to the [issue tab](https://github.com/fossasia/labyrinth/issues) and find a issue that you want to resolve or improve.
-- Make it and push those changes into your repo.
+- Resolve/improve that issue and push those changes into your repo.
 - Copy the issue number from issue tab.
 - Go to your forked repository.
 - Go to Pull Reqest tab.
 - Click on New pull request.
-- See there all changes are ready.
+- See there all files changes are ready or not(If not not follow next steps, please add your changes before proceed).
 - Select base fork and head fork if it isn't not selected automatically.
 - Click on Create Pull request.
 - Change PR topic and message as instructions on it.
