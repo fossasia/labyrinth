@@ -21,7 +21,6 @@ window.addEventListener("load", function() {
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
             "characters/detective.svg": "Agent X"
-            "characters/pixie.svg": "Forest Spirit",
         });
 
 window.addEventListener("load", function()
@@ -42,7 +41,7 @@ window.addEventListener("load", function()
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
-
+      "characters/pixie.svg": "Forest Spirit",
     });
     player = newPlayer();
     level.addPlayer(player);
