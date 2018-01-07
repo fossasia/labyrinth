@@ -17,6 +17,7 @@ window.addEventListener("load", function() {
             "characters/robo.svg": "Robo",
             "characters/swammy.svg": "Swammy",
             "characters/monster.svg": "Monster",
+            "characters/pixie.svg": "Forest Spirit",
             "characters/elephant.svg": "Elephant",
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
