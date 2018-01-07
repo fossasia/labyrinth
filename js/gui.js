@@ -17,8 +17,8 @@ var level;
             "characters/elephant.svg": "Elephant",
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
-            "characters/detective.svg": "Agent X"
-            "characters/stickman.svg": "Stickman"
+            "characters/detective.svg": "Agent X",
+            "characters/stickman.svg": "Stickman",
         });
     });
     player = newPlayer();
