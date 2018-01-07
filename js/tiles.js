@@ -466,7 +466,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/banner-1.svg");
         },
-
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
         visit: function() {
             // would show a message onto screen.
             // left open for future because no output div in hand
