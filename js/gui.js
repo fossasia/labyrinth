@@ -18,6 +18,7 @@ var level;
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
             "characters/detective.svg": "Agent X",
+            "characters/Geekomoji.svg": "Geekomoji",
             "characters/stickman.svg": "Stickman",
         });
     });
