@@ -33,7 +33,7 @@ window.addEventListener("load", function()
     inputOptions: inputOptionsPromise,
     /* This is a way to get data quickly from swal */
     inputValidator: function(value) {
-      https://github.com/fossasia/labyrinth  player.changeCharacter(value);
+      player.changeCharacter(value);
     }
   });
 });
