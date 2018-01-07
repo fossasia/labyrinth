@@ -75,7 +75,6 @@ ul {
     background-color: #ff0000 !important;
 }
 .fa-facebook {
-    padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -87,7 +86,6 @@ ul {
     background-color: #3d5b99;
 }
 .fa-twitter {
-    padding:10px 12px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -99,7 +97,6 @@ ul {
     background-color: #00aced;
 }
 .fa-rss {
-    padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -111,7 +108,6 @@ ul {
     background-color: #eb8231;
 }
 .fa-youtube {
-    padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -123,7 +119,6 @@ ul {
     background-color: #e64a41;
 }
 .fa-linkedin {
-    padding:10px 14px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;
@@ -135,7 +130,6 @@ ul {
     background-color: #0073a4;
 }
 .fa-google-plus {
-    padding:10px 9px;
     -o-transition:.5s;
     -ms-transition:.5s;
     -moz-transition:.5s;

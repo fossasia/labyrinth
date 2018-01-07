@@ -40,24 +40,28 @@ window.addEventListener("load", function()
 
 var keyHandlers = {
     "ArrowLeft": function() {
+        swal.close();
         if (player.canMoveLeft()) {
             player.moveLeft();
         }
         player.logPosition();
     },
     "ArrowRight": function() {
+        swal.close();
         if (player.canMoveRight()) {
             player.moveRight();
         }
         player.logPosition();
     },
     "ArrowUp": function() {
+        swal.close();
         if (player.canMoveUp()) {
             player.moveUp();
         }
         player.logPosition();
     },
     "ArrowDown": function() {
+        swal.close();
         if (player.canMoveDown()) {
             player.moveDown();
         }
@@ -70,24 +74,28 @@ var keyHandlers = {
 
 // On Screen Keys
 $("#leftKey").on("click", function() {
+    swal.close();
     if (player.canMoveLeft()) {
         player.moveLeft();
     }
     player.logPosition();
 });
 $("#rightKey").on("click", function() {
+    swal.close();
     if (player.canMoveRight()) {
         player.moveRight();
     }
     player.logPosition();
 });
 $("#upKey").on("click", function() {
+    swal.close();
     if (player.canMoveUp()) {
         player.moveUp();
     }
     player.logPosition();
 });
 $("#downKey").on("click", function() {
+    swal.close();
     if (player.canMoveDown()) {
         player.moveDown();
     }
