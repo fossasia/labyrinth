@@ -12,7 +12,7 @@ window.addEventListener("load", function()
   level.showIn(container);
   
   var inputOptionsPromise = new Promise(function (resolve) {
-    // input your character here in the form, "src_url": "character_name",
+  // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
@@ -24,17 +24,18 @@ window.addEventListener("load", function()
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
     });
-    player = newPlayer();
-    level.addPlayer(player);
+  });
+  player = newPlayer();
+  level.addPlayer(player);
 
-    swal({
-        input: 'select',
-        inputOptions: inputOptionsPromise,
-        /* This is a way to get data quickly from swal */
-        inputValidator: function(value) {
-            player.changeCharacter(value);
-        }
-    });
+  swal({
+    input: 'select',
+    inputOptions: inputOptionsPromise,
+    /* This is a way to get data quickly from swal */
+    inputValidator: function(value) {
+      player.changeCharacter(value);
+    }
+  });
 });
 
 var keyHandlers = {
