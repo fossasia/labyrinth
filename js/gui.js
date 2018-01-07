@@ -5,24 +5,24 @@
 var player;
 var level;
 
-window.addEventListener("load", function()
-{
-  var container = document.getElementById("tiles");
-  level = createTestLevel();
-  level.showIn(container);
-  
-  var inputOptionsPromise = new Promise(function (resolve) {
-    // input your character here in the form, "src_url": "character_name",
-    resolve({
-      "characters/sheep.svg": "Intelligent Sheep",
-      "characters/robo.svg": "Robo",
-      "characters/swammy.svg": "Swammy",
-      "characters/monster.svg": "Monster",
-      "characters/elephant.svg": "Elephant",
-      "characters/shadowman.svg": "Shadowman",
-      "characters/santa.svg": "Santa Clause",
-      "characters/detective.svg":"Agent X",
-      "characters/Geekomoji.svg": "Geekomoji",
+window.addEventListener("load", function() {
+    var container = document.getElementById("tiles");
+    level = createTestLevel();
+    level.showIn(container);
+
+    var inputOptionsPromise = new Promise(function(resolve) {
+        // input your character here in the form, "src_url": "character_name",
+        resolve({
+            "characters/sheep.svg": "Intelligent Sheep",
+            "characters/robo.svg": "Robo",
+            "characters/swammy.svg": "Swammy",
+            "characters/monster.svg": "Monster",
+            "characters/elephant.svg": "Elephant",
+            "characters/shadowman.svg": "Shadowman",
+            "characters/santa.svg": "Santa Clause",
+            "characters/detective.svg": "Agent X",
+            "characters/pixie.svg": "Forest Spirit"
+        });
     });
     player = newPlayer();
     level.addPlayer(player);
