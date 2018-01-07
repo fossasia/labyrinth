@@ -40,24 +40,28 @@ window.addEventListener("load", function()
 
 var keyHandlers = {
     "ArrowLeft": function() {
+        swal.close();
         if (player.canMoveLeft()) {
             player.moveLeft();
         }
         player.logPosition();
     },
     "ArrowRight": function() {
+        swal.close();
         if (player.canMoveRight()) {
             player.moveRight();
         }
         player.logPosition();
     },
     "ArrowUp": function() {
+        swal.close();
         if (player.canMoveUp()) {
             player.moveUp();
         }
         player.logPosition();
     },
     "ArrowDown": function() {
+        swal.close();
         if (player.canMoveDown()) {
             player.moveDown();
         }
