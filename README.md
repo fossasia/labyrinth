@@ -113,7 +113,7 @@ Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `al
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
 
-<br><br><br>
+<br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
 
