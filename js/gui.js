@@ -5,10 +5,7 @@
 var player;
 var level;
 
-window.addEventListener("load", function() {
-    var container = document.getElementById("tiles");
-    level = createTestLevel();
-    level.showIn(container);
+
 
     var inputOptionsPromise = new Promise(function(resolve) {
         // input your character here in the form, "src_url": "character_name",
@@ -27,36 +24,45 @@ window.addEventListener("load", function() {
     player = newPlayer();
     level.addPlayer(player);
 
-    swal({
-        input: 'select',
-        inputOptions: inputOptionsPromise,
-        /* This is a way to get data quickly from swal */
-        inputValidator: function(value) {
-            player.changeCharacter(value);
-        }
     });
+  });
+  player = newPlayer();
+  level.addPlayer(player);
+
+  swal({
+    input: 'select',
+    inputOptions: inputOptionsPromise,
+    /* This is a way to get data quickly from swal */
+    inputValidator: function(value) {
+      player.changeCharacter(value);
+    }
+  });
 });
 
 var keyHandlers = {
     "ArrowLeft": function() {
+        swal.close();
         if (player.canMoveLeft()) {
             player.moveLeft();
         }
         player.logPosition();
     },
     "ArrowRight": function() {
+        swal.close();
         if (player.canMoveRight()) {
             player.moveRight();
         }
         player.logPosition();
     },
     "ArrowUp": function() {
+        swal.close();
         if (player.canMoveUp()) {
             player.moveUp();
         }
         player.logPosition();
     },
     "ArrowDown": function() {
+        swal.close();
         if (player.canMoveDown()) {
             player.moveDown();
         }
@@ -68,30 +74,10 @@ var keyHandlers = {
 };
 
 // On Screen Keys
-$("#leftKey").on("click", function() {
-    if (player.canMoveLeft()) {
-        player.moveLeft();
-    }
-    player.logPosition();
-});
-$("#rightKey").on("click", function() {
-    if (player.canMoveRight()) {
-        player.moveRight();
-    }
-    player.logPosition();
-});
-$("#upKey").on("click", function() {
-    if (player.canMoveUp()) {
-        player.moveUp();
-    }
-    player.logPosition();
-});
-$("#downKey").on("click", function() {
-    if (player.canMoveDown()) {
-        player.moveDown();
-    }
-    player.logPosition();
-});
+$("#leftKey").on("click", keyHandlers.ArrowLeft);
+$("#rightKey").on("click", keyHandlers.ArrowRight);
+$("#upKey").on("click", keyHandlers.ArrowUp);
+$("#downKey").on("click", keyHandlers.ArrowDown);
 
 window.addEventListener("keydown", function(event) {
     var handler = keyHandlers[event.key];
