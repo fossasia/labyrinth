@@ -17,11 +17,11 @@ window.addEventListener("load", function() {
             "characters/robo.svg": "Robo",
             "characters/swammy.svg": "Swammy",
             "characters/monster.svg": "Monster",
-            "characters/pixie.svg": "Forest Spirit",
             "characters/elephant.svg": "Elephant",
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
             "characters/detective.svg": "Agent X"
+            "characters/pixie.svg": "Forest Spirit",
         });
 
 window.addEventListener("load", function()
