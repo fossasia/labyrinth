@@ -5,14 +5,17 @@
 var player;
 var level;
 
-window.addEventListener("load", function() {
-    var container = document.getElementById("tiles");
-    level = createTestLevel();
-    level.showIn(container);
 
-    var inputOptionsPromise = new Promise(function(resolve) {
-        // input your character here in the form, "src_url": "character_name",
-        resolve({
+window.addEventListener("load", function()
+{
+  var container = document.getElementById("tiles");
+  level = createTestLevel();
+  level.showIn(container);
+  
+  var inputOptionsPromise = new Promise(function (resolve) {
+    // input your character here in the form, "src_url": "character_name",
+    resolve({
+      
             "characters/block.svg": "Block",
             "characters/sheep.svg": "Intelligent Sheep",
             "characters/robo.svg": "Robo",
@@ -22,8 +25,7 @@ window.addEventListener("load", function() {
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
             "characters/detective.svg": "Agent X"
-            
-        });
+
     });
     player = newPlayer();
     level.addPlayer(player);
