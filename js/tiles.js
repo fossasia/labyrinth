@@ -662,6 +662,13 @@ const door = {
             alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
         }
     }),
+    cricketGround: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
+        },
+    }),
 };
 
 const forest = {
