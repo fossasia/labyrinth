@@ -43,4 +43,14 @@ function createTestLevel()
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],
   ]);
+
+  return new Level([
+    [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
+    [desert.none, desert.top, PlayerStartsAt(desert.start), desert.both, desert.both, desert.top],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
+    [desert.none, desert.top, desert.top, desert.both, desert.top, desert.top],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
+    [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
+  ]);
 }
