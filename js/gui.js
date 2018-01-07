@@ -28,7 +28,7 @@ window.addEventListener("load", function()
       "characters/ddx.svg":"Bear DD",
       "characters/Geekomoji.svg": "Geekomoji",
       "characters/stickman.svg": "Stickman",
-      "characters/dardevil.svg": "DancinDaredevil",
+      "characters/daredevil.svg": "DancinDaredevil",
         
     });
 });
