@@ -5,6 +5,7 @@
 var player;
 var level;
 
+
 window.addEventListener("load", function()
 {
   var container = document.getElementById("tiles");
@@ -14,6 +15,8 @@ window.addEventListener("load", function()
   var inputOptionsPromise = new Promise(function (resolve) {
   // input your character here in the form, "src_url": "character_name",
     resolve({
+         
+      "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
@@ -23,6 +26,7 @@ window.addEventListener("load", function()
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
+
     });
   });
   player = newPlayer();
