@@ -5,12 +5,13 @@
 var player;
 var level;
 
-window.addEventListener("load", function() {
-    var container = document.getElementById("tiles");
-    level = createTestLevel();
-    level.showIn(container);
-
-var inputOptionsPromise = new Promise(function (resolve) {
+window.addEventListener("load", function()
+{
+  var container = document.getElementById("tiles");
+  level = createTestLevel();
+  level.showIn(container);
+  
+  var inputOptionsPromise = new Promise(function (resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/sheep.svg": "Intelligent Sheep",
