@@ -73,34 +73,10 @@ var keyHandlers = {
 };
 
 // On Screen Keys
-$("#leftKey").on("click", function() {
-    swal.close();
-    if (player.canMoveLeft()) {
-        player.moveLeft();
-    }
-    player.logPosition();
-});
-$("#rightKey").on("click", function() {
-    swal.close();
-    if (player.canMoveRight()) {
-        player.moveRight();
-    }
-    player.logPosition();
-});
-$("#upKey").on("click", function() {
-    swal.close();
-    if (player.canMoveUp()) {
-        player.moveUp();
-    }
-    player.logPosition();
-});
-$("#downKey").on("click", function() {
-    swal.close();
-    if (player.canMoveDown()) {
-        player.moveDown();
-    }
-    player.logPosition();
-});
+$("#leftKey").on("click", keyHandlers.ArrowLeft);
+$("#rightKey").on("click", keyHandlers.ArrowRight);
+$("#upKey").on("click", keyHandlers.ArrowUp);
+$("#downKey").on("click", keyHandlers.ArrowDown);
 
 window.addEventListener("keydown", function(event) {
     var handler = keyHandlers[event.key];
