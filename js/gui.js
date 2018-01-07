@@ -25,6 +25,7 @@ window.addEventListener("load", function()
       "characters/shadowman.svg": "Shadowman",
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
+      "characters/ddx.svg":"Bear DD",
       "characters/Geekomoji.svg": "Geekomoji",
 
     });
