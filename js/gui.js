@@ -13,6 +13,7 @@ window.addEventListener("load", function() {
     var inputOptionsPromise = new Promise(function(resolve) {
         // input your character here in the form, "src_url": "character_name",
         resolve({
+            "characters/Character.svg": "Block",
             "characters/sheep.svg": "Intelligent Sheep",
             "characters/robo.svg": "Robo",
             "characters/swammy.svg": "Swammy",
@@ -21,6 +22,7 @@ window.addEventListener("load", function() {
             "characters/shadowman.svg": "Shadowman",
             "characters/santa.svg": "Santa Clause",
             "characters/detective.svg": "Agent X"
+            
         });
     });
     player = newPlayer();
