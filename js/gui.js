@@ -28,6 +28,7 @@ window.addEventListener("load", function()
       "characters/ddx.svg":"Bear DD",
       "characters/Geekomoji.svg": "Geekomoji",
       "characters/stickman.svg": "Stickman",
+      "characters/cpt_america.svg": "Captain America"
         
     });
 });
