@@ -7,6 +7,11 @@ Labyrinth
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)]()
 
+[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
+[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
+
+
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
 
