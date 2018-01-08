@@ -31,7 +31,7 @@ $( document ).ready(function() {
     console.log(backgroundPlay);
     backgroundPlay.play();
 });
-function shuffleBackgroundAudio() {
+function nextBackgroundAudio() {
     backgroundPlay.pause();
     backgroundNum = backgroundNum + 1
     backgroundNum = backgroundNum % (backgroundAudio.length);
