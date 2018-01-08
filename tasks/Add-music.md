@@ -11,7 +11,8 @@ Requirements:
 - Add the music with the relevant code changes to the [tiles.js](https://github.com/fossasia/labyrinth/blob/master/js/tiles.js) file.
 - It should automatically play when the users enters, and stop when exiting. 
 - It should be music relevant to the theme, try not to add any songs
-- Please make sure to use the existing API/
+- Please make sure to use the existing API.
+- The music should be your own work. Please make sure you have the rights to any music that you add.
 
 Expected Outcome:
 - A merged pull request
