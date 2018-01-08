@@ -125,6 +125,17 @@ PlacedTile.prototype.scrollToCenter = function() {
     scrollLeft: offset.left - centerLeft
   }, 250);
 }
+function stopAudio() {
+    if (audioPlay !== null) {
+        audioPlay.pause();
+    }
+}
+var audioPlay = null;
+function playAudio (audio) {
+            audioPlay = new Audio("audio/" + audio);
+            console.log(audioPlay);
+            audioPlay.play();
+}
 function alertWarning(title, text) {
     swal({
         type: 'warning',
@@ -569,6 +580,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
+            playAudio("outdoor.mp3");
             alertQuestion("Do you like to go to outdoor?", "");
             this.wallRight.show();
             this.wallTop.show();
@@ -621,6 +633,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
+            playAudio("minecraft.mp3");
             alertInfo("You have stumbled upon the world of Minecraft!", "");
             this.wallTop.show();
             this.wallRight.show();
