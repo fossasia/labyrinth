@@ -678,6 +678,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
         },
     }),
+    yellow: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
+          this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
+        }
+    })
 };
 
 const forest = {
