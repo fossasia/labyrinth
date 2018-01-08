@@ -111,6 +111,32 @@ tile_name: Object.assign({}, OpenDoors, {
 ```
 Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
+<br>
+If you want to have a sound played when the character reaches your tile, your implementation must be something like this :
+
+```javascript
+tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
+    },
+    visit: function() {
+      playAudio("audio.mp3");
+      this.wallTop.show();
+      this.wallRight.show();
+      this.ground.show();
+     },
+  }),
+```
+Put your audio file in mp3 format in `/audio` and replace `audio` with the file name of that audio file.
+
+Please note that you <b>can</b> have both audio and alert box in your tile as well.
+
+<br>
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
 
