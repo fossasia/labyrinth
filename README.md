@@ -142,9 +142,9 @@ Please note that you <b>can</b> have both audio and alert box in your tile as we
 <br>
 
 If you want to add a background music, add your music to `audio/background/` in mp3 format
-and update the `js/tiles.js` file like so
+and update the `js/sound.js` file like so
 ```javascript
-const backgroundAudio = ["audio/background/filename.mp3", "audio/background/filename.mp3"];
+const backgroundAudio = ["audio/music/filename.mp3", "audio/music/filename.mp3"];
 ```
 
 <br>
