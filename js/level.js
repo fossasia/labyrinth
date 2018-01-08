@@ -7,7 +7,7 @@ const tileHeight = 256.314; // px
 
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
-level.finish() {
+this.finish() {
   loadNextLevel();
 }
 function Level(specification)
