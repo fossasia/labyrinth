@@ -51,33 +51,33 @@ level.addPlayer(player);
 
 var keyHandlers = {
     "ArrowLeft": function() {
-        stopAudio();
         swal.close();
         if (player.canMoveLeft()) {
+            stopAudio();
             player.moveLeft();
         }
         player.logPosition();
     },
     "ArrowRight": function() {
-        stopAudio();
         swal.close();
         if (player.canMoveRight()) {
+            stopAudio();
             player.moveRight();
         }
         player.logPosition();
     },
     "ArrowUp": function() {
-        stopAudio(); 
         swal.close();
         if (player.canMoveUp()) {
+            stopAudio();
             player.moveUp();
         }
         player.logPosition();
     },
     "ArrowDown": function() {
-        stopAudio();
         swal.close();
         if (player.canMoveDown()) {
+            stopAudio();
             player.moveDown();
         }
         player.logPosition();
