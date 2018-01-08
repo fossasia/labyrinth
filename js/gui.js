@@ -31,6 +31,7 @@ window.addEventListener("load", function()
       "characters/Mrs zero.svg": "Mrs. Zero",
       "characters/stickman.svg": "Stickman",
       "characters/cpt_america.svg": "Captain America",
+      "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
       "characters/pixie.svg": "Forest Spirit",
     });
