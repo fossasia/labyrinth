@@ -821,6 +821,57 @@ const desert = {
             this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
         },
     }),
+    drought: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return player.inventory.has('Camel');
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightDesert.svg");
+            this.ground = this.createImage("tiles/rooms/floor/drought.svg");
+        },
+        visit: function() {
+            if (player.inventory.has('Camel')) {
+                alertSuccess("You got the treasure !", "there's more to find !");
+                player.inventory.remove('Camel');
+            } else {
+                alertNormal("You Need a Camel!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    camel: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.ground = this.createImage("tiles/rooms/floor/camel.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightDesert.svg");
+        },
+        visit: function() {
+            alertInfo("You found a Camel !", "Keep it it might come handy");
+            // add item to inventory
+            player.inventory.add(['Camel', 'camel.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     start: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
