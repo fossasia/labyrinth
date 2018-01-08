@@ -27,9 +27,12 @@ window.addEventListener("load", function()
       "characters/detective.svg":"Agent X",
       "characters/ddx.svg":"Bear DD",
       "characters/Geekomoji.svg": "Geekomoji",
+      "characters/Mr zero.svg":"Mr. Zero",
+      "characters/Mrs zero.svg": "Mrs. Zero",
       "characters/stickman.svg": "Stickman",
-      "characters/cpt_america.svg": "Captain America"
-        
+      "characters/cpt_america.svg": "Captain America",
+      "characters/MonsterJuice.svg": "Monster Juice",
+      "characters/pixie.svg": "Forest Spirit",
     });
 });
 player = newPlayer();

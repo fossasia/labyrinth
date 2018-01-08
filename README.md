@@ -5,6 +5,12 @@ Labyrinth
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
+[![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
+
+[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
+[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
+
 
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
@@ -89,6 +95,31 @@ tile_name: Object.assign({}, OpenDoors, {
   }),
 ```
 
+If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
+```javascript
+tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
+    },
+    visit: function() {
+    alertName("title", "text");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+     },
+  }),
+```
+Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+
+And replace `title` and `text` with whatever title or text you want to display.
+If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
+
+<br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
 
