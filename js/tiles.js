@@ -28,16 +28,32 @@ const backgroundAudio = ["audio/background/epic1.mp3", "audio/background/relaxin
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
 $( document ).ready(function() {
+    startBackgroundAudio();
+});
+function startBackgroundAudio() {
     console.log(backgroundPlay);
     backgroundPlay.play();
-});
+}
 function nextBackgroundAudio() {
     backgroundPlay.pause();
-    backgroundNum = backgroundNum + 1
-    backgroundNum = backgroundNum % (backgroundAudio.length);
+    if (backgroundNum !== backgroundAudio.length - 1) {
+        backgroundNum = backgroundNum + 1
+    }
     backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
     console.log(backgroundPlay);
     backgroundPlay.play();
+}
+function previousBackgroundAudio() {
+    backgroundPlay.pause();
+    if (backgroundNum !== 0) {
+        backgroundNum = backgroundNum - 1
+    }
+    backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
+    console.log(backgroundPlay);
+    backgroundPlay.play();
+}
+function stopBackgroundAudio() {
+    backgroundPlay.pause();
 }
 // PlayerStartsAt is used in /js/levels.js ignoring the error
 // ignore JSHintBear
