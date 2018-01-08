@@ -364,6 +364,19 @@ const door = {
             this.ground.show();
         },
     }),
+    yellow: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = createImage("tiles/rooms/wall/ColorWallTop.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/ColorWall.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Color.svg");
+        },
+        vist: function() {
+            alertInfo("The World of Yellow, Welcome :D");
+            this.wallTop.show();
+            this.wallTop.show();
+            this.ground.show();
+        },
+    }),
     chessMate: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
