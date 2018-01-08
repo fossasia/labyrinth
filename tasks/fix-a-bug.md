@@ -7,14 +7,14 @@ Requirements:
 - Create or work on an  existing issue(Please take permission from the opener) to solve a bug in the site.
   These are different aspects which you can cover:
   - What problems it causes?
-  - What is needed to implement it
+  - What is needed to implement it?.
   - How you propose an implementation
-- Get feedback from one maintainer (it is labeled as [bug](https://github.com/fossasia/labyrinth/labels/new%20feature))
-  or two other participants (they say this feature is good for the game).
+- Get feedback from one maintainer (Get the issue labeled as bug)
+  or two other participants (they say this addition/PR is good for the game).
 - Create at least one pull request to create the feature. 
 
 Expected outcome:
-- The issue is tagged as bugand resolved.
+- The issue is tagged as bug and resolved.
 - The issue is resolved.
 - There is at least one pull request by you which substantially helps resolve the issue.
 
