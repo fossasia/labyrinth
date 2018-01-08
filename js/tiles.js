@@ -746,3 +746,13 @@ const forest = {
         }
     }),
 };
+Stars: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/stars.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
