@@ -659,6 +659,28 @@ const door = {
             this.ground.show();
         }
     }),
+    Forbidden: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
+        },
+        visit: function() {
+            swal({
+                type: 'info',
+                title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
+            });
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     newYear: Object.assign({}, OpenDoors, {
         canLeaveToTheTop: function(player) {
             return true;
