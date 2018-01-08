@@ -35,6 +35,7 @@ window.addEventListener("load", function()
       "characters/MonsterJuice.svg": "Monster Juice",
       "characters/pixie.svg": "Forest Spirit",
       "characters/AngryBot.svg": "Angry Bot",
+      "characters/deathnote.svg": "Death Note",
     });
 });
 player = newPlayer();
