@@ -312,6 +312,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/animations/wheel.svg");
         },
+        visit: function() {
+        	playAudio("gears.mp3");
+        },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -465,6 +468,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
         },
         visit: function() {
+            playAudio("discover.mp3");
             alertInfo("You got something !", "Explore More ! Let's see what can find ...");
             // add item to inventory
             player.inventory.add(['Key', 'key.png']);
@@ -484,7 +488,10 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
-        }
+        },
+        visit: function() {
+            playAudio("gears.mp3");
+        },
     }),
     batcave: Object.assign({}, OpenDoors, {
         canEnterFromTheLeft() {
@@ -617,6 +624,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
         },
         visit: function() {
+            playAudio("spy.mp3");
             alertInfo("Get out!", "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room.");
             this.wallTop.show();
             this.wallRight.show();
