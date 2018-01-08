@@ -114,42 +114,62 @@ Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `al
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
 
-<br>
-If you want to have a sound played when the character reaches your tile, your implementation must be something like this :
-
-```javascript
-tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
-    canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
-    },
-    visit: function() {
-      playAudio("audio.mp3");
-      this.wallTop.show();
-      this.wallRight.show();
-      this.ground.show();
-     },
-  }),
-```
-Put your audio file in mp3 format in `/audio` and replace `audio` with the file name of that audio file.
-
-Please note that you <b>can</b> have both audio and alert box in your tile as well.
-
-<br>
-
-If you want to add a background music, add your music to `audio/background/` in mp3 format
-and update the `js/sound.js` file like so
-```javascript
-const backgroundAudio = ["audio/music/filename.mp3", "audio/music/filename.mp3"];
-```
-
-<br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
+
+
+## How to Add Music
+
+If you want to have a sound played when the character reaches your tile, your implementation must be something like this:
+
+```javascript
+    visit: function() {
+      playAudio("audio.mp3");
+      // ...
+     },
+```
+
+To add your audio file, please read the following carefully:
+Audio files are usually not licensed under AGPL. They have a different license.
+Please **make sure that the license permits** using the file for the project.
+Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .
+To add the a sound file, we need to respect the license, so please follow this guide:
+- [ ] Add your sound file to the [audio](audio) directory. Use a name which fits the sound.
+- [ ] Add a file with the license of the sound file. If your file is named `audio.mp3` add a file named `audio.mp3.license`.
+- [ ] If you created this sound, please consider adding the source files.
+
+So, these two structures can exist in the audio folder:
+- A single file with a license:
+  ```
+  audio/
+  +- sound.mp3
+  +- sound.mp3.license
+  ```
+- A folder for many sound files with one license:
+  ```
+  audio/
+  +- source-name/
+     +- LICENSE
+     +- README.md
+     +- sound1.mp3
+     +- sound2.ogg
+  ```
+
+Please note that you **can** have both audio and alert box in your tile as well.
+
+If you want to add a background music, add your music to `audio/background/` in the same way.
+and update the `js/sound.js` file like so
+```javascript
+const backgroundAudio = [
+    {   "file" : "audio/sound.mp3",
+        "legalNotice": "Song title - <a href="link to page of the sound file">owner</a>"
+    }, ...
+];
+```
+Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
+This could be the same as the content of the license file for the file.
+
+<br>
 
 ## How to add a new character
 
