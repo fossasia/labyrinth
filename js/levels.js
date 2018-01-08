@@ -17,7 +17,7 @@ function createTestLevel()
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.top],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
-    [NullTile, door.none, door.none, door.none, door.none, door.newYear],
+    [NullTile, door.none, door.river, door.none, door.none, door.newYear],
   ]);
 
   return new Level([
