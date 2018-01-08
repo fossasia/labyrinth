@@ -370,18 +370,18 @@ const door = {
         },
     }),
     goal: Object.assign({}, OpenDoors, {
-        createImages: function() {
+            createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
         },
         /* Override the function */
         visit: function() {
-        	playAudio("outdoor.mp3");
-            alertSuccess("You win!", "Yay! You have won the game");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
+        	 playAudio("outdoor.mp3");
+             alertSuccess("You win!", "Yay! You have won the game");
+             this.wallTop.show();
+             this.wallRight.show();
+             this.ground.show();
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
