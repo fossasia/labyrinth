@@ -57,6 +57,18 @@ function Level(specification)
       });
     });
   };
+  /*TODO
+  * Update Level now 
+  */
+  this.finish = function() {
+    // clear tiles
+    swal({
+          type: 'success',
+          title: 'Level Complete',
+    });
+    $("#tiles").html("");
+    startGame();
+  };
   var me = this;
   this.startTile = null;
   this.tiles = specification.map(function(row, y){// defined in /js/tiles.js

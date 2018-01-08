@@ -328,6 +328,9 @@ const door = {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+            // call level.finish here
+            $("#tiles").html("");
+            startGame();
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {

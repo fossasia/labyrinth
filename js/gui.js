@@ -8,6 +8,10 @@ var level;
 
 window.addEventListener("load", function()
 {
+  startGame();
+});
+
+function startGame(){  
   var container = document.getElementById("tiles");
   level = createTestLevel();
   level.showIn(container);
@@ -42,7 +46,7 @@ level.addPlayer(player);
       player.changeCharacter(value);
     }
   });
-});
+}
 
 var keyHandlers = {
     "ArrowLeft": function() {
