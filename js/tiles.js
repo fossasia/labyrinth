@@ -543,10 +543,10 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	    playAudio("watersound.mp3");
-            if (player.inventory.has('Boat')) {
-                alertSuccess("You got the treasure !", "there's more to find !");
-                player.inventory.remove('Boat');
+        	 playAudio("watersound.mp3");
+             if (player.inventory.has('Boat')) {
+             alertSuccess("You got the treasure !", "there's more to find !");
+             player.inventory.remove('Boat');
             } else {
                 alertNormal("You Need a Boat!", "");
             }
