@@ -390,6 +390,7 @@ const door = {
         },
         visit: function() {
             alertInfo("Checkmate", "");
+            playAudio("audio/large-gong-sound.mp3")
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
