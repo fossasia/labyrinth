@@ -24,7 +24,6 @@ const NullTile = {
     viewFromTheRight: function() {},
     viewFromTheBottom: function() {},
 };
-
 // PlayerStartsAt is used in /js/levels.js ignoring the error
 // ignore JSHintBear
 function PlayerStartsAt(tileSpecification) {
@@ -124,17 +123,6 @@ PlacedTile.prototype.scrollToCenter = function() {
     scrollTop: offset.top - centerTop,
     scrollLeft: offset.left - centerLeft
   }, 250);
-}
-function stopAudio() {
-    if (audioPlay !== null) {
-        audioPlay.pause();
-    }
-}
-var audioPlay = null;
-function playAudio (audio) {
-            audioPlay = new Audio("audio/" + audio);
-            console.log(audioPlay);
-            audioPlay.play();
 }
 function alertWarning(title, text) {
     swal({

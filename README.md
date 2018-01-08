@@ -111,6 +111,9 @@ tile_name: Object.assign({}, OpenDoors, {
 ```
 Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
+And replace `title` and `text` with whatever title or text you want to display.
+If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
+
 <br>
 If you want to have a sound played when the character reaches your tile, your implementation must be something like this :
 
@@ -137,8 +140,12 @@ Put your audio file in mp3 format in `/audio` and replace `audio` with the file 
 Please note that you <b>can</b> have both audio and alert box in your tile as well.
 
 <br>
-And replace `title` and `text` with whatever title or text you want to display.
-If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
+
+If you want to add a background music, add your music to `audio/background/` in mp3 format
+and update the `js/sound.js` file like so
+```javascript
+const backgroundAudio = ["audio/music/filename.mp3", "audio/music/filename.mp3"];
+```
 
 <br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
