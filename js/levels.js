@@ -16,7 +16,7 @@ function createTestLevel()
     [door.none, door.yellowBoxes, PlayerStartsAt(door.black), door.green, door.banner, door.top],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.top],
-    [door.none, door.top, door.both, door.treasureKey, door.drawn, door.top],
+    [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [NullTile, door.none, door.none, door.none, door.none, door.newYear],
   ]);
 
@@ -42,5 +42,15 @@ function createTestLevel()
     [forest.none, forest.top, forest.top, forest.both, forest.top, forest.top],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],
+  ]);
+
+  return new Level([
+    [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
+    [desert.none, desert.top, PlayerStartsAt(desert.start), desert.both, desert.both, desert.top],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
+    [desert.none, desert.top, desert.top, desert.both, desert.top, desert.top],
+    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
+    [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
 }
