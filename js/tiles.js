@@ -283,6 +283,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/caro.svg");
+            alertInfo("Welcome to the Labyrinth !", "Explore More ! Let's see what can find ...");
         },
     }),
     scene: Object.assign({}, OpenDoors, {
@@ -290,6 +291,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/live.svg");
+            alertInfo("More to Go !", "");
         },
     }),
     black: Object.assign({}, OpenDoors, {
@@ -297,6 +299,8 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/black.svg");
+            alertInfo("Welcome to the Black Tile !", "");
+
         },
     }),
     drawn: Object.assign({}, OpenDoors, {
@@ -311,6 +315,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/animations/wheel.svg");
+            alertInfo("Run Run Don't Stay here anymore !", "");
         },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
@@ -318,6 +323,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/animations/fossasia_bullet.svg");
+            alertInfo("So Close !", "");
         },
     }),
     blue: Object.assign({}, OpenDoors, {
@@ -389,7 +395,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
-            alertInfo("Checkmate", "");
+            alertInfo("Checkmate", "Come on, Try to get out from here.");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -414,7 +420,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
-            alertInfo("Stalemate", "");
+            alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -449,7 +455,7 @@ const door = {
                 alertSuccess("You got the treasure !", "there's more to find !");
                 player.inventory.remove('Key');
             } else {
-                alertNormal("You Need a Key !", "");
+                alertNormal("You Need a Key ! Try to find it.", "");
             }
             this.wallTop.show();
             this.wallRight.show();
@@ -463,7 +469,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
         },
         visit: function() {
-            alertInfo("You got something !", "Explore More ! Let's see what can find ...");
+            alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
             // add item to inventory
             player.inventory.add(['Key', 'key.png']);
             this.wallTop.show();
@@ -559,7 +565,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
         },
         visit: function() {
-            alertInfo("You found a boat !", "Keep it it might come handy");
+            alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
             this.wallTop.show();
@@ -581,7 +587,7 @@ const door = {
         },
         visit: function() {
             playAudio("outdoor.mp3");
-            alertQuestion("Do you like to go to outdoor?", "");
+            alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
             this.wallTop.show();
             this.ground.show();
@@ -689,6 +695,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
+            alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
     }),
     yellow: Object.assign({}, OpenDoors, {
@@ -696,6 +703,7 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
+           alertInfo("You are in the Yellow Floor Now.", "");
         }
     })
 };
@@ -713,6 +721,7 @@ const forest = {
             this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
             this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+             alertInfo("Welcome to the Forest", "Watch out for the Monsters");
         },
     }),
     top: Object.assign({}, OpenDoors, {
@@ -787,6 +796,7 @@ const desert = {
             this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
             this.wallRight = this.createImage("tiles/rooms/door/rightDesert.svg");
             this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+             alertInfo("Welcome to the Lonely Desert.", "Don't Stop Anywhere, Try to escape from here quickly");
         },
     }),
     top: Object.assign({}, OpenDoors, {
@@ -844,13 +854,14 @@ const desert = {
             this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightDesert.svg");
             this.ground = this.createImage("tiles/rooms/floor/drought.svg");
+             alertInfo("Evade", "A very bug storm is to come.");
         },
         visit: function() {
             if (player.inventory.has('Camel')) {
-                alertSuccess("You got the treasure !", "there's more to find !");
+                alertSuccess("You got the Camel !", "Escape from here !");
                 player.inventory.remove('Camel');
             } else {
-                alertNormal("You Need a Camel!", "");
+                alertNormal("You Need a Camel to Escape from the Storm!", "");
             }
             this.wallTop.show();
             this.wallRight.show();
@@ -864,7 +875,7 @@ const desert = {
             this.wallRight = this.createImage("tiles/rooms/door/rightDesert.svg");
         },
         visit: function() {
-            alertInfo("You found a Camel !", "Keep it it might come handy");
+            alertInfo("You found a Camel !", "Use it whenever you face Storms.");
             // add item to inventory
             player.inventory.add(['Camel', 'camel.png']);
             this.wallTop.show();
