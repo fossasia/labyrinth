@@ -580,6 +580,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
+            playAudio("outdoor.mp3");
             alertQuestion("Do you like to go to outdoor?", "");
             this.wallRight.show();
             this.wallTop.show();
