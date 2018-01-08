@@ -32,7 +32,8 @@ window.addEventListener("load", function()
       "characters/stickman.svg": "Stickman",
       "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
-      "characters/pixie.svg": "Forest Spirit",  
+      "characters/pixie.svg": "Forest Spirit",
+      "characters/Pikachu.svg": "Pikachu",
     });
 });
 player = newPlayer();
