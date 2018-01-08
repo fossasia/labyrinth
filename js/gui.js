@@ -31,7 +31,7 @@ window.addEventListener("load", function()
       "characters/Mrs zero.svg": "Mrs. Zero",
       "characters/stickman.svg": "Stickman",
       "characters/MonsterJuice.svg": "Monster Juice",
-        
+      "characters/pixie.svg": "Forest Spirit",  
     });
 });
 player = newPlayer();
