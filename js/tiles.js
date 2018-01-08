@@ -389,8 +389,8 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
+            playAudio("large-gong-sound.mp3");
             alertInfo("Checkmate", "");
-            playAudio("large-gong-sound.mp3")
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
