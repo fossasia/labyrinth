@@ -125,6 +125,17 @@ PlacedTile.prototype.scrollToCenter = function() {
     scrollLeft: offset.left - centerLeft
   }, 250);
 }
+function stopAudio() {
+    if (audioPlay !== null) {
+        audioPlay.pause();
+    }
+}
+var audioPlay = null;
+function playAudio (audio) {
+            audioPlay = new Audio("audio/" + audio);
+            console.log(audioPlay);
+            audioPlay.play();
+}
 function alertWarning(title, text) {
     swal({
         type: 'warning',

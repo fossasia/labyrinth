@@ -51,6 +51,7 @@ level.addPlayer(player);
 
 var keyHandlers = {
     "ArrowLeft": function() {
+        stopAudio();
         swal.close();
         if (player.canMoveLeft()) {
             player.moveLeft();
@@ -58,6 +59,7 @@ var keyHandlers = {
         player.logPosition();
     },
     "ArrowRight": function() {
+        stopAudio();
         swal.close();
         if (player.canMoveRight()) {
             player.moveRight();
@@ -65,6 +67,7 @@ var keyHandlers = {
         player.logPosition();
     },
     "ArrowUp": function() {
+        stopAudio(); 
         swal.close();
         if (player.canMoveUp()) {
             player.moveUp();
@@ -72,6 +75,7 @@ var keyHandlers = {
         player.logPosition();
     },
     "ArrowDown": function() {
+        stopAudio();
         swal.close();
         if (player.canMoveDown()) {
             player.moveDown();
