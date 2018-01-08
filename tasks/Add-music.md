@@ -13,12 +13,6 @@ Requirements:
 - It should be music relevant to the theme, try not to add any songs
 - Please make sure to use the existing API.
 - The music should be your own work. Please make sure you have the rights to any music that you add.
-- the music of any tile stops playing when the player leaves not moves
-  choose the background music randomly
-- add a loudness to the background music in the object you store it. Some music may be loud, some music is quite silent. If we add         music   from different people, we want to control that in the game as they make music of different volume.
-  document different open-source software in the task that we can use.
-  recording: audacity
-- When all is done, we can create a new feature task to show a configuration menu for the two music types (on off/loudness)
 
 Expected Outcome:
 - A merged pull request
