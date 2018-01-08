@@ -632,6 +632,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
+            playAudio("minecraft.mp3");
             alertInfo("You have stumbled upon the world of Minecraft!", "");
             this.wallTop.show();
             this.wallRight.show();
