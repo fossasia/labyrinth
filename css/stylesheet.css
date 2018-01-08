@@ -12,14 +12,14 @@ body {
     padding-top: 70px;
     display: table-cell;
     vertical-align: middle;
-    background: #333;
+    background: #84C79F;
 }
 
 h1, h2, h3 {
   font-family: 'playfair display';
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #C0392B;
+  color: #60A550;
 }
 
 
@@ -39,9 +39,9 @@ button::after {
 
 button {
   background: none;
-  border: 3px solid #C0392B;
+  border: 3px solid #60A550;
   border-radius: 5px;
-  color: #fff;
+  color: #333;
   display: block;
   margin: 3em auto;
   padding: 1em 3em;
@@ -53,7 +53,7 @@ button {
 
 button::before,
 button::after {
-  background: #C0392B;
+  background: #60A550;
   content: '';
   position: absolute;
   z-index: -1;
@@ -108,11 +108,7 @@ img {
 .whitespace {
   background: #fff;
   padding: 50px;
-  border-style: solid;
-  border-width: 7px;
-  border-color: #C0392B;
   border-radius: 15px;
-  border-spacing: 2px;
 }
 
 /*Fotter credits*/
@@ -125,7 +121,7 @@ img {
   font-size: 0.7em;
   text-transform: uppercase;
   text-decoration: none;
-  padding-left: 80px;
+  padding-left: 180px;
 }
 
 .credits a {
@@ -139,7 +135,7 @@ img {
   border-bottom-style: solid;
   border-spacing: 50px;
   border-width: 2px;
-  border-color: #C0392B;
+  border-color: #60A550;
 }
 
 .content {

@@ -15,6 +15,18 @@ Labyrinth
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
 
+## Content Outline
+- [**Motivation**](https://github.com/fossasia/labyrinth#motivation)
+- [**Implementation**](https://github.com/fossasia/labyrinth#implementation)
+- [**Contributions, Bug Reports, Feature Requests**](https://github.com/fossasia/labyrinth#contributions-bug-reports-feature-requests)
+- [**Issue and Branch Policy**](https://github.com/fossasia/labyrinth#issue-and-branch-policy)
+- [**How to add new tiles**](https://github.com/fossasia/labyrinth#how-to-add-new-tiles)
+- [**How to add a new character**](https://github.com/fossasia/labyrinth#how-to-add-a-new-character)
+- [**Hints for GCI students**](https://github.com/fossasia/labyrinth#hints-for-gci-students)
+- [**Solve an Issue**](https://github.com/fossasia/labyrinth#solve-an-issue)
+- [**UI identity guideline**](https://github.com/fossasia/labyrinth#ui-identity-guideline)
+- [**Maintainers**](https://github.com/fossasia/labyrinth#maintainers)
+
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
 ![](vision-example.jpg)
@@ -193,7 +205,10 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
 
+## UI identity guideline
+[>>Click here to read the full UI guideline<<](https://github.com/fossasia/labyrinth/UI_Identity.md)
 
+![](images/UI_identity/UI_Identity.jpg)
 
 ## Maintainers
 
