@@ -377,11 +377,11 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-        	 playAudio("outdoor.mp3");
-             alertSuccess("You win!", "Yay! You have won the game");
-             this.wallTop.show();
-             this.wallRight.show();
-             this.ground.show();
+        	playAudio("outdoor.mp3");
+            alertSuccess("You win!", "Yay! You have won the game");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
