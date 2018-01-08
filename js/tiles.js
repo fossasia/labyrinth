@@ -370,7 +370,7 @@ const door = {
         },
     }),
     goal: Object.assign({}, OpenDoors, {
-            createImages: function() {
+        createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
