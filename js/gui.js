@@ -34,6 +34,7 @@ window.addEventListener("load", function()
       "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
       "characters/pixie.svg": "Forest Spirit",
+      "characters/AngryBot.svg": "Angry Bot",
     });
 });
 player = newPlayer();
