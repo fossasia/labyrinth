@@ -1,20 +1,21 @@
 #Labyrinth: Create a Wall
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
-We can add new features to the labyrinth which improve the game.
+As most of the tiles have the same walls and with same walls in every tile the game will look monotonous, please add more walls!
 
-Requirements:
-- Download and install Inkscape 
-- Create a Wall for the Labyrinth maze 
+ Requirements:
+- Download and install Inkscape from inkscape.org
+- Create a wall for the Labyrinth maze 
 - Add your wall to labyrinth/tiles/rooms/wall
 - A merged pull request
 
-Expected outcome:
+ Expected outcome:
 - Added atleast one wall
-- One pull requset is succesfully merged
+- The created wall should be a part of the labyrinth maze
+- Issues based on the created PR must be resolved
 
-Hints:
-- You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.
+ Hints:
+- You can start with an existing wall or tile to get the placing and the dimensions.
 - You can join our [chat on gitter](https://gitter.im/fossasia/labyrinth) if you get stuck to get help or just hang out and have a nice time with others.
 
 ---
