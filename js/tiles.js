@@ -753,3 +753,81 @@ const forest = {
         }
     }),
 };
+
+const desert = {
+    both: OpenDoors,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightDesert.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightDesert.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightDesert.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topDesert.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightDesert.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+        visit: function() {
+            swal({
+                type: 'info',
+                title: 'Hi there',
+                text: "I'm a nameless monster, welcome to my forest. You may find something interesting or equally horrific, let's rely on your fate.",
+            });
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+};

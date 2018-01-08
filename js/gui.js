@@ -30,9 +30,10 @@ window.addEventListener("load", function()
       "characters/Mr zero.svg":"Mr. Zero",
       "characters/Mrs zero.svg": "Mrs. Zero",
       "characters/stickman.svg": "Stickman",
+      "characters/cpt_america.svg": "Captain America",
       "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
-      "characters/pixie.svg": "Forest Spirit",  
+      "characters/pixie.svg": "Forest Spirit",
     });
 });
 player = newPlayer();
