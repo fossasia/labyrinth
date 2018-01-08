@@ -543,7 +543,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	playAudio("watersound.mp3");
+        	    playAudio("watersound.mp3");
             if (player.inventory.has('Boat')) {
                 alertSuccess("You got the treasure !", "there's more to find !");
                 player.inventory.remove('Boat');
@@ -681,11 +681,11 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("celebrate.mp3");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
-            alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
+        	  playAudio("celebrate.mp3");
+              this.wallTop.show();
+              this.wallRight.show();
+              this.ground.show();
+              alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
         }
     }),
     cricketGround: Object.assign({}, OpenDoors, {
