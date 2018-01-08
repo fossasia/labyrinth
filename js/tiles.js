@@ -55,6 +55,12 @@ function previousBackgroundAudio() {
 function stopBackgroundAudio() {
     backgroundPlay.pause();
 }
+function setVolume() {
+    if (audioPlay !== null) {
+        audioPlay.volume = document.getElementById("volume1").value;
+    }
+    backgroundPlay.volume = document.getElementById("volume1").value;
+}
 // PlayerStartsAt is used in /js/levels.js ignoring the error
 // ignore JSHintBear
 function PlayerStartsAt(tileSpecification) {

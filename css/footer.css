@@ -141,3 +141,6 @@ ul {
     background-color: #e25714;
 }
 
+input[type="range"] {
+    border: none;
+}
