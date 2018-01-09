@@ -15,7 +15,7 @@ window.addEventListener("load", function()
  var inputOptionsPromise = new Promise(function(resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
-        
+      "characters/golem.svg": "Golem"
       "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
@@ -34,6 +34,8 @@ window.addEventListener("load", function()
       "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
       "characters/pixie.svg": "Forest Spirit",
+      "characters/AngryBot.svg": "Angry Bot",
+      "characters/deathnote.svg": "Death Note",
     });
 });
 player = newPlayer();
