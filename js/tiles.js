@@ -383,7 +383,8 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
-            alertInfo("Checkmate", "Come on, Try to get out from here.");
+            playAudio("large-gong-sound.mp3");
+            alertInfo("Checkmate", "");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
