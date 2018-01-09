@@ -57,6 +57,7 @@
 			<div class="col s12">
 				<div class="card blue-grey darken-3">
 					<div class="card-action">
+						<blockquote>Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></blockquote>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i> Previous Audio</a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();">Next Audio <i class="fa fa-step-forward" aria-hidden="true"></i></a>
 						<br><br>
@@ -65,7 +66,7 @@
 						<p class="range-field">
      						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
     					</p>
-						
+						<a class="waves-effect waves-light btn blue-grey darken-2" id="legalNotice" href="">Music by</a>
 					</div>
 				</div>
 			</div>
