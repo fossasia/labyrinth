@@ -10,8 +10,8 @@ Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it m
 
 # Changes done in this Pull Request
 
-- If your change will be reflected on the website, please provide a **Test-Link** (**Hint : `gh-pages`**)
-  Here you can add your preview link--
+- If your change will be reflected on the website, please provide a **Test-Link**
+  **Here you can add your preview link--**
 - [Preview Link](http://rawgit.com/USERNAME/labyrinth/BRANCH-NAME/index.html)
 - Fixes`#<Issue no.>`
 , 
