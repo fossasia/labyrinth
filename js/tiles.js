@@ -304,6 +304,9 @@ const door = {
             this.ground = this.createImage("tiles/animations/wheel.svg");
             alertInfo("Run Run Don't Stay here anymore !", "");
         },
+        visit: function() {
+        	playAudio("gears.mp3");
+        },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -355,6 +358,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
+        	playAudio("suspense.mp3");
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -369,7 +373,6 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-            player.badges.add(['Nailed It', 'NailedIt.png']);
             alertSuccess("You win!", "Yay! You have won the game");
             this.wallTop.show();
             this.wallRight.show();
@@ -493,7 +496,12 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
         },
         visit: function() {
+
+            playAudio("discover.mp3");
+            alertInfo("You got something !", "Explore More ! Let's see what can find ...");
+
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
+
             // add item to inventory
             player.inventory.add(['Key', 'key.png']);
             this.wallTop.show();
@@ -512,7 +520,10 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
-        }
+        },
+        visit: function() {
+            playAudio("gears.mp3");
+        },
     }),
     batcave: Object.assign({}, OpenDoors, {
         canEnterFromTheLeft() {
@@ -571,9 +582,10 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-            if (player.inventory.has('Boat')) {
-                alertSuccess("You got the treasure !", "there's more to find !");
-                player.inventory.remove('Boat');
+        	 playAudio("watersound.mp3");
+             if (player.inventory.has('Boat')) {
+             alertSuccess("You got the treasure !", "there's more to find !");
+             player.inventory.remove('Boat');
             } else {
                 alertNormal("You Need a Boat!", "");
             }
@@ -645,6 +657,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
         },
         visit: function() {
+            playAudio("spy.mp3");
             alertInfo("Get out!", "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room.");
             this.wallTop.show();
             this.wallRight.show();
@@ -735,6 +748,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
+        	playAudio("celebrate.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
