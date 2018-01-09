@@ -383,6 +383,10 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
+            if(player.inventory.has('Key')){
+                player.inventory.remove('Key')
+                alertInfo('Oops lost your key!')
+            }
             playAudio('fire-truck-air-horn_daniel-simion.mp3');
             console.log("Courtesy of Daniel simons for his music, taken from soundbible.com");
             alertInfo("Checkmate", "Come on, Try to get out from here.");
