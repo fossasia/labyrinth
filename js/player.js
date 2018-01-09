@@ -8,6 +8,7 @@ function Player() {
 
     // Create inventory instance
     this.inventory = new inventory();
+    this.badges = new badges();
 
     this.enter = function(tile) {
         this.currentTile.playerLeaves(this);

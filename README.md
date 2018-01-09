@@ -5,9 +5,27 @@ Labyrinth
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
+[![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
+
+[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
+[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
+
 
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
+
+## Content Outline
+- [**Motivation**](https://github.com/fossasia/labyrinth#motivation)
+- [**Implementation**](https://github.com/fossasia/labyrinth#implementation)
+- [**Contributions, Bug Reports, Feature Requests**](https://github.com/fossasia/labyrinth#contributions-bug-reports-feature-requests)
+- [**Issue and Branch Policy**](https://github.com/fossasia/labyrinth#issue-and-branch-policy)
+- [**How to add new tiles**](https://github.com/fossasia/labyrinth#how-to-add-new-tiles)
+- [**How to add a new character**](https://github.com/fossasia/labyrinth#how-to-add-a-new-character)
+- [**Hints for GCI students**](https://github.com/fossasia/labyrinth#hints-for-gci-students)
+- [**Solve an Issue**](https://github.com/fossasia/labyrinth#solve-an-issue)
+- [**UI identity guideline**](https://github.com/fossasia/labyrinth#ui-identity-guideline)
+- [**Maintainers**](https://github.com/fossasia/labyrinth#maintainers)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -89,8 +107,90 @@ tile_name: Object.assign({}, OpenDoors, {
   }),
 ```
 
+If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
+```javascript
+tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
+    },
+    visit: function() {
+    alertName("title", "text");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+     },
+  }),
+```
+Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+
+And replace `title` and `text` with whatever title or text you want to display.
+If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
+
+<br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
+
+## How to Add Music
+
+If you want to have a sound played when the character reaches your tile, your implementation must be something like this:
+
+```javascript
+    visit: function() {
+      playAudio("audio.mp3");
+      // ...
+     },
+```
+
+To add your audio file, please read the following carefully:
+Audio files are usually not licensed under AGPL. They have a different license.
+Please **make sure that the license permits** using the file for the project.
+Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .
+To add the a sound file, we need to respect the license, so please follow this guide:
+- [ ] Add your sound file to the [audio](audio) directory. Use a name which fits the sound.
+- [ ] Add a file with the license of the sound file. If your file is named `audio.mp3` add a file named `audio.mp3.license`.
+- [ ] If you created this sound, please consider adding the source files.
+
+So, these two structures can exist in the audio folder:
+- A single file with a license:
+  ```
+  audio/
+  +- sound.mp3
+  +- sound.mp3.license
+  ```
+- A folder for many sound files with one license:
+  ```
+  audio/
+  +- source-name/
+     +- LICENSE
+     +- README.md
+     +- sound1.mp3
+     +- sound2.ogg
+  ```
+
+Please note that you **can** have both audio and alert box in your tile as well.
+
+If you want to add a background music, add your music to `audio/background/` in the same way.
+and update the `js/sound.js` file like so
+```javascript
+const backgroundAudio = [
+    {
+        filename : "Path of the file",
+        backgroundSongName: "Name of the song",
+        author: "Name of the author",
+        legalNotice : "Music by author",
+        link : "Link to author's website",
+    },
+];
+```
+Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
+This could be the same as the content of the license file for the file.
+
+<br>
 
 ## How to add a new character
 
@@ -162,7 +262,10 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
 
+## UI identity guideline
+[>>Click here to read the full UI guideline<<](https://github.com/fossasia/labyrinth/UI_Identity.md)
 
+![](images/UI_identity/UI_Identity.jpg)
 
 ## Maintainers
 

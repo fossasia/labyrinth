@@ -11,11 +11,11 @@ window.addEventListener("load", function()
   var container = document.getElementById("tiles");
   level = createTestLevel();
   level.showIn(container);
-  
-  var inputOptionsPromise = new Promise(function (resolve) {
-  // input your character here in the form, "src_url": "character_name",
+
+ var inputOptionsPromise = new Promise(function(resolve) {
+    // input your character here in the form, "src_url": "character_name",
     resolve({
-         
+      "characters/golem.svg": "Golem",
       "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
@@ -25,13 +25,22 @@ window.addEventListener("load", function()
       "characters/shadowman.svg": "Shadowman",
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
+      "characters/ddx.svg":"Bear DD",
       "characters/Geekomoji.svg": "Geekomoji",
       "characters/ninja.svg": "Ninja",
-
+      "characters/Mr zero.svg":"Mr. Zero",
+      "characters/Mrs zero.svg": "Mrs. Zero",
+      "characters/stickman.svg": "Stickman",
+      "characters/cpt_america.svg": "Captain America",
+      "characters/daredevil.svg": "DancinDaredevil",
+      "characters/MonsterJuice.svg": "Monster Juice",
+      "characters/pixie.svg": "Forest Spirit",
+      "characters/AngryBot.svg": "Angry Bot",
+      "characters/deathnote.svg": "Death Note",
     });
-  });
-  player = newPlayer();
-  level.addPlayer(player);
+});
+player = newPlayer();
+level.addPlayer(player);
 
   swal({
     input: 'select',
@@ -47,6 +56,7 @@ var keyHandlers = {
     "ArrowLeft": function() {
         swal.close();
         if (player.canMoveLeft()) {
+            stopAudio();
             player.moveLeft();
         }
         player.logPosition();
@@ -54,6 +64,7 @@ var keyHandlers = {
     "ArrowRight": function() {
         swal.close();
         if (player.canMoveRight()) {
+            stopAudio();
             player.moveRight();
         }
         player.logPosition();
@@ -61,6 +72,7 @@ var keyHandlers = {
     "ArrowUp": function() {
         swal.close();
         if (player.canMoveUp()) {
+            stopAudio();
             player.moveUp();
         }
         player.logPosition();
@@ -68,6 +80,7 @@ var keyHandlers = {
     "ArrowDown": function() {
         swal.close();
         if (player.canMoveDown()) {
+            stopAudio();
             player.moveDown();
         }
         player.logPosition();
