@@ -709,11 +709,11 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	  playAudio("celebrate.mp3");
-              this.wallTop.show();
-              this.wallRight.show();
-              this.ground.show();
-              alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
+        	playAudio("celebrate.mp3");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+            alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
         }
     }),
     cricketGround: Object.assign({}, OpenDoors, {
