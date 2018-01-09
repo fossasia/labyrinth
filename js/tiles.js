@@ -226,6 +226,7 @@ const OpenDoors = {
 
 // door is used in /js/levels.js ignoring the error
 // ignore JSHintBear
+var keyFound=false; //boolean variable to check if key is found or not
 const door = {
     both: OpenDoors,
     right: Object.assign({}, OpenDoors, {
@@ -423,16 +424,18 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
-        canEnterFromTheLeft() {
-            return false;
-        },
+        
         canLeaveToTheLeft() {
-            return false;
+            return true;
         },
         canEnterFromTheTop: function(player) {
             return false;
         },
         canLeaveToTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom()
+        {
             return false;
         },
         createImages: function() {
@@ -453,6 +456,10 @@ const door = {
         }
     }),
     treasureKey: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop()
+        {
+            return false;
+        },
         createImages: function() {
             this.ground = this.createImage("tiles/rooms/floor/treasureKey.svg");
             this.wallTop = this.createImage("tiles/rooms/wall/treasureWall.svg");
@@ -461,6 +468,7 @@ const door = {
         visit: function() {
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
             // add item to inventory
+            keyFound=true;
             player.inventory.add(['Key', 'key.png']);
             this.wallTop.show();
             this.wallRight.show();
@@ -570,6 +578,7 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+        
         createImages: function() {
             this.wallRight = this.createImage("tiles/rooms/wall/outwall.svg");
             this.ground = this.createImage("tiles/rooms/floor/out.svg");
@@ -623,6 +632,10 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+        canEnterFromTheBottom()
+        {
+            return false;
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightMinecraft.svg");
@@ -664,7 +677,7 @@ const door = {
         },
         canLeaveToTheTop(){
             return false;    
-        }
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
