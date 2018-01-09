@@ -1,11 +1,33 @@
-const backgroundAudio = ["audio/music/epic1.mp3", "audio/music/relaxing1.mp3"];
+const backgroundAudio = [
+    {
+        filename : "audio/music/bensound.com/epic1.mp3",
+        backgroundSongName: "Epic",
+        author: "bensound.com",
+        legalNotice : "Music by bensound.com",
+        link : "http://bensound.com/",
+    },
+    {
+        filename : "audio/music/bensound.com/relaxing1.mp3",
+        backgroundSongName: "Relaxing",
+        author: "bensound.com",
+        legalNotice : "Music by bensound.com",
+        link : "http://bensound.com/",
+    },
+];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
-var backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
+var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
 var audioPlay = null;
 $( document ).ready(function() {
     startBackgroundAudio();
 });
+function updateLegalBackground() {
+    $("#legalNotice").html(backgroundAudio[backgroundNum].legalNotice);
+    $("#backgroundSongName").html(backgroundAudio[backgroundNum].backgroundSongName);
+    $("#legalNotice").attr("href", backgroundAudio[backgroundNum].link);
+    $("#backgroundSongAuthor").html(backgroundAudio[backgroundNum].author);;
+}
 function startBackgroundAudio() {
+    updateLegalBackground();
     console.log(backgroundPlay);
     backgroundPlay.play();
 }
@@ -14,7 +36,8 @@ function nextBackgroundAudio() {
     if (backgroundNum !== backgroundAudio.length - 1) {
         backgroundNum = backgroundNum + 1
     }
-    backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
+    updateLegalBackground();
+    backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
     console.log(backgroundPlay);
     backgroundPlay.play();
 }
@@ -23,7 +46,8 @@ function previousBackgroundAudio() {
     if (backgroundNum !== 0) {
         backgroundNum = backgroundNum - 1
     }
-    backgroundPlay = new Audio(backgroundAudio[backgroundNum]);
+    updateLegalBackground();
+    backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
     console.log(backgroundPlay);
     backgroundPlay.play();
 }
