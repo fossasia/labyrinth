@@ -232,9 +232,7 @@ const door = {
         canEnterFromTheTop: function(player) {
             return false;
         },
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
@@ -248,6 +246,7 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
@@ -370,6 +369,7 @@ const door = {
         },
         /* Override the function */
         visit: function() {
+            player.badges.add(['Nailed It', 'NailedIt.png']);
             alertSuccess("You win!", "Yay! You have won the game");
             this.wallTop.show();
             this.wallRight.show();
@@ -447,6 +447,7 @@ const door = {
             } else {
                 alertNormal("You Need a Key ! Try to find it.", "");
             }
+            player.badges.add(['Discoverer', 'Discoverer.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -576,6 +577,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
+            player.badges.add(['Fresh Air', 'FreshAir.png']);
             playAudio("outdoor.mp3");
             alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
@@ -709,6 +711,12 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
+        visit: function() {
+        player.badges.add(['Cricketer', 'Cricketer.png']);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
     }),
     yellow: Object.assign({}, OpenDoors, {
         createImages: function() {

@@ -128,3 +128,19 @@ div.swal2-content {
 .range-field {
   padding-left: 30px;
 }
+
+.badgesImg {
+  height: 120px;
+  padding-top: 15px;
+  width: auto;
+}
+
+.badgesImg:hover {
+  height: 300px;
+  -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.collection {
+  border: none;
+}
