@@ -8,6 +8,7 @@
 	<!-- UI Sheets -->
 	<link rel="stylesheet" type="text/css" href="css/materialize.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
 	<!-- Include Font Awesome Stylesheet -->
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -49,28 +50,21 @@
 					<p>Player Moved :
 						<span id="playerMoves">0</span> Times</p>
 					</div>
-					<div class="card-action">
-						<a class="waves-effect waves-light btn blue-grey darken-2" href="http://github.com/yashkumarverma/">UI by Yash Kumar Verma</a>
+					<div class="border1"></div>
+					<div class="card-content white-text">
+						<span class="card-title">Audio</span>
 					</div>
-				</div>
-			</div>
-			<div class="col s12">
-				<div class="card blue-grey darken-3">
 					<div class="card-action">
-						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i> Previous Audio</a>
-						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();">Next Audio <i class="fa fa-step-forward" aria-hidden="true"></i></a>
-						<br><br>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();"><i class="fa fa-play" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();"><i class="fa fa-pause" aria-hidden="true"></i></a>
 						<p class="range-field">
      						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
     					</p>
-						
+
 					</div>
-				</div>
-			</div>
-			<div class="col s12">
-				<div class="card blue-grey darken-4">
+					<div class="border1"></div>
 					<div class="card-content white-text">
 						<h4 class="_14">Follow us on</h4>
 					</div>
@@ -110,14 +104,11 @@
 		</div>
 	</ul>
 </div>
-</div>
-</div>
-<div class="col s12">
-	<div class="card blue-grey darken-1">
+<div class="border1"></div>
 		<div class="card-content white-text">
 			<span class="card-title">Inventory</span>
 			<ul class="collection black-text" id="inventoryDisplay">
-                        <!-- SAMPLE ITEM  
+                        <!-- SAMPLE ITEM
               <li class="collection-item avatar">
                 <img src="images/yuna.jpg" alt="" class="circle">
                 <span class="title">Title</span>
@@ -125,7 +116,7 @@
                    Second Line
                 </p>
                 <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li> 
+              </li>
           -->
                         <!-- SAMPLE ITEM WITH ICON
             <li class="collection-item avatar">
