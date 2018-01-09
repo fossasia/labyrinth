@@ -15,7 +15,7 @@ window.addEventListener("load", function()
  var inputOptionsPromise = new Promise(function(resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
-        
+      "characters/golem.svg": "Golem"
       "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
@@ -30,8 +30,12 @@ window.addEventListener("load", function()
       "characters/Mr zero.svg":"Mr. Zero",
       "characters/Mrs zero.svg": "Mrs. Zero",
       "characters/stickman.svg": "Stickman",
+      "characters/cpt_america.svg": "Captain America",
+      "characters/daredevil.svg": "DancinDaredevil",
       "characters/MonsterJuice.svg": "Monster Juice",
-      "characters/pixie.svg": "Forest Spirit",  
+      "characters/pixie.svg": "Forest Spirit",
+      "characters/AngryBot.svg": "Angry Bot",
+      "characters/deathnote.svg": "Death Note",
     });
 });
 player = newPlayer();
@@ -51,6 +55,7 @@ var keyHandlers = {
     "ArrowLeft": function() {
         swal.close();
         if (player.canMoveLeft()) {
+            stopAudio();
             player.moveLeft();
         }
         player.logPosition();
@@ -58,6 +63,7 @@ var keyHandlers = {
     "ArrowRight": function() {
         swal.close();
         if (player.canMoveRight()) {
+            stopAudio();
             player.moveRight();
         }
         player.logPosition();
@@ -65,6 +71,7 @@ var keyHandlers = {
     "ArrowUp": function() {
         swal.close();
         if (player.canMoveUp()) {
+            stopAudio();
             player.moveUp();
         }
         player.logPosition();
@@ -72,6 +79,7 @@ var keyHandlers = {
     "ArrowDown": function() {
         swal.close();
         if (player.canMoveDown()) {
+            stopAudio();
             player.moveDown();
         }
         player.logPosition();
