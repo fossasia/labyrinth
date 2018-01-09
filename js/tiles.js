@@ -416,6 +416,33 @@ const door = {
             this.ground.show();
         }
     }),
+    //mine
+    vector_pattern: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
+            this.ground = this.createImage("tiles/rooms/floor/vector_pattern.svg");
+        },
+        visit: function() {
+            alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    //end
     treasure: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -664,7 +691,7 @@ const door = {
         },
         canLeaveToTheTop(){
             return false;    
-        }
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
