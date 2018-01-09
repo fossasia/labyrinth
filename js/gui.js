@@ -26,6 +26,7 @@ window.addEventListener("load", function()
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
+      "characters/ninja.svg": "Ninja",
 
     });
   });
