@@ -3,7 +3,7 @@
 
 Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it matters.
 
-- [ ] Read and understood (see CONTRIBUTING.md)
+- [ ] Read and understood [see CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/master/CONTRIBUTING.md)
 - [ ] Included a Preview link and screenshot showning after and before the changes.
 - [ ] Included a description of change below.
 - [ ] Squashed the commits.
@@ -11,6 +11,8 @@ Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it m
 # Changes done in this Pull Request
 
 - If your change will be reflected on the website, please provide a **Test-Link** (**Hint : `gh-pages`**)
+  Here you can add your preview link--
+- [Preview Link](http://rawgit.com/USERNAME/labyrinth/BRANCH-NAME/index.html)
 - Fixes`#<Issue no.>`
 , 
 <!-- If you fully fixed/improved some isuue(s), please insert the issue number(s) behind the # or if you are not fixed/improved some isuue(s) completly, but only some of step(s) in issue(s) please insert the issue number(s) with step number(s) hind the #-->
@@ -27,7 +29,4 @@ Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it m
 ### Screenshots,
 [If any]
 
-### Links
-<!-- Please replace USERNAME with your GitHub user name and BRANCH-NAME with your branch name e.g. master -->
-<!--The square brackets are for the name of the link and the round brackets are for the URL-->
-[Preview Link](http://rawgit.com/USERNAME/labyrinth/BRANCH-NAME/index.html)
+
