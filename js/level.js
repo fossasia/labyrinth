@@ -7,9 +7,6 @@ const tileHeight = 256.314; // px
 
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
-this.finish() {
-  loadNextLevel();
-}
 function Level(specification)
 {
   this.scale = 0.5;
@@ -59,18 +56,6 @@ function Level(specification)
         tile.visit();
       });
     });
-  };
-  /*TODO
-  * Update Level now 
-  */
-  this.finish = function() {
-    // clear tiles
-    swal({
-          type: 'success',
-          title: 'Level Complete',
-    });
-    $("#tiles").html("");
-    startGame();
   };
   var me = this;
   this.startTile = null;
