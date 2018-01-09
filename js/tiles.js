@@ -51,7 +51,7 @@ ImageCollection.prototype.addImage = function(file) {
     embed.id = "tile-" + this.position.x + "-" + this.position.y;
     embed.src = file;
     embed.type = "image/svg+xml";
-    embed.style.width = this.pixelPosition.tileWidth; // this scales down everything
+    embed.style.width = this.pixelPosition.tileWidth; // this scales ssdown everything
     embed.classList.add("image");
     this.container.appendChild(embed);
     return {
@@ -232,9 +232,7 @@ const door = {
         canEnterFromTheTop: function(player) {
             return false;
         },
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
@@ -248,6 +246,7 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
@@ -374,7 +373,6 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-        	playAudio("outdoor.mp3");
             alertSuccess("You win!", "Yay! You have won the game");
             this.wallTop.show();
             this.wallRight.show();
@@ -388,7 +386,15 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
-            alertInfo("Checkmate", "Come on, Try to get out from here.");
+            if(player.inventory.has('Key')){
+                player.inventory.remove('Key')
+                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.')
+            }
+            else{
+                alertInfo("Checkmate", "Come on, Try to get out from here.");
+            }
+            playAudio('fire-truck-air-horn_daniel-simion.mp3');
+            console.log("Courtesy of Daniel simons for his music, taken from soundbible.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -419,6 +425,33 @@ const door = {
             this.ground.show();
         }
     }),
+    //mine
+    vector_pattern: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
+            this.ground = this.createImage("tiles/rooms/floor/vector_pattern.svg");
+        },
+        visit: function() {
+            alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    //end
     treasure: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -450,6 +483,7 @@ const door = {
             } else {
                 alertNormal("You Need a Key ! Try to find it.", "");
             }
+            player.badges.add(['Discoverer', 'Discoverer.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -588,6 +622,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
+            player.badges.add(['Fresh Air', 'FreshAir.png']);
             playAudio("outdoor.mp3");
             alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
@@ -675,12 +710,16 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+        canLeaveToTheTop(){
+            return false;    
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
+            playAudio('creepy.mp3');
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
@@ -723,15 +762,35 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
+        visit: function() {
+        player.badges.add(['Cricketer', 'Cricketer.png']);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
     }),
     yellow: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
            alertInfo("You are in the Yellow Floor Now.", "");
         }
-    })
+    }),
+    red: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/redRight.svg");
+          this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
+           alertInfo("You are in the Red Floor Now.", "");
+        }
+    }),
 };
 
 const forest = {

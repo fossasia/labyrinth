@@ -1,1 +1,146 @@
 /*Add custom CSS for Game here*/
+
+body {
+  background: #d5dbdb !important;
+}
+.nav-wrapper {
+  background-color: #60A550;
+  height: 90px !important;
+}
+
+.brand-logo.center {
+  font-family: 'abril fatface';
+  font-size: 3em;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+  top: 10px;
+}
+
+.card-title, a {
+  font-family: 'quicksand';
+}
+
+nav ul a {
+  height: 90px;
+  font-size: 1.5em;
+  padding: 10px 30px 0px 30px;
+}
+
+nav ul a:hover {
+  background-color: #4A893E !important;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'quicksand';
+}
+
+.card-content .white-text {
+  padding-left: 0px;
+  padding-bottom: 0px !important;
+}
+
+div.card-action {
+  border: none !important;
+  padding-left: 0px !important;
+  padding-top: 0px !important;
+}
+
+div.social-container {
+  margin-left: 0px;
+}
+
+i.fa {background: none !important;}
+.btn-floating.transparent.waves-effect.waves-light {background: none !important; box-shadow: none;}
+i.fa.fa-facebook:hover {color: #446ebf;}
+i.fa.fa-twitter:hover {color: #39aadc;}
+i.fa.fa-youtube-play:hover {color: #ee423d;}
+i.fa.fa-linkedin:hover {color: #81d3fd;}
+i.fa.fa-google-plus:hover {color: #d63d1e;}
+
+.waves-effect.waves-light {
+  background-color: #60A550;
+}
+
+.waves-effect.waves-light:hover {
+  background-color: #80BE62;
+}
+
+.large.material-icons {
+  background-color: #60A550;
+}
+
+.btn-floating.btn-large.red {
+  background-color: #60A550 !important;
+}
+
+.col.s12 {
+  width: 400px !important;
+  padding-top: 150px;
+  padding-left: 0px;
+  position: fixed;
+}
+
+.card.blue-grey.darken-3 {
+  background-color: #84C79F !important;
+}
+
+.border1 {
+  border-bottom-style: solid;
+  border-width: 8px;
+  border-color: #23AF92;
+  width: 310px;
+  margin-left: 40px;
+  margin-bottom: 30px;
+}
+
+.border2 {
+  border-bottom-style: solid;
+  border-width: 8px;
+  border-color: #23AF92;
+  width: 310px;
+  margin-left: 15px;
+}
+
+h2#swal2-title {
+  font-family: 'quicksand';
+}
+
+button {
+  background-color: #23AF92 !important;
+}
+
+button:hover {
+  background-color: #54BF9C !important;
+}
+
+div.swal2-content {
+  font-size: 25px !important;
+  font-family: 'quicksand';
+  font-weight: bold !important;
+}
+
+.waves-effect.waves-light.btn.blue-grey.darken-2 {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.range-field {
+  padding-left: 30px;
+}
+
+.badgesImg {
+  height: 120px;
+  padding-top: 15px;
+  width: auto;
+}
+
+.badgesImg:hover {
+  height: 300px;
+  -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.collection {
+  border: none;
+}

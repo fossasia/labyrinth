@@ -7,8 +7,25 @@ Labyrinth
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
 
+[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
+[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
+[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
+
+
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
+
+## Content Outline
+- [**Motivation**](https://github.com/fossasia/labyrinth#motivation)
+- [**Implementation**](https://github.com/fossasia/labyrinth#implementation)
+- [**Contributions, Bug Reports, Feature Requests**](https://github.com/fossasia/labyrinth#contributions-bug-reports-feature-requests)
+- [**Issue and Branch Policy**](https://github.com/fossasia/labyrinth#issue-and-branch-policy)
+- [**How to add new tiles**](https://github.com/fossasia/labyrinth#how-to-add-new-tiles)
+- [**How to add a new character**](https://github.com/fossasia/labyrinth#how-to-add-a-new-character)
+- [**Hints for GCI students**](https://github.com/fossasia/labyrinth#hints-for-gci-students)
+- [**Solve an Issue**](https://github.com/fossasia/labyrinth#solve-an-issue)
+- [**UI identity guideline**](https://github.com/fossasia/labyrinth#ui-identity-guideline)
+- [**Maintainers**](https://github.com/fossasia/labyrinth#maintainers)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -114,9 +131,9 @@ Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `al
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
 
+<br>
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
-
 
 ## How to Add Music
 
@@ -161,9 +178,13 @@ If you want to add a background music, add your music to `audio/background/` in 
 and update the `js/sound.js` file like so
 ```javascript
 const backgroundAudio = [
-    {   "file" : "audio/sound.mp3",
-        "legalNotice": "Song title - <a href="link to page of the sound file">owner</a>"
-    }, ...
+    {
+        filename : "Path of the file",
+        backgroundSongName: "Name of the song",
+        author: "Name of the author",
+        legalNotice : "Music by author",
+        link : "Link to author's website",
+    },
 ];
 ```
 Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
@@ -241,7 +262,10 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
 
+## UI identity guideline
+[>>Click here to read the full UI guideline<<](https://github.com/fossasia/labyrinth/UI_Identity.md)
 
+![](images/UI_identity/UI_Identity.jpg)
 
 ## Maintainers
 

@@ -11,11 +11,11 @@ window.addEventListener("load", function()
   var container = document.getElementById("tiles");
   level = createTestLevel();
   level.showIn(container);
-    
+
  var inputOptionsPromise = new Promise(function(resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
-      "characters/golem.svg": "Golem"
+      "characters/golem.svg": "Golem",
       "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
