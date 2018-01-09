@@ -1,4 +1,4 @@
-
+https://codein.withgoogle.com/dashboard/tasks/6625585495277568/
 
 ---
 
@@ -26,7 +26,7 @@ Hints:
 - You can use the following open-source software:
   - [Audacity](https://www.audacityteam.org/) for recording
 - For your own recodrings, we recommend choosing the license `CC-BY` or `CC-BY-SA` if you like others to remix or `CC-BY-ND` if you do not like people editing your song. Choose a license here: https://creativecommons.org/choose/ Please do not choose NC as this might disable it for GSoC.
-- If someone wants to work with you, let them do that. You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.
+- If someone wants to work with you, let them do that :-)
 - You can join our [chat on gitter](https://gitter.im/fossasia/labyrinth) if you get stuck to get help or just hang out and have a nice time with others.
 
 ---
