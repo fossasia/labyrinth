@@ -16,7 +16,7 @@ function createTestLevel()
     [door.none, door.sofa, door.outdoor, door.chessMate, door.both, door.chessStale],
     [door.none, door.yellowBoxes, PlayerStartsAt(door.black), door.green, door.banner, door.top],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
-    [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.top],
+    [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [NullTile, door.none, door.none, door.none, door.none, door.newYear],
   ]);
