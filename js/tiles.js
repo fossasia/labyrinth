@@ -720,7 +720,15 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
            alertInfo("You are in the Yellow Floor Now.", "");
         }
-    })
+    }),
+    red: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/redRight.svg");
+          this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
+           alertInfo("You are in the Red Floor Now.", "");
+        }
+    }),
 };
 
 const forest = {
