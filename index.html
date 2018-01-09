@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
 	<!-- Include Font Awesome Stylesheet -->
-	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- @0x48piraj custom social section stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<!-- Engine Scripts -->
@@ -56,23 +56,18 @@
 					<div class="border1"></div>
 					<div class="card-content white-text">
 						<span class="card-title">Audio</span>
+						<p class="trackname">Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></p>
 					</div>
 					<div class="card-action">
+						<div class="audiosetting">
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
-
-						<blockquote>Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></blockquote>
-						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i> Previous Audio</a>
-						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();">Next Audio <i class="fa fa-step-forward" aria-hidden="true"></i></a>
-						<br><br>
-
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();"><i class="fa fa-play" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();"><i class="fa fa-pause" aria-hidden="true"></i></a>
+					</div>
 						<p class="range-field">
-     						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
-    					</p>
-
-						<a class="waves-effect waves-light btn blue-grey darken-2" id="legalNotice" href="">Music by</a>
+							<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
+						</p>
 
 					</div>
 					<div class="border1"></div>
