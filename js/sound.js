@@ -1,11 +1,15 @@
 const backgroundAudio = [
     {
         filename : "audio/music/bensound.com/epic1.mp3",
+        backgroundSongName: "Epic",
+        author: "bensound.com",
         legalNotice : "Music by bensound.com",
         link : "http://bensound.com/",
     },
     {
         filename : "audio/music/bensound.com/relaxing1.mp3",
+        backgroundSongName: "Relaxing",
+        author: "bensound.com",
         legalNotice : "Music by bensound.com",
         link : "http://bensound.com/",
     },
@@ -18,7 +22,9 @@ $( document ).ready(function() {
 });
 function updateLegalBackground() {
     $("#legalNotice").html(backgroundAudio[backgroundNum].legalNotice);
-    $("#legalNotice").attr("href", backgroundAudio[backgroundNum].link)
+    $("#backgroundSongName").html(backgroundAudio[backgroundNum].backgroundSongName);
+    $("#legalNotice").attr("href", backgroundAudio[backgroundNum].link);
+    $("#backgroundSongAuthor").html(backgroundAudio[backgroundNum].author);;
 }
 function startBackgroundAudio() {
     updateLegalBackground();
