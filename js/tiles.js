@@ -387,9 +387,11 @@ const door = {
                 player.inventory.remove('Key')
                 alertInfo('Oops lost your key!')
             }
+            else{
+                alertInfo("Checkmate", "Come on, Try to get out from here.");
+            }
             playAudio('fire-truck-air-horn_daniel-simion.mp3');
             console.log("Courtesy of Daniel simons for his music, taken from soundbible.com");
-            alertInfo("Checkmate", "Come on, Try to get out from here.");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
