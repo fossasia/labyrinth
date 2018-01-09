@@ -714,6 +714,12 @@ const door = {
         },
     }),
     yellow: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
