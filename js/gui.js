@@ -16,6 +16,7 @@ window.addEventListener("load", function()
     // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/golem.svg": "Golem",
+      "characters/witch.svg": "Witch",
       "characters/block.svg": "Block",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
