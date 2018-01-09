@@ -51,7 +51,7 @@ ImageCollection.prototype.addImage = function(file) {
     embed.id = "tile-" + this.position.x + "-" + this.position.y;
     embed.src = file;
     embed.type = "image/svg+xml";
-    embed.style.width = this.pixelPosition.tileWidth; // this scales down everything
+    embed.style.width = this.pixelPosition.tileWidth; // this scales ssdown everything
     embed.classList.add("image");
     this.container.appendChild(embed);
     return {
@@ -385,7 +385,7 @@ const door = {
         visit: function() {
             if(player.inventory.has('Key')){
                 player.inventory.remove('Key')
-                alertInfo('Oops lost your key!')
+                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.')
             }
             else{
                 alertInfo("Checkmate", "Come on, Try to get out from here.");
