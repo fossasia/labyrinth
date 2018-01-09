@@ -777,6 +777,14 @@ const door = {
            alertInfo("You are in the Red Floor Now.", "");
         }
     }),
+    threeHeads: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
+           alertInfo("This tile was Hand-Drawn by Beta-King", "");
+        }
+    }),
 };
 
 const forest = {
