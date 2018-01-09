@@ -1,107 +1,125 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Labyrinth | Game ">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Labyrinth | Game ">
 
-        <!-- UI Sheets -->
-        <link rel="stylesheet" type="text/css" href="css/materialize.css">
-        <link rel="stylesheet" type="text/css" href="css/fonts.css">
-        <script type="text/javascript" src="js/sweetalert2.min.js"></script>
-        <!-- Include Font Awesome Stylesheet -->
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-        <!-- @0x48piraj custom social section stylesheet -->
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
-        <!-- Engine Scripts -->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/materialize.js"></script>
-        <script type="text/javascript" src="js/tiles.js"></script>
-        <script type="text/javascript" src="js/levels.js"></script>
-        <script type="text/javascript" src="js/inventory.js"></script>
-        <script type="text/javascript" src="js/player.js"></script>
-        <script type="text/javascript" src="js/level.js"></script>
-        <link rel="stylesheet" href="css/tiles.css">
-        <title>Labyrinth</title>
-    </head>
+	<!-- UI Sheets -->
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
+	<!-- Include Font Awesome Stylesheet -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- @0x48piraj custom social section stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<!-- Engine Scripts -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+	<script type="text/javascript" src="js/sound.js"></script>
+	<script type="text/javascript" src="js/tiles.js"></script>
+	<script type="text/javascript" src="js/levels.js"></script>
+	<script type="text/javascript" src="js/inventory.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script type="text/javascript" src="js/level.js"></script>
+	<link rel="stylesheet" href="css/tiles.css">
+	<title>Labyrinth</title>
+</head>
 
-    <body>
-        <div class="navbar-fixed">
-            <nav>
-                <div class="nav-wrapper">
-                    <a href="https://github.com/fossasia/labyrinth" class="brand-logo center">Labyrinth</a>
-                    <ul class="right hide-on-med-and-down">
-                        <li>
-                            <a href="howtoplay.html">How to Play</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+<body>
+	<div class="navbar-fixed">
+		<nav>
+			<div class="nav-wrapper">
+				<a href="https://github.com/fossasia/labyrinth" class="brand-logo center">Labyrinth</a>
+				<ul class="right hide-on-med-and-down">
+					<li>
+						<a href="howtoplay.html">How to Play</a>
+					</li>
+                    <li>
+                        <a href="credits.html">Credits</a>
+                    <li>
+				</ul>
+			</div>
+		</nav>
+	</div>
 
-        <!-- Data Card -->
-        <div class="row left-column">
-            <div class="col s12">
-                <div class="card blue-grey darken-3">
-                    <div class="card-content white-text">
-                        <span class="card-title">Statistics</span>
-                        <p>Player Moved :
-                            <span id="playerMoves">0</span> Times</p>
-                    </div>
-                    <div class="card-action">
-                        <a class="waves-effect waves-light btn blue-grey darken-2" href="http://github.com/yashkumarverma/">UI by Yash Kumar Verma</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12">
-                <div class="card blue-grey darken-4">
-                    <div class="card-content white-text">
-                        <h4 class="_14">Follow us on</h4>
-                    </div>
-                    <div class="card-action">
-                        <ul class="social-icons">
-                            <div class="social-container">
-                                <li>
-                                    <a class="btn-floating  transparent waves-effect waves-light facebook" target="_blank" href="http://facebook.com/fossasia"
-                                        class="social-icon">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn-floating transparent waves-effect waves-light twitter" target="_blank" href="http://twitter.com/fossasia"
-                                        class="social-icon">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn-floating transparent waves-effect waves-light youtube" target="_blank" href="https://www.youtube.com/fossasiaorg"
-                                        class="social-icon">
-                                        <i class="fa fa-youtube-play"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn-floating transparent waves-effect waves-light linkedin" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811"
-                                        class="social-icon">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="btn-floating transparent waves-effect waves-light googleplus" target="_blank" href="https://plus.google.com/108920596016838318216"
-                                        class="social-icon">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                </li>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-          <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text">
-                    <span class="card-title">Inventory</span>
-                    <ul class="collection black-text" id="inventoryDisplay">
-                        <!-- SAMPLE ITEM  
+	<!-- Data Card -->
+	<div class="row left-column">
+		<div class="col s12">
+			<div class="card blue-grey darken-3">
+				<div class="card-content white-text">
+					<span class="card-title">Statistics</span>
+					<p>Player Moved :
+						<span id="playerMoves">0</span> Times</p>
+					</div>
+					<div class="border1"></div>
+					<div class="card-content white-text">
+						<span class="card-title">Audio</span>
+					</div>
+					<div class="card-action">
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
+
+						<blockquote>Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></blockquote>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i> Previous Audio</a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();">Next Audio <i class="fa fa-step-forward" aria-hidden="true"></i></a>
+						<br><br>
+
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();"><i class="fa fa-play" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();"><i class="fa fa-pause" aria-hidden="true"></i></a>
+						<p class="range-field">
+     						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
+    					</p>
+
+						<a class="waves-effect waves-light btn blue-grey darken-2" id="legalNotice" href="">Music by</a>
+
+					</div>
+					<div class="border1"></div>
+					<div class="card-content white-text">
+						<h4 class="_14">Follow us on</h4>
+					</div>
+					<div class="card-action">
+						<ul class="social-icons">
+							<div class="social-container">
+								<li>
+									<a class="btn-floating  transparent waves-effect waves-light facebook" target="_blank" href="http://facebook.com/fossasia"
+									class="social-icon">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light twitter" target="_blank" href="http://twitter.com/fossasia"
+								class="social-icon">
+								<i class="fa fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a class="btn-floating transparent waves-effect waves-light youtube" target="_blank" href="https://www.youtube.com/fossasiaorg"
+							class="social-icon">
+							<i class="fa fa-youtube-play"></i>
+						</a>
+					</li>
+					<li>
+						<a class="btn-floating transparent waves-effect waves-light linkedin" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811"
+						class="social-icon">
+						<i class="fa fa-linkedin"></i>
+					</a>
+				</li>
+				<li>
+					<a class="btn-floating transparent waves-effect waves-light googleplus" target="_blank" href="https://plus.google.com/108920596016838318216"
+					class="social-icon">
+					<i class="fa fa-google-plus"></i>
+				</a>
+			</li>
+		</div>
+	</ul>
+</div>
+<div class="border1"></div>
+		<div class="card-content white-text">
+			<span class="card-title">Inventory</span>
+			<ul class="collection black-text" id="inventoryDisplay">
+                        <!-- SAMPLE ITEM
               <li class="collection-item avatar">
                 <img src="images/yuna.jpg" alt="" class="circle">
                 <span class="title">Title</span>
@@ -109,8 +127,8 @@
                    Second Line
                 </p>
                 <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
-              </li> 
-            -->
+              </li>
+          -->
                         <!-- SAMPLE ITEM WITH ICON
             <li class="collection-item avatar">
               <i class="material-icons circle">folder</i>
@@ -120,49 +138,49 @@
               </p>
               <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
             </li>
-          -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Inventory Ends -->
-        </div>
+        -->
+    </ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Inventory Ends -->
+</div>
 
-        <!-- Inventory -->
+<!-- Inventory -->
 
-        <!-- Control Buttons -->
-        <div class="fixed-action-btn toolbar">
-            <a class="btn-floating btn-large red">
-                <i class="large material-icons">directions_run</i>
-            </a>
-            <ul>
-                <li class="waves-effect waves-light">
-                    <a id="upKey">
-                        <i class="material-icons">arrow_upward</i>
-                    </a>
-                </li>
-                <li class="waves-effect waves-light">
-                    <a id="leftKey">
-                        <i class="material-icons">arrow_back</i>
-                    </a>
-                </li>
-                <li class="waves-effect waves-light">
-                    <a id="rightKey">
-                        <i class="material-icons">arrow_forward</i>
-                    </a>
-                </li>
-                <li class="waves-effect waves-light">
-                    <a id="downKey">
-                        <i class="material-icons">arrow_downward</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
+<!-- Control Buttons -->
+<div class="fixed-action-btn toolbar">
+	<a class="btn-floating btn-large red">
+		<i class="large material-icons">directions_run</i>
+	</a>
+	<ul>
+		<li class="waves-effect waves-light">
+			<a id="upKey">
+				<i class="material-icons">arrow_upward</i>
+			</a>
+		</li>
+		<li class="waves-effect waves-light">
+			<a id="leftKey">
+				<i class="material-icons">arrow_back</i>
+			</a>
+		</li>
+		<li class="waves-effect waves-light">
+			<a id="rightKey">
+				<i class="material-icons">arrow_forward</i>
+			</a>
+		</li>
+		<li class="waves-effect waves-light">
+			<a id="downKey">
+				<i class="material-icons">arrow_downward</i>
+			</a>
+		</li>
+	</ul>
+</div>
 
-        <!-- Game Tiles  -->
-        <div id="tiles"></div>
-    </body>
-    <script type="text/javascript" src="js/gui.js"></script>
+<!-- Game Tiles  -->
+<div id="tiles"></div>
+</body>
+<script type="text/javascript" src="js/gui.js"></script>
 
 </html>
