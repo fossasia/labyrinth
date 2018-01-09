@@ -36,6 +36,9 @@
 					<li>
 						<a href="howtoplay.html">How to Play</a>
 					</li>
+                    <li>
+                        <a href="credits.html">Credits</a>
+                    <li>
 				</ul>
 			</div>
 		</nav>
@@ -57,11 +60,19 @@
 					<div class="card-action">
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
+
+						<blockquote>Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></blockquote>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();"><i class="fa fa-step-backward" aria-hidden="true"></i> Previous Audio</a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();">Next Audio <i class="fa fa-step-forward" aria-hidden="true"></i></a>
+						<br><br>
+
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();"><i class="fa fa-play" aria-hidden="true"></i></a>
 						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();"><i class="fa fa-pause" aria-hidden="true"></i></a>
 						<p class="range-field">
      						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.01 value='1'>
     					</p>
+
+						<a class="waves-effect waves-light btn blue-grey darken-2" id="legalNotice" href="">Music by</a>
 
 					</div>
 					<div class="border1"></div>

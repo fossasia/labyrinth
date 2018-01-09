@@ -178,9 +178,13 @@ If you want to add a background music, add your music to `audio/background/` in 
 and update the `js/sound.js` file like so
 ```javascript
 const backgroundAudio = [
-    {   "file" : "audio/sound.mp3",
-        "legalNotice": "Song title - <a href="link to page of the sound file">owner</a>"
-    }, ...
+    {
+        filename : "Path of the file",
+        backgroundSongName: "Name of the song",
+        author: "Name of the author",
+        legalNotice : "Music by author",
+        link : "Link to author's website",
+    },
 ];
 ```
 Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
