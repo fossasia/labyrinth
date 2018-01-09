@@ -664,8 +664,8 @@ const door = {
         },
         canLeaveToTheTop(){
             return false;    
-        }
-        createImages: function() {
+        },
+        createImages: function() {  
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
