@@ -30,7 +30,7 @@ window.addEventListener("load", function()
       "characters/Geekomoji.svg": "Geekomoji",
 
 	  //added Character from RuKoBe
-      "characters/OwnChar.png": "OwnChar"
+      "characters/OwnChar.png": "OwnChar",
 
 
       "characters/ninja.svg": "Ninja",
