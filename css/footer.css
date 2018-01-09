@@ -141,3 +141,10 @@ ul {
     background-color: #e25714;
 }
 
+input[type="range"] {
+    border: none;
+}
+
+blockquote {
+    border-left: 5px solid #26a69a;
+}
