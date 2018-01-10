@@ -31,7 +31,7 @@ function createTestLevel()
     [door.none, door.top, door.both, door.wheel, door.both, door.top, door.none, door.right, door.top, door.both],
     [door.none, door.none, door.none, door.none, door.none, door.none, door.both, door.right, door.top, door.none],
     [door.left, door.top, door.none, door.right, door.none, door.wheel, door.none, door.none, door.none],
-    [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top]
+    [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top],
 ]);
   /* I know this return doesnot work but leaving it here to be solved in #161 */
   /* Forest specific levels */
