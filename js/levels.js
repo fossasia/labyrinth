@@ -8,12 +8,11 @@
 
 // createTestLevel is used in /js/gui.js ignoring the error
 // ignore JSHintBear
-function createTestLevel(level) {
-  if(level == 2) {
-    /* 2nd level */
-    return new Level([
-    [door.none, door.right, door.minecraft, door.none, door.goal, door.none],
-    [door.none, door.right, door.Forbidden, door.none, door.none, door.none],
+function createTestLevel()
+{
+  return new Level([
+    [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],
+    [door.none, door.both, door.Forbidden, door.none, door.none, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.none, door.yellowBoxes, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
