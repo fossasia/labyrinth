@@ -16,16 +16,17 @@ Labyrinth
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
 
 ## Content Outline
-- [**Motivation**](https://github.com/fossasia/labyrinth#motivation)
-- [**Implementation**](https://github.com/fossasia/labyrinth#implementation)
-- [**Contributions, Bug Reports, Feature Requests**](https://github.com/fossasia/labyrinth#contributions-bug-reports-feature-requests)
-- [**Issue and Branch Policy**](https://github.com/fossasia/labyrinth#issue-and-branch-policy)
-- [**How to add new tiles**](https://github.com/fossasia/labyrinth#how-to-add-new-tiles)
-- [**How to add a new character**](https://github.com/fossasia/labyrinth#how-to-add-a-new-character)
-- [**Hints for GCI students**](https://github.com/fossasia/labyrinth#hints-for-gci-students)
-- [**Solve an Issue**](https://github.com/fossasia/labyrinth#solve-an-issue)
-- [**UI identity guideline**](https://github.com/fossasia/labyrinth#ui-identity-guideline)
-- [**Maintainers**](https://github.com/fossasia/labyrinth#maintainers)
+- [**Motivation**](#motivation)
+- [**Implementation**](#implementation)
+- [**Contributions, Bug Reports, Feature Requests**](#contributions-bug-reports-feature-requests)
+- [**Issue and Branch Policy**](#issue-and-branch-policy)
+- [**How to add new tiles**](#how-to-add-new-tiles)
+- [**How to add a new character**](#how-to-add-a-new-character)
+- [**How to add a new badge**](#how-to-add-a-new-badge)
+- [**Hints for GCI students**](#hints-for-gci-students)
+- [**Solve an Issue**](#solve-an-issue)
+- [**UI identity guideline**](#ui-identity-guideline)
+- [**Maintainers**](#maintainers)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -212,6 +213,29 @@ under the `resolve` sub class.)
 "character_src": "character_name",
 ```
 
+## How to add a new badge
+
+Players will archieve badge when they reachs a certain tiles, you may allow players to recieve badge when they reached youe tile as well. To create a badge we'll need to upload your badge and modify tiles.js. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.
+
+First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
+
+Next, in `tiles.js` add the following to your tile function;
+```
+visit: function() {
+        player.badges.add(['badgeName', 'fileName.png']);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
+```
+You may add pop-up alert if you'd like, by adding *sweet alert*, for example;
+```
+swal({
+                type: 'info',
+                title: 'Congrats! You got the DISCOVERER badge',
+            });
+```
+
 ## Hints for GCI students
 
 ### Adding animated tiles
@@ -263,7 +287,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
 
 ## UI identity guideline
-[>>Click here to read the full UI guideline<<](https://github.com/fossasia/labyrinth/UI_Identity.md)
+[Click here to read the full UI guideline](https://github.com/fossasia/labyrinth/UI_Identity.md)
 
 ![](images/UI_identity/UI_Identity.jpg)
 
