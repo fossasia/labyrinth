@@ -641,6 +641,29 @@ const door = {
             this.ground.show();
         }
     }),
+    
+    
+    universe: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return true;
+        }, 
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/universeDoor.svg"); 
+            this.wallRight = this.createImage("tiles/rooms/wall/universeWall.svg");
+            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg"); 
+        },
+        visit: function() {
+            swal('no one can escape from the universe');
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        },
+  }),
+    
+    
     newYear: Object.assign({}, OpenDoors, {
         canLeaveToTheTop: function(player) {
             return true;
