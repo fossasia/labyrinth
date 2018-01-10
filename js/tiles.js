@@ -646,6 +646,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/plain.svg");
         },
     }),
+    texture: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/texture.svg");
+        },
+    }),
     sofa: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -679,8 +686,28 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
-            playAudio("minecraft.mp3");
-            alertInfo("You have stumbled upon the world of Minecraft!", "");
+            if (player.inventory.has('DiamondBlock')) {
+                alertInfo("You have stumbled upon the world of Minecraft!", "");
+                playAudio("minecraft/minecraft.mp3");
+                player.inventory.remove('DiamondBlock');
+            } else {
+                alertNormal("You need a diamond block to enter!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    minecraftEntry: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightMinecraft.svg");
+            this.ground = this.createImage("tiles/rooms/floor/minecraftEntry.svg");
+        },
+        visit: function() {
+            playAudio("minecraft/minecraftEntry.mp3");
+            alertInfo("You found a diamond block!", "It is really expensive!");
+            player.inventory.add(['DiamondBlock', 'diamondBlock.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -714,6 +741,9 @@ const door = {
   }),
     Forbidden: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop() {
             return false;
         },
         canLeaveToTheRight() {
