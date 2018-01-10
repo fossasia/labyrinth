@@ -8,6 +8,7 @@
 
 // createTestLevel is used in /js/gui.js ignoring the error
 // ignore JSHintBear
+
 function createTestLevel()
 {
   return new Level([
@@ -54,4 +55,4 @@ function createTestLevel()
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
-}
+
