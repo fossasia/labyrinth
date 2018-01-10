@@ -697,7 +697,7 @@ const door = {
         },
         visit: function() {
             playAudio("minecraft/minecraftEntry.mp3");
-            alertInfo("You got a diamond block!", "It is really expensive!");
+            alertInfo("You found a diamond block!", "It is really expensive!");
             player.inventory.add(['DiamondBlock', 'key.png']);
             this.wallTop.show();
             this.wallRight.show();
