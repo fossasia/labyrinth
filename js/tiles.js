@@ -228,6 +228,7 @@ const OpenDoors = {
 // ignore JSHintBear
 const door = {
     both: OpenDoors,
+    levelCode: 1,
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
@@ -373,12 +374,13 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-            alertSuccess("You win!", "Yay! You have won the game");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+            clearGame();
+            startGame(door.levelCode);
         },
-    }),
+
     chessMate: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
@@ -803,6 +805,7 @@ const door = {
 
 const forest = {
     both: OpenDoors,
+    levelCode: 2,
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
