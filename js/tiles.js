@@ -644,6 +644,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/plain.svg");
         },
     }),
+    texture: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/texture.svg");
+        },
+    }),
     sofa: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
