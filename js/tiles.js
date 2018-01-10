@@ -374,6 +374,8 @@ const door = {
         },
         /* Override the function */
         visit: function() {
+            playAudio("applause.mp3");
+            console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
