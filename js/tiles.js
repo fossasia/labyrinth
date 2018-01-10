@@ -645,14 +645,14 @@ const door = {
     
     universe: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
-            return true;
+            return false;
         }, 
         canLeaveToTheRight() {
             return false;
         },
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/universeDoor.svg"); 
-            this.wallRight = this.createImage("tiles/rooms/wall/universeWall.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg"); 
         },
         visit: function() {
