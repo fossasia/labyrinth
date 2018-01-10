@@ -707,6 +707,9 @@ const door = {
         canEnterFromTheRight() {
             return false;
         },
+        canEnterFromTheTop() {
+            return false;
+        },
         canLeaveToTheRight() {
             return false;
         },
