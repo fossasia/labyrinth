@@ -6,10 +6,18 @@ var player;
 var level;
 
 
-window.addEventListener("load", function()
-{
+window.addEventListener("load", function() {
+  startGame(0);
+});
+
+function clearGame() {
+  $("#tiles").html("");
+}
+
+function startGame(level) {
   var container = document.getElementById("tiles");
-  level = createTestLevel();
+  level += 1;
+  level = createTestLevel(level);
   level.showIn(container);
 
  var inputOptionsPromise = new Promise(function(resolve) {
@@ -19,6 +27,7 @@ window.addEventListener("load", function()
       "characters/witch.svg": "Witch",
 
       "characters/block.svg": "Block",
+      "characters/coolcat.svg": "Cool Cat"
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
@@ -57,7 +66,7 @@ window.addEventListener("load", function()
       player.changeCharacter(value);
     }
   });
-});
+}
 
 var keyHandlers = {
     "ArrowLeft": function() {

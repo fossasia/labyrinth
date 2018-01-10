@@ -13,7 +13,7 @@ function createTestLevel()
   return new Level([
     [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],
     [door.none, door.both, door.Forbidden, door.none, door.none, door.none],
-    [door.none, door.sofa, door.outdoor, door.chessMate, door.both, door.chessStale],
+    [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.none, door.yellowBoxes, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
@@ -54,4 +54,4 @@ function createTestLevel()
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
-}
+
