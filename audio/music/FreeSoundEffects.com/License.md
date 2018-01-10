@@ -1,0 +1,10 @@
+[License](https://www.freesoundeffects.com/licence.php)
+
+# License Agreement Explained.
+What You Can Do With Our Sounds
+Add them to any feature film, video, website, Flash animation, podcast, instructional DVD, computer games....
+You can use our sounds for almost anything you can think of. No recurring royalties, no hidden costs, no submitting cue sheets.
+Add them to any software program, web application or computer game
+You just need to make sure the sounds are part of the app or game and not distributed as a separate sounds effects directory.
+Use them in any theatre performance, art gallery, museum, performance piece
+You can use these sounds in any type of live performance.

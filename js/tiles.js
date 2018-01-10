@@ -51,7 +51,7 @@ ImageCollection.prototype.addImage = function(file) {
     embed.id = "tile-" + this.position.x + "-" + this.position.y;
     embed.src = file;
     embed.type = "image/svg+xml";
-    embed.style.width = this.pixelPosition.tileWidth; // this scales down everything
+    embed.style.width = this.pixelPosition.tileWidth; // this scales ssdown everything
     embed.classList.add("image");
     this.container.appendChild(embed);
     return {
@@ -233,9 +233,7 @@ const door = {
         canEnterFromTheTop: function(player) {
             return false;
         },
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
@@ -249,6 +247,7 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
@@ -306,6 +305,9 @@ const door = {
             this.ground = this.createImage("tiles/animations/wheel.svg");
             alertInfo("Run Run Don't Stay here anymore !", "");
         },
+        visit: function() {
+        	playAudio("gears.mp3");
+        },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -357,6 +359,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
+        	playAudio("suspense.mp3");
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -385,9 +388,15 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/banner-Chess.svg");
         },
         visit: function() {
+            if(player.inventory.has('Key')){
+                player.inventory.remove('Key')
+                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.')
+            }
+            else{
+                alertInfo("Checkmate", "Come on, Try to get out from here.");
+            }
             playAudio('fire-truck-air-horn_daniel-simion.mp3');
             console.log("Courtesy of Daniel simons for his music, taken from soundbible.com");
-            alertInfo("Checkmate", "Come on, Try to get out from here.");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -418,6 +427,33 @@ const door = {
             this.ground.show();
         }
     }),
+    //mine
+    vector_pattern: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topChess.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightChess.svg");
+            this.ground = this.createImage("tiles/rooms/floor/vector_pattern.svg");
+        },
+        visit: function() {
+            alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    //end
     treasure: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -449,6 +485,7 @@ const door = {
             } else {
                 alertNormal("You Need a Key ! Try to find it.", "");
             }
+            player.badges.add(['Discoverer', 'Discoverer.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -461,7 +498,12 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
         },
         visit: function() {
+
+            playAudio("discover.mp3");
+            alertInfo("You got something !", "Explore More ! Let's see what can find ...");
+
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
+
             // add item to inventory
             player.inventory.add(['Key', 'key.png']);
             this.wallTop.show();
@@ -480,7 +522,10 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
-        }
+        },
+        visit: function() {
+            playAudio("gears.mp3");
+        },
     }),
     batcave: Object.assign({}, OpenDoors, {
         canEnterFromTheLeft() {
@@ -539,9 +584,10 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-            if (player.inventory.has('Boat')) {
-                alertSuccess("You got the treasure !", "there's more to find !");
-                player.inventory.remove('Boat');
+        	 playAudio("watersound.mp3");
+             if (player.inventory.has('Boat')) {
+             alertSuccess("You got the treasure !", "there's more to find !");
+             player.inventory.remove('Boat');
             } else {
                 alertNormal("You Need a Boat!", "");
             }
@@ -578,6 +624,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
+            player.badges.add(['Fresh Air', 'FreshAir.png']);
             playAudio("outdoor.mp3");
             alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
@@ -612,6 +659,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
         },
         visit: function() {
+            playAudio("spy.mp3");
             alertInfo("Get out!", "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room.");
             this.wallTop.show();
             this.wallRight.show();
@@ -666,13 +714,14 @@ const door = {
         },
         canLeaveToTheTop(){
             return false;    
-        }
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightForbidden.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
+            playAudio('creepy.mp3');
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
@@ -701,6 +750,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
+        	playAudio("celebrate.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -714,16 +764,43 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
+        visit: function() {
+        player.badges.add(['Cricketer', 'Cricketer.png']);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
     }),
     yellow: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
            alertInfo("You are in the Yellow Floor Now.", "");
         }
-    })
-
+    }),
+    red: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
+          this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
+           alertInfo("You are in the Red Floor Now.", "");
+        }
+    }),
+    threeHeads: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
+           alertInfo("This tile was Hand-Drawn by Beta-King", "");
+        }
+    }),
 };
 
 const forest = {
