@@ -19,6 +19,7 @@ window.addEventListener("load", function()
       "characters/witch.svg": "Witch",
 
       "characters/block.svg": "Block",
+      "characters/coolcat.svg": "Cool Cat"
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
