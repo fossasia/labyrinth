@@ -13,13 +13,6 @@ const backgroundAudio = [
         legalNotice : "Music by bensound.com",
         link : "http://bensound.com/",
     },
-    {
-        filename : "audio/music/perfect.mp3",
-        backgroundSongName: "Perfect",
-        author: "Ed Sheeran",
-        legalNotice : "Music by Ed Sheeran",
-        link : "http://www.edsheeran.com/",
-    },
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
