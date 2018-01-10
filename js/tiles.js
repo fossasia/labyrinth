@@ -684,6 +684,20 @@ const door = {
             this.ground.show();
         }
     }),
+    minecraftEntry: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
+        },
+        visit: function() {
+            playAudio("minecraft.mp3");
+            alertInfo("You have stumbled upon the world of Minecraft!", "");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     highLow: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
