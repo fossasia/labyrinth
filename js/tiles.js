@@ -677,8 +677,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
-            playAudio("minecraft.mp3");
-            alertInfo("You have stumbled upon the world of Minecraft!", "");
+            if (player.inventory.has('DiamondBlock')) {
+                alertInfo("You have stumbled upon the world of Minecraft!", "");
+                playAudio("minecraft.mp3");
+                player.inventory.remove('DiamondBlock');
+            } else {
+                alertNormal("You need a diamond block to enter!", "");
+            }
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -691,8 +696,9 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
-            playAudio("minecraft.mp3");
-            alertInfo("You have stumbled upon the world of Minecraft!", "");
+            playAudio("minecraftEntry.mp3");
+            alertInfo("You got a diamond block!", "It is really expensive!");
+            player.inventory.add(['DiamondBlock', 'key.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
