@@ -679,7 +679,7 @@ const door = {
         visit: function() {
             if (player.inventory.has('DiamondBlock')) {
                 alertInfo("You have stumbled upon the world of Minecraft!", "");
-                playAudio("minecraft.mp3");
+                playAudio("minecraft/minecraft.mp3");
                 player.inventory.remove('DiamondBlock');
             } else {
                 alertNormal("You need a diamond block to enter!", "");
@@ -692,11 +692,11 @@ const door = {
     minecraftEntry: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
-            this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightMinecraft.svg");
+            this.ground = this.createImage("tiles/rooms/floor/minecraftEntry.svg");
         },
         visit: function() {
-            playAudio("minecraftEntry.mp3");
+            playAudio("minecraft/minecraftEntry.mp3");
             alertInfo("You got a diamond block!", "It is really expensive!");
             player.inventory.add(['DiamondBlock', 'key.png']);
             this.wallTop.show();
