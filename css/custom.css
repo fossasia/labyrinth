@@ -83,13 +83,13 @@ i.fa.fa-google-plus:hover {color: #d63d1e;}
 }
 
 .card.blue-grey.darken-3 {
-  background-color: #84C79F !important;
+  background-color: #80be62 !important;
 }
 
 .border1 {
   border-bottom-style: solid;
   border-width: 5px;
-  border-color: #54bf9c;
+  border-color: #60a550;
   width: 300px;
   margin-bottom: 30px;
   margin-left: 45px;
@@ -124,7 +124,7 @@ div.swal2-content {
 
 .audiosetting {
   padding: 15px 0px 15px 0px;
-  background-color: #23AF92;
+  background-color: #60a550;
   width: 385px;
   text-align: center;
 }
@@ -136,4 +136,20 @@ p.trackname {
 .social-container {
   width: 385px;
   text-align: center;
+}
+
+.badgesImg {
+  height: 120px;
+  padding-top: 15px;
+  width: auto;
+}
+
+.badgesImg:hover {
+  height: 300px;
+  -webkit-transition: 1.5s;
+    transition: 1.5s;
+}
+
+.collection {
+  border: none;
 }
