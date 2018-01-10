@@ -291,6 +291,10 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 ![](images/UI_identity/UI_Identity.jpg)
 
+## Videos by students
+- https://www.youtube.com/watch?v=5vXDJOYqWvk
+- https://www.youtube.com/watch?v=XvoHY3QCJtw
+
 ## Maintainers
 
 <table>
