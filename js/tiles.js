@@ -648,7 +648,7 @@ const door = {
             return true;
         }, 
         canLeaveToTheRight() {
-            return false;
+            return true;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/universeDoor.svg"); 
