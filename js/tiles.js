@@ -509,6 +509,42 @@ const door = {
             this.ground.show();
         }
     }),
+        Cake: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Cake.svg");
+        },
+        visit: function() {
+            if (player.inventory.has('Spoon')) {
+                alertSuccess("Now you can eat the Cake, Yum-Yum!!");
+                player.inventory.remove('Spoon');
+            } else {
+                alertNormal("You nedd a Spoon to eat this cake, try to find it :D", "");
+            }
+            player.badges.add(['Cake-Eater', 'Cake.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),  
+    Spoon: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.ground = this.createImage("tiles/rooms/floor/Spoon.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+        },
+        visit: function() {
+
+            alertInfo("You got a Spoon!!", "Try to find some cake to eat it with :D");
+
+            // add item to inventory
+            player.inventory.add(['Spoon', 'Spoon.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     yellowBoxes: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
