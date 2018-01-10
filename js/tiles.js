@@ -831,7 +831,7 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
-};
+});
 
 const forest = {
     both: OpenDoors,
