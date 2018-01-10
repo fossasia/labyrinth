@@ -54,4 +54,4 @@ function createTestLevel()
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
-
+}
