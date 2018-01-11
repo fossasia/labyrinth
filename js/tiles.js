@@ -228,6 +228,7 @@ const OpenDoors = {
 // ignore JSHintBear
 const door = {
     both: OpenDoors,
+    levelCode: 1,
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
@@ -373,10 +374,13 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-            alertSuccess("You win!", "Yay! You have won the game");
+            playAudio("applause.mp3");
+            console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+            clearGame();
+            startGame(door.levelCode);
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
@@ -644,6 +648,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/plain.svg");
         },
     }),
+    texture: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/texture.svg");
+        },
+    }),
     sofa: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -677,8 +688,28 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraft.svg");
         },
         visit: function() {
-            playAudio("minecraft.mp3");
-            alertInfo("You have stumbled upon the world of Minecraft!", "");
+            if (player.inventory.has('DiamondBlock')) {
+                alertInfo("You have stumbled upon the world of Minecraft!", "");
+                playAudio("minecraft/minecraft.mp3");
+                player.inventory.remove('DiamondBlock');
+            } else {
+                alertNormal("You need a diamond block to enter!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    minecraftEntry: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightMinecraft.svg");
+            this.ground = this.createImage("tiles/rooms/floor/minecraftEntry.svg");
+        },
+        visit: function() {
+            playAudio("minecraft/minecraftEntry.mp3");
+            alertInfo("You found a diamond block!", "It is really expensive!");
+            player.inventory.add(['DiamondBlock', 'diamondBlock.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -703,15 +734,25 @@ const door = {
             this.ground.show();
         }
     }),
+    Saarthak: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Saarthak.svg"); /*  svg_name is the name of your svg */
+    },
+  }),
     Forbidden: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop() {
             return false;
         },
         canLeaveToTheRight() {
             return false;
         },
         canLeaveToTheTop(){
-            return false;    
+            return false;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
@@ -769,6 +810,42 @@ const door = {
         this.ground.show();
       }
     }),
+    cake: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return player.inventory.has('Spoon');
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Cake.svg");
+        },
+        visit: function() {
+             if (player.inventory.has('Spoon')) {
+             alertSuccess("You ate the CAKE!!", "YUM-YUM!!");
+             player.inventory.remove('Spoon');
+            } else {
+                alertNormal("You Need a Spoon to eat this CAKE!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     yellow: Object.assign({}, OpenDoors, {
         canEnterFromTheRight: function(player) {
             return false;
@@ -780,8 +857,14 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
-           alertInfo("You are in the Yellow Floor Now.", "");
-        }
+        },
+        visit: function() {
+          player.inventory.add(['Spoon', 'Spoon.png']);
+          alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+        },
     }),
     red: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -803,6 +886,7 @@ const door = {
 
 const forest = {
     both: OpenDoors,
+    levelCode: 2,
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
