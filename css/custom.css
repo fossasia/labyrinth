@@ -198,12 +198,12 @@ nav ul.left li a {
 #labyrinthVersion {
   display: inline-block;
   transition: 0.4s;
-  color: #0081ff;
+  color: #0039ff;
   border-bottom: 3px #60a550 solid;
   padding-top: 4px;
   text-transform: initial;
   letter-spacing: initial;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 #labyrinthVersion:hover {
