@@ -781,12 +781,14 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/topNewYear.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightNewYear.svg");
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
         },
         visit: function(player) {
         	playAudio("celebrate.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+            this.wallTop.show();
             alertNormal("Happy 2018!', 'It's new year already! Don't waste your time and explore!", "");
         }
     }),
