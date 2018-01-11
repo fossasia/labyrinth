@@ -1118,11 +1118,7 @@ const desert = {
             return false;
         },
         visit: function() {
-            swal({
-                title: 'The floor is lava!',
-                type: 'warning',
-                text: 'Better get outta here!'
-        });
+        alertWarning("The floor is lava!", "Better get outta here!");
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
