@@ -733,6 +733,7 @@ const door = {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+            playAudio("background/yashkumarverma.github.io/pinballGame.mp3");
         }
     }),
     Forbidden: Object.assign({}, OpenDoors, {
