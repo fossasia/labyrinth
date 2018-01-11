@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -123,7 +124,7 @@ PlacedTile.prototype.scrollToCenter = function() {
     scrollTop: offset.top - centerTop,
     scrollLeft: offset.left - centerLeft
   }, 250);
-}
+};
 function alertWarning(title, text) {
     swal({
         type: 'warning',
@@ -391,8 +392,8 @@ const door = {
         },
         visit: function() {
             if(player.inventory.has('Key')){
-                player.inventory.remove('Key')
-                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.')
+                player.inventory.remove('Key');
+                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.');
             }
             else{
                 alertInfo("Checkmate", "Come on, Try to get out from here.");
