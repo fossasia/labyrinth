@@ -22,7 +22,7 @@ const NullTile = {
     viewFromTheTop: function() {},
     viewFromTheLeft: function() {},
     viewFromTheRight: function() {},
-    viewFromTheBottom: function() {},
+    viewFromTheBottom: function() {}
 };
 // PlayerStartsAt is used in /js/levels.js ignoring the error
 // ignore JSHintBear
@@ -306,7 +306,7 @@ const door = {
             alertInfo("Run Run Don't Stay here anymore !", "");
         },
         visit: function() {
-        	playAudio("gears.mp3");
+            playAudio("gears.mp3");
         },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
@@ -359,7 +359,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
-        	playAudio("suspense.mp3");
+            playAudio("suspense.mp3");
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -382,6 +382,7 @@ const door = {
             clearGame();
             startGame(door.levelCode);
         },
+    }),
 
     chessMate: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -586,7 +587,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	 playAudio("watersound.mp3");
+             playAudio("watersound.mp3");
              if (player.inventory.has('Boat')) {
              alertSuccess("You got the treasure !", "there's more to find !");
              player.inventory.remove('Boat');
@@ -782,7 +783,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("celebrate.mp3");
+            playAudio("celebrate.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -870,7 +871,7 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
-});
+};
 
 const forest = {
     both: OpenDoors,
