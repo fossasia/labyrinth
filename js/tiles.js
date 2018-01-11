@@ -374,6 +374,8 @@ const door = {
         },
         /* Override the function */
         visit: function() {
+            playAudio("applause.mp3");
+            console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -707,7 +709,7 @@ const door = {
         visit: function() {
             playAudio("minecraft/minecraftEntry.mp3");
             alertInfo("You found a diamond block!", "It is really expensive!");
-            player.inventory.add(['DiamondBlock', 'diamondBlock.png']);
+            player.inventory.add(['DiamondBlock', 'diamondBlock.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -808,6 +810,42 @@ const door = {
         this.ground.show();
       }
     }),
+    cake: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return player.inventory.has('Spoon');
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Cake.svg");
+        },
+        visit: function() {
+             if (player.inventory.has('Spoon')) {
+             alertSuccess("You ate the CAKE!!", "YUM-YUM!!");
+             player.inventory.remove('Spoon');
+            } else {
+                alertNormal("You Need a Spoon to eat this CAKE!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     yellow: Object.assign({}, OpenDoors, {
         canEnterFromTheRight: function(player) {
             return false;
@@ -816,10 +854,11 @@ const door = {
             return false;
         },
         createImages: function() {
+          player.inventory.add(['Spoon', 'Spoon.png']);
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
-           alertInfo("You are in the Yellow Floor Now.", "");
+           alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
         }
     }),
     red: Object.assign({}, OpenDoors, {
@@ -838,7 +877,7 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
-};
+});
 
 const forest = {
     both: OpenDoors,
