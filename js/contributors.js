@@ -1,4 +1,4 @@
-$(document).ready(function(){
+window.onload = function(){
   $.ajax({
     url: "https://api.github.com/repos/fossasia/labyrinth/contributors"
   }).done(function(data){
@@ -19,4 +19,4 @@ $(document).ready(function(){
       $("#contributors").append(html);
     });
   });
-}); 
+};
