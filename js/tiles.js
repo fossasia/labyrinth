@@ -1216,7 +1216,7 @@ const Superhero = {
             alertInfo("Wecome", "Ready to feel the thunder!");
         }
     }),
-        top: Object.assign({}, OpenDoors, {
+        new: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
