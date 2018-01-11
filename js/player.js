@@ -75,5 +75,5 @@ function Player() {
     };
     this.changeCharacter = function(character_src) {
         document.getElementById("player").src = character_src;
-    }
+    };
 }

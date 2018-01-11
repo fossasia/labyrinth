@@ -54,7 +54,7 @@ function inventory() {
                 $("#inventoryItem_" + this.items[i].id).remove();
             }
         }
-    }
+    };
 
     // printInventoryItem
     function addItem(obj) {

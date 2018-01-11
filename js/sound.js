@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 const backgroundAudio = [
     {
         filename : "audio/music/bensound.com/epic1.mp3",
@@ -24,7 +26,7 @@ function updateLegalBackground() {
     $("#legalNotice").html(backgroundAudio[backgroundNum].legalNotice);
     $("#backgroundSongName").html(backgroundAudio[backgroundNum].backgroundSongName);
     $("#legalNotice").attr("href", backgroundAudio[backgroundNum].link);
-    $("#backgroundSongAuthor").html(backgroundAudio[backgroundNum].author);;
+    $("#backgroundSongAuthor").html(backgroundAudio[backgroundNum].author);
 }
 function startBackgroundAudio() {
     updateLegalBackground();
@@ -34,7 +36,7 @@ function startBackgroundAudio() {
 function nextBackgroundAudio() {
     backgroundPlay.pause();
     if (backgroundNum !== backgroundAudio.length - 1) {
-        backgroundNum = backgroundNum + 1
+        backgroundNum = backgroundNum + 1;
     }
     updateLegalBackground();
     backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
@@ -44,7 +46,7 @@ function nextBackgroundAudio() {
 function previousBackgroundAudio() {
     backgroundPlay.pause();
     if (backgroundNum !== 0) {
-        backgroundNum = backgroundNum - 1
+        backgroundNum = backgroundNum - 1;
     }
     updateLegalBackground();
     backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);

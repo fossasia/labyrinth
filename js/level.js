@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 
 // defined in /js/tiles.js
 /* global NullTile */
