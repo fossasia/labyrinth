@@ -8,6 +8,13 @@ const backgroundAudio = [
         legalNotice : "Music by bensound.com",
         link : "http://bensound.com/",
     },
+     {
+        filename : "audio/music/bensound.com/happiness.mp3",
+        backgroundSongName: "Happiness",
+        author: "bensound.com",
+        legalNotice : "Music by bensound.com",
+        link : "http://bensound.com/",
+    },
     {
         filename : "audio/music/bensound.com/relaxing1.mp3",
         backgroundSongName: "Relaxing",
