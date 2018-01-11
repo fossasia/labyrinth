@@ -2,14 +2,14 @@ https://codein.withgoogle.com/dashboard/tasks/6625585495277568/
 
 ---
 
-# Labyrinth: Add Background Music
+# Labyrinth: Add Your Own Background Music
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
 To make the game more interesting, please add background music.
 
 Requirements:
-- Add background music eg: Recording of your favorite song. You can sing, play an instrument (guitar, piano)
-  or compose your own music.
+- Add background music e.g.: **Your recording of your favorite song**. You can sing, play an instrument (guitar, piano)
+  or **compose your own music**.
 - Add it to the [/audio/background](https://github.com/fossasia/labyrinth/tree/master/audio) folder.
   - Add the license as a file according to documentation
 - Add it to the API in the /js/sound.js file.
