@@ -8,8 +8,12 @@ body {
   height: 90px !important;
 }
 
+h1, h2, h3 {
+  font-family: "Abril Fatface";
+}
+
 .brand-logo.center {
-  font-family: 'abril fatface';
+  font-family: 'Abril Fatface';
   font-size: 3em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
@@ -17,13 +21,13 @@ body {
 }
 
 .card-title, a {
-  font-family: 'quicksand';
+  font-family: 'Quicksand';
 }
 
 nav ul a {
   height: 90px;
-  font-size: 1.5em;
-  padding: 10px 30px 0px 30px;
+  font-size: 1.2em;
+  padding: 10px 15px 0 15px;
 }
 
 nav ul a:hover {
@@ -32,7 +36,7 @@ nav ul a:hover {
 
 p {
   font-size: 20px;
-  font-family: 'quicksand';
+  font-family: 'Quicksand';
 }
 
 .card-content .white-text {
@@ -76,9 +80,7 @@ i.fa.fa-google-plus:hover {color: #d63d1e;}
 
 .col.s12 {
   width: 400px !important;
-  top: 150px;
   padding-left: 0px;
-  position: fixed;
   text-align: center;
 }
 
@@ -125,7 +127,7 @@ div.swal2-content {
 .audiosetting {
   padding: 15px 0px 15px 0px;
   background-color: #60a550;
-  width: 385px;
+  width: 106.5%;
   text-align: center;
 }
 
@@ -152,4 +154,38 @@ p.trackname {
 
 .collection {
   border: none;
+}
+
+#slide-out {
+  background: #80be62;
+  transition: 0.4s;
+  overflow-x: hidden;
+}
+
+.side-nav {
+  width: 389px;
+}
+
+.card {
+  margin: 0;
+}
+
+nav ul.left li a {
+  padding: 10px 30px;
+  font-size: 30px;
+}
+
+.close-sidebar {
+  transition: 0.3s;
+  color: white;
+  font-family: 30px;
+  border-bottom: 4px solid #60a550;
+}
+
+.social-icons .fa {
+  color: white;
+}
+
+.fa.fa-times::before {
+  color: white;
 }
