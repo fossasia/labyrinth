@@ -111,6 +111,7 @@ PlacedTile.prototype.playerEnters = function(player) {
   this.scrollToCenter();
 };
 PlacedTile.prototype.playerLeaves = function(player) {
+    stopAudio();
     this.images.playerLeaves(player);
     this.whenPlayerLeaves(player);
 };
