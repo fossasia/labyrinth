@@ -16,9 +16,7 @@ cd "`dirname \"$0\"`"
       continue
     fi
     echo "Checking $file"
-    log="/tmp/error.log"
-    curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | tee "$log" | grep --color=auto -I "error" || true
-    if cat "$log" | grep -qI "error"
+    if curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | grep --color=auto -I "error"
     then
       allFine="false"
     else
