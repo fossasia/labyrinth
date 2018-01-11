@@ -35,7 +35,7 @@ Level.prototype.setTilesFromSpecification = function(specification) {
   if (this.startTile === null) {
     this.startTile = this.tiles[0][0];
   }
-}
+};
 
 Level.prototype.indexToPosition = function(position) {
   return {
@@ -95,13 +95,12 @@ Level.prototype.visit = function() {
 
 Level.prototype.hide = function() {
   this.tilesContainer.classList.add("hidden");
-}
+};
 
 Level.prototype.show = function() {
   this.tilesContainer.classList.remove("hidden");
-}
-
+};
 
 Level.prototype.removePlayer = function(player) {
-}
+};
 
