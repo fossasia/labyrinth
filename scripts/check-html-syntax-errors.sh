@@ -17,10 +17,12 @@ cd "`dirname \"$0\"`"
     fi
     echo "Checking $file"
     log="/tmp/error.log"
-    curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | tee "$log" | grep --color=auto -I "error"
+    curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | tee "$log" | grep --color=auto -I "error" || true
     if cat "$log" | grep -qI "error"
     then
       allFine="false"
+    else
+      printf "\033[0;32mOK\e[0m\n"
     fi
     echo
   done
