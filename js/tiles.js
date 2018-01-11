@@ -602,8 +602,8 @@ const door = {
     boat: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.ground = this.createImage("tiles/rooms/floor/boat.svg");
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
@@ -1054,6 +1054,27 @@ const desert = {
             this.ground.show();
         }
     }),
+    
+    universe: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        }, 
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg"); 
+        },
+        visit: function() {
+            swal('no one can escape from the universe');
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        },
+  }),
+    
     start: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
