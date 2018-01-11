@@ -9,4 +9,5 @@ cache:
 services: docker
 
 script:
-  - scripts/check-syntax-errors.sh
+  - scripts/check-javascript-syntax-errors.sh
+  - scripts/check-html-syntax-errors.sh
