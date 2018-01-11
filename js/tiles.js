@@ -1104,4 +1104,29 @@ const desert = {
             this.ground.show();
         }
     }),
+    lava: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canEnterFromTheBottom() {
+            return true;
+        },
+        canLeaveToTheBottom() {
+            return true;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        visit: function() {
+        alertWarning("The floor is lava!", "Better get outta here!");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+        },
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/lava.svg");
+        },
+      }),
 };
