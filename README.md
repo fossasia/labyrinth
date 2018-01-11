@@ -27,6 +27,7 @@ Labyrinth
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
 - [**Maintainers**](#maintainers)
+- [**Maintainers**](#videos-by-students)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -290,6 +291,11 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 [Click here to read the full UI guideline](https://github.com/fossasia/labyrinth/UI_Identity.md)
 
 ![](images/UI_identity/UI_Identity.jpg)
+
+## Videos by students
+- [Labyrinth | A short intro](https://youtu.be/vc4GgDbx8WA)
+- https://www.youtube.com/watch?v=5vXDJOYqWvk
+- https://www.youtube.com/watch?v=XvoHY3QCJtw
 
 ## Maintainers
 

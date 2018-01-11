@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -123,7 +124,7 @@ PlacedTile.prototype.scrollToCenter = function() {
     scrollTop: offset.top - centerTop,
     scrollLeft: offset.left - centerLeft
   }, 250);
-}
+};
 function alertWarning(title, text) {
     swal({
         type: 'warning',
@@ -374,13 +375,15 @@ const door = {
         },
         /* Override the function */
         visit: function() {
+            playAudio("applause.mp3");
+            console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
             clearGame();
             startGame(door.levelCode);
         },
-
+    }),
     chessMate: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
@@ -389,8 +392,8 @@ const door = {
         },
         visit: function() {
             if(player.inventory.has('Key')){
-                player.inventory.remove('Key')
-                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.')
+                player.inventory.remove('Key');
+                alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.');
             }
             else{
                 alertInfo("Checkmate", "Come on, Try to get out from here.");
@@ -707,7 +710,7 @@ const door = {
         visit: function() {
             playAudio("minecraft/minecraftEntry.mp3");
             alertInfo("You found a diamond block!", "It is really expensive!");
-            player.inventory.add(['DiamondBlock', 'diamondBlock.png']);
+            player.inventory.add(['DiamondBlock', 'diamondBlock.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -743,7 +746,7 @@ const door = {
             return false;
         },
         canLeaveToTheTop(){
-            return false;    
+            return false;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
@@ -801,6 +804,42 @@ const door = {
         this.ground.show();
       }
     }),
+    cake: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return player.inventory.has('Spoon');
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Cake.svg");
+        },
+        visit: function() {
+             if (player.inventory.has('Spoon')) {
+             alertSuccess("You ate the CAKE!!", "YUM-YUM!!");
+             player.inventory.remove('Spoon');
+            } else {
+                alertNormal("You Need a Spoon to eat this CAKE!", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     yellow: Object.assign({}, OpenDoors, {
         canEnterFromTheRight: function(player) {
             return false;
@@ -812,8 +851,14 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
-           alertInfo("You are in the Yellow Floor Now.", "");
-        }
+        },
+        visit: function() {
+          player.inventory.add(['Spoon', 'Spoon.png']);
+          alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+        },
     }),
     red: Object.assign({}, OpenDoors, {
         createImages: function() {

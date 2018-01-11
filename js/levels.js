@@ -18,23 +18,26 @@ function createTestLevel()
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
-    [NullTile, door.none, door.river, door.universe, door.none, door.newYear],
+    [NullTile, door.none, door.river, door.universe, door.cake, door.newYear],
   ]);
+}
 
+function createHugeLevel() {
   return new Level([
     [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
     [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
     [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
-    [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top]
+    [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top],
     [door.none, door.top, door.both, door.both, door.both, door.top, door.top, door.left, door.right],
     [door.none, door.top, door.wheel, door.both, door.both, door.wheel, door.right, door.top, door.top],
     [door.none, door.top, door.both, door.wheel, door.both, door.top, door.none, door.right, door.top, door.both],
     [door.none, door.none, door.none, door.none, door.none, door.none, door.both, door.right, door.top, door.none],
     [door.left, door.top, door.none, door.right, door.none, door.wheel, door.none, door.none, door.none],
-    [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top]
-]);
-  /* I know this return doesnot work but leaving it here to be solved in #161 */
-  /* Forest specific levels */
+    [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top],
+  ]);
+}
+
+function createForestLevel() {
   return new Level([
     [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.both],
@@ -44,7 +47,9 @@ function createTestLevel()
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],
   ]);
+}
 
+function createDesertLevel() {
   return new Level([
     [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
@@ -54,4 +59,5 @@ function createTestLevel()
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
+}
 
