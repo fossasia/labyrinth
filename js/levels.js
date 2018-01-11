@@ -8,7 +8,7 @@
 
 // createTestLevel is used in /js/gui.js ignoring the error
 // ignore JSHintBear
-function createTestLevel()
+function createFirstLevel()
 {
   return new Level([
     [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],

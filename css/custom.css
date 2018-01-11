@@ -213,4 +213,9 @@ nav ul.left li a {
   box-shadow: inset #60a550 400px 0 0;
 }
 
-
+#player {
+  position: absolute;
+  z-index: 10000;
+  width: 55px;
+  height: 60px;
+}
