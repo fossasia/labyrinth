@@ -25,9 +25,8 @@ function startGame(level) {
     resolve({
       "characters/golem.svg": "Golem",
       "characters/witch.svg": "Witch",
-
       "characters/block.svg": "Block",
-      "characters/coolcat.svg": "Cool Cat"
+      "characters/coolcat.svg": "Cool Cat",
       "characters/sheep.svg": "Intelligent Sheep",
       "characters/robo.svg": "Robo",
       "characters/swammy.svg": "Swammy",
@@ -37,11 +36,7 @@ function startGame(level) {
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
-
-	  //added Character from RuKoBe
       "characters/OwnChar.png": "OwnChar",
-
-
       "characters/ninja.svg": "Ninja",
       "characters/Mr zero.svg":"Mr. Zero",
       "characters/Mrs zero.svg": "Mrs. Zero",
@@ -51,8 +46,7 @@ function startGame(level) {
       "characters/MonsterJuice.svg": "Monster Juice",
       "characters/pixie.svg": "Forest Spirit",
       "characters/AngryBot.svg": "Angry Bot",
-      "characters/deathnote.svg": "Death Note",
-      }
+      "characters/deathnote.svg": "Death Note"
     });
   });
   player = newPlayer();
