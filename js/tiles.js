@@ -382,7 +382,7 @@ const door = {
             clearGame();
             startGame(door.levelCode);
         },
-
+    }),
     chessMate: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/topChess.svg");
@@ -745,7 +745,7 @@ const door = {
             return false;
         },
         canLeaveToTheTop(){
-            return false;    
+            return false;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topForbidden.svg");
@@ -847,12 +847,17 @@ const door = {
             return false;
         },
         createImages: function() {
-          player.inventory.add(['Spoon', 'Spoon.png']);
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
-           alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
-        }
+        },
+        visit: function() {
+          player.inventory.add(['Spoon', 'Spoon.png']);
+          alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+        },
     }),
     red: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -870,7 +875,7 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
-});
+};
 
 const forest = {
     both: OpenDoors,
