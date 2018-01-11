@@ -734,13 +734,6 @@ const door = {
             this.ground.show();
         }
     }),
-    Saarthak: Object.assign({}, OpenDoors, {
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/Saarthak.svg"); /*  svg_name is the name of your svg */
-    },
-  }),
     Forbidden: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
