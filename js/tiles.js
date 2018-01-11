@@ -1195,7 +1195,7 @@ const Superhero = {
             this.ground.show();
         }
     }),
-    type: Object.assign({}, OpenDoors, {
+    hulk: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
