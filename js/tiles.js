@@ -1130,3 +1130,122 @@ const desert = {
         },
       }),
 };
+const Superhero = {
+    both: OpenDoors,
+    levelCode: 4,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/character1.svg");
+        },
+    }),
+    first: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/character4.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/");
+            this.wallRight = this.createImage("tiles/rooms/wall/");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/character2.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/character3.svg");
+        },
+        visit: function() {
+            alertInfo("Wecome", "You will meet your worst doom in the batcave!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        },
+    }),
+    second: Object.assign({},OpenDoors,{
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/");
+            this.wallRight = this.createImage("tiles/rooms/wall/");
+            this.wallTop = this.createImage("tiles/rooms/wall/character1.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+            alertInfo("","");
+        },
+    }),
+     goal: Object.assign({},OpenDoors,{
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/");
+            this.wallRight = this.createImage("tiles/rooms/wall/");
+            this.wallTop = this.createImage("tiles/rooms/floor/superheroes/captain.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    hulk: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/hulk.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/thor.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+            alertInfo("Wecome", "Ready to feel the thunder!");
+        }
+    }),
+    new: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/superheroes/ironman.svg");
+        },
+    }),
+};
+
