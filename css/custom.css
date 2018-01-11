@@ -79,6 +79,7 @@ i.fa.fa-google-plus:hover {color: #d63d1e;}
 }
 
 .col.s12 {
+  padding-bottom: 50px;
   width: 400px !important;
   padding-left: 0px;
   text-align: center;
@@ -188,4 +189,23 @@ nav ul.left li a {
 
 .fa.fa-times::before {
   color: white;
+}
+
+.versionSpan {
+  font-size: 24px;
+}
+
+#labyrinthVersion {
+  display: inline-block;
+  transition: 0.4s;
+  color: #0039ff;
+  border-bottom: 3px #60a550 solid;
+  padding-top: 4px;
+  text-transform: initial;
+  letter-spacing: initial;
+  font-size: 14px;
+}
+
+#labyrinthVersion:hover {
+  box-shadow: inset #60a550 400px 0 0;
 }
