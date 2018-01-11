@@ -181,6 +181,9 @@ nav ul.left li a {
   color: white;
   font-family: 30px;
   border-bottom: 4px solid #60a550;
+  float: none;
+  line-height: 48px;
+  width: 100%;
 }
 
 .social-icons .fa {
@@ -209,3 +212,5 @@ nav ul.left li a {
 #labyrinthVersion:hover {
   box-shadow: inset #60a550 400px 0 0;
 }
+
+

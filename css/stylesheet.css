@@ -86,6 +86,7 @@ button:hover {
 .play-button {
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
+    height: 50px;
 }
 
 p.site_description {
@@ -181,3 +182,11 @@ img {
     -ms-transform: translateY(-15px);
     -o-transform: translateY(-15px);
     transform: translateY(-15px); } }
+    
+.centered {
+  text-align: center;
+}
+
+.how-to-play-image {
+  width: 50%;
+}

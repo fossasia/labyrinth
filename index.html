@@ -23,7 +23,8 @@
 	<script type="text/javascript" src="js/level.js"></script>
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="js/gui.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<title>Labyrinth</title>
 </head>
 
@@ -52,11 +53,9 @@
 	</div>
 
 	<!-- Side Bar -->
-	<ul id="slide-out" class="side-nav full">
-		<div class="row left-column">
-		<div class="col s12">
+	<div id="slide-out" class="side-nav full row left-column col s12">
 
-			<li><a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+			<a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
 			
 			<div class="card blue-grey darken-3">
 				<div class="card-content white-text">
@@ -89,46 +88,40 @@
 					<span class="card-title">Follow us on</span>
 				</div>
 				<div class="card-action">
-					<ul class="social-icons">
-						<div class="social-container">
+				  <div class="social-container">
+				    <ul class="social-icons">						
 							<li>
-								<a class="btn-floating  transparent waves-effect waves-light facebook" target="_blank" href="http://facebook.com/fossasia"
-								class="social-icon">
+								<a class="btn-floating  transparent waves-effect waves-light facebook social-icon" target="_blank" href="http://facebook.com/fossasia">
 									<i class="fa fa-facebook"></i>
 								</a>
 							</li>
 							<li>
-								<a class="btn-floating transparent waves-effect waves-light twitter" target="_blank" href="http://twitter.com/fossasia"
-								class="social-icon">
+								<a class="btn-floating transparent waves-effect waves-light twitter social-icon" target="_blank" href="http://twitter.com/fossasia">
 									<i class="fa fa-twitter"></i>
 								</a>
 							</li>
 							<li>
-								<a class="btn-floating transparent waves-effect waves-light youtube" target="_blank" href="https://www.youtube.com/fossasiaorg"
-								class="social-icon">
+								<a class="btn-floating transparent waves-effect waves-light youtube social-icon" target="_blank" href="https://www.youtube.com/fossasiaorg">
 									<i class="fa fa-youtube-play"></i>
 								</a>
 							</li>
 							<li>
-								<a class="btn-floating transparent waves-effect waves-light linkedin" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811"
-								class="social-icon">
+								<a class="btn-floating transparent waves-effect waves-light linkedin social-icon" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811">
 									<i class="fa fa-linkedin"></i>
 								</a>
 							</li>
 							<li>
-								<a class="btn-floating transparent waves-effect waves-light googleplus" target="_blank" href="https://plus.google.com/108920596016838318216"
-								class="social-icon">
+								<a class="btn-floating transparent waves-effect waves-light googleplus social-icon" target="_blank" href="https://plus.google.com/108920596016838318216">
 									<i class="fa fa-google-plus"></i>
 								</a>
 							</li>
-                            <li>
-								<a class="btn-floating transparent waves-effect waves-light github" target="_blank" href="https://github.com/fossasia"
-								class="social-icon">
+              <li>
+								<a class="btn-floating transparent waves-effect waves-light github social-icon" target="_blank" href="https://github.com/fossasia">
 									<i class="fa fa-github"></i>
 								</a>
 							</li>
-						</div>
-					</ul>
+					  </ul>
+					</div>
 				</div>
 
 				<div class="border1"></div>
@@ -172,9 +165,8 @@
 				<div class="card-content white-text">
 					<span class="versionSpan">Version<a href="" id="labyrinthVersion"></a></span>
 				</div>
-			</div>
-		</div>
-	</ul>
+			</div>  
+	</div>
 
   
 	
@@ -213,5 +205,4 @@
 	<div id="tiles"></div>
 
 </body>
-<script type="text/javascript" src="js/gui.js"></script>
 </html>
