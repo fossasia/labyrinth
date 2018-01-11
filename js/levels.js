@@ -18,7 +18,7 @@ function createTestLevel()
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
-    [NullTile, door.boat, door.river, door.universe, door.cake, door.newYear],
+    [NullTile, door.boat, door.river, desert.universe, door.cake, door.newYear],
   ]);
 }
 
