@@ -1174,20 +1174,20 @@ const Superhero = {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/");
             this.wallRight = this.createImage("tiles/rooms/wall/");
-            this.wallTop = this.createImage("tiles/rooms/wall/character1.svg")
+            this.wallTop = this.createImage("tiles/rooms/wall/character1.svg");
         },
         visit: function() {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
-            alertInfo("","")
+            alertInfo("","");
         },
     }),
      goal: Object.assign({},OpenDoors,{
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/");
             this.wallRight = this.createImage("tiles/rooms/wall/");
-            this.wallTop = this.createImage("tiles/rooms/floor/superheroes/captain.svg")
+            this.wallTop = this.createImage("tiles/rooms/floor/superheroes/captain.svg");
         },
         visit: function() {
             this.wallTop.show();
