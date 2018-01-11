@@ -848,11 +848,13 @@ const door = {
             return false;
         },
         createImages: function() {
-          player.inventory.add(['Spoon', 'Spoon.png']);
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
            alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
+        },
+        visit: function(){
+            player.inventory.add(['Spoon', 'Spoon.png']);  
         }
     }),
     red: Object.assign({}, OpenDoors, {
