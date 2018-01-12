@@ -393,7 +393,6 @@ const door = {
         },
         visit: function() {
             if(player.inventory.has('Key')){
-                playAudio("arjun.mp3")
                 player.inventory.remove('Key');
                 alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.');
             }
@@ -427,6 +426,7 @@ const door = {
         },
         visit: function() {
             alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            playAudio("arjun.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
