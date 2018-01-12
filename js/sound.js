@@ -136,5 +136,5 @@ function playAudio(audio, licenseNum) {
     audioPlay = new Audio("audio/" + audio);
     console.log(audioPlay);
     audioPlay.play();
-    $("tileLicense").html(creativeCommonsLicense[licenseNum]);
+    $("#tileLicense").html(creativeCommonsLicense[licenseNum]);
 }

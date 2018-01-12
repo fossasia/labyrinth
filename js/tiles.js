@@ -308,7 +308,7 @@ const door = {
             alertInfo("Run Run Don't Stay here anymore !", "");
         },
         visit: function() {
-        	playAudio("gears.mp3");
+        	playAudio("gears.mp3", 1);
         },
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
@@ -340,7 +340,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/marina.svg");
         },
         visit: function() {
-            playAudio("Runnergarage.m4a");
+            playAudio("Runnergarage.m4a", 1);
         },
     }),
     star: Object.assign({}, OpenDoors, {
@@ -364,7 +364,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
-        	playAudio("suspense.mp3");
+        	playAudio("suspense.mp3", 1);
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -379,7 +379,7 @@ const door = {
         },
         /* Override the function */
         visit: function() {
-            playAudio("applause.mp3");
+            playAudio("applause.mp3", 1);
             console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
@@ -402,7 +402,7 @@ const door = {
             else{
                 alertInfo("Checkmate", "Come on, Try to get out from here.");
             }
-            playAudio('fire-truck-air-horn_daniel-simion.mp3');
+            playAudio('fire-truck-air-horn_daniel-simion.mp3', 1);
             console.log("Courtesy of Daniel simons for his music, taken from soundbible.com");
             this.wallTop.show();
             this.wallRight.show();
@@ -506,7 +506,7 @@ const door = {
         },
         visit: function() {
 
-            playAudio("discover.mp3");
+            playAudio("discover.mp3", 1);
             alertInfo("You got something !", "Explore More ! Let's see what can find ...");
 
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
@@ -531,7 +531,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handDrawnBoxes.svg");
         },
         visit: function() {
-            playAudio("gears.mp3");
+            playAudio("gears.mp3", 1);
         },
     }),
     batcave: Object.assign({}, OpenDoors, {
@@ -591,7 +591,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	 playAudio("watersound.mp3");
+        	 playAudio("watersound.mp3", 1);
              if (player.inventory.has('Boat')) {
              alertSuccess("You got the treasure !", "there's more to find !");
              player.inventory.remove('Boat');
@@ -632,7 +632,7 @@ const door = {
         },
         visit: function() {
             player.badges.add(['Fresh Air', 'FreshAir.png']);
-            playAudio("outdoor.mp3");
+            playAudio("outdoor.mp3", 1);
             alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
             this.wallTop.show();
@@ -653,7 +653,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/plain.svg");
         },
         visit: function() {
-            playAudio("0x48piraj/composed/0x48piraj.mp3");
+            playAudio("0x48piraj/composed/0x48piraj.mp3", 1);
         }
     }),
     texture: Object.assign({}, OpenDoors, {
@@ -676,7 +676,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
         },
         visit: function() {
-            playAudio("spy.mp3");
+            playAudio("spy.mp3", 1);
             alertInfo("Get out!", "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room.");
             this.wallTop.show();
             this.wallRight.show();
@@ -698,7 +698,7 @@ const door = {
         visit: function() {
             if (player.inventory.has('DiamondBlock')) {
                 alertInfo("You have stumbled upon the world of Minecraft!", "");
-                playAudio("minecraft/minecraft.mp3");
+                playAudio("minecraft/minecraft.mp3", 2);
                 player.inventory.remove('DiamondBlock');
             } else {
                 alertNormal("You need a diamond block to enter!", "");
@@ -715,7 +715,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/minecraftEntry.svg");
         },
         visit: function() {
-            playAudio("minecraft/minecraftEntry.mp3");
+            playAudio("minecraft/minecraftEntry.mp3", 3);
             alertInfo("You found a diamond block!", "It is really expensive!");
             player.inventory.add(['DiamondBlock', 'diamondBlock.svg']);
             this.wallTop.show();
@@ -740,7 +740,7 @@ const door = {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
-            playAudio("background/yashkumarverma.github.io/pinballGame.mp3");
+            playAudio("background/yashkumarverma.github.io/pinballGame.mp3", 1);
         }
     }),
     Forbidden: Object.assign({}, OpenDoors, {
@@ -762,7 +762,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
-            playAudio('creepy.mp3');
+            playAudio('creepy.mp3', 1);
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
@@ -791,7 +791,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("celebrate.mp3");
+        	playAudio("celebrate.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
