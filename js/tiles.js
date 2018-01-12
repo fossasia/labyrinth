@@ -871,20 +871,48 @@ const door = {
     }),
     red: Object.assign({}, OpenDoors, {
         createImages: function() {
+           player.inventory.add(['Sword', 'sword.png']);
           this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
           this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
-           alertInfo("You are in the Red Floor Now.", "");
+           alertInfo("You found a Sword!! Defeat monsters with it.", "");
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {
+   	canEnterFromTheRight() {
+             return player.inventory.has('Sword');
+         },
+         canLeaveToTheRight() {
+             return false;
+         },
+         canEnterFromTheLeft() {
+             return false;
+         },
+         canLeaveToTheLeft() {
+             return false;
+         },
+         canEnterFromTheTop: function(player) {
+             return false;
+         },
+         canLeaveToTheTop: function(player) {
+             return false;
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
-           alertInfo("This tile was Hand-Drawn by Beta-King", "");
-        }
-    }),
+     	},
+    	visit: function() {
+              if (player.inventory.has('Sword')) {
+              alertSuccess("You Defeated the Basilisk, You're a true Gryffindor!!");
+              player.inventory.remove('Sword');
+             } else {
+                 alertNormal("You Need a Sword to defeat the Basilisk", "");
+             }
+             this.wallTop.show();
+             this.wallRight.show();
+             this.ground.show();
+         }
+     }),
 };
 
 const forest = {
