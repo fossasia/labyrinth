@@ -15,6 +15,13 @@ const backgroundAudio = [
         link: "http://bensound.com/",
     },
     {
+        filename: "audio/music/Drumplo.m4a",
+        backgroundSongName: "Drumplo",
+        author: "Samyak Jain",
+        legalNotice: "Created by Samyak Jain",
+        link: "https://github.com/samyakbvs",
+    },
+    {
         filename: "audio/background/yashkumarverma.github.io/mousePlay.mp3",
         backgroundSongName: "Mouse Play",
         author: "Yash Kumar Verma",
