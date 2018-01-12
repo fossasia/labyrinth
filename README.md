@@ -150,7 +150,11 @@ If you want to have a sound played when the character reaches your tile, your im
 
 The license numbers are as follows : 
 1. Attribution 4.0 International
-2. 
+2. Attribution-NoDerivatives 4.0 International
+3. Attribution-ShareAlike 4.0 International
+4. Attribution-NonCommercial 4.0 International
+5. Attribution-NonCommercial-NoDerivatives 4.0 International
+6. Attribution-NonCommercial-ShareAlike 4.0 International
 
 <br><br>
 
