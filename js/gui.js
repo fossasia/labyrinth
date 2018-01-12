@@ -73,7 +73,6 @@ var keyHandlers = {
     "ArrowLeft": function() {
         swal.close();
         if (player.canMoveLeft()) {
-            stopAudio();
             player.moveLeft();
         }
         player.logPosition();
@@ -81,7 +80,6 @@ var keyHandlers = {
     "ArrowRight": function() {
         swal.close();
         if (player.canMoveRight()) {
-            stopAudio();
             player.moveRight();
         }
         player.logPosition();
@@ -89,7 +87,6 @@ var keyHandlers = {
     "ArrowUp": function() {
         swal.close();
         if (player.canMoveUp()) {
-            stopAudio();
             player.moveUp();
         }
         player.logPosition();
@@ -97,7 +94,6 @@ var keyHandlers = {
     "ArrowDown": function() {
         swal.close();
         if (player.canMoveDown()) {
-            stopAudio();
             player.moveDown();
         }
         player.logPosition();
