@@ -2,7 +2,7 @@ https://codein.withgoogle.com/dashboard/tasks/4932979551895552/
 
 ---
 
-# Labyrinth: Add Music to Tiles
+# Labyrinth: Add Your Own Music to Tiles
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
 To make the game more interesting, please add music when the user enters a tile.
@@ -12,7 +12,7 @@ Requirements:
 - It must automatically play when the users enters, and stop when exiting.
 - Please make sure to use the existing API, so it stops when exiting.
 - It should be music relevant to the theme, try not to add any songs
-- The music should be your own work. Please make sure you have the rights to any music that you add.
+- **The music must be your own work.** Please make sure you have the rights to any music that you add.
 
 Expected Outcome:
 - At least one merged pull request (link)
