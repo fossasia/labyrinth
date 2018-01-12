@@ -5,7 +5,6 @@ body {
 }
 .nav-wrapper {
   background-color: #60A550;
-  height: 90px !important;
 }
 
 h1, h2, h3 {
@@ -14,10 +13,9 @@ h1, h2, h3 {
 
 .brand-logo.center {
   font-family: 'Abril Fatface';
-  font-size: 3em;
+  font-size: 2.5em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
-  top: 10px;
 }
 
 .card-title, a {
@@ -25,13 +23,11 @@ h1, h2, h3 {
 }
 
 nav ul a {
-  height: 90px;
   font-size: 1.2em;
-  padding: 10px 15px 0 15px;
 }
 
-nav ul a:hover {
-  background-color: #4A893E !important;
+nav ul a:hover, nav ul a:focus {
+  background-color: #80BE62 !important;
 }
 
 p {
@@ -55,7 +51,14 @@ div.social-container {
 }
 
 i.fa {background: none !important;}
-.btn-floating.transparent.waves-effect.waves-light {background: none !important; box-shadow: none;}
+
+.btn-floating.transparent.waves-effect.waves-light {
+  background: none !important;
+  box-shadow: none;
+  width: 48px !important;
+  padding: 0 !important;
+}
+
 i.fa.fa-facebook:hover {color: #446ebf;}
 i.fa.fa-twitter:hover {color: #39aadc;}
 i.fa.fa-youtube-play:hover {color: #ee423d;}
@@ -79,10 +82,9 @@ i.fa.fa-google-plus:hover {color: #d63d1e;}
 }
 
 .col.s12 {
-  padding-bottom: 50px;
+  padding: 30px;
+  padding-bottom: 60px;
   width: 400px !important;
-  padding-left: 0px;
-  text-align: center;
 }
 
 .card.blue-grey.darken-3 {
@@ -92,10 +94,9 @@ i.fa.fa-google-plus:hover {color: #d63d1e;}
 .border1 {
   border-bottom-style: solid;
   border-width: 5px;
-  border-color: #60a550;
-  width: 300px;
-  margin-bottom: 30px;
-  margin-left: 45px;
+  border-color: #47A883;
+  width: 100%;
+  margin: 2em 0;
 }
 
 h2#swal2-title {
@@ -122,13 +123,29 @@ div.swal2-content {
 }
 
 .range-field {
-  padding-left: 30px;
+  padding-left: 0 5px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background-color: #48A883;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #48A883;
+}
+
+input[type=range]::-ms-thumb {
+  background-color: #48A883;
+}
+
+input[type=range] + .thumb {
+  background-color: #5ec39c;
 }
 
 .audiosetting {
-  padding: 15px 0px 15px 0px;
-  background-color: #60a550;
-  width: 106.5%;
+  padding: 10px 0;
+  background-color: #47a883;
+  width: 100%;
   text-align: center;
 }
 
@@ -158,7 +175,7 @@ p.trackname {
 }
 
 #slide-out {
-  background: #80be62;
+  background: #84C79F;
   transition: 0.4s;
   overflow-x: hidden;
 }
@@ -167,20 +184,23 @@ p.trackname {
   width: 389px;
 }
 
-.card {
-  margin: 0;
+.side-nav-card {
+  margin: 20px 0;
 }
 
-nav ul.left li a {
-  padding: 10px 30px;
+.side-nav-card .card-title {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+nav .left li a {
+  padding: 0 30px;
   font-size: 30px;
 }
 
 .close-sidebar {
-  transition: 0.3s;
   color: white;
-  font-family: 30px;
-  border-bottom: 4px solid #60a550;
+  font-size: 30px;
   float: none;
   line-height: 48px;
   width: 100%;
@@ -201,16 +221,14 @@ nav ul.left li a {
 #labyrinthVersion {
   display: inline-block;
   transition: 0.4s;
-  color: #0039ff;
-  border-bottom: 3px #60a550 solid;
-  padding-top: 4px;
+  padding: 0 !important;
   text-transform: initial;
   letter-spacing: initial;
   font-size: 14px;
 }
 
 #labyrinthVersion:hover {
-  box-shadow: inset #60a550 400px 0 0;
+  box-shadow: inset #47a883 400px 0 0;
 }
 
 #player {
@@ -218,4 +236,46 @@ nav ul.left li a {
   z-index: 10000;
   width: 55px;
   height: 60px;
+}
+
+.swal2-container [role="dialog"] {
+  background-color: #F3EFEC !important;
+}
+
+.swal2-buttonswrapper button {
+  background-color: #679B49 !important;
+  font-family: 'quicksand' !important;
+}
+
+.swal2-buttonswrapper button:hover, .swal2-buttonswrapper button:focus {
+  background-color: #80BE62 !important;
+}
+
+#inventoryDisplay {
+  background-color: #47a883;
+}
+
+#inventoryDisplay .collection-item {
+  background-color: unset;
+  color: white;
+}
+
+#inventoryDisplay .collection-item .circle {
+  background-color: #84c79f;
+  color: rgba(255,255,255,0.62);
+}
+
+#inventoryDisplay .collection-item .secondary-content,
+#inventoryDisplay .collection-item .secondary-content i {
+  color: white;
+  opacity: 0.62;
+}
+
+.fixed-action-btn i.large {
+  transition: background-color 0.2s;
+  background-color: #679B49;
+}
+
+.fixed-action-btn:hover i.large, .fixed-action-btn:focus i.large {
+  background-color: #80BE62;
 }
