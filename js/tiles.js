@@ -300,6 +300,42 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/drawn.svg");
         },
     }),
+    orchestra: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/orchestra.svg");
+        },
+        visit: function() {
+            if (player.inventory.has('Guitar')) {
+                alertSuccess("Wow, an awesome solo perfomance, keep it up", "Your guitar skills looks fantastic");
+                // We wont remove the guitar.
+            } else {
+                alertNormal(
+                    "Hey, you forgot to take your guitar",
+                    "There is your solo perfomance with guitar on stage and you have'nt brought it, please find it quick..."
+                );
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    guitarCase: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/guitar_case.svg");
+        },
+        visit: function() {
+            alertInfo("Here's your guitar, now you can make your solo perfomance come true.");
+            // Add guitar to inventory
+            player.inventory.add(['Guitar', 'guitar.svg']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     wheel: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
