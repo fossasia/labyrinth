@@ -1,12 +1,5 @@
 /*jshint esversion: 6 */
 const backgroundAudio = [
-	{
-        filename: "audio/music/ownsound.mp3",
-        backgroundSongName: "Beat Like Crazy",
-        author: "Saarthak Chaturvedi",
-        legalNotice: "Created by Saarthak Chaturvedi",
-        link: "http://github.com/saarthakchats",
-    },
     {
         filename: "audio/music/bensound.com/epic1.mp3",
         backgroundSongName: "Epic",
@@ -42,6 +35,14 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
         link: "http://bensound.com/",
     },
+    {
+        filename: "audio/music/ownsound.mp3",
+        backgroundSongName: "Beat",
+        author: "Saarthak Chaturvedi",
+        legalNotice: "Music by Saarthak Chaturvedi",
+        link: "http://github.com/saarthakchats",
+    },
+
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
