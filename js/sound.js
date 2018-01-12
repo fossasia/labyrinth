@@ -57,6 +57,22 @@ const backgroundAudio = [
     },
 
 ];
+/*
+creativeCommonsLicense[0] = Attribution 4.0 International
+creativeCommonsLicense[1] = Attribution-NoDerivatives 4.0 International
+creativeCommonsLicense[2] = Attribution-ShareAlike 4.0 International
+creativeCommonsLicense[3] = Attribution-NonCommercial 4.0 International
+creativeCommonsLicense[4] = Attribution-NonCommercial-NoDerivatives 4.0 International
+creativeCommonsLicense[5] = Attribution-NonCommercial-ShareAlike 4.0 International
+*/
+const creativeCommonsLicense = [
+'<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.',
+];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
 var audioPlay = null;
@@ -116,8 +132,9 @@ function stopAudio() {
     }
 }
 
-function playAudio(audio) {
+function playAudio(audio, licenseNum) {
     audioPlay = new Audio("audio/" + audio);
     console.log(audioPlay);
     audioPlay.play();
+    $("tileLicense").html(creativeCommonsLicense[licenseNum]);
 }
