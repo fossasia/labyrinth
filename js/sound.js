@@ -1,7 +1,7 @@
 /*jshint esversion: 6 */
 const backgroundAudio = [
 	{
-        filename: "audio/background/Saarthak Chaturvedi's Sounds/SoundBySaarthak.mp3",
+        filename: "audio/music/ownsound.mp3",
         backgroundSongName: "Beat Like Crazy",
         author: "Saarthak Chaturvedi",
         legalNotice: "Created by Saarthak Chaturvedi",
