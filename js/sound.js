@@ -48,6 +48,13 @@ const backgroundAudio = [
         legalNotice: "Music by Saarthak Chaturvedi",
         link: "http://github.com/saarthakchats",
     },
+        {
+        filename: "audio/background/arjunpandey/arjun.mp3",
+        backgroundSongName: "Hyper",
+        author: "bensound.com",
+        legalNotice: "Music by Arjun Pandey",
+        link: "http://github.com/arjunpandey2003",
+    },
 
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
