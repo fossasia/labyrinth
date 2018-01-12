@@ -219,3 +219,12 @@ nav ul.left li a {
   width: 55px;
   height: 60px;
 }
+
+#tileLicense {
+  margin-left: 20px;
+}
+
+#tileLicense a {
+  color: #000;
+  border-bottom: #000 solid 2px;
+}
