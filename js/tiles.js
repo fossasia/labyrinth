@@ -339,6 +339,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/marina.svg");
         },
+        visit: function() {
+            playAudio("Runnergarage.m4a");
+        },
     }),
     star: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -426,6 +429,7 @@ const door = {
         },
         visit: function() {
             alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            playAudio("arjun.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
