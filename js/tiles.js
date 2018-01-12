@@ -870,11 +870,39 @@ const door = {
         },
     }),
     red: Object.assign({}, OpenDoors, {
+    	canEnterFromTheRight() {
+            return player.inventory.has('Sword');
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
           this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
-           alertInfo("You are in the Red Floor Now.", "");
+        },
+        visit: function() {
+             if (player.inventory.has('Sword')) {
+             alertSuccess("You killed the monster!!");
+             player.inventory.remove('Sword');
+            } else {
+                alertNormal("You Need a Sword to fight the Basilisk", "");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {
@@ -882,8 +910,14 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
-           alertInfo("This tile was Hand-Drawn by Beta-King", "");
-        }
+         
+        },
+        visit: function() {
+          player.inventory.add(['Sword', 'Sword.png']);
+          alertInfo("You are in the explorer's tile now.", "You found a sword, Use it to kill Monsters");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
     }),
 };
 
