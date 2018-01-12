@@ -429,6 +429,7 @@ const door = {
         },
         visit: function() {
             alertInfo("Stalemate", "Gotta go, Choose the Correct Path to escape from here");
+            playAudio("arjun.mp3");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
