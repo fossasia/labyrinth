@@ -37,7 +37,7 @@ const backgroundAudio = [
     },
     {
         filename: "audio/music/ownsound.mp3",
-        backgroundSongName: "Beat",
+        backgroundSongName: "NoPro",
         author: "Saarthak Chaturvedi",
         legalNotice: "Music by Saarthak Chaturvedi",
         link: "http://github.com/saarthakchats",
