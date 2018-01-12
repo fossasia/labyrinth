@@ -36,6 +36,12 @@ const backgroundAudio = [
         link: "http://bensound.com/",
     },
     {
+        filename: "audio/background/abishekvashok/guitar_background.mp3",
+        backgroundSongName: "Guitar classics",
+        author: "Abishek V Ashok",
+        legalNotice: "Music by Abishek V Ashok",
+    },
+    {
         filename: "audio/music/ownsound.mp3",
         backgroundSongName: "NoPro",
         author: "Saarthak Chaturvedi",
