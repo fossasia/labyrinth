@@ -69,7 +69,7 @@ ImageCollection.prototype.showIn = function(container) {
 };
 ImageCollection.prototype.playerEnters = function(player) {
   this.container.classList.add("current");
-  player.setPosition(this.pixelPosition.x + tileWidth/2, this.pixelPosition.y + tileHeight/2);
+  player.showPictureIn(this.container);
 };
 ImageCollection.prototype.playerLeaves = function(player) {
     this.container.classList.remove("current");

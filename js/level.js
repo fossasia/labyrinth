@@ -8,11 +8,23 @@ const tileHeight = 256.314; // px
 
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
+
+function createTilesContainer() {
+  var tilesContainer = document.createElement("div");
+  tilesContainer.classList.add("tileContainer");
+  return tilesContainer;
+}
+
 function Level(specification)
 {
   this.scale = 0.5;
-  this.specification = specification;
   this.startTile = null;
+  this.tilesContainer = createTilesContainer();
+  this.setTilesFromSpecification(specification);
+  this.showTilesIn(this.tilesContainer);
+}
+
+Level.prototype.setTilesFromSpecification = function(specification) {
   var me = this;
   this.tiles = specification.map(function(row, y){
     return row.map(function(tileSpecification, x){
@@ -23,7 +35,7 @@ function Level(specification)
   if (this.startTile === null) {
     this.startTile = this.tiles[0][0];
   }
-}
+};
 
 Level.prototype.indexToPosition = function(position) {
   return {
@@ -35,7 +47,7 @@ Level.prototype.indexToPosition = function(position) {
   };
 };
 
-Level.prototype.showIn = function(container){
+Level.prototype.showTilesIn = function(container){
   var minX = 0;
   var minY = 0;
   var me = this;
@@ -48,11 +60,14 @@ Level.prototype.showIn = function(container){
       return tile.showIn(container);
     });
   });
-  container.classList.add("tileContainer");
   // add width of left column to prevent its elements from overlapping tiles
   container.style.left = (-minX + $('.left-column').width()) + "px";
   // add height of top navbar to prevent it from overlapping tiles
   container.style.top = (-minY + $('.navbar-fixed').height()) + "px";
+};
+
+Level.prototype.showIn = function(container){
+  container.appendChild(this.tilesContainer);
 };
 
 Level.prototype.getTileAt = function(x, y){
@@ -77,3 +92,15 @@ Level.prototype.visit = function() {
     });
   });
 };
+
+Level.prototype.hide = function() {
+  this.tilesContainer.classList.add("hidden");
+};
+
+Level.prototype.show = function() {
+  this.tilesContainer.classList.remove("hidden");
+};
+
+Level.prototype.removePlayer = function(player) {
+};
+

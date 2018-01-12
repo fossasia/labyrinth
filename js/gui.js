@@ -7,20 +7,25 @@ var level;
 
 
 window.addEventListener("load", function() {
-  startGame(0);
+  startGame();
 });
 
 function clearGame() {
   $("#tiles").html("");
 }
 
-function startGame(level) {
+function startGame() {
   var container = document.getElementById("tiles");
-  level += 1;
-  level = createTestLevel(level);
+  level = createFirstLevel();
   level.showIn(container);
+  player = newPlayer();
+  player.enterLevel(level);
+  choosePlayerCharacter(player);
+}
 
- var inputOptionsPromise = new Promise(function(resolve) {
+function choosePlayerCharacter(player) {
+
+  var inputOptionsPromise = new Promise(function(resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/golem.svg": "Golem",
@@ -54,9 +59,6 @@ function startGame(level) {
       "characters/deathnote.svg": "Death Note",
     });
   });
-  player = newPlayer();
-  level.addPlayer(player);
-
   swal({
     input: 'select',
     inputOptions: inputOptionsPromise,
