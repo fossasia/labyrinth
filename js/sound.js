@@ -48,6 +48,13 @@ const backgroundAudio = [
         legalNotice: "Music by Saarthak Chaturvedi",
         link: "http://github.com/saarthakchats",
     },
+    {
+        filename: "audio/art/musicofart-backgvideo.mp3",
+        backgroundSongName: "Motivate",
+        author: "Supun Tharinda Edirisuriya",
+        legalNotice: "Motivate",
+        link: "http://github.com/STEdirisuriya",
+    },
 
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
