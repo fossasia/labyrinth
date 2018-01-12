@@ -898,6 +898,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
         },
         visit: function() {
+          playAudio("idea.mp3");
           player.inventory.add(['Spoon', 'Spoon.png']);
           alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
           this.wallTop.show();
