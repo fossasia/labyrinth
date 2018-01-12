@@ -130,6 +130,7 @@ function stopAudio() {
     if (audioPlay !== null) {
         audioPlay.pause();
     }
+    $("#tileLicense").html("");
 }
 
 function playAudio(audio, licenseNum) {
