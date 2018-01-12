@@ -35,6 +35,14 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
         link: "http://bensound.com/",
     },
+    {
+        filename: "audio/music/ownsound.mp3",
+        backgroundSongName: "NoPro",
+        author: "Saarthak Chaturvedi",
+        legalNotice: "Music by Saarthak Chaturvedi",
+        link: "http://github.com/saarthakchats",
+    },
+
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
