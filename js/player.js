@@ -2,7 +2,7 @@ function newPlayer() {
     return new Player();
 }
 
-NullLevel = {
+var NullLevel = {
   removePlayer: function(player) {},
   hide: function() {},
 };
@@ -75,8 +75,8 @@ function Player() {
     this.showPictureIn = function(element) {
         element.appendChild(this.picture);
     };
-    this.changeCharacter = function(character_source) {
-        this.picture.src = character_source;
+    this.changeCharacter = function(characterSource) {
+        this.picture.src = characterSource;
     };
     this.enterLevel = function(level) {
         this.currentLevel.removePlayer(this);
