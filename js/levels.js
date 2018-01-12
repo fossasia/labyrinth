@@ -60,6 +60,17 @@ function createDesertLevel() {
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
   ]);
 }
+function createPartyLevel() {
+  return new Level([
+    [party.none, party.right, party.right, party.right, party.right, party.none],
+    [party.none, party.top, party.both, party.both, party.both, party.both],
+    [party.none, party.top, PlayerStartsAt(party.start), party.both, party.both, party.top],
+    [party.none, party.top, party.both, party.both, party.both, party.top],
+    [party.none, party.top, party.top, party.both, party.top, party.top],
+    [party.none, party.top, party.both, party.both, party.both, party.top],
+    [NullTile, party.none, party.none, party.none, party.none, party.none],
+  ]);
+}
 function createSuperheroLevel() {
   return new Level([
     [Superhero.none, Superhero.right, Superhero.right, Superhero.second, Superhero.right, Superhero.none],
