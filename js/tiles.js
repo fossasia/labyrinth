@@ -393,6 +393,7 @@ const door = {
         },
         visit: function() {
             if(player.inventory.has('Key')){
+                playAudio("arjun.mp3")
                 player.inventory.remove('Key');
                 alertInfo('Checkmate!', 'Oops lost your key! Come on, try to get out from here.');
             }
