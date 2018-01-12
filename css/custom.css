@@ -279,3 +279,12 @@ nav .left li a {
 .fixed-action-btn:hover i.large, .fixed-action-btn:focus i.large {
   background-color: #80BE62;
 }
+
+#tileLicense {
+  margin-left: 20px;
+}
+
+#tileLicense a {
+  color: #000;
+  border-bottom: #000 solid 2px;
+}

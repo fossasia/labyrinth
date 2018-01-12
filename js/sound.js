@@ -1,6 +1,13 @@
 /*jshint esversion: 6 */
 const backgroundAudio = [
     {
+        filename: "audio/0x48piraj/composed/0x48piraj_Rusted_Heart.mp3",
+        backgroundSongName: "Rusted Heart.mp3",
+        author: "Piyush Raj (0x48piraj)",
+        legalNotice: "Music by Piyush Raj (0x48piraj)",
+        link: "https://github.com/0x48piraj",
+    },
+    {
         filename: "audio/music/bensound.com/epic1.mp3",
         backgroundSongName: "Epic",
         author: "bensound.com",
@@ -55,14 +62,43 @@ const backgroundAudio = [
         legalNotice: "Music by Saarthak Chaturvedi",
         link: "http://github.com/saarthakchats",
     },
-        {
+    {
+        filename: "audio/art/musicofart-backgvideo.mp3",
+        backgroundSongName: "Motivate",
+        author: "Supun Tharinda Edirisuriya",
+        legalNotice: "Motivate",
+        link: "http://github.com/STEdirisuriya",
+    },
+    {
         filename: "audio/background/arjunpandey/arjun.mp3",
         backgroundSongName: "Hyper",
         author: "bensound.com",
         legalNotice: "Music by Arjun Pandey",
         link: "http://github.com/arjunpandey2003",
     },
+        {
+        filename: "audio/music/bensound.com/idea.mp3",
+        backgroundSongName: "Idea",
+        author: "bensound.com",
+        legalNotice: "Music by bensound.com",
+    },
 
+];
+/*
+creativeCommonsLicense[0] = Attribution 4.0 International
+creativeCommonsLicense[1] = Attribution-NoDerivatives 4.0 International
+creativeCommonsLicense[2] = Attribution-ShareAlike 4.0 International
+creativeCommonsLicense[3] = Attribution-NonCommercial 4.0 International
+creativeCommonsLicense[4] = Attribution-NonCommercial-NoDerivatives 4.0 International
+creativeCommonsLicense[5] = Attribution-NonCommercial-ShareAlike 4.0 International
+*/
+const creativeCommonsLicense = [
+'<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nd/4.0/">Creative Commons Attribution-NoDerivatives 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.',
+'<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.',
 ];
 var backgroundNum = Math.floor(Math.random() * backgroundAudio.length);
 var backgroundPlay = new Audio(backgroundAudio[backgroundNum].filename);
@@ -121,10 +157,12 @@ function stopAudio() {
     if (audioPlay !== null) {
         audioPlay.pause();
     }
+    $("#tileLicense").html("");
 }
 
-function playAudio(audio) {
+function playAudio(audio, licenseNum) {
     audioPlay = new Audio("audio/" + audio);
     console.log(audioPlay);
     audioPlay.play();
+    $("#tileLicense").html(creativeCommonsLicense[licenseNum - 1]);
 }
