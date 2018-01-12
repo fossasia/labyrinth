@@ -1256,5 +1256,29 @@ const Superhero = {
             this.ground = this.createImage("tiles/rooms/floor/superheroes/ironman.svg");
         },
     }),
+    art: Object.assign({}, OpenDoors, {
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        createImages: function () {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/art.svg");
+        },
+        visit: function () {
+            playAudio("audio/art/art.mp3");
+            swal({
+                type: 'info',
+                title: 'Do you know this fact about, Mona Lisa?',
+                text: "While some claim that Leonardo da Vinci’s most famous painting is a self-portrait of the artist himself in drag, research has concluded it is likely a portrait of a woman named Lisa Gherardini, a member of a prominent Florentine family and wife of a wealthy silk merchant.",
+            });
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
 };
 
