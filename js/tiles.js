@@ -648,6 +648,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/plain.svg");
         },
+        visit: function() {
+            playAudio("0x48piraj/composed/0x48piraj.mp3");
+        }
     }),
     texture: Object.assign({}, OpenDoors, {
         createImages: function() {
