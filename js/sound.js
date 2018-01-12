@@ -1,6 +1,13 @@
 /*jshint esversion: 6 */
 const backgroundAudio = [
     {
+        filename: "audio/0x48piraj/composed/0x48piraj_Rusted_Heart.mp3",
+        backgroundSongName: "Rusted Heart.mp3",
+        author: "Piyush Raj (0x48piraj)",
+        legalNotice: "Music by Piyush Raj (0x48piraj)",
+        link: "https://github.com/0x48piraj",
+    },
+    {
         filename: "audio/music/bensound.com/epic1.mp3",
         backgroundSongName: "Epic",
         author: "bensound.com",
