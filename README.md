@@ -143,10 +143,16 @@ If you want to have a sound played when the character reaches your tile, your im
 
 ```javascript
     visit: function() {
-      playAudio("audio.mp3");
+      playAudio("audio.mp3", licenseNum);
       // ...
      },
 ```
+
+The license numbers are as follows : 
+1. Attribution 4.0 International
+2. 
+
+<br><br>
 
 To add your audio file, please read the following carefully:
 Audio files are usually not licensed under AGPL. They have a different license.
