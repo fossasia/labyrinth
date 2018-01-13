@@ -10,7 +10,7 @@
 // ignore JSHintBear
 function createFirstLevel()
 {
-  return new Level("first", [
+  return new Level("Starter", [
     [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],
     [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
@@ -22,8 +22,8 @@ function createFirstLevel()
   ]);
 }
 
-function createHugeLevel() {
-  return new Level("huge", [
+function createAdvancedLevel() {
+  return new Level("Advanced", [
     [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
     [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
     [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],

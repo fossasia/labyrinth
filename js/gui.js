@@ -3,23 +3,14 @@
 // defined in /js/levels.js
 /* global createTestLevel */
 var player;
-var level;
-
 
 window.addEventListener("load", function() {
   startGame();
 });
 
-function clearGame() {
-  $("#tiles").html("");
-}
-
 function startGame() {
-  var container = document.getElementById("tiles");
-  level = createFirstLevel();
-  level.showIn(container);
   player = newPlayer();
-  player.enterLevel(level);
+  player.enterLevel(createFirstLevel());
   choosePlayerCharacter(player);
 }
 

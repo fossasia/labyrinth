@@ -29,6 +29,7 @@ function Player() {
     this.badges = new badges();
     this.currentLevel = NullLevel;
     this.picture = createPlayerPicture();
+    this.levels = [];
 
     this.enter = function(tile) {
         this.currentTile.playerLeaves(this);
@@ -79,10 +80,44 @@ function Player() {
         this.picture.src = characterSource;
     };
     this.enterLevel = function(level) {
+        this.addLevel(level);
         this.currentLevel.removePlayer(this);
         this.currentLevel.hide();
         this.currentLevel = level;
         this.currentLevel.addPlayer(this);
         this.currentLevel.show();
     };
+    this.getLevelNamed = function(levelName) {
+      return this.levels.find(function(level){return level.name == levelName});
+    }
+    this.addLevel = function(level) {
+      // add a level if it is not already added
+      if (this.getLevelNamed(level.name)) {
+        return;
+      }
+      this.levels.push(level);
+    }
+    this.addReachableLevel = function(level) {
+      // please use this in tiles to go to a new level
+      this.addLevel(level);
+      this.askToChooseALevel();
+    }
+    this.askToChooseALevel = function() {
+      var levelsToNames = {};
+      this.levels.forEach(function(level){
+        levelsToNames[level.name] = level.name;
+      });
+      var inputOptionsPromise = new Promise(function(resolve) {
+        // input your character here in the form, "src_url": "character_name",
+        resolve(levelsToNames);
+      });
+      var me = this;
+      swal({
+        input: 'select',
+        inputOptions: inputOptionsPromise,
+        inputValidator: function(levelName) {
+          me.enterLevel(me.getLevelNamed(levelName));
+        }
+      });
+    }
 }

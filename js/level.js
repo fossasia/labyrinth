@@ -9,9 +9,12 @@ const tileHeight = 256.314; // px
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
 
-function createTilesContainer() {
+function createTilesContainer(name) {
+  var container = document.getElementById("tiles");
   var tilesContainer = document.createElement("div");
+  container.appendChild(tilesContainer);
   tilesContainer.classList.add("tileContainer");
+  tilesContainer.id = "level-" + name;
   return tilesContainer;
 }
 
@@ -20,9 +23,10 @@ function Level(name, specification)
   this.name = name;
   this.scale = 0.5;
   this.startTile = null;
-  this.tilesContainer = createTilesContainer();
+  this.tilesContainer = createTilesContainer(this.name);
   this.setTilesFromSpecification(specification);
   this.showTilesIn(this.tilesContainer);
+  this.hide();
 }
 
 Level.prototype.setTilesFromSpecification = function(specification) {
@@ -68,10 +72,6 @@ Level.prototype.showTilesIn = function(container){
   container.style.left = (-minX + $('.left-column').width()) + "px";
   // add height of top navbar to prevent it from overlapping tiles
   container.style.top = (-minY + $('.navbar-fixed').height()) + "px";
-};
-
-Level.prototype.showIn = function(container){
-  container.appendChild(this.tilesContainer);
 };
 
 Level.prototype.getTileAt = function(x, y){

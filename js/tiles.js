@@ -204,11 +204,11 @@ const OpenDoors = {
     viewFromTheBottom: function(player) {},
     whenPlayerLeaves: function(player) {},
     whenPlayerEnters: function(player) {
-        this.visit();
-        this.tileToTheLeft().viewFromTheRight();
-        this.tileToTheRight().viewFromTheLeft();
-        this.tileToTheTop().viewFromTheBottom();
-        this.tileToTheBottom().viewFromTheTop();
+        this.visit(player);
+        this.tileToTheLeft().viewFromTheRight(player);
+        this.tileToTheRight().viewFromTheLeft(player);
+        this.tileToTheTop().viewFromTheBottom(player);
+        this.tileToTheBottom().viewFromTheTop(player);
     },
     visit: function() {
         this.wallTop.show();
@@ -442,14 +442,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
         },
         /* Override the function */
-        visit: function() {
+        visit: function(player) {
             playAudio("applause.mp3", 1);
             console.log("Courtesy of Daniel simons for his music, taken from freesoundeffects.com");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
-            clearGame();
-            startGame(door.levelCode);
+            player.addReachableLevel(createForestLevel());
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
