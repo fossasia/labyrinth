@@ -23,6 +23,14 @@ function startGame() {
   choosePlayerCharacter(player);
 }
 
+function saveTrigger() {
+    saveGame(player);
+}
+
+function loadTrigger() {
+    loadGame(player);
+}
+
 function choosePlayerCharacter(player) {
 
   var inputOptionsPromise = new Promise(function(resolve) {
