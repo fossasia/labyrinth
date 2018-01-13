@@ -82,6 +82,12 @@ const backgroundAudio = [
         author: "bensound.com",
         legalNotice: "Music by bensound.com",
     },
+    {
+        filename: "audio/music/Righteous.mp3",
+        backgroundSongName: "Righteous",
+        legalNotice: "Music from Youtube Audio Library",
+        link: "https://www.youtube.com/audiolibrary/music",
+    },
 
 ];
 /*
