@@ -12,7 +12,7 @@ function createFirstLevel()
 {
   return new Level("first", [
     [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],
-    [door.none, door.orchestra, door.Forbidden, door.none, door.guitarCase, door.none],
+    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.none, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
@@ -82,4 +82,3 @@ function createSuperheroLevel() {
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
   ]);
 }
-
