@@ -308,6 +308,7 @@ const door = {
         },
         visit: function() {
             if (player.inventory.has('Guitar')) {
+                playAudio("guitar_strings.mp3");
                 alertSuccess("Wow, an awesome solo perfomance, keep it up", "Your guitar skills looks fantastic");
                 // We wont remove the guitar.
             } else {
