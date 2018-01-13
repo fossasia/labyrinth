@@ -1,3 +1,8 @@
+<center>
+	<a href="https://github.com/fossasia/labyrinth">
+		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
+	</a>
+</center>
 Labyrinth
 =========
 
