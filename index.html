@@ -24,7 +24,8 @@
 	<script type="text/javascript" src="js/level.js"></script>
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
-  <script type="text/javascript" src="js/gui.js"></script>
+    <script type="text/javascript" src="js/save.js"></script>
+    <script type="text/javascript" src="js/gui.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<title>Labyrinth</title>
 </head>
@@ -65,6 +66,8 @@
 					<span class="card-title">Statistics</span>
 					<p>Player Moved :
 					<span id="playerMoves">0</span> Times</p>
+					<input type="button" value="Save" onClick="saveTrigger()" class="black-text"/>
+					<input type="button" value="Load last save" onClick="loadTrigger()" class="black-text"/>
 				</div>
 
 				<div class="border1"></div>
