@@ -2,7 +2,7 @@
 
 <!-- Check by changing each `[ ]` to `[x]` Please take note of the whitespace as it matters. -->
 - [ ] Read and understood [see CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/master/CONTRIBUTING.md)
-- [ ] Included a Preview link and screenshot showning after and before the changes.
+- [ ] Included a preview link and screenshot showing after and before the changes.
 - [ ] Included a description of change below.
 - [ ] Squashed the commits.
 
