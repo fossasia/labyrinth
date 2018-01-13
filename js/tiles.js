@@ -1100,18 +1100,18 @@ const desert = {
             this.ground.show();
         }
     }),
-    
+
     universe: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
-        }, 
+        },
         canLeaveToTheRight() {
             return false;
         },
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg"); 
+            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg");
         },
         visit: function() {
             swal('no one can escape from the universe');
@@ -1120,7 +1120,7 @@ const desert = {
             this.ground.show();
         },
   }),
-    
+
     start: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -1318,4 +1318,3 @@ const Superhero = {
         }
     }),
 };
-
