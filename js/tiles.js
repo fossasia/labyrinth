@@ -304,6 +304,13 @@ const door = {
             alertInfo("More to Go !", "");
         },
     }),
+       design: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/handarjun.svg");
+        },
+    }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -734,8 +741,17 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/sofa.svg");
         },
         visit: function() {
-            playAudio("spy.mp3", 1);
+          if (player.inventory.has('Chocolate')) {
+              alertInfo("Welcome to another chocolate kingdom", "");
+              player.inventory.remove('Chocolate');
+              this.wallTop = this.createImage("tiles/rooms/door/topChoc.svg");
+              this.wallRight = this.createImage("tiles/rooms/wall/rightChoc.svg");
+              this.ground = this.createImage("tiles/rooms/floor/chocolate.svg");
+          }
+          else {
             alertInfo("Get out!", "Yeah, I know no one's here, but basically you shouldn't invade someone else's living room.");
+          }
+            playAudio("spy.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -943,6 +959,26 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
+    chocolate: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/topChoc.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightChoc.svg");
+            this.ground = this.createImage("tiles/rooms/floor/chocolate.svg");
+        },
+        visit: function() {
+            alertInfo("You got a magic chocolate, Use it to turn the living room into a choco kingdom.");
+            player.inventory.add(['Chocolate', 'choc.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     winter1: Object.assign({}, OpenDoors, {
         canEnterFromTheRight: function(player) {
             return false;
@@ -974,7 +1010,7 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
-        }
+        },
     }),
 };
 
@@ -1154,18 +1190,18 @@ const desert = {
             this.ground.show();
         }
     }),
-    
+
     universe: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
-        }, 
+        },
         canLeaveToTheRight() {
             return false;
         },
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg"); 
+            this.ground = this.createImage("tiles/rooms/floor/universeFloor.svg");
         },
         visit: function() {
             swal('no one can escape from the universe');
@@ -1174,7 +1210,7 @@ const desert = {
             this.ground.show();
         },
   }),
-    
+
     start: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -1449,4 +1485,3 @@ const Superhero = {
         }
     }),
 };
-

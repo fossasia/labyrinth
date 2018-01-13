@@ -4,6 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="description" content="Labyrinth | Game ">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 	<!-- UI Sheets -->
 	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
@@ -32,7 +33,7 @@
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<ul class="left hide-on-med-and-down">
+				<ul class="left">
 					<li><a href="#" onclick="openSideBar();"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
 				</ul>
 				<a href="https://github.com/fossasia/labyrinth" class="brand-logo center">Labyrinth</a>
@@ -57,7 +58,9 @@
 
 			<a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
 			
-			<div class="card blue-grey darken-3">
+			<div class="border1"></div>
+			
+			<div class="side-nav-card">
 				<div class="card-content white-text">
 					<span class="card-title">Statistics</span>
 					<p>Player Moved :
@@ -191,7 +194,8 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="versionSpan">Version<a href="" id="labyrinthVersion"></a></span>
+					<span class="card-title">Version</span>
+					<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
 				</div>
 			</div>  
 	</div>

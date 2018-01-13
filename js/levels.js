@@ -10,20 +10,20 @@
 // ignore JSHintBear
 function createFirstLevel()
 {
-  return new Level([
-    [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2,
-    [door.none, door.orchestra, door.Forbidden, door.none, door.guitarCase, door.none],
+  return new Level("first", [
+    [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2],
+    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
-    [door.none, door.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
+    [door.none, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
-    [door.fairysWheel, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
+    [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [NullTile, door.boat, door.river, desert.universe, door.cake, door.newYear],
   ]);
 }
 
 function createHugeLevel() {
-  return new Level([
+  return new Level("huge", [
     [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
     [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
     [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
@@ -38,7 +38,7 @@ function createHugeLevel() {
 }
 
 function createForestLevel() {
-  return new Level([
+  return new Level("Forest", [
     [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.both],
     [forest.none, forest.top, PlayerStartsAt(forest.start), forest.both, forest.both, forest.top],
@@ -50,7 +50,7 @@ function createForestLevel() {
 }
 
 function createDesertLevel() {
-  return new Level([
+  return new Level("Desert", [
     [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
     [desert.none, desert.top, PlayerStartsAt(desert.start), desert.both, desert.both, desert.top],
@@ -61,7 +61,7 @@ function createDesertLevel() {
   ]);
 }
 function createPartyLevel() {
-  return new Level([
+  return new Level("Party", [
     [party.none, party.right, party.right, party.right, party.right, party.none],
     [party.none, party.top, party.both, party.both, party.both, party.both],
     [party.none, party.top, PlayerStartsAt(party.start), party.both, party.both, party.top],
@@ -72,7 +72,7 @@ function createPartyLevel() {
   ]);
 }
 function createSuperheroLevel() {
-  return new Level([
+  return new Level("Super Hero", [
     [Superhero.none, Superhero.right, Superhero.right, Superhero.second, Superhero.right, Superhero.none],
     [Superhero.none, Superhero.first, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
     [Superhero.none, Superhero.first, PlayerStartsAt(Superhero.start), Superhero.both, Superhero.both, Superhero.top],
@@ -82,4 +82,3 @@ function createSuperheroLevel() {
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
   ]);
 }
-
