@@ -4,4 +4,6 @@
 
 ### Steps to reproduce the issue
 
-## Would you like to work on this
+### Implementation/Solution Ideas
+
+### Would you like to work on this
