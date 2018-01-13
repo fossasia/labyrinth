@@ -943,6 +943,39 @@ const door = {
            alertInfo("This tile was Hand-Drawn by Beta-King", "");
         }
     }),
+    winter1: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/winter1.svg");
+        },
+        visit: function() {
+          playAudio("jingleBellsKuba.mp3");
+          alertInfo("It's winter here!");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+        },
+    }),
+    winter2: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
+        }
+    }),
 };
 
 const forest = {

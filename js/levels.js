@@ -11,7 +11,7 @@
 function createFirstLevel()
 {
   return new Level([
-    [door.none, door.minecraftEntry, door.minecraft, door.none, door.goal, door.none],
+    [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2,
     [door.none, door.orchestra, door.Forbidden, door.none, door.guitarCase, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.none, door.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
