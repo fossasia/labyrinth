@@ -76,6 +76,13 @@ const backgroundAudio = [
         legalNotice: "Music by Arjun Pandey",
         link: "http://github.com/arjunpandey2003",
     },
+    {
+        filename: "audio/background/Major.mp3",
+        backgroundSongName: "Major",
+        author: "Naveen Rajan",
+        legalNotice: "Music by Naveen Rajan",
+        link: "http://github.com/naveentherocker",
+    },
         {
         filename: "audio/music/bensound.com/idea.mp3",
         backgroundSongName: "Idea",
