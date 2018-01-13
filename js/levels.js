@@ -16,7 +16,7 @@ function createFirstLevel()
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.none, door.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
-    [door.none, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
+    [door.fairysWheel, door.top, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [NullTile, door.boat, door.river, desert.universe, door.cake, door.newYear],
   ]);
@@ -58,6 +58,17 @@ function createDesertLevel() {
     [desert.none, desert.top, desert.top, desert.both, desert.top, desert.top],
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [NullTile, desert.none, desert.none, desert.none, desert.none, desert.none],
+  ]);
+}
+function createPartyLevel() {
+  return new Level([
+    [party.none, party.right, party.right, party.right, party.right, party.none],
+    [party.none, party.top, party.both, party.both, party.both, party.both],
+    [party.none, party.top, PlayerStartsAt(party.start), party.both, party.both, party.top],
+    [party.none, party.top, party.both, party.both, party.both, party.top],
+    [party.none, party.top, party.top, party.both, party.top, party.top],
+    [party.none, party.top, party.both, party.both, party.both, party.top],
+    [NullTile, party.none, party.none, party.none, party.none, party.none],
   ]);
 }
 function createSuperheroLevel() {
