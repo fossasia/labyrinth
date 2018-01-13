@@ -88,20 +88,20 @@ function Player() {
         this.currentLevel.show();
     };
     this.getLevelNamed = function(levelName) {
-      return this.levels.find(function(level){return level.name == levelName});
-    }
+      return this.levels.find(function(level){return level.name == levelName;});
+    };
     this.addLevel = function(level) {
       // add a level if it is not already added
       if (this.getLevelNamed(level.name)) {
         return;
       }
       this.levels.push(level);
-    }
+    };
     this.addReachableLevel = function(level) {
       // please use this in tiles to go to a new level
       this.addLevel(level);
       this.askToChooseALevel();
-    }
+    };
     this.askToChooseALevel = function() {
       var levelsToNames = {};
       this.levels.forEach(function(level){
@@ -119,5 +119,5 @@ function Player() {
           me.enterLevel(me.getLevelNamed(levelName));
         }
       });
-    }
+    };
 }
