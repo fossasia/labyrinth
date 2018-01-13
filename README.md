@@ -26,8 +26,8 @@ Labyrinth
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
+- [**Videos about the Labyrinth**](#videos-by-students)
 - [**Maintainers**](#maintainers)
-- [**Maintainers**](#videos-by-students)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
