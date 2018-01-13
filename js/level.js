@@ -9,10 +9,12 @@ const tileHeight = 256.314; // px
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
 
+function getLevelsContainer() {
+  return document.getElementById("tiles");
+}
+
 function createTilesContainer(name) {
-  var container = document.getElementById("tiles");
   var tilesContainer = document.createElement("div");
-  container.appendChild(tilesContainer);
   tilesContainer.classList.add("tileContainer");
   tilesContainer.id = "level-" + name;
   return tilesContainer;
@@ -98,11 +100,12 @@ Level.prototype.visit = function() {
 };
 
 Level.prototype.hide = function() {
-  this.tilesContainer.classList.add("hidden");
+  this.show();
+  getLevelsContainer().removeChild(this.tilesContainer);
 };
 
 Level.prototype.show = function() {
-  this.tilesContainer.classList.remove("hidden");
+  getLevelsContainer().appendChild(this.tilesContainer);
 };
 
 Level.prototype.removePlayer = function(player) {
