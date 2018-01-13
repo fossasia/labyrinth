@@ -15,8 +15,9 @@ function createTilesContainer() {
   return tilesContainer;
 }
 
-function Level(specification)
+function Level(name, specification)
 {
+  this.name = name;
   this.scale = 0.5;
   this.startTile = null;
   this.tilesContainer = createTilesContainer();
@@ -29,6 +30,9 @@ Level.prototype.setTilesFromSpecification = function(specification) {
   this.tiles = specification.map(function(row, y){
     return row.map(function(tileSpecification, x){
       const position = {"x": x, "y": y};
+      if (!tileSpecification) {
+        alert("ERROR: Tile is " + tileSpecification + " at row " + (y + 1) + " column " + (x + 1) + " in level \"" + me.name + "\". Please see levels.js and correct the problem.");
+      }
       return tileSpecification.placeAtIn(position, me);
     });
   });

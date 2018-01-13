@@ -1,4 +1,8 @@
-#Labyrinth: Create a Wall
+https://codein.withgoogle.com/dashboard/tasks/4947274276798464/
+
+---
+
+# Labyrinth: Create a Wall
 
 The [FOSSASIA Labyrinth](https://github.com/fossasia/labyrinth/) allows you to contribute parts to a huge labyrinth.
 As most of the tiles have the same walls and with same walls in every tile the game will look monotonous, please add more walls!
@@ -8,10 +12,11 @@ As most of the tiles have the same walls and with same walls in every tile the g
 - Create a wall for the Labyrinth maze 
 - Add your wall to labyrinth/tiles/rooms/wall
 - A merged pull request
+- Do not just color an existing wall: make it beautiful! Plants, cracks, animations, trees and mountains can be a wall, too, as long as you can not walk through it.
 
  Expected outcome:
-- Added atleast one wall
-- The created wall should be a part of the labyrinth maze
+- Added at least one wall
+- The created wall must be a part of the labyrinth maze
 - Issues based on the created PR must be resolved
 
  Hints:
