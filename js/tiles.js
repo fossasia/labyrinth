@@ -1000,7 +1000,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
         },
         visit: function() {
-        	 playAudio("mybits.mp3", 2);
+        	 playAudio("background/yashkumarverma.github.io/pinballGame.mp3", 1);
              if (player.inventory.has('Sword')) {
              alertSuccess("You killed the Monster! Yay!!");
              player.inventory.remove('Sword');
