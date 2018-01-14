@@ -59,6 +59,7 @@ function choosePlayerCharacter(player) {
     });
   });
   swal({
+    title: 'Choose a character',
     input: 'select',
     inputOptions: inputOptionsPromise,
     /* This is a way to get data quickly from swal */
