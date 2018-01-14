@@ -31,8 +31,8 @@ Labyrinth
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
-- [**Videos about the Labyrinth**](#videos-by-students)
 - [**Maintainers**](#maintainers)
+- [**Maintainers**](#videos-by-students)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -93,6 +93,8 @@ Tiles are present in the `tiles` folder within subdirectories corresponding to p
 
 To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
 and saved as a svg file with the speccified dimensions.
+
+Note: if you are copying the template of a tile(floor) from an existing tile, then do edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
 
 After creating tiles add them to the specific sub folder inside tiles.
 
@@ -162,6 +164,8 @@ The license numbers are as follows :
 6. Attribution-NonCommercial-ShareAlike 4.0 International
 
 <br><br>
+
+Note: if you are adding music to a tile then add it to: `audio/music` and if you are adding music as a background then add it to: `audio/background`! This is so that we can be organised and have a consistent filing system. 
 
 To add your audio file, please read the following carefully:
 Audio files are usually not licensed under AGPL. They have a different license.
@@ -313,7 +317,6 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - https://www.youtube.com/watch?v=XvoHY3QCJtw
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
-- [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)
 
 ## Maintainers
 
