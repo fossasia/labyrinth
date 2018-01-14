@@ -980,7 +980,7 @@ const door = {
             alertInfo("You got the sword of Gryffindor!", "Kill monsters with it!");
 
             // add item to inventory
-            player.inventory.add(['Sword', 'sword.png']);
+            player.inventory.add(['Sword', 'sword.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
