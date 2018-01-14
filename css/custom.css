@@ -51,9 +51,12 @@ div.social-container {
   margin-left: 0px;
 }
 
-i.fa {
-  background: none !important;
+input.black-text:hover {
+  background-color:yellow;
+  border:1px solid yellow;
 }
+
+i.fa {background: none !important;}
 
 i.fa.fa-times:hover {
   color: red;
@@ -360,6 +363,7 @@ nav .left li a {
 .large:hover {
   height: 245px;
 }
+
 div.swal2-popup.swal2-modal {
   margin-right: 30px !important;
   bottom: 450px;

@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<script>
-  @keyframes winterAnimation {
-    50% { transform: scale(1.5, 1.5); }
-  }
-  #svg2 {
-    animation: winterAnimation 4s infinite linear;
-  }
-</script>
 
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
