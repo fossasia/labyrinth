@@ -56,7 +56,7 @@ const backgroundAudio = [
         legalNotice: "Music by Abishek V Ashok",
     },
     {
-        filename: "audio/music/ownsound.mp3",
+        filename: "audio/saarthakchats/ownsound.mp3",
         backgroundSongName: "NoPro",
         author: "Saarthak Chaturvedi",
         legalNotice: "Music by Saarthak Chaturvedi",
