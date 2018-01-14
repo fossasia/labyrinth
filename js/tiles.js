@@ -452,7 +452,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
-        	playAudio("suspense.mp3", 1);
+        	playAudio("FreeSoundEffects.com/suspense.mp3", 1);
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -701,7 +701,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
-            playAudio("mybits.mp3");
+            
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
@@ -892,7 +892,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("audio/music/FreeSoundEffects.com/celebrate.mp3", 1);
+        	playAudio("FreeSoundEffects.com/celebrate.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1000,6 +1000,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
         },
         visit: function() {
+        	 playAudio("mybits.mp3", 2);
              if (player.inventory.has('Sword')) {
              alertSuccess("You killed the Monster! Yay!!");
              player.inventory.remove('Sword');
