@@ -983,11 +983,39 @@ const door = {
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {
+    	canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheLeft() {
+            return false;
+        },
+        canLeaveToTheLeft() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
-           alertInfo("This tile was Hand-Drawn by Beta-King", "");
+        },
+        visit: function() {
+             if (player.inventory.has('Sword')) {
+             alertSuccess("You killed the Monster! Yay!!");
+             player.inventory.remove('Spoon');
+            } else {
+                alertNormal("You Need a Sword to fight the Basilisk!", "It is deadly");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     chocolate: Object.assign({}, OpenDoors, {
