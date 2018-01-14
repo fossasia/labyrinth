@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    <script type="text/javascript" src="js/jquery.translate.js"></script>
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/sweetalert2.min.js"></script>
     <script type="text/javascript" src="js/translate.js"></script>
   </head>
@@ -22,7 +22,7 @@
       <div class="centered">
         <div class="header">
           <img class="play-button" src="images/docs/play-button.png" alt="Play" />
-          <h1 class="site_title centered"><div class="lang" key="how">HOW TO PLA</div></h1>
+          <h1 class="site_title centered lang" key="how">HOW TO PLAY</h1>
           <a href="https://github.com/fossasia/labyrinth">
             <img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="160" height="120">
           </a>
@@ -30,20 +30,21 @@
         </div>
         <br>
         <h3 class="lang" key="language">Select your language</h3>
-        <ul>
+        <div>
           <a class="translate" id="en">
-            <img align='left' src="icons/UnitedKingdom.png" width=7% height=7%/>
-            <p align='left'><font color ="blue"><i>&nbspEnglish</i></font></p>
+            <img class="translation-flag" src="icons/UnitedKingdom.png" alt="" /> English
           </a>
+        <div>
+        </div>
           <a class="translate" id="si">
-            <img align='left' src="icons/SriLanka.png" width=7% height=7%/>
-            <p align='left'><font color="blue"><i>&nbspSinhala</i></font></p>
+            <img class="translation-flag" src="icons/SriLanka.png" alt="" /> Sinhala
           </a>
+        <div>
+        </div>
           <a class="translate" id="pl">
-            <img align='left' src="icons/Poland.png" width=7% height=7%/>
-            <p align='left'><font color="blue"><i>&nbspPolski</i></font></p>
+            <img class="translation-flag" src="icons/Poland.png" alt="" /> Polski
           </a>
-        </ul>
+        </div>
         <hr>
         <div class="content">
           <h3 class="lang" key="start">Let's start</h3>
@@ -68,8 +69,11 @@
       </div>
     </div>
     <div>
-      <button class="play" onclick="javascript: document.location='index.html'"><div class="lang" key="play">Play</div></button>
-      <p class="credits"><div class="lang" key="icon">Icons by </div><a href="flaticon.com"><div class="lang" key="flaticon">flaticon.com</div></a></p>
+      <button class="play lang" onclick="javascript: document.location='index.html'" key="play">Play</button>
+      <div class="credits">
+        <div class="lang" key="icon">Icons by</div>
+        <a href="flaticon.com" class="lang" key="flaticon">flaticon.com</a>
+      </div>
     </div>
   </body>
  </html>
