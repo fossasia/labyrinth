@@ -9,9 +9,14 @@ const tileHeight = 256.314; // px
 // Level is used in /js/levels.js ignoring the error
 // ignore JSHintBear
 
-function createTilesContainer() {
+function getLevelsContainer() {
+  return document.getElementById("tiles");
+}
+
+function createTilesContainer(name) {
   var tilesContainer = document.createElement("div");
   tilesContainer.classList.add("tileContainer");
+  tilesContainer.id = "level-" + name;
   return tilesContainer;
 }
 
@@ -20,9 +25,10 @@ function Level(name, specification)
   this.name = name;
   this.scale = 0.5;
   this.startTile = null;
-  this.tilesContainer = createTilesContainer();
+  this.tilesContainer = createTilesContainer(this.name);
   this.setTilesFromSpecification(specification);
   this.showTilesIn(this.tilesContainer);
+  this.hide();
 }
 
 Level.prototype.setTilesFromSpecification = function(specification) {
@@ -70,10 +76,6 @@ Level.prototype.showTilesIn = function(container){
   container.style.top = (-minY + $('.navbar-fixed').height()) + "px";
 };
 
-Level.prototype.showIn = function(container){
-  container.appendChild(this.tilesContainer);
-};
-
 Level.prototype.getTileAt = function(x, y){
   if (x < 0 || y < 0 || y >= this.tiles.length || x >= this.tiles[y].length) {
     return NullTile;
@@ -98,11 +100,12 @@ Level.prototype.visit = function() {
 };
 
 Level.prototype.hide = function() {
-  this.tilesContainer.classList.add("hidden");
+  this.show();
+  getLevelsContainer().removeChild(this.tilesContainer);
 };
 
 Level.prototype.show = function() {
-  this.tilesContainer.classList.remove("hidden");
+  getLevelsContainer().appendChild(this.tilesContainer);
 };
 
 Level.prototype.removePlayer = function(player) {
