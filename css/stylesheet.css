@@ -190,3 +190,9 @@ img {
 .how-to-play-image {
   width: 50%;
 }
+
+.translation-flag {
+  height: 1em;
+  vertical-align: center;
+}
+

@@ -234,7 +234,7 @@ nav .left li a {
 
 #player {
   position: absolute;
-  z-index: 10000;
+  z-index: 1;
   width: 55px;
   height: 60px;
 }
@@ -288,4 +288,106 @@ nav .left li a {
 #tileLicense a {
   color: #000;
   border-bottom: #000 solid 2px;
+}
+
+.collection-badges {
+  float: left !important;
+  margin-right: 10px !important;
+}
+
+/*Translate drop box*/
+
+.languagepicker {
+  background-color: rgb(96, 165, 82);
+  display: inline-block;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin: 0 50px 10px 0;
+  vertical-align: top;
+  float: left;
+}
+
+.languagepicker:hover {
+  height: 81px;
+}
+
+.languagepicker a {
+  color: #000;
+  text-decoration: none;
+}
+
+.languagepicker li {
+  display: block;
+  padding: 0px 20px;
+  line-height: 40px;
+  border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover {
+  background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+  border: none;
+  background: #FFF !important;
+}
+
+.languagepicker li img {
+  margin-right: 5px;
+}
+
+.large:hover {
+  height: 245px;
+}
+
+div.swal2-popup.swal2-modal {
+  margin-right: 30px !important;
+  bottom: 450px;
+  top: 30px;
+  width: 350px !important;
+}
+
+.swal2-container.swal2-center.swal2-fade.swal2-shown {
+  background: none;
+}
+
+div#swal2-content.swal2-content {
+  font-weight: 400 !important;
+}
+
+h2.swal2-title {
+  padding: 15px !important;
+}
+
+#rate-game {
+  text-align: center;
+}
+.rate {
+  width: 100px;
+  height: auto;
+  background-color: #eee;
+  padding: 30px;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.rate:hover {
+  background-color: #fff;
+}
+.thanks {
+  transition: 0.3s;
+}
+.dislike {
+  transform: rotate(180deg);
+}
+.translation-flag {
+  height: 1em;
+  vertical-align: center;
+}
+
+.translate-language-choice {
+  display: block;
+  text-align: center;
 }

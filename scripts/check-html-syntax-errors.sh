@@ -7,6 +7,8 @@ set -e
 
 cd "`dirname \"$0\"`"
 
+excludeErrors='Attribute “key” not allowed on element'
+
 (
   cd ..
   allFine="true"
@@ -16,7 +18,7 @@ cd "`dirname \"$0\"`"
       continue
     fi
     echo "Checking $file"
-    if curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | grep --color=auto -I "error"
+    if curl -H "Content-Type: text/html; charset=utf-8" --data-binary "@$file" 'https://validator.w3.org/nu/?out=gnu' 2>/dev/null | grep --invert-match --fixed-strings "$excludeErrors" | grep --color=auto -I "error"
     then
       allFine="false"
     else

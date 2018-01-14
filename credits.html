@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Credits // Labyrinth</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Labyrinth | Game ">
+    <title>Credits | Labyrinth</title>
     <link rel="icon" type="image/png" href="labyrinthlogo.png" />
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
- <style type="text/css">
-    p{
-    	padding: 10px;
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="text/css" href="css/materialize.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <style type="text/css">
+    html {
+        box-sizing: border-box;
     }
     .space{
     	margin-top: 20px;
@@ -24,31 +35,42 @@
     .need{
         background-color: #0F8A33;
     }
-	</style>
+    </style>
 
 </head>
 <body>
     <nav class="navbar navbar-default need">
-        <div class="container">
+      <div class="container">
         <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> 
-      <a href="" class="navbar-brand">Labyrinth</a>      
-     </div>
-         <div class="collapse navbar-collapse" id="bs">
-         <ul class="nav navbar-nav navbar-right">
-             <li><a href="index.html">LABYRINTH</a></li>
-             <li><a href="howtoplay.html">HOW TO PLAY</a></li>
-         </ul>
-        <a href="https://github.com/fossasia/labyrinth">
-            <img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
-        </a>
-     </div>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button> 
+          
         </div>
+        <div class="collapse navbar-collapse" id="bs">
+          <div class="nav-wrapper">
+            <div class="languagepicker roundborders large">
+						  <a class="lang" key="language">Select your language</a>
+							  <a class="translate translate-language-choice" id="en">
+								  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+						    </a>
+						    <a class="translate translate-language-choice" id="si">
+								  <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+							  </a>
+					  </div>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html" class="lang" key="game">GAME</a></li>
+              <li><a href="howtoplay.html" class="lang" key="how">HOW TO PLAY</a></li>
+            </ul>
+            <a href="https://github.com/fossasia/labyrinth">
+              <img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
+            </a>
+          </div>
+        </div>
+      </div>
     </nav>
     
 	<div class="jumbotron space container">

@@ -948,6 +948,15 @@ const door = {
           this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
           this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
            alertInfo("You are in the Red Floor Now.", "");
+        },
+         visit: function() {
+            alertInfo("You got the sword of Gryffindor!", "Kill monsters with it!");
+
+            // add item to inventory
+            player.inventory.add(['Sword', 'sword.svg']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {
@@ -991,7 +1000,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/winter1.svg");
         },
         visit: function() {
-          playAudio("jingleBellsKuba.mp3");
+          playAudio("music/jingleBellsKuba.mp3");
           alertInfo("It's winter here!");
           this.wallTop.show();
           this.wallRight.show();
