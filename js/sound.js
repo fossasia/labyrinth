@@ -89,6 +89,12 @@ const backgroundAudio = [
         author: "bensound.com",
         legalNotice: "Music by bensound.com",
     },
+        {
+        filename: "audio/background/CuteSong/bensound-cute.mp3",
+        backgroundSongName: "Cute",
+        author: "bensound.com",
+        legalNotice: "Music by bensound.com",
+    },
 
 ];
 /*
