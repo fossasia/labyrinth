@@ -682,7 +682,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	 playAudio("audio/music/FreeSoundEffects.com/watersound.mp3", 1);
+        	 playAudio("FreeSoundEffects.com/watersound.mp3", 1);
              if (player.inventory.has('Boat')) {
              alertSuccess("You got the treasure !", "there's more to find !");
              player.inventory.remove('Boat');
@@ -701,7 +701,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
-            playAudio("audio/saarthakchats/mybits.mp3");
+            playAudio("../saarthakchats/mybits.mp3");
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
@@ -863,7 +863,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
-            playAudio('audio/music/bensound.com/creepy.mp3', 1);
+            playAudio('bensound.com/creepy.mp3', 1);
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
