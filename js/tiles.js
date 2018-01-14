@@ -682,7 +682,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	 playAudio("watersound.mp3", 1);
+        	 playAudio("audio/music/FreeSoundEffects.com/watersound.mp3", 1);
              if (player.inventory.has('Boat')) {
              alertSuccess("You got the treasure !", "there's more to find !");
              player.inventory.remove('Boat');
@@ -892,7 +892,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("celebrate.mp3", 1);
+        	playAudio("audio/music/FreeSoundEffects.com/celebrate.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
