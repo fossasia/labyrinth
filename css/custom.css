@@ -382,3 +382,13 @@ div#swal2-content.swal2-content {
 h2.swal2-title {
   padding: 15px !important;
 }
+
+.translation-flag {
+  height: 1em;
+  vertical-align: center;
+}
+
+.translate-language-choice {
+  display: block;
+  text-align: center;
+}
