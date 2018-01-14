@@ -473,7 +473,6 @@ const door = {
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createForestLevel());
-            player.addReachableLevel(createSuperheroLevel());
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
