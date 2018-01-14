@@ -635,6 +635,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/batcave.svg"); /*  svg_name is the name of your svg */
         },
+        visit: function() {
+            playAudio("superherosound.mp3", 1);
+        },
     }),
     banner: Object.assign({}, OpenDoors, {
         createImages: function() {
