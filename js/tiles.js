@@ -863,7 +863,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
-            playAudio('creepy.mp3', 1);
+            playAudio('audio/music/bensound.com/creepy.mp3', 1);
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
