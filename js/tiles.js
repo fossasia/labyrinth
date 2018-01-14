@@ -995,7 +995,7 @@ const door = {
             return false;
         },
         canEnterFromTheTop: function(player) {
-            return false;
+           
         },
         canLeaveToTheTop: function(player) {
             return false;
