@@ -1037,8 +1037,13 @@ const door = {
 };
 
 const forest = {
-    both: OpenDoors,
-    levelCode: 2,
+    both: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+        },
+    },
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
@@ -1050,7 +1055,6 @@ const forest = {
             this.wallTop = this.createImage("tiles/rooms/wall/topForest.svg");
             this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
-             alertInfo("Welcome to the Forest", "Watch out for the Monsters");
         },
     }),
     top: Object.assign({}, OpenDoors, {
