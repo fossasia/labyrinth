@@ -94,7 +94,7 @@ Tiles are present in the `tiles` folder within subdirectories corresponding to p
 To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
 and saved as a svg file with the speccified dimensions.
 
-Note: if you are copying the template of a tile(floor) from an existing tile, then do edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
+Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
 
 After creating tiles add them to the specific sub folder inside tiles.
 
