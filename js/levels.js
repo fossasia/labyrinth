@@ -14,7 +14,7 @@ function createFirstLevel()
     [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2],
     [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
-    [door.none, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
+    [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
@@ -26,7 +26,7 @@ function createAdvancedLevel() {
   return new Level("Advanced", [
     [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
     [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
-    [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
+    [door.drawnbyme, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
     [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top],
     [door.none, door.top, door.both, door.both, door.both, door.top, door.top, door.left, door.right],
     [door.none, door.top, door.wheel, door.both, door.both, door.wheel, door.right, door.top, door.top],
@@ -52,7 +52,7 @@ function createForestLevel() {
 function createDesertLevel() {
   return new Level("Desert", [
     [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
-    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
+    [desert.drawnbyme, desert.top, desert.both, desert.both, desert.both, desert.both],
     [desert.none, desert.top, PlayerStartsAt(desert.start), desert.both, desert.both, desert.top],
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [desert.none, desert.top, desert.top, desert.both, desert.top, desert.top],
@@ -74,7 +74,7 @@ function createPartyLevel() {
 function createSuperheroLevel() {
   return new Level("Super Hero", [
     [Superhero.none, Superhero.right, Superhero.right, Superhero.second, Superhero.right, Superhero.none],
-    [Superhero.none, Superhero.first, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
+    [Superhero.drawnbyme, Superhero.first, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
     [Superhero.none, Superhero.first, PlayerStartsAt(Superhero.start), Superhero.both, Superhero.both, Superhero.top],
     [Superhero.none, Superhero.second, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
     [Superhero.none, Superhero.first, Superhero.top, Superhero.second, Superhero.top, Superhero.top],

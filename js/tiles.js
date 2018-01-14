@@ -311,6 +311,16 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handarjun.svg");
         },
     }),
+    
+    drawnbyme: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/saarthakdraw.svg");
+            alertInfo("Saarthak Chaturvedi Drew this", "Should he become an artist?");
+
+        },
+    }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
