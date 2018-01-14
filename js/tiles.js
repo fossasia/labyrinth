@@ -989,14 +989,11 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
-        canEnterFromTheLeft() {
-         },
+        
         canLeaveToTheLeft() {
             return false;
         },
-        canEnterFromTheTop: function(player) {
-           
-        },
+      
         canLeaveToTheTop: function(player) {
             return false;
         },
