@@ -990,8 +990,7 @@ const door = {
             return false;
         },
         canEnterFromTheLeft() {
-            return false;
-        },
+         },
         canLeaveToTheLeft() {
             return false;
         },
