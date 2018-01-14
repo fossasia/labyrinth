@@ -974,7 +974,7 @@ const door = {
            alertInfo("You are in the Red Floor Now.", "");
         },
          visit: function() {
-            alertInfo("You got the sword!", "Kill monsters with it!");
+            alertInfo("You got the sword of Gryffindor!", "Kill monsters with it!");
 
             // add item to inventory
             player.inventory.add(['Sword', 'sword.png']);
