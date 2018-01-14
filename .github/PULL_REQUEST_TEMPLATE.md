@@ -15,7 +15,7 @@
 - <!-- If you fully fixed/improved some isuue(s), please insert the issue number(s) behind the # 
        If you have not fixed some issue(s) completly, but only some of step(s) in issue(s),
          please insert the issue number(s) with step number(s) hind the # -->
-  Related Issues or Pull Requests #<Issue no.>
+  Fixes #[Add issue number here]
 
 
 <!-- please summarize the problem you faced -->
