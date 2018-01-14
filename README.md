@@ -31,8 +31,8 @@ Labyrinth
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
+- [**Videos about the Labyrinth**](#videos-by-students)
 - [**Maintainers**](#maintainers)
-- [**Maintainers**](#videos-by-students)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -317,6 +317,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - https://www.youtube.com/watch?v=XvoHY3QCJtw
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
+- [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)
 
 ## Maintainers
 
