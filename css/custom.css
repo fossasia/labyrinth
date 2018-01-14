@@ -52,6 +52,8 @@ div.social-container {
 
 i.fa {background: none !important;}
 
+i.fa.fa-times:hover {color:red;}
+
 .btn-floating.transparent.waves-effect.waves-light {
   background: none !important;
   box-shadow: none;
@@ -208,10 +210,6 @@ nav .left li a {
 }
 
 .social-icons .fa {
-  color: white;
-}
-
-.fa.fa-times::before {
   color: white;
 }
 
