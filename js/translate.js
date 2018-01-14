@@ -19,7 +19,7 @@ var arrlang = {
     'badge': 'Your Badges',
     'version': 'Version',
     'license': 'License',
-    'start': "Let's strat",
+    'start': "Let's start",
     'how1': "You'll see the base room with doors on it's walls. Notice the red and grey tile, there are 4 doors/openings on 4 walls.",
     'how2': "Press the upward arrow button for go to room above the current room (precisely, top left corner of your screen or north-west direction taking north towards the top of your screen)",
     'how3': "Now you can see a new block/room added. Also see that the color difference of the tiles. The bring red shows the current (red) active tile and the dark (black) tile shows the rest of tiles. Let's move a bit towards right now",
