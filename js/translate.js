@@ -1,3 +1,5 @@
+/* jshint -W100 */
+/* https://stackoverflow.com/a/18636523 */
 var arrlang = {
   'en': {
     'language': 'Select your language',
