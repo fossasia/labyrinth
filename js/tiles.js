@@ -320,6 +320,15 @@ const door = {
             alertInfo("Saarthak Chaturvedi Drew this", "Should he become an artist?");
 
         },
+        visit: function() {
+            alertInfo("You got the sword!", "Kill monsters with it!");
+
+            // add item to inventory
+            player.inventory.add(['Sword', 'sword.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
     }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -974,11 +983,27 @@ const door = {
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {
+    	canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
-           alertInfo("This tile was Hand-Drawn by Beta-King", "");
+        },
+        visit: function() {
+             if (player.inventory.has('Sword')) {
+             alertSuccess("You killed the Monster! Yay!!");
+             player.inventory.remove('Sword');
+            } else {
+                alertNormal("You Need a Sword to fight the Basilisk!", "It is deadly");
+            }
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     chocolate: Object.assign({}, OpenDoors, {
