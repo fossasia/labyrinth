@@ -1043,7 +1043,7 @@ const forest = {
             this.wallRight = this.createImage("tiles/rooms/door/rightForest.svg");
             this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
         },
-    },
+    }),
     right: Object.assign({}, OpenDoors, {
         canEnterFromTheTop: function(player) {
             return false;
