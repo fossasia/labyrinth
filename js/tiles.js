@@ -1034,10 +1034,16 @@ const door = {
         canLeaveToTheRight: function(player) {
             return false;
         },
+        canLeaveToTheBottom: function(player) {
+            return true;
+        },
+        canLeaveToTheTop: function(player) {
+            return true;
+        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-          this.ground = this.createImage("tiles/rooms/floor/winter1.svg");
+          this.ground = this.createImage("tiles/animations/winter1.svg");
         },
         visit: function() {
           playAudio("jingleBellsKuba.mp3");
@@ -1051,7 +1057,19 @@ const door = {
         canEnterFromTheRight: function(player) {
             return false;
         },
+        canEnterFromTheBottom: function(player) {
+            return false;
+        },
+        canEnterFromTheLeft: function(player) {
+            return true;
+        },
         canLeaveToTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheBottom: function(player) {
             return false;
         },
         createImages: function() {

@@ -1,10 +1,8 @@
 <center>
 	<a href="https://github.com/fossasia/labyrinth">
-		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
+		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="120">
 	</a>
 </center>
-Labyrinth
-=========
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -374,3 +372,12 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 </tr> 
   </table>
+  
+Responsibilities:
+
+- merge pull requests
+- follow [CCCC](https://rfc.zeromq.org/spec:42/C4/)
+- tag issues and pull requests to close after 3 days and close them after three to 7 days
+  - if no updates are there
+  - if there are no clear closig criteria
+- merge patches
