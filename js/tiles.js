@@ -781,10 +781,10 @@ const door = {
     }),
     minecraft: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
-            return true;
+            return false;
         },
         canLeaveToTheRight() {
-            return true;
+            return false;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/topMinecraft.svg");
@@ -1005,16 +1005,10 @@ const door = {
         canEnterFromTheRight: function(player) {
             return false;
         },
-        canEnterFromTheLeft: function(player) {
-            return true;
-        },
         canLeaveToTheRight: function(player) {
             return false;
         },
         canLeaveToTheBottom: function(player) {
-            return false;
-        },
-        canLeaveToTheLeft: function(player) {
             return true;
         },
         canLeaveToTheTop: function(player) {
@@ -1044,7 +1038,7 @@ const door = {
             return true;
         },
         canLeaveToTheRight: function(player) {
-            return false;
+            return true;
         },
         canLeaveToTheLeft: function(player) {
             return true;
