@@ -320,15 +320,7 @@ const door = {
             alertInfo("Saarthak Chaturvedi Drew this", "Should he become an artist?");
 
         },
-        visit: function() {
-            alertInfo("You got the sword!", "Kill monsters with it!");
-
-            // add item to inventory
-            player.inventory.add(['Sword', 'sword.png']);
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
-        }
+       
     }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -980,6 +972,15 @@ const door = {
           this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
           this.ground = this.createImage("tiles/rooms/floor/redFloor.svg");
            alertInfo("You are in the Red Floor Now.", "");
+        },
+         visit: function() {
+            alertInfo("You got the sword of Gryffindor!", "Kill monsters with it!");
+
+            // add item to inventory
+            player.inventory.add(['Sword', 'sword.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     threeHeads: Object.assign({}, OpenDoors, {

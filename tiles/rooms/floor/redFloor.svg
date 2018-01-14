@@ -13,7 +13,7 @@
    height="325.29514"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="redFloor.svg">
   <defs
      id="defs4">
@@ -33,16 +33,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="199.92082"
+     inkscape:cx="124.41192"
      inkscape:cy="130.34245"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="710"
-     inkscape:window-x="0"
-     inkscape:window-y="1"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -97,5 +97,24 @@
        id="path12"
        inkscape:connector-curvature="0"
        transform="translate(53.643411,569.625)" />
+    <rect
+       style="fill:#502d16;fill-opacity:1"
+       id="rect13"
+       width="50.002552"
+       height="12.12183"
+       x="203.146"
+       y="752.48865" />
+    <rect
+       style="fill:#999999;fill-opacity:1"
+       id="rect15"
+       width="85.862968"
+       height="29.294424"
+       x="246.07747"
+       y="742.38708" />
+    <path
+       style="fill:#999999;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 331.94043,742.38708 19.1929,14.64723 -19.1929,14.64721"
+       id="path17"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
