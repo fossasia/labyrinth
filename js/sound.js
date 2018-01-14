@@ -95,6 +95,13 @@ const backgroundAudio = [
         author: "bensound.com",
         legalNotice: "Music by bensound.com",
     },
+        {
+        filename: "audio/background/DrummersSong/Drummers.mp3",
+        backgroundSongName: "Drummers",
+        author: "Yash Kothari",
+        legalNotice: "Music by Yash Kothari",
+    },
+
 
 ];
 /*
