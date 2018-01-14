@@ -1009,7 +1009,7 @@ const door = {
         visit: function() {
              if (player.inventory.has('Sword')) {
              alertSuccess("You killed the Monster! Yay!!");
-             player.inventory.remove('Spoon');
+             player.inventory.remove('Sword');
             } else {
                 alertNormal("You Need a Sword to fight the Basilisk!", "It is deadly");
             }
