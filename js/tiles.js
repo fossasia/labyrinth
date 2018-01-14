@@ -989,14 +989,6 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
-        
-        canLeaveToTheLeft() {
-            return false;
-        },
-      
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
