@@ -287,3 +287,8 @@ nav .left li a {
   color: #000;
   border-bottom: #000 solid 2px;
 }
+
+.collection-badges {
+  float: left !important;
+  margin-right: 10px !important;
+}
