@@ -257,7 +257,7 @@ nav .left li a {
 
 #player {
   position: absolute;
-  z-index: 10000;
+  z-index: 1;
   width: 55px;
   height: 60px;
 }
