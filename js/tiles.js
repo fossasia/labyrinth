@@ -320,6 +320,15 @@ const door = {
             alertInfo("Saarthak Chaturvedi Drew this", "Should he become an artist?");
 
         },
+        visit: function() {
+            alertInfo("You got the sword!", "Kill monsters with it!");
+
+            // add item to inventory
+            player.inventory.add(['Sword', 'sword.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
     }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
