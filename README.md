@@ -372,3 +372,12 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 </tr> 
   </table>
+  
+Responsibilities:
+
+- merge pull requests
+- follow [CCCC](https://rfc.zeromq.org/spec:42/C4/)
+- tag issues and pull requests to close after 3 days and close them after three to 7 days
+  - if no updates are there
+  - if there are no clear closig criteria
+- merge patches
