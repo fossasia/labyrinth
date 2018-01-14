@@ -292,3 +292,22 @@ nav .left li a {
   float: left !important;
   margin-right: 10px !important;
 }
+
+div.swal2-popup.swal2-modal {
+  margin-right: 30px !important;
+  bottom: 450px;
+  top: 30px;
+  width: 350px !important;
+}
+
+.swal2-container.swal2-center.swal2-fade.swal2-shown {
+  background: none;
+}
+
+div#swal2-content.swal2-content {
+  font-weight: 400 !important;
+}
+
+h2.swal2-title {
+  padding: 15px !important;
+}

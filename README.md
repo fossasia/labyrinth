@@ -94,6 +94,8 @@ Tiles are present in the `tiles` folder within subdirectories corresponding to p
 To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
 and saved as a svg file with the speccified dimensions.
 
+Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
+
 After creating tiles add them to the specific sub folder inside tiles.
 
 Now, we will move on to the javascript part.
@@ -162,6 +164,8 @@ The license numbers are as follows :
 6. Attribution-NonCommercial-ShareAlike 4.0 International
 
 <br><br>
+
+Note: if you are adding music to a tile then add it to: `audio/music` and if you are adding music as a background then add it to: `audio/background`! This is so that we can be organised and have a consistent filing system. 
 
 To add your audio file, please read the following carefully:
 Audio files are usually not licensed under AGPL. They have a different license.
