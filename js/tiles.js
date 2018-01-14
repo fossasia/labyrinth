@@ -701,7 +701,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
-            playAudio("saarthakchats/mybits.mp3");
+            playAudio("mybits.mp3");
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
