@@ -1551,3 +1551,52 @@ const Superhero = {
         }
     }),
 };
+
+const graphics = {
+    both: OpenDoors,
+    levelCode: 1,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/graphicsTop.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/graphicsRight.svg");
+            this.ground = this.createImage("tiles/rooms/floor/graphics.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/graphicsTop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/graphicsRight.svg");
+            this.ground = this.createImage("tiles/rooms/floor/graphics.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/graphicsTop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/graphicsRight.svg");
+            this.ground = this.createImage("tiles/rooms/floor/graphics.svg");
+        },
+    }),
+};

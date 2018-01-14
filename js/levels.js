@@ -82,3 +82,14 @@ function createSuperheroLevel() {
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
   ]);
 }
+function createGraphicsManiaLevel() {
+  return new Level("Grpahics Mania", [
+    [graphics.none, graphics.right, graphics.right, graphics.right, graphics.right, graphics.none, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, PlayerStartsAt(graphics.both), graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [NullTile, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none],
+  ]);
+}
