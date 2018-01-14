@@ -3,6 +3,7 @@
 body {
   background: #d5dbdb !important;
 }
+
 .nav-wrapper {
   background-color: #60A550;
 }
@@ -57,7 +58,9 @@ input.black-text:hover {
 
 i.fa {background: none !important;}
 
-i.fa.fa-times:hover {color:red;}
+i.fa.fa-times:hover {
+  color: red;
+}
 
 .btn-floating.transparent.waves-effect.waves-light {
   background: none !important;
@@ -66,12 +69,29 @@ i.fa.fa-times:hover {color:red;}
   padding: 0 !important;
 }
 
-i.fa.fa-facebook:hover {color: #446ebf;}
-i.fa.fa-twitter:hover {color: #39aadc;}
-i.fa.fa-youtube-play:hover {color: #ee423d;}
-i.fa.fa-linkedin:hover {color: #81d3fd;}
-i.fa.fa-google-plus:hover {color: #d63d1e;}
-i.fa.fa-github:hover {color:black;}
+i.fa.fa-facebook:hover {
+  color: #446ebf;
+}
+
+i.fa.fa-twitter:hover {
+  color: #39aadc;
+}
+
+i.fa.fa-youtube-play:hover {
+  color: #ee423d;
+}
+
+i.fa.fa-linkedin:hover {
+  color: #81d3fd;
+}
+
+i.fa.fa-google-plus:hover {
+  color: #d63d1e;
+}
+
+i.fa.fa-github:hover {
+  color: black;
+}
 
 .waves-effect.waves-light {
   background-color: #60A550;
@@ -146,7 +166,7 @@ input[type=range]::-ms-thumb {
   background-color: #48A883;
 }
 
-input[type=range] + .thumb {
+input[type=range]+.thumb {
   background-color: #5ec39c;
 }
 
@@ -175,7 +195,7 @@ p.trackname {
 .badgesImg:hover {
   height: 300px;
   -webkit-transition: 1.5s;
-    transition: 1.5s;
+  transition: 1.5s;
 }
 
 .collection {
@@ -266,11 +286,10 @@ nav .left li a {
 
 #inventoryDisplay .collection-item .circle {
   background-color: #84c79f;
-  color: rgba(255,255,255,0.62);
+  color: rgba(255, 255, 255, 0.62);
 }
 
-#inventoryDisplay .collection-item .secondary-content,
-#inventoryDisplay .collection-item .secondary-content i {
+#inventoryDisplay .collection-item .secondary-content, #inventoryDisplay .collection-item .secondary-content i {
   color: white;
   opacity: 0.62;
 }
@@ -296,6 +315,53 @@ nav .left li a {
 .collection-badges {
   float: left !important;
   margin-right: 10px !important;
+}
+
+/*Translate drop box*/
+
+.languagepicker {
+  background-color: rgb(96, 165, 82);
+  display: inline-block;
+  padding: 0;
+  height: 40px;
+  overflow: hidden;
+  transition: all .3s ease;
+  margin: 0 50px 10px 0;
+  vertical-align: top;
+  float: left;
+}
+
+.languagepicker:hover {
+  height: 81px;
+}
+
+.languagepicker a {
+  color: #000;
+  text-decoration: none;
+}
+
+.languagepicker li {
+  display: block;
+  padding: 0px 20px;
+  line-height: 40px;
+  border-top: 1px solid #EEE;
+}
+
+.languagepicker li:hover {
+  background-color: #EEE;
+}
+
+.languagepicker a:first-child li {
+  border: none;
+  background: #FFF !important;
+}
+
+.languagepicker li img {
+  margin-right: 5px;
+}
+
+.large:hover {
+  height: 245px;
 }
 
 div.swal2-popup.swal2-modal {
