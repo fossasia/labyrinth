@@ -26,6 +26,7 @@
 - [**How to add new tiles**](#how-to-add-new-tiles)
 - [**How to add a new character**](#how-to-add-a-new-character)
 - [**How to add a new badge**](#how-to-add-a-new-badge)
+- [**How to add new theme**](#how-to-add-new-theme)
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
@@ -253,6 +254,31 @@ swal({
                 title: 'Congrats! You got the DISCOVERER badge',
             });
 ```
+
+## How to add new theme
+Adding new theme is basically adding new tiles in a constant object:
+```
+const yourThemeName = {
+  your tiles go here
+},
+```
+While adding new theme you have to keep in mind theme structure. You can take a look at already existing themes.
+
+After adding your theme to `tiles.js` file, you have to declare it in `levels.js`. Exactly its function, so it's going to create new tiles:
+```
+function createXLevel() {
+  return new Level("X", [
+    [X.none, X.right, X.right, X.right, X.right, X.none],
+    [X.none, X.top, X.both, X.both, X.both, X.both],
+    [X.none, X.top, PlayerStartsAt(X.start), X.both, X.both, X.top],
+    [X.none, X.top, X.both, X.both, X.both, X.top],
+    [X.none, X.top, X.top, X.both, X.top, X.top],
+    [X.none, X.top, X.both, X.both, X.both, X.top],
+    [NullTile, X.none, X.none, X.none, X.none, X.none],
+  ]);
+}
+```
+That's just an example of this function. Note that all these functions in `levels.js` file are looking very similar. Instead of `X` sign insert your theme name.
 
 ## Hints for GCI students
 
