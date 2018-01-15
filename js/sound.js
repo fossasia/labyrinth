@@ -101,6 +101,12 @@ const backgroundAudio = [
         author: "Yash Kothari",
         legalNotice: "Music by Yash Kothari",
     },
+{
+        filename: "audio/background/Labyrmsuic/Labyrmusic.mp3",
+        backgroundSongName: "Labyrmusic",
+        author: "Sing Sing Karaoke",
+        legalNotice: "Sound by Sing Sing Karaoke",
+    },
 
 
 ];
