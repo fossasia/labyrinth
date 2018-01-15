@@ -581,7 +581,7 @@ const door = {
             } else {
                 alertNormal("You Need a Key ! Try to find it.", "");
             }
-            player.badges.add(['Discoverer', 'Discoverer.png']);
+            player.badges.add(['Discoverer', 'Discoverer.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -601,7 +601,7 @@ const door = {
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
 
             // add item to inventory
-            player.inventory.add(['Key', 'key.png']);
+            player.inventory.add(['Key', 'key.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -702,7 +702,7 @@ const door = {
 
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
-            player.inventory.add(['Boat', 'boat.png']);
+            player.inventory.add(['Boat', 'boat.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -721,7 +721,7 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/out.svg");
         },
         visit: function() {
-            player.badges.add(['Fresh Air', 'FreshAir.png']);
+            player.badges.add(['Fresh Air', 'FreshAir.svg']);
             playAudio("outdoor.mp3", 1);
             alertQuestion("Here you come to the Outdoor", "");
             this.wallRight.show();
@@ -911,7 +911,7 @@ const door = {
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
         visit: function() {
-        player.badges.add(['Cricketer', 'Cricketer.png']);
+        player.badges.add(['Cricketer', 'Cricketer.svg']);
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
@@ -967,7 +967,7 @@ const door = {
         },
         visit: function() {
           playAudio("idea.mp3");
-          player.inventory.add(['Spoon', 'Spoon.png']);
+          player.inventory.add(['Spoon', 'Spoon.svg']);
           alertInfo("You are in the Yellow Floor Now.", "You found a spoon, keeping looking for a cake to eat it with :D");
           this.wallTop.show();
           this.wallRight.show();
@@ -1030,7 +1030,7 @@ const door = {
         },
         visit: function() {
             alertInfo("You got a magic chocolate, Use it to turn the living room into a choco kingdom.");
-            player.inventory.add(['Chocolate', 'choc.png']);
+            player.inventory.add(['Chocolate', 'choc.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1175,7 +1175,7 @@ const forest = {
         },
         visit: function() {
             alertInfo("You found some mushroom...", "If something is constantly changing color to purple, doubt if it's poisoned.");
-            player.inventory.add(['Poisoned Mushroom', 'PoisonedMushroom.png']);
+            player.inventory.add(['Poisoned Mushroom', 'PoisonedMushroom.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1277,7 +1277,7 @@ const desert = {
         visit: function() {
             alertInfo("You found a Camel !", "Use it whenever you face Storms.");
             // add item to inventory
-            player.inventory.add(['Camel', 'camel.png']);
+            player.inventory.add(['Camel', 'camel.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
