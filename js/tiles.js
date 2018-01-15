@@ -393,11 +393,14 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/animations/wheel.svg");
-            alertInfo("Run Run Don't Stay here anymore !", "");
+            alertInfo("Run Run, Don't Stay here anymore!", "");
         },
         visit: function() {
         	playAudio("gears.mp3", 1);
-        },
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
     }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
         createImages: function() {
