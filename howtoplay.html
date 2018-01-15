@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
   </head>
 
   <body>
@@ -19,37 +22,58 @@
       <div class="centered">
         <div class="header">
           <img class="play-button" src="images/docs/play-button.png" alt="Play" />
-          <h1 class="site_title centered">How to play</h1>
+          <h1 class="site_title centered lang" key="how">HOW TO PLAY</h1>
           <a href="https://github.com/fossasia/labyrinth">
             <img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="160" height="120">
           </a>
           <p class="site_description">Fossasia Labyrinth</p>
         </div>
+        <br>
+        <h3 class="lang" key="language">Select your language</h3>
+        <div>
+          <a class="translate" id="en">
+            <img class="translation-flag" src="icons/UnitedKingdom.png" alt="" /> English
+          </a>
+        <div>
+        </div>
+          <a class="translate" id="si">
+            <img class="translation-flag" src="icons/SriLanka.png" alt="" /> Sinhala
+          </a>
+        <div>
+        </div>
+          <a class="translate" id="pl">
+            <img class="translation-flag" src="icons/Poland.png" alt="" /> Polski
+          </a>
+        </div>
+        <hr>
         <div class="content">
-          <h3>Let's start</h3>
-          <p>You'll see the base room with doors on it's walls. Notice the red and grey tile, there are 3 doors/openings on 3 walls.</p>
+          <h3 class="lang" key="start">Let's start</h3>
+          <p class="lang" key="how1">You'll see the base room with doors on it's walls. Notice the red and grey tile, there are 4 doors/openings on 4 walls.</p>
           <img src="images/docs/how-to-play-1.jpg" class="how-to-play-image" alt="Step 1" />
           <h2>2.</h2>
-          <p>Press the upward arrow button to create a room above the current room (precisely, top left corner of your screen or north-west direction taking north towards the top of your screen)</p>
+          <p class="lang" key="how2">Press the upward arrow button for go to room above the current room (precisely, top left corner of your screen or north-west direction taking north towards the top of your screen)</p>
           <img src="images/docs/how-to-play-2.jpg" class="how-to-play-image" alt="Step 2" />
           <h2>3.</h2>
-          <p>Now you can see a new block/room added. Also see that the color difference of the tiles. The bring red shows the current (red) active tile and the dark (black) tile shows the rest of tiles. Let's move a bit towards right now <code>press right arrow</code></p>
+          <p class="lang" key="how3">Now you can see another block/room. Also see that the color difference of the tiles. The bring red shows the current (red) active tile and the dark (black) tile shows the rest of tiles. Let's move a bit towards right now <code class="lang" key="code">press right arrow</code></p>
           <img src="images/docs/how-to-play-3.jpg" class="how-to-play-image" alt="Step 3" />
           <h2>4.</h2>
-          <p>We can see the tiles to the right (top-right precisely). We can see the doors towards all sides/walls of the room/block. so let's move more in the game.</p>
+          <p class="lang" key="how4">We can see the tiles to the right (top-right precisely). We can see the doors towards all sides/walls of the room/block. so let's move more in the game.</p>
           <img src="images/docs/how-to-play-4.jpg" class="how-to-play-image" alt="Step 4" />
           <h2>5.</h2>
-          <p>We can see that there's no tile towards the top, so now we cannot move more in that direction. Let's go about making a complete grid. Do you see a way now too ? There is still an open door to explore!</p>
+          <p class="lang" key="how5">We can see that there's no tile towards the top, so now we cannot move more in that direction. Let's go about making a complete grid. Do you see a way now too ? There is still an open door to explore!</p>
           <img src="images/docs/how-to-play-5.jpg" class="how-to-play-image" alt="Step 5" />
           <img src="images/docs/how-to-play-6.jpg" class="how-to-play-image" alt="Step 6" />
-          <h2>All done!</h2>
-          <p>Now it's your turn to explore, you can also contribute & create your own tiles.</p>
+          <h2 class="lang" key="done">All done!</h2>
+          <p class="lang" key="finish">Now it's your turn to explore, you can also contribute & create your own tiles.</p>
         </div>
       </div>
     </div>
     <div>
-      <button class="play" onclick="javascript: document.location='index.html'">Play</button>
-      <p class="credits">Icons by <a href="flaticon.com">flaticon.com</a></p>
+      <button class="play lang" onclick="javascript: document.location='index.html'" key="play">Play</button>
+      <div class="credits">
+        <div class="lang" key="icon">Icons by</div>
+        <a href="flaticon.com" class="lang" key="flaticon">flaticon.com</a>
+      </div>
     </div>
   </body>
  </html>

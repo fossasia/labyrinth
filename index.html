@@ -12,9 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/tiles.css">
-	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
 	<!-- Engine Scripts -->
+	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/sound.js"></script>
 	<script type="text/javascript" src="js/tiles.js"></script>
@@ -25,37 +26,52 @@
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
     <script type="text/javascript" src="js/save.js"></script>
-    <script type="text/javascript" src="js/gui.js"></script>
+	<script type="text/javascript" src="js/gui.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 		<title>Labyrinth</title>
 		<link rel="icon" type="image/png" href="labyrinthlogo.png" />
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<ul class="left">
-					<li><a href="#" onclick="openSideBar();"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
-				</ul>
-				<a href="https://github.com/fossasia/labyrinth">
-					<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
-                </a>
-				<ul class="right hide-on-med-and-down">
-					<li>
-						<a href="howtoplay.html">How to Play</a>
-					</li>
-                    <li>
-                        <a href="credits.html">Credits</a>
-                    <li>
-                    <li>
-						<a href="contributors.html">Contributors</a>
-					</li>
-					
-				</ul>
-			</div>
-		</nav>
-	</div>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper">
+					<ul class="left">
+						<li>
+							<a href="#" onclick="openSideBar();">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="languagepicker roundborders large">
+						<a class="lang" key="language">Select your language</a>
+							<a class="translate translate-language-choice" id="en">
+								<img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+						  </a>
+						  <a class="translate translate-language-choice" id="si">
+								<img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+							</a>
+						  <a class="translate translate-language-choice" id="pl">
+								<img src="icons/Poland.png" alt="" class="translation-flag" /> Polski
+							</a>
+					</div>
+					<a href="https://github.com/fossasia/labyrinth">
+						<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
+					</a>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="howtoplay.html" class="lang" key="how">How to Play</a>
+						</li>
+						<li>
+							<a href="credits.html" class="lang" key="credit">Credits</a>
+						</li>
+						<li>
+							<a href="contributors.html" class="lang" key="contribute">Contributors</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
 
 	<!-- Side Bar -->
 	<div id="slide-out" class="side-nav full row left-column col s12">
@@ -66,9 +82,9 @@
 			
 			<div class="side-nav-card">
 				<div class="card-content white-text">
-					<span class="card-title">Statistics</span>
-					<p>Player Moved :
-					<span id="playerMoves">0</span> Times</p>
+					<span class="card-title"><a class="lang" key="statistics">Statistics</a></span>
+					<p><a class="lang" key="moved">Player Moved :</a>
+					<span id="playerMoves">0</span><a class="lang" key="times"> Times</a></p>
 					<input type="button" value="Save" onClick="saveTrigger()" class="black-text"/>
 					<input type="button" value="Load last save" onClick="loadTrigger()" class="black-text"/>
 				</div>
@@ -76,8 +92,8 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title">Audio</span>
-					<p class="trackname">Now Playing : <b><span id="backgroundSongName"></span></b> by <b><span id="backgroundSongAuthor"></span></b></p>
+					<span class="card-title"><a class="lang" key="audio">Audio</a></span>
+					<p class="trackname"><a class="lang" key="now">Now Playing :</a><b><span id="backgroundSongName"></span></b><a class="lang" key="by"> by </a><b><span id="backgroundSongAuthor"></span></b></p>
 				</div>
 				<div class="card-action">
 					<div class="audiosetting">
@@ -95,7 +111,7 @@
 				<div class="border1"></div>
 
                 <div class="card-content white-text">
-	                <span class="card-title">Share Game</span>
+	                <span class="card-title"><a class="lang" key="share">Share Game</a></span>
 				</div>
 				<div class="card-action">
                     <div class="social-container">
@@ -122,7 +138,7 @@
                 <div class="border1"></div>
                 
 				<div class="card-content white-text">
-					<span class="card-title">Follow us on</span>
+					<span class="card-title"><a class="lang" key="follow">Follow us on</a></span>
 				</div>
 				<div class="card-action">
 				  <div class="social-container">
@@ -164,7 +180,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title">Inventory</span>
+					<span class="card-title"><a class="lang" key="invent">Inventory</a></span>
 					<ul class="collection black-text" id="inventoryDisplay">
                 		<!-- SAMPLE ITEM
 				              <li class="collection-item avatar">
@@ -192,7 +208,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title">Your Badges</span>
+					<span class="card-title"><a class="lang" key="badge">Your Badges</a></span>
 					<ul class="collection black-text" id="badgesDisplay">
 					</ul>
 				</div>
@@ -200,7 +216,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title">Version</span>
+					<span class="card-title"><a class="lang" key="version">Version</a></span>
 					<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
 				</div>
 			</div>  

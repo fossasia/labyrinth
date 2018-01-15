@@ -11,8 +11,8 @@
 function createFirstLevel()
 {
   return new Level("Starter", [
-    [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2],
-    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
+    [door.none, door.minecraftEntry, door.minecraft, door.none, door.winter1, door.goal, door.none],
+    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
@@ -40,7 +40,7 @@ function createAdvancedLevel() {
 function createForestLevel() {
   return new Level("Forest", [
     [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
-    [forest.none, forest.top, forest.both, forest.both, forest.both, forest.both],
+    [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [forest.none, forest.top, PlayerStartsAt(forest.start), forest.both, forest.both, forest.top],
     [forest.none, forest.top, forest.mushroom, forest.both, forest.both, forest.top],
     [forest.none, forest.top, forest.top, forest.both, forest.top, forest.top],
@@ -80,5 +80,16 @@ function createSuperheroLevel() {
     [Superhero.none, Superhero.first, Superhero.top, Superhero.second, Superhero.top, Superhero.top],
     [Superhero.none, Superhero.first, Superhero.second, Superhero.both, Superhero.both, Superhero.top],
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
+  ]);
+}
+function createGraphicsManiaLevel() {
+  return new Level("Grpahics Mania", [
+    [graphics.none, graphics.right, graphics.right, graphics.right, graphics.right, graphics.none, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, PlayerStartsAt(graphics.both), graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [NullTile, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none],
   ]);
 }
