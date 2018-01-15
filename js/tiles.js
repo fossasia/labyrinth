@@ -283,9 +283,6 @@ const door = {
         canLeaveToTheRight() {
             return false;
         },
-        canEnterFromTheTop: function(player) {
-            return false;
-        },
         canLeaveToTheTop: function(player) {
             return false;
         },
@@ -304,7 +301,7 @@ const door = {
             alertInfo("More to Go !", "");
         },
     }),
-       design: Object.assign({}, OpenDoors, {
+    design: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
@@ -318,9 +315,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/saarthakdraw.svg");
             alertInfo("Saarthak Chaturvedi Drew this", "Should he become an artist?");
-
         },
-       
     }),
     black: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -432,6 +427,9 @@ const door = {
         },
         visit: function() {
             playAudio("Runnergarage.m4a", 1);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         },
     }),
     star: Object.assign({}, OpenDoors, {
@@ -648,6 +646,9 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/banner-1.svg");
         },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
         canLeaveToTheTop: function(player) {
             return false;
         },
@@ -663,12 +664,6 @@ const door = {
     river: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return player.inventory.has('Boat');
-        },
-        canLeaveToTheRight() {
-            return false;
-        },
-        canEnterFromTheLeft() {
-            return false;
         },
         canLeaveToTheLeft() {
             return false;
@@ -704,7 +699,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
-            
+
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
@@ -749,6 +744,9 @@ const door = {
         },
         visit: function() {
             playAudio("0x48piraj/composed/0x48piraj.mp3", 1);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         }
     }),
     texture: Object.assign({}, OpenDoors, {
@@ -1554,9 +1552,6 @@ const Superhero = {
     }),
     art: Object.assign({}, OpenDoors, {
         canEnterFromTheLeft() {
-            return false;
-        },
-        canLeaveToTheLeft() {
             return false;
         },
         createImages: function () {
