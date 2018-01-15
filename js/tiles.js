@@ -1051,7 +1051,7 @@ const door = {
           this.ground = this.createImage("tiles/animations/winter1.svg");
         },
         visit: function() {
-          playAudio("jingleBellsKuba.mp3");
+          playAudio("music/jingleBellsKuba.mp3");
           alertInfo("It's winter here!");
           this.wallTop.show();
           this.wallRight.show();
