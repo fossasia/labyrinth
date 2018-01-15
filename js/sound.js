@@ -22,7 +22,7 @@ const backgroundAudio = [
         link: "http://bensound.com/",
     },
     {
-        filename: "audio/music/Drumplo.m4a",
+        filename: "audio/music/Drumplo.ogg",
         backgroundSongName: "Drumplo",
         author: "Samyak Jain",
         legalNotice: "Created by Samyak Jain",
@@ -56,7 +56,7 @@ const backgroundAudio = [
         legalNotice: "Music by Abishek V Ashok",
     },
     {
-        filename: "audio/saarthakchats/ownsound.mp3",
+        filename: "audio/saarthakchats/ownsound.ogg",
         backgroundSongName: "NoPro",
         author: "Saarthak Chaturvedi",
         legalNotice: "Music by Saarthak Chaturvedi",

@@ -603,7 +603,7 @@ const door = {
             alertInfo("You got the Key for the Treasure !", "Explore More ! Let's see what can find ...");
 
             // add item to inventory
-            player.inventory.add(['Key', 'key.png']);
+            player.inventory.add(['Key', 'key.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -707,7 +707,7 @@ const door = {
             
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
-            player.inventory.add(['Boat', 'boat.png']);
+            player.inventory.add(['Boat', 'boat.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1003,7 +1003,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
         },
         visit: function() {
-        	 playAudio("saarthakchats/mybits.wav", 1);
+        	 playAudio("saarthakchats/mybits.ogg", 1);
              if (player.inventory.has('Sword')) {
              alertSuccess("You killed the Monster! Yay!!");
              player.inventory.remove('Sword');
@@ -1029,7 +1029,7 @@ const door = {
         },
         visit: function() {
             alertInfo("You got a magic chocolate, Use it to turn the living room into a choco kingdom.");
-            player.inventory.add(['Chocolate', 'choc.png']);
+            player.inventory.add(['Chocolate', 'choc.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1276,7 +1276,7 @@ const desert = {
         visit: function() {
             alertInfo("You found a Camel !", "Use it whenever you face Storms.");
             // add item to inventory
-            player.inventory.add(['Camel', 'camel.png']);
+            player.inventory.add(['Camel', 'camel.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
