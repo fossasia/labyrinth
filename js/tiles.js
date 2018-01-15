@@ -905,7 +905,7 @@ const door = {
     cricketGround: Object.assign({}, OpenDoors, {
         canLeaveToTheRight: function(player){
             return true;
-        }
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
