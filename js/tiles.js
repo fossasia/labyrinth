@@ -311,7 +311,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handarjun.svg");
         },
     }),
-    
+
     drawnbyme: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -1109,6 +1109,20 @@ const forest = {
             this.wallRight.show();
             this.ground.show();
         }
+    }),
+    mushroom: Object.assign({}, OpenDoors, {
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+          this.ground = this.createImage("tiles/rooms/floor/mushroom.svg");
+        },
+        visit: function() {
+            alertInfo("You found some mushroom...", "If something is constantly changing color to purple, doubt if it's poisoned.");
+            player.inventory.add(['Poisoned Mushroom', 'PoisonedMushroom.png']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+          }
     }),
 };
 
