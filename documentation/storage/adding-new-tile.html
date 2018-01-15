@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adding New Tile</title>
+</head>
+<body>
+<h4>How to add new tiles</h4>
+<p>Labyrinth allows you to add your tiles by customizing the required javascript and svg files. There are various types of svg files which are available<br> such as doors, floors etc.</p><br /><br />
+<p>Currently the tiles are svg images which are embedded into a div via javascript. Floor tiles have a dimension of about 429.544 x 256.314 px (wxh)<br> Tiles are present in the <code>tiles</code> folder within subdirectories corresponding to particular
+  tiles such as door, floor etc.</p><br /><br />
+<p>To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor<br> and saved as a svg file with the speccified dimensions.</p><br /><br />
+<p>Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned.</p><br /><br />
+<p>After creating tiles add them to the specific sub folder inside tiles.</p><br /><br />
+<p>Now, we will move on to the javascript part.<br> Each tile's attributes and specifications along with it's declaration is done in the <code>js/tiles.js</code> file. You may edit this file defining attributes<br> such as how you could enter and exit out
+  of the tile and so on. You can also specify the door it takes, it's closed exit paths etc.<br> A sample Implementation should go into the already defined <code>door</code> class like:</p><br /><br />
+<pre><code class="javascript">tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage(&quot;tiles/rooms/wall/top.svg&quot;); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage(&quot;tiles/rooms/wall/right.svg&quot;);
+      this.ground = this.createImage(&quot;tiles/rooms/floor/svg_name.svg&quot;); /*  svg_name is the name of your svg */
+    },
+  }),
+</code></pre>
+<p>If you want to display an alert box when the character reaches your tile, your implementation must be something like this :</p><br /><br />
+<pre><code class="javascript">tile_name: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canLeaveToTheRight() {return false;},
+    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    createImages: function() {
+      this.wallTop = this.createImage(&quot;tiles/rooms/wall/top.svg&quot;); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
+      this.wallRight = this.createImage(&quot;tiles/rooms/wall/right.svg&quot;);
+      this.ground = this.createImage(&quot;tiles/rooms/floor/svg_name.svg&quot;); /*  svg_name is the name of your svg */
+    },
+    visit: function() {
+    alertName(&quot;title&quot;, &quot;text&quot;);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+     },
+  }),
+</code></pre>
+<p>Replace <code>alertName</code> with either <code>alertNormal</code>, <code>alertInfo</code>, <code>alertQuestion</code>, <code>alertSuccess</code>, <code>alertError</code> or <code>alertWarning</code>. For more info, <a href="http://sweetalert2.github.io/">read this</a>.</p><br /><br />
+<p>And replace <code>title</code> and <code>text</code> with whatever title or text you want to display.<br> If you want to only have a title and not any text, keep <code>text</code> empty. Like this : <code>&quot;&quot;</code>.</p><br /><br />
+<br> After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile. Something like `door.tile_name` since we have added it (our object) to the door
+(which is a class). You may use css to animate the svg if you wish.
+</body>
+</html>
