@@ -316,6 +316,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
 - [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)
+- [Labyrinth | Game by Fossasia](https://www.youtube.com/watch?v=nEJ5jAIRfjw)
 
 ## Maintainers
 
