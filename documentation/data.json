@@ -1,0 +1,18 @@
+{
+	"vermaTation":[
+		{	
+			"itemName":"Inventory",
+			"author" : "Yash Kumar Verma",
+			"github" : "yashkumarverma",
+			"file" : "API-Inventory.html",
+			"slug" : "API-Inventory"			
+		}
+		,{
+			"itemName":"Adding New Tiles",
+			"author" : "Yash Kumar Verma",
+			"github" : "yashkumarverma",
+			"file" : "adding-new-tile.html",
+			"slug" : "API-Adding-New-Tile" 			
+		}
+	]
+}
