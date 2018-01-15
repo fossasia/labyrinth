@@ -455,7 +455,7 @@ const door = {
             this.ground = this.createImage("tiles/animations/caro.svg");
         },
         visit: function() {
-        	playAudio("suspense.mp3", 1);
+        	playAudio("FreeSoundEffects.com/suspense.mp3", 1);
             alertInfo("Pretty close. Keep going!!", "");
             this.wallTop.show();
             this.wallRight.show();
@@ -685,7 +685,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/river.svg");
         },
         visit: function() {
-        	 playAudio("watersound.mp3", 1);
+        	 playAudio("FreeSoundEffects.com/watersound.mp3", 1);
              if (player.inventory.has('Boat')) {
              alertSuccess("You got the treasure !", "there's more to find !");
              player.inventory.remove('Boat');
@@ -704,6 +704,7 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
         },
         visit: function() {
+            
             alertInfo("You found a boat !", "Keep it it might come handy when you found a treasure");
             // add item to inventory
             player.inventory.add(['Boat', 'boat.png']);
@@ -865,7 +866,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/Forbidden.svg");
         },
         visit: function() {
-            playAudio('creepy.mp3', 1);
+            playAudio('bensound.com/creepy.mp3', 1);
             swal({
                 type: 'info',
                 title: 'Be careful with this place, used to be used for murder. So get away quickly from this place!',
@@ -894,7 +895,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/floorNewYear.svg");
         },
         visit: function(player) {
-        	playAudio("celebrate.mp3", 1);
+        	playAudio("FreeSoundEffects.com/celebrate.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1002,6 +1003,7 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/HandDrawnTile.svg");
         },
         visit: function() {
+        	 playAudio("saarthakchats/mybits.wav", 1);
              if (player.inventory.has('Sword')) {
              alertSuccess("You killed the Monster! Yay!!");
              player.inventory.remove('Sword');
