@@ -474,6 +474,7 @@ const door = {
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createForestLevel());
+            player.addReachableLevel(createPartyLevel());
         },
     }),
     chessMate: Object.assign({}, OpenDoors, {
@@ -1085,6 +1086,13 @@ const door = {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
           this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
           this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
+        },
+    }),
+    staircase: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/staircase.svg");
         },
     }),
 };

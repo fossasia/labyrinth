@@ -16,7 +16,7 @@ $(document).ready(function(){
 });
 
 function insertToList(node){
-	var data = "<a href='#"+node.slug+"' class='collection-item'>"+node.itemName+"</a>"
+	var data = "<a href='#"+node.slug+"' class='collection-item'>"+node.itemName+"</a>";
 	$("#documentationList").append(data);
 }
 
