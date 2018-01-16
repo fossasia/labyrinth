@@ -1,10 +1,8 @@
 <center>
 	<a href="https://github.com/fossasia/labyrinth">
-		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
+		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="120">
 	</a>
 </center>
-Labyrinth
-=========
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -32,8 +30,8 @@ Labyrinth
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
+- [**Videos about the Labyrinth**](#videos-by-students)
 - [**Maintainers**](#maintainers)
-- [**Maintainers**](#videos-by-students)
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
@@ -95,6 +93,8 @@ Tiles are present in the `tiles` folder within subdirectories corresponding to p
 To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
 and saved as a svg file with the speccified dimensions.
 
+Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
+
 After creating tiles add them to the specific sub folder inside tiles.
 
 Now, we will move on to the javascript part.
@@ -104,12 +104,12 @@ A sample Implementation should go into the already defined `door` class like:
 
 ```javascript
 tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canEnterFromTheRight() {return false;}, /* Set these to false to block movements on the right */
     canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    /* Simillarly you can have canLeaveToTheTop(), canEnterFromTheTop() etc. */
     createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
     },
   }),
@@ -117,24 +117,14 @@ tile_name: Object.assign({}, OpenDoors, {
 
 If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
 ```javascript
-tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
-    canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
-    },
     visit: function() {
-    alertName("title", "text");
+        alertNormal("title", "text");
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
      },
-  }),
 ```
-Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
@@ -163,6 +153,8 @@ The license numbers are as follows :
 6. Attribution-NonCommercial-ShareAlike 4.0 International
 
 <br><br>
+
+Note: if you are adding music to a tile then add it to: `audio/music` and if you are adding music as a background then add it to: `audio/background`! This is so that we can be organised and have a consistent filing system. 
 
 To add your audio file, please read the following carefully:
 Audio files are usually not licensed under AGPL. They have a different license.
@@ -397,3 +389,12 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 </tr> 
   </table>
+  
+Responsibilities:
+
+- merge pull requests
+- follow [CCCC](https://rfc.zeromq.org/spec:42/C4/)
+- tag issues and pull requests to close after 3 days and close them after three to 7 days
+  - if no updates are there
+  - if there are no clear closig criteria
+- merge patches

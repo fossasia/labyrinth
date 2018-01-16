@@ -24,16 +24,41 @@
     html {
         box-sizing: border-box;
     }
-    .space{
-    	margin-top: 20px;
+
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
     }
-    body{
-        background: #8e9eab; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #8e9eab, #eef2f3); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #8e9eab, #eef2f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
     }
-    .need{
-        background-color: #0F8A33;
+
+    @media (max-width: 650px) {
+        .column {
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .lol {
+        padding: 0 16px;
+    }
+
+    .lol::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
     }
 
     p {

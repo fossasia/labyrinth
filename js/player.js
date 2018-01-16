@@ -113,7 +113,8 @@ function Player() {
       });
       var me = this;
       swal({
-        input: 'select',
+        title: "Choose a Level:",
+        input: "select",
         inputOptions: inputOptionsPromise,
         inputValidator: function(levelName) {
           me.enterLevel(me.getLevelNamed(levelName));

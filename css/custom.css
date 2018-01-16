@@ -3,6 +3,7 @@
 body {
   background: #d5dbdb !important;
 }
+
 .nav-wrapper {
   background-color: #60A550;
 }
@@ -12,6 +13,8 @@ h1, h2, h3 {
 }
 
 .brand-logo.center {
+  margin: 0;
+  margin-top: .65%;
   font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
@@ -52,19 +55,44 @@ div.social-container {
 
 i.fa {background: none !important;}
 
+i.fa.fa-times:hover {
+  color: red;
+}
+
 .btn-floating.transparent.waves-effect.waves-light {
   background: none !important;
   box-shadow: none;
   width: 48px !important;
   padding: 0 !important;
 }
+ul.social-icons a i {
+  margin: 0;
+  margin-left: 12px;
+  transition: 0.4s;
+}
+i.fa.fa-facebook:hover {
+  color: #446ebf;
+}
 
-i.fa.fa-facebook:hover {color: #446ebf;}
-i.fa.fa-twitter:hover {color: #39aadc;}
-i.fa.fa-youtube-play:hover {color: #ee423d;}
-i.fa.fa-linkedin:hover {color: #81d3fd;}
-i.fa.fa-google-plus:hover {color: #d63d1e;}
-i.fa.fa-github:hover {color:black;}
+i.fa.fa-twitter:hover {
+  color: #39aadc;
+}
+
+i.fa.fa-youtube-play:hover {
+  color: #ee423d;
+}
+
+i.fa.fa-linkedin:hover {
+  color: #81d3fd;
+}
+
+i.fa.fa-google-plus:hover {
+  color: #d63d1e;
+}
+
+i.fa.fa-github:hover {
+  color: black;
+}
 
 .waves-effect.waves-light {
   background-color: #60A550;
@@ -139,7 +167,7 @@ input[type=range]::-ms-thumb {
   background-color: #48A883;
 }
 
-input[type=range] + .thumb {
+input[type=range]+.thumb {
   background-color: #5ec39c;
 }
 
@@ -155,7 +183,6 @@ p.trackname {
 }
 
 .social-container {
-  width: 385px;
   text-align: center;
 }
 
@@ -168,7 +195,7 @@ p.trackname {
 .badgesImg:hover {
   height: 300px;
   -webkit-transition: 1.5s;
-    transition: 1.5s;
+  transition: 1.5s;
 }
 
 .collection {
@@ -208,10 +235,6 @@ nav .left li a {
 }
 
 .social-icons .fa {
-  color: white;
-}
-
-.fa.fa-times::before {
   color: white;
 }
 
@@ -263,11 +286,10 @@ nav .left li a {
 
 #inventoryDisplay .collection-item .circle {
   background-color: #84c79f;
-  color: rgba(255,255,255,0.62);
+  color: rgba(255, 255, 255, 0.62);
 }
 
-#inventoryDisplay .collection-item .secondary-content,
-#inventoryDisplay .collection-item .secondary-content i {
+#inventoryDisplay .collection-item .secondary-content, #inventoryDisplay .collection-item .secondary-content i {
   color: white;
   opacity: 0.62;
 }
@@ -367,6 +389,20 @@ h2.swal2-title {
 }
 
 .translate-language-choice {
+  height: 60px;
   display: block;
   text-align: center;
+}
+
+.languagepicker a {
+  color: #fff;
+}
+
+.close-sidebar i {
+  transition: 0.4s;
+}
+
+.card-content.white-text.statistics a {
+  text-decoration: none;
+  color: #fff;
 }

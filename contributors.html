@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -13,6 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
 	<!-- Include Font Awesome Stylesheet -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<!-- @0x48piraj custom social section stylesheet -->
@@ -47,6 +48,8 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding-top: 1em;
 }
 
 .lol {
@@ -83,6 +86,8 @@ p {
 h2 { 
   text-align: center;
 }
+
+
 </style>
 <script type="text/javascript" src="js/contributors.js"></script>
 
@@ -106,19 +111,25 @@ h2 {
                 </a>
 				<ul class="right hide-on-med-and-down">
 					<li>
-						<a href="howtoplay.html">How to Play</a>
+						<a href="howtoplay.html" class="lang" key="how">How to Play</a>
 					</li>
-					<li>
-						<a href="index.html">Back to Menu</a>
+                    <li>
+											<a href="credits.html" class="lang" key="credit">Credits</a>
+                    <li>
+                    <li>
+						<a href="index.html" class="lang" key="game">Game</a>
 					</li>
+					
 				</ul>
 			</div>
 		</nav>
 	</div>
 
+		
+
 	<!--contributors section-->
 
-	<h2>Contributors</h2>
+	<h2><a class="lang" key="contribute">Contributors</a></h2>
 		
 <div class="container">
 		<div class="row" id="contributors"></div>

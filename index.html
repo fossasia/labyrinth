@@ -31,8 +31,7 @@ lines (239 sloc) 10.5 KB
 	<script type="text/javascript" src="js/level.js"></script>
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
-	<script type="text/javascript" src="js/save.js"></script>
-	<script type="text/javascript" src="js/rate-game.js"></script>
+  <script type="text/javascript" src="js/save.js"></script>
 	<script type="text/javascript" src="js/gui.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 	<title>Labyrinth</title>
@@ -136,6 +135,14 @@ lines (239 sloc) 10.5 KB
 					<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();" title="Next Audio">
 						<i class="fa fa-step-forward" aria-hidden="true"></i>
 					</a>
+			
+			<div class="side-nav-card">
+				<div class="card-content white-text statistics">
+					<span class="card-title"><a class="lang" key="statistics">Statistics</a></span>
+					<p><a class="lang" key="moved">Player Moved :</a>
+					<span id="playerMoves">0</span><a class="lang" key="times"> Times</a></p>
+					<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
+					<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
 				</div>
 				<p class="range-field">
 					<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.1 value='1'>

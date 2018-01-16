@@ -11,21 +11,11 @@
 function createFirstLevel()
 {
   return new Level("Starter", [
-    [door.none, door.minecraftEntry, door.minecraft, door.winter1, door.goal, door.winter2],
-    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.none],
+    [door.none, door.minecraftEntry, door.minecraft, door.none, door.winter1, door.goal, door.none],
+    [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
-<<<<<<< HEAD
-<<<<<<< HEAD
-    [door.none, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
-=======
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.both, door.highLow, door.new, door.wheel, door.plain, door.top],
->>>>>>> d556247... Fix broken tiles
-=======
-    [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.both, door.highLow, door.new, door.wheel, door.plain, door.top],
->>>>>>> 2283390... Improve UI and add new features
+    [door.staircase, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
@@ -36,7 +26,7 @@ function createAdvancedLevel() {
   return new Level("Advanced", [
     [NullTile, door.none, door.left, door.right, door.none, door.right, door.none, door.none, door.right, door.top],
     [door.none, door.right, door.right, door.right, door.goal, door.none, door.top, door.left, door.right,],
-    [door.none, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
+    [door.drawnbyme, door.top, door.both, door.both, door.wheel, door.top, NullTile, door.right, door.top, door.left],
     [door.none, door.top, PlayerStartsAt(door.black), door.both, door.both, door.top],
     [door.none, door.top, door.both, door.both, door.both, door.top, door.top, door.left, door.right],
     [door.none, door.top, door.wheel, door.both, door.both, door.wheel, door.right, door.top, door.top],
@@ -62,7 +52,7 @@ function createForestLevel() {
 function createDesertLevel() {
   return new Level("Desert", [
     [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
-    [desert.none, desert.top, desert.both, desert.both, desert.both, desert.both],
+    [desert.drawnbyme, desert.top, desert.both, desert.both, desert.both, desert.both],
     [desert.none, desert.top, PlayerStartsAt(desert.start), desert.both, desert.both, desert.top],
     [desert.none, desert.top, desert.both, desert.both, desert.both, desert.top],
     [desert.none, desert.top, desert.top, desert.both, desert.top, desert.top],
@@ -84,11 +74,22 @@ function createPartyLevel() {
 function createSuperheroLevel() {
   return new Level("Super Hero", [
     [Superhero.none, Superhero.right, Superhero.right, Superhero.second, Superhero.right, Superhero.none],
-    [Superhero.none, Superhero.first, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
+    [Superhero.drawnbyme, Superhero.first, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
     [Superhero.none, Superhero.first, PlayerStartsAt(Superhero.start), Superhero.both, Superhero.both, Superhero.top],
     [Superhero.none, Superhero.second, Superhero.both, Superhero.second, Superhero.both, Superhero.second],
     [Superhero.none, Superhero.first, Superhero.top, Superhero.second, Superhero.top, Superhero.top],
     [Superhero.none, Superhero.first, Superhero.second, Superhero.both, Superhero.both, Superhero.top],
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
+  ]);
+}
+function createGraphicsManiaLevel() {
+  return new Level("Grpahics Mania", [
+    [graphics.none, graphics.right, graphics.right, graphics.right, graphics.right, graphics.none, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, PlayerStartsAt(graphics.both), graphics.both, graphics.both, graphics.top, graphics.none],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
+    [NullTile, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none],
   ]);
 }

@@ -17,8 +17,6 @@ var arrlang = {
     'follow': 'Follow us on',
     'invent': 'Inventory',
     'badge': 'Your Badges',
-    'rate': 'Rate game',
-    'rate-question': 'How do you enjoy the game so far?', 
     'version': 'Version',
     'license': 'License',
     'start': "Let's start",
