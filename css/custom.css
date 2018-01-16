@@ -13,6 +13,7 @@ h1, h2, h3 {
 }
 
 .brand-logo.center {
+  margin: 0;
   font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
@@ -392,4 +393,8 @@ h2.swal2-title {
 
 .languagepicker a {
   color: #fff;
+}
+
+.close-sidebar i {
+  transition: 0.4s;
 }
