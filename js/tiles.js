@@ -992,6 +992,14 @@ const door = {
             this.ground.show();
         }
     }),
+    blue: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/blueWall.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/blueDoor.svg");
+            this.ground = this.createImage("tiles/rooms/floor/blueFloor.svg");
+            alertInfo("Why are you feeling blue?!", "Cheer Up!!");
+        },
+    }),
     threeHeads: Object.assign({}, OpenDoors, {
     	canEnterFromTheRight() {
             return false;
