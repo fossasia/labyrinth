@@ -104,12 +104,12 @@ A sample Implementation should go into the already defined `door` class like:
 
 ```javascript
 tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canEnterFromTheRight() {return false;}, /* Set these to false to block movements on the right */
     canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    /* Simillarly you can have canLeaveToTheTop(), canEnterFromTheTop() etc. */
     createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
     },
   }),
@@ -117,24 +117,14 @@ tile_name: Object.assign({}, OpenDoors, {
 
 If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
 ```javascript
-tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
-    canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
-    },
     visit: function() {
-    alertName("title", "text");
+        alertNormal("title", "text");
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
      },
-  }),
 ```
-Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
