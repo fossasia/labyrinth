@@ -25,7 +25,8 @@
 	<script type="text/javascript" src="js/level.js"></script>
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
-    <script type="text/javascript" src="js/save.js"></script>
+	<script type="text/javascript" src="js/save.js"></script>
+	<script type="text/javascript" src="js/rate-game.js"></script>
 	<script type="text/javascript" src="js/gui.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
 		<title>Labyrinth</title>
@@ -56,7 +57,7 @@
 							</a>
 					</div>
 					<a href="https://github.com/fossasia/labyrinth">
-						<h1 class="brand-logo center">Labyrinth</h1>
+						<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
 					</a>
 					<ul class="right hide-on-med-and-down">
 						<li>
@@ -79,7 +80,14 @@
 			<a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
 			
 			<div class="border1"></div>
-			
+			<div class="side-nav-card">
+			<div class="card-content white-text">
+					<span class="card-title">
+						<a href="pages\character_select\game.html" class="lang" key="contribute">Characters</a>
+					</span>
+				</div>
+				</div>
+				<div class="border1"></div>
 			<div class="side-nav-card">
 				<div class="card-content white-text statistics">
 					<span class="card-title"><a class="lang" key="statistics">Statistics</a></span>
@@ -87,6 +95,8 @@
 					<span id="playerMoves">0</span><a class="lang" key="times"> Times</a></p>
 					<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
 					<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
+					<input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/>
+					<input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/>
 				</div>
 
 				<div class="border1"></div>
@@ -212,6 +222,18 @@
 					<ul class="collection black-text" id="badgesDisplay">
 					</ul>
 				</div>
+
+				<div class="border1"></div>
+ 
+ 				<div class="card-content white-text">
+ 					<span class="card-title"><a class="lang" key="rate">Rate game</a></span><br>
+ 					<span><a class="lang" key="rate-question">How do you enjoy the game so far?</a></span>
+ 					<ul id="rate-game" id="badgesDisplay">
+ 						<img class="rate dislike" src="icons/like.png" onClick="thankYouDislike()" alt="dislike">
+ 						<img class="rate like" src="icons/like.png" onClick="thankYouLike()" alt="like">
+ 					</ul>
+ 					<div>Icon made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+ 				</div>
 				
 				<div class="border1"></div>
 
