@@ -397,6 +397,20 @@ const door = {
             this.ground.show();
         }
     }),
+    wheel: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/animations/wheel.svg");
+            alertInfo("Run Run, Don't Stay here anymore!", "");
+        },
+        visit: function() {
+        	playAudio("gears.mp3", 1);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     fossasiaBullet: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -1183,7 +1197,7 @@ const forest = {
         },
         visit: function() {
             alertInfo("You found some mushroom...", "If something is constantly changing color to purple, doubt if it's poisoned.");
-            player.inventory.add(['Poisoned Mushroom', 'PoisonedMushroom.svg']);
+            player.inventory.add(['Poisoned Mushroom', 'PoisonedMushroom.png']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
