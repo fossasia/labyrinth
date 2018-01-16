@@ -400,3 +400,8 @@ h2.swal2-title {
 .close-sidebar i {
   transition: 0.4s;
 }
+
+.card-content.white-text.statistics a {
+  text-decoration: none;
+  color: #fff;
+}
