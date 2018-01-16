@@ -101,7 +101,7 @@ $(function () {
     var lang = $(this).attr('id');
 
     $('.lang').each(function (index, element) {
-      $(this).text(arrlang[lang][$(this).attr('key')]);
+      $(this).text(arrlang[lang][$(this).attr('data-href')]);
     });
   });
 });

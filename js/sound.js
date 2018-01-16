@@ -107,8 +107,12 @@ const backgroundAudio = [
         author: "Sing Sing Karaoke",
         legalNotice: "Sound by Sing Sing Karaoke",
     },
-
-
+    {
+        filename: "audio/background/HappyClappy.mp3",
+        backgroundSongName: "HappyClappy",
+        author: "Anirudh Chauhan",
+        legalNotice: "Sound by Anirudh Chauhan",
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
