@@ -14,6 +14,7 @@ h1, h2, h3 {
 
 .brand-logo.center {
   margin: 0;
+  margin-top: .65%;
   font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
