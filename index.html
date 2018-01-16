@@ -44,8 +44,10 @@
 						</li>
 					</ul>
 					<div class="languagepicker roundborders large">
-						<a class="lang" key="language">Select your language</a>
-							<a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
+
+						<a class="lang" data-href="language">Select your language</a>
+							<a class="translate translate-language-choice" id="en">
+						
 								<img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
 						  </a>
 						  <a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="si">
@@ -60,13 +62,13 @@
 					</a>
 					<ul class="right hide-on-med-and-down">
 						<li>
-							<a href="howtoplay.html" class="lang" key="how">How to Play</a>
+							<a href="howtoplay.html" class="lang" data-href="how">How to Play</a>
 						</li>
 						<li>
-							<a href="credits.html" class="lang" key="credit">Credits</a>
+							<a href="credits.html" class="lang" data-href="credit">Credits</a>
 						</li>
 						<li>
-							<a href="contributors.html" class="lang" key="contribute">Contributors</a>
+							<a href="contributors.html" class="lang" data-href="contribute">Contributors</a>
 						</li>
 					</ul>
 				</div>
@@ -81,19 +83,21 @@
 			<div class="border1"></div>
 			
 			<div class="side-nav-card">
-				<div class="card-content white-text statistics">
-					<span class="card-title"><a class="lang" key="statistics">Statistics</a></span>
-					<p><a class="lang" key="moved">Player Moved :</a>
-					<span id="playerMoves">0</span><a class="lang" key="times"> Times</a></p>
-					<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
-					<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
+        
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" data-href="statistics">Statistics</a></span>
+					<p><a class="lang" data-href="moved">Player Moved :</a>
+					<span id="playerMoves">0</span><a class="lang" data-href="times"> Times</a></p>
+					<input type="button" value="Save" onClick="saveTrigger()" class="black-text"/>
+					<input type="button" value="Load last save" onClick="loadTrigger()" class="black-text"/>
+        
 				</div>
 
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" key="audio">Audio</a></span>
-					<p class="trackname"><a class="lang" key="now">Now Playing :</a><b><span id="backgroundSongName"></span></b><a class="lang" key="by"> by </a><b><span id="backgroundSongAuthor"></span></b></p>
+					<span class="card-title"><a class="lang" data-href="audio">Audio</a></span>
+					<p class="trackname"><a class="lang" data-href="now">Now Playing :</a><b><span id="backgroundSongName"></span></b><a class="lang" data-href="by"> by </a><b><span id="backgroundSongAuthor"></span></b></p>
 				</div>
 				<div class="card-action">
 					<div class="audiosetting">
@@ -111,7 +115,7 @@
 				<div class="border1"></div>
 
                 <div class="card-content white-text">
-	                <span class="card-title"><a class="lang" key="share">Share Game</a></span>
+	                <span class="card-title"><a class="lang" data-href="share">Share Game</a></span>
 				</div>
 				<div class="card-action">
                     <div class="social-container">
@@ -138,7 +142,7 @@
                 <div class="border1"></div>
                 
 				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" key="follow">Follow us on</a></span>
+					<span class="card-title"><a class="lang" data-href="follow">Follow us on</a></span>
 				</div>
 				<div class="card-action">
 				  <div class="social-container">
@@ -180,7 +184,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" key="invent">Inventory</a></span>
+					<span class="card-title"><a class="lang" data-href="invent">Inventory</a></span>
 					<ul class="collection black-text" id="inventoryDisplay">
                 		<!-- SAMPLE ITEM
 				              <li class="collection-item avatar">
@@ -208,7 +212,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" key="badge">Your Badges</a></span>
+					<span class="card-title"><a class="lang" data-href="badge">Your Badges</a></span>
 					<ul class="collection black-text" id="badgesDisplay">
 					</ul>
 				</div>
@@ -216,7 +220,7 @@
 				<div class="border1"></div>
 
 				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" key="version">Version</a></span>
+					<span class="card-title"><a class="lang" data-href="version">Version</a></span>
 					<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
 				</div>
 			</div>  
