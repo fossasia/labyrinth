@@ -13,6 +13,8 @@ h1, h2, h3 {
 }
 
 .brand-logo.center {
+  margin: 0;
+  margin-top: .65%;
   font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
@@ -51,11 +53,6 @@ div.social-container {
   margin-left: 0px;
 }
 
-input.black-text:hover {
-  background-color:yellow;
-  border:1px solid yellow;
-}
-
 i.fa {background: none !important;}
 
 i.fa.fa-times:hover {
@@ -68,7 +65,11 @@ i.fa.fa-times:hover {
   width: 48px !important;
   padding: 0 !important;
 }
-
+ul.social-icons a i {
+  margin: 0;
+  margin-left: 12px;
+  transition: 0.4s;
+}
 i.fa.fa-facebook:hover {
   color: #446ebf;
 }
@@ -182,7 +183,6 @@ p.trackname {
 }
 
 .social-container {
-  width: 385px;
   text-align: center;
 }
 
@@ -332,7 +332,7 @@ nav .left li a {
 }
 
 .languagepicker:hover {
-  height: 81px;
+  height: auto;
 }
 
 .languagepicker a {
@@ -361,7 +361,7 @@ nav .left li a {
 }
 
 .large:hover {
-  height: 245px;
+  height: auto;
 }
 
 div.swal2-popup.swal2-modal {
@@ -389,6 +389,20 @@ h2.swal2-title {
 }
 
 .translate-language-choice {
+  height: 60px;
   display: block;
   text-align: center;
+}
+
+.languagepicker a {
+  color: #fff;
+}
+
+.close-sidebar i {
+  transition: 0.4s;
+}
+
+.card-content.white-text.statistics a {
+  text-decoration: none;
+  color: #fff;
 }
