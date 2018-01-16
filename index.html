@@ -1,9 +1,3 @@
-Skip to content This repository Search Pull requests Issues Marketplace Explore @STEdirisuriya Sign out Watch 1 Star 0 Fork
-70 kubami9/labyrinth-km-contribute forked from fossasia/labyrinth Code Pull requests 0 Projects 0 Insights Tree: 82a622da8f
-Find file Copy pathlabyrinth-km-contribute/index.html cad6068 2 hours ago @kubami9 kubami9 Delete upvote/downvote system
-:`( 16 contributors @duttaditya18 @niccokunzmann @Ploypiti @kubami9 @0x48piraj @Beta-King @YashKumarVerma @naveentherocker
-@amryarios @myfrom @samyakbvs @STEdirisuriya @abishekvashok @apappu9 @saarthakchats @arjunpandey2003 RawBlameHistory 266
-lines (239 sloc) 10.5 KB
 <!DOCTYPE html>
 <html>
 
@@ -31,110 +25,60 @@ lines (239 sloc) 10.5 KB
 	<script type="text/javascript" src="js/level.js"></script>
 	<script type="text/javascript" src="js/badges.js"></script>
 	<script type="text/javascript" src="js/sidebar.js"></script>
-  <script type="text/javascript" src="js/save.js"></script>
+    <script type="text/javascript" src="js/save.js"></script>
 	<script type="text/javascript" src="js/gui.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
-	<title>Labyrinth</title>
-	<link rel="icon" type="image/png" href="labyrinthlogo.png" />
+		<title>Labyrinth</title>
+		<link rel="icon" type="image/png" href="labyrinthlogo.png" />
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
-				<ul class="left">
-					<li>
-						<a href="#" onclick="openSideBar();">
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</a>
-					</li>
-				</ul>
-				<div class="languagepicker roundborders large">
-					<a class="lang" key="language">Select your language</a>
-					<a class="translate translate-language-choice" id="en">
-						<img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper">
+					<ul class="left">
+						<li>
+							<a href="#" onclick="openSideBar();">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="languagepicker roundborders large">
+						<a class="lang" key="language">Select your language</a>
+							<a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
+								<img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+						  </a>
+						  <a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="si">
+								<img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+							</a>
+						  <a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="pl">
+								<img src="icons/Poland.png" alt="" class="translation-flag" /> Polski
+							</a>
+					</div>
+					<a href="https://github.com/fossasia/labyrinth">
+						<h1 class="brand-logo center">Labyrinth</h1>
 					</a>
-					<a class="translate translate-language-choice" id="si">
-						<img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-					</a>
-					<a class="translate translate-language-choice" id="pl">
-						<img src="icons/Poland.png" alt="" class="translation-flag" /> Polski
-					</a>
+					<ul class="right hide-on-med-and-down">
+						<li>
+							<a href="howtoplay.html" class="lang" key="how">How to Play</a>
+						</li>
+						<li>
+							<a href="credits.html" class="lang" key="credit">Credits</a>
+						</li>
+						<li>
+							<a href="contributors.html" class="lang" key="contribute">Contributors</a>
+						</li>
+					</ul>
 				</div>
-				<a href="https://github.com/fossasia/labyrinth">
-					<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
-				</a>
-				<ul class="right hide-on-med-and-down">
-					<li>
-						<a href="howtoplay.html" class="lang" key="how">How to Play</a>
-					</li>
-					<li>
-						<a href="credits.html" class="lang" key="credit">Credits</a>
-					</li>
-					<li>
-						<a href="contributors.html" class="lang" key="contribute">Contributors</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
+			</nav>
+		</div>
 
 	<!-- Side Bar -->
 	<div id="slide-out" class="side-nav full row left-column col s12">
 
-		<a href="#" onclick="closeSideBar();" class="close-sidebar">
-			<i class="fa fa-times" aria-hidden="true"></i>
-		</a>
-
-		<div class="border1"></div>
-
-		<div class="side-nav-card">
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="statistics">Statistics</a>
-				</span>
-				<p>
-					<a class="lang" key="moved">Player Moved :</a>
-					<span id="playerMoves">0</span>
-					<a class="lang" key="times"> Times</a>
-				</p>
-				<input type="button" value="Save" onClick="saveTrigger()" class="black-text" />
-				<input type="button" value="Load last save" onClick="loadTrigger()" class="black-text" />
-				<input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="black-text" />
-				<input type="button" value="Restart" onClick="reset()" class="black-text" />
-			</div>
-
+			<a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
+			
 			<div class="border1"></div>
-
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="audio">Audio</a>
-				</span>
-				<p class="trackname">
-					<a class="lang" key="now">Now Playing :</a>
-					<b>
-						<span id="backgroundSongName"></span>
-					</b>
-					<a class="lang" key="by"> by </a>
-					<b>
-						<span id="backgroundSongAuthor"></span>
-					</b>
-				</p>
-			</div>
-			<div class="card-action">
-				<div class="audiosetting">
-					<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();" title="Previous Audio">
-						<i class="fa fa-step-backward" aria-hidden="true"></i>
-					</a>
-					<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();" title="Play Audio">
-						<i class="fa fa-play" aria-hidden="true"></i>
-					</a>
-					<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();" title="Stop">
-						<i class="fa fa-pause" aria-hidden="true"></i>
-					</a>
-					<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();" title="Next Audio">
-						<i class="fa fa-step-forward" aria-hidden="true"></i>
-					</a>
 			
 			<div class="side-nav-card">
 				<div class="card-content white-text statistics">
@@ -144,93 +88,101 @@ lines (239 sloc) 10.5 KB
 					<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
 					<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
 				</div>
-				<p class="range-field">
-					<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.1 value='1'>
-				</p>
-				<div id="tileLicense"></div>
-			</div>
 
-			<div class="border1"></div>
+				<div class="border1"></div>
 
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="share">Share Game</a>
-				</span>
-			</div>
-			<div class="card-action">
-				<div class="social-container">
-					<ul class="social-icons">
-						<li>
-							<a class="btn-floating  transparent waves-effect waves-light facebook social-icon" target="_blank" href="https://www.facebook.com/sharer.php?u=http://rawgit.com/fossasia/labyrinth/master/index.html">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light twitter social-icon" target="_blank" href="https://twitter.com/share?url=http://rawgit.com/fossasia/labyrinth/master/index.html">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light googleplus social-icon" target="_blank" href="https://plus.google.com/share?url=http://rawgit.com/fossasia/labyrinth/master/index.html">
-								<i class="fa fa-google-plus"></i>
-							</a>
-						</li>
-					</ul>
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" key="audio">Audio</a></span>
+					<p class="trackname"><a class="lang" key="now">Now Playing :</a><b><span id="backgroundSongName"></span></b><a class="lang" key="by"> by </a><b><span id="backgroundSongAuthor"></span></b></p>
 				</div>
-			</div>
-
-			<div class="border1"></div>
-
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="follow">Follow us on</a>
-				</span>
-			</div>
-			<div class="card-action">
-				<div class="social-container">
-					<ul class="social-icons">
-						<li>
-							<a class="btn-floating  transparent waves-effect waves-light facebook social-icon" target="_blank" href="http://facebook.com/fossasia">
-								<i class="fa fa-facebook"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light twitter social-icon" target="_blank" href="http://twitter.com/fossasia">
-								<i class="fa fa-twitter"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light youtube social-icon" target="_blank" href="https://www.youtube.com/fossasiaorg">
-								<i class="fa fa-youtube-play"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light linkedin social-icon" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811">
-								<i class="fa fa-linkedin"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light googleplus social-icon" target="_blank" href="https://plus.google.com/108920596016838318216">
-								<i class="fa fa-google-plus"></i>
-							</a>
-						</li>
-						<li>
-							<a class="btn-floating transparent waves-effect waves-light github social-icon" target="_blank" href="https://github.com/fossasia">
-								<i class="fa fa-github"></i>
-							</a>
-						</li>
-					</ul>
+				<div class="card-action">
+					<div class="audiosetting">
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="previousBackgroundAudio();" title="Previous Audio"><i class="fa fa-step-backward" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="startBackgroundAudio();" title="Play Audio"><i class="fa fa-play" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="stopBackgroundAudio();" title="Stop"><i class="fa fa-pause" aria-hidden="true"></i></a>
+						<a class="waves-effect waves-light btn blue-grey darken-2" onclick="nextBackgroundAudio();" title="Next Audio"><i class="fa fa-step-forward" aria-hidden="true"></i></a>
+					</div>
+					<p class="range-field">
+						<input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.1 value='1'>
+					</p>
+					<div id="tileLicense"></div>
 				</div>
-			</div>
 
-			<div class="border1"></div>
+				<div class="border1"></div>
 
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="invent">Inventory</a>
-				</span>
-				<ul class="collection black-text" id="inventoryDisplay">
-					<!-- SAMPLE ITEM
+                <div class="card-content white-text">
+	                <span class="card-title"><a class="lang" key="share">Share Game</a></span>
+				</div>
+				<div class="card-action">
+                    <div class="social-container">
+					    <ul class="social-icons">
+							<li>
+								<a class="btn-floating  transparent waves-effect waves-light facebook social-icon" target="_blank" href="https://www.facebook.com/sharer.php?u=http://rawgit.com/fossasia/labyrinth/master/index.html">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light twitter social-icon" target="_blank" href="https://twitter.com/share?url=http://rawgit.com/fossasia/labyrinth/master/index.html">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+                                <a class="btn-floating transparent waves-effect waves-light googleplus social-icon" target="_blank" href="https://plus.google.com/share?url=http://rawgit.com/fossasia/labyrinth/master/index.html">									
+                                    <i class="fa fa-google-plus"></i>
+								</a>
+							</li>
+                        </ul>    
+				    </div>
+				</div>
+            
+                <div class="border1"></div>
+                
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" key="follow">Follow us on</a></span>
+				</div>
+				<div class="card-action">
+				  <div class="social-container">
+				    <ul class="social-icons">						
+							<li>
+								<a class="btn-floating  transparent waves-effect waves-light facebook social-icon" target="_blank" href="http://facebook.com/fossasia">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light twitter social-icon" target="_blank" href="http://twitter.com/fossasia">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light youtube social-icon" target="_blank" href="https://www.youtube.com/fossasiaorg">
+									<i class="fa fa-youtube-play"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light linkedin social-icon" target="_blank" href="https://www.linkedin.com/groups/FOSSASIA-3762811">
+									<i class="fa fa-linkedin"></i>
+								</a>
+							</li>
+							<li>
+								<a class="btn-floating transparent waves-effect waves-light googleplus social-icon" target="_blank" href="https://plus.google.com/108920596016838318216">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</li>
+              <li>
+								<a class="btn-floating transparent waves-effect waves-light github social-icon" target="_blank" href="https://github.com/fossasia">
+									<i class="fa fa-github"></i>
+								</a>
+							</li>
+					  </ul>
+					</div>
+				</div>
+
+				<div class="border1"></div>
+
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" key="invent">Inventory</a></span>
+					<ul class="collection black-text" id="inventoryDisplay">
+                		<!-- SAMPLE ITEM
 				              <li class="collection-item avatar">
 				                <img src="images/yuna.jpg" alt="" class="circle">
 				                <span class="title">Title</span>
@@ -240,7 +192,7 @@ lines (239 sloc) 10.5 KB
 				                <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
 				              </li>
 				          -->
-					<!-- SAMPLE ITEM WITH ICON
+                        <!-- SAMPLE ITEM WITH ICON
 				            <li class="collection-item avatar">
 				              <i class="material-icons circle">folder</i>
 				              <span class="title">Title</span>
@@ -250,35 +202,29 @@ lines (239 sloc) 10.5 KB
 				              <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
 				            </li>
 				        -->
-				</ul>
-			</div>
+    				</ul>
+				</div>
 
-			<div class="border1"></div>
+				<div class="border1"></div>
 
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="badge">Your Badges</a>
-				</span>
-				<ul class="collection black-text" id="badgesDisplay">
-				</ul>
-			</div>
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" key="badge">Your Badges</a></span>
+					<ul class="collection black-text" id="badgesDisplay">
+					</ul>
+				</div>
+				
+				<div class="border1"></div>
 
-			<div class="border1"></div>
-
-			<div class="card-content white-text">
-				<span class="card-title">
-					<a class="lang" key="version">Version</a>
-				</span>
-				<span class="versionSpan">
-					<a href="" id="labyrinthVersion"></a>
-				</span>
-			</div>
-		</div>
+				<div class="card-content white-text">
+					<span class="card-title"><a class="lang" key="version">Version</a></span>
+					<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
+				</div>
+			</div>  
 	</div>
 
-
-
-
+  
+	
+	
 
 	<!-- Control Buttons -->
 	<div class="fixed-action-btn toolbar">
@@ -313,6 +259,4 @@ lines (239 sloc) 10.5 KB
 	<div id="tiles"></div>
 
 </body>
-
 </html>
-© 2018 GitHub, Inc. Terms Privacy Security Status Help Contact GitHub API Training Shop Blog About
