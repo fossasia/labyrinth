@@ -12,11 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/tiles.css">
-	<script type="text/javascript" src="js/jquery.translate.js"></script>
-	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
-	<script type="text/javascript" src="js/translate.js"></script>
 	<!-- Engine Scripts -->
+	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
 	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/translate.js"></script>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<script type="text/javascript" src="js/sound.js"></script>
 	<script type="text/javascript" src="js/tiles.js"></script>
@@ -44,20 +43,18 @@
 							</a>
 						</li>
 					</ul>
-					<ul class="languagepicker roundborders large">
-						<li><a class="lang" key="language">Select your language</a></li>
-						<a class="translate" id="en">
-							<li>
-								<img src="icons/UnitedKingdom.png" width=7% height=7%/> English
-		
-							</li>
-						</a>
-						<a class="translate" id="si">
-							<li>
-								<img src="icons/SriLanka.png" width=7% height=7%/> Sinhala
-							</li>
-						</a>
-					</ul>
+					<div class="languagepicker roundborders large">
+						<a class="lang" key="language">Select your language</a>
+							<a class="translate translate-language-choice" id="en">
+								<img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+						  </a>
+						  <a class="translate translate-language-choice" id="si">
+								<img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+							</a>
+						  <a class="translate translate-language-choice" id="pl">
+								<img src="icons/Poland.png" alt="" class="translation-flag" /> Polski
+							</a>
+					</div>
 					<a href="https://github.com/fossasia/labyrinth">
 						<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="80" height="60">
 					</a>

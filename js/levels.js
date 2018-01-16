@@ -15,10 +15,10 @@ function createFirstLevel()
     [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.none, door.highLow, door.new, door.wheel, door.plain, door.top],
+    [door.staircase, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
-    [door.none, door.top, door.marina, door.treasureKey, door.drawn, door.top],
-    [NullTile, door.boat, door.river, desert.universe, door.cake, door.newYear],
+    [door.both, door.top, door.marina, door.treasureKey, door.drawn, door.top],
+    [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
   ]);
 }
 
@@ -42,7 +42,7 @@ function createForestLevel() {
     [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [forest.none, forest.top, PlayerStartsAt(forest.start), forest.both, forest.both, forest.top],
-    [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
+    [forest.none, forest.top, forest.mushroom, forest.both, forest.both, forest.top],
     [forest.none, forest.top, forest.top, forest.both, forest.top, forest.top],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],

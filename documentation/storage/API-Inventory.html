@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>API Inventory</title>
+</head>
+<body>
+<h4>Inventory Mechanism</h4>
+<br /><br />
+<p>The inventory mechanism allows user to pick up objects or items from the game by passing over them. The API at present provides three functions for interaction with the mechanism.</p>
+<p>The engine by default doesn't allow multiple instances of the same item to be added to inventory.</p>
+<br /><br />
+<h5>inventory.add()</h5>
+<p>This function is used to add an item to the player's inventory. The function accepts an array as parameters, the first index containing the item's name and second containing the object's image.<br> For instance, the following code snippet adds a bucket
+  to the inventory.</p>
+<pre><code>  Player.inventory.add([&quot;bucket&quot;,&quot;bucket.jpg&quot;]);
+  Player.inventory.add([&quot;skull&quot;,&quot;skull.jpg&quot;]);
+</code></pre>
+<br /><br />
+<h5>inventory.has()</h5>
+<p>This function is used to check the existence of an item in the player's inventory. The function accepts a string as parameter, which is the item's name.<br> For instance, the following code snippet returns true if key found.</p>
+<pre><code>if(Player.inventory.has(&quot;bucket&quot;)){
+  // dance about in the maze
+}
+</code></pre>
+<br /><br />
+<h5>inventory.remove()</h5>
+<p>This function is used to remove an item from the player's inventory. The function accepts a string as parameter, which is the item's name.</p>
+<pre><code>if(Player.inventory.has(&quot;coin&quot;)){
+  ThrowParty();
+  Player.inventory.remove(coin);
+}
+</code></pre>
+
+</body>
+</html>

@@ -56,7 +56,7 @@ const backgroundAudio = [
         legalNotice: "Music by Abishek V Ashok",
     },
     {
-        filename: "audio/music/ownsound.mp3",
+        filename: "audio/saarthakchats/ownsound.mp3",
         backgroundSongName: "NoPro",
         author: "Saarthak Chaturvedi",
         legalNotice: "Music by Saarthak Chaturvedi",
@@ -100,6 +100,12 @@ const backgroundAudio = [
         backgroundSongName: "Drummers",
         author: "Yash Kothari",
         legalNotice: "Music by Yash Kothari",
+    },
+{
+        filename: "audio/background/Labyrmsuic/Labyrmusic.mp3",
+        backgroundSongName: "Labyrmusic",
+        author: "Sing Sing Karaoke",
+        legalNotice: "Sound by Sing Sing Karaoke",
     },
 
 

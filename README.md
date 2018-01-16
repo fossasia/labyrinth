@@ -26,6 +26,7 @@
 - [**How to add new tiles**](#how-to-add-new-tiles)
 - [**How to add a new character**](#how-to-add-a-new-character)
 - [**How to add a new badge**](#how-to-add-a-new-badge)
+- [**How to add new theme**](#how-to-add-new-theme)
 - [**Hints for GCI students**](#hints-for-gci-students)
 - [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
@@ -103,12 +104,12 @@ A sample Implementation should go into the already defined `door` class like:
 
 ```javascript
 tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canEnterFromTheRight() {return false;}, /* Set these to false to block movements on the right */
     canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    /* Simillarly you can have canLeaveToTheTop(), canEnterFromTheTop() etc. */
     createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
     },
   }),
@@ -116,24 +117,14 @@ tile_name: Object.assign({}, OpenDoors, {
 
 If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
 ```javascript
-tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
-    canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
-    },
     visit: function() {
-    alertName("title", "text");
+        alertNormal("title", "text");
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
      },
-  }),
 ```
-Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
@@ -254,6 +245,31 @@ swal({
             });
 ```
 
+## How to add new theme
+Adding new theme is basically adding new tiles in a constant object:
+```
+const yourThemeName = {
+  your tiles go here
+},
+```
+While adding new theme you have to keep in mind theme structure. You can take a look at already existing themes.
+
+After adding your theme to `tiles.js` file, you have to declare it in `levels.js`. Exactly its function, so it's going to create new tiles:
+```
+function createXLevel() {
+  return new Level("X", [
+    [X.none, X.right, X.right, X.right, X.right, X.none],
+    [X.none, X.top, X.both, X.both, X.both, X.both],
+    [X.none, X.top, PlayerStartsAt(X.start), X.both, X.both, X.top],
+    [X.none, X.top, X.both, X.both, X.both, X.top],
+    [X.none, X.top, X.top, X.both, X.top, X.top],
+    [X.none, X.top, X.both, X.both, X.both, X.top],
+    [NullTile, X.none, X.none, X.none, X.none, X.none],
+  ]);
+}
+```
+That's just an example of this function. Note that all these functions in `levels.js` file are looking very similar. Instead of `X` sign insert your theme name.
+
 ## Hints for GCI students
 
 ### Adding animated tiles
@@ -316,6 +332,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
 - [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)
+- [Labyrinth | Game by Fossasia](https://www.youtube.com/watch?v=nEJ5jAIRfjw)
 
 ## Maintainers
 
