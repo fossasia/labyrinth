@@ -65,7 +65,9 @@ i.fa.fa-times:hover {
   width: 48px !important;
   padding: 0 !important;
 }
-ul.social-icons i {
+ul.social-icons a i {
+  margin: 0;
+  margin-left: 12px;
   transition: 0.4s;
 }
 i.fa.fa-facebook:hover {
@@ -181,7 +183,6 @@ p.trackname {
 }
 
 .social-container {
-  width: 385px;
   text-align: center;
 }
 
