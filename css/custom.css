@@ -331,7 +331,7 @@ nav .left li a {
 }
 
 .languagepicker:hover {
-  height: 81px;
+  height: auto;
 }
 
 .languagepicker a {
@@ -360,7 +360,7 @@ nav .left li a {
 }
 
 .large:hover {
-  height: 245px;
+  height: auto;
 }
 
 div.swal2-popup.swal2-modal {
@@ -388,6 +388,7 @@ h2.swal2-title {
 }
 
 .translate-language-choice {
+  height: 60px;
   display: block;
   text-align: center;
 }
