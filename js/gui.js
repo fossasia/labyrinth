@@ -103,6 +103,11 @@ var keyHandlers = {
     },
 };
 
+// Reset button
+function reset() {
+    location.reload();
+}
+
 // On Screen Keys
 $("#leftKey").on("click", keyHandlers.ArrowLeft);
 $("#rightKey").on("click", keyHandlers.ArrowRight);
