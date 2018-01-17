@@ -992,6 +992,24 @@ const door = {
             this.ground.show();
         }
     }),
+    orange: Object.assign({},OpenDoors,{
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return false;
+        },
+       createImages: function() {
+           this.wallTop = this.createImage("tiles/rooms/wall/orangeWall.svg");
+           this.wallRight = this.createImage("tiles/rooms/door/orangeDoor.svg");
+           this.wallTop = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+       },
+       visit: function() {
+           this.wallTop.show();
+           this.wallRight.show();
+           this.ground.show();
+       }
+   }),
     threeHeads: Object.assign({}, OpenDoors, {
     	canEnterFromTheRight() {
             return false;
