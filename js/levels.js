@@ -39,10 +39,10 @@ function createAdvancedLevel() {
 
 function createForestLevel() {
   return new Level("Forest", [
-    [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
+    [forest.none, forest.right, forest.CreativeRoomDoor, forest.right, forest.right, forest.right, forest.none],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [forest.none, forest.top, PlayerStartsAt(forest.start), forest.both, forest.both, forest.top],
-    [forest.none, forest.top, forest.mushroom, forest.both, forest.both, forest.top, forest.CreativeRoomDoor],
+    [forest.none, forest.top, forest.mushroom, forest.both, forest.both, forest.top],
     [forest.none, forest.top, forest.top, forest.both, forest.top, forest.top],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],
