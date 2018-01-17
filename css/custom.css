@@ -414,6 +414,7 @@ h2.swal2-title {
   height: 60px;
   display: block;
   text-align: center;
+  padding-top: 12px;
 }
 
 .languagepicker a {
