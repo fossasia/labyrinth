@@ -110,12 +110,6 @@ function reset() {
     location.reload();
 }
 
-// On Screen Keys
-$("#leftKey").on("click", keyHandlers.ArrowLeft);
-$("#rightKey").on("click", keyHandlers.ArrowRight);
-$("#upKey").on("click", keyHandlers.ArrowUp);
-$("#downKey").on("click", keyHandlers.ArrowDown);
-
 window.addEventListener("keydown", function(event) {
     var handler = keyHandlers[event.key];
     if (handler) {
