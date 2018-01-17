@@ -93,3 +93,14 @@ function createGraphicsManiaLevel() {
     [NullTile, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none],
   ]);
 }
+function createTileMeshLevel() {
+  return new Level([
+    [TileMesh.none, TileMesh.right, TileMesh.right, TileMesh.right, TileMesh.right, TileMesh.none],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.both],
+    [TileMesh.none, TileMesh.top, PlayerStartsAt(TileMesh.start), TileMesh.both, TileMesh.both, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.top, TileMesh.both, TileMesh.top, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.top],
+    [NullTile, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none],
+  ]);
+}
