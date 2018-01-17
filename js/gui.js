@@ -56,6 +56,8 @@ function choosePlayerCharacter(player) {
       "characters/pixie.svg": "Forest Spirit",
       "characters/AngryBot.svg": "Angry Bot",
       "characters/deathnote.svg": "Death Note",
+      // added character cowboy
+      "characters/cowboy.png": "Cowboy",
     });
   });
   swal({
