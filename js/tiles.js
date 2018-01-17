@@ -1118,6 +1118,31 @@ const forest = {
             this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
         },
     }),
+        CreativeRoomDoor: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canEnterFromTheBottom: function(player) {
+            return true;
+        },
+        canEnterFromTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheBottom: function(player) {
+            return true;
+        },
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/CreativeRoomDoor.png");
+          this.wallRight = this.createImage("tiles/rooms/wall/CreativeRoomWall.png");
+          this.ground = this.createImage("tiles/rooms/floor/CreativeRoomFloor.png");
+        },
+    }),
     top: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
