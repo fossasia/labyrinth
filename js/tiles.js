@@ -905,6 +905,9 @@ const door = {
         canLeaveToTheRight: function(player){
             return true;
         },
+        canEnterFromTheRight: function(player){
+            return false;
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
