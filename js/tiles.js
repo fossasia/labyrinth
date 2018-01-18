@@ -1219,10 +1219,16 @@ const forest = {
         }
     }),
     mushroom: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
         createImages: function() {
-          this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
-          this.ground = this.createImage("tiles/rooms/floor/mushroom.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+            this.ground = this.createImage("tiles/rooms/floor/mushroom.svg");
         },
         visit: function() {
             alertInfo("You found some mushroom...", "If something is constantly changing color to purple, doubt if it's poisoned.");
