@@ -229,7 +229,7 @@ Players will archieve badge when they reachs a certain tiles, you may allow play
 First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
 
 Next, in `tiles.js` add the following to your tile function;
-```
+```javascript
 visit: function() {
         player.badges.add(['badgeName', 'fileName.png']);
         this.wallTop.show();
@@ -237,17 +237,20 @@ visit: function() {
         this.ground.show();
       }
 ```
-You may add pop-up alert if you'd like, by adding *sweet alert*, for example;
+You may add pop-up alert if you'd like, by using the *SweetAlert API*, for example;
+```javascript
+visit: function() {
+    alertNormal("title", "text");
+    // ...
+  },
 ```
-swal({
-                type: 'info',
-                title: 'Congrats! You got the DISCOVERER badge',
-            });
-```
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](https://sweetalert2.github.io/).
+
+And replace `title` and `text` with whatever title or text you want to display. If you want to only have a title and not any `text`, keep text empty. Like this : `""`.
 
 ## How to add new theme
 Adding new theme is basically adding new tiles in a constant object:
-```
+```javascript
 const yourThemeName = {
   your tiles go here
 },
@@ -255,7 +258,7 @@ const yourThemeName = {
 While adding new theme you have to keep in mind theme structure. You can take a look at already existing themes.
 
 After adding your theme to `tiles.js` file, you have to declare it in `levels.js`. Exactly its function, so it's going to create new tiles:
-```
+```javascript
 function createXLevel() {
   return new Level("X", [
     [X.none, X.right, X.right, X.right, X.right, X.none],

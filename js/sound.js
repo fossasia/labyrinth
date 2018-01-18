@@ -90,7 +90,7 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
     },
         {
-        filename: "audio/background/CuteSong/bensound-cute.mp3",
+        filename: "audio/music/bensound.com/bensound-cute.mp3",
         backgroundSongName: "Cute",
         author: "bensound.com",
         legalNotice: "Music by bensound.com",
