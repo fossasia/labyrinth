@@ -903,7 +903,7 @@ const door = {
     }),
     cricketGround: Object.assign({}, OpenDoors, {
         canLeaveToTheRight: function(player){
-            return true;
+            return false;
         },
         canEnterFromTheRight: function(player){
             return false;
