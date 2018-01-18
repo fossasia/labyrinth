@@ -905,9 +905,12 @@ const door = {
         canLeaveToTheRight: function(player){
             return true;
         },
+        canEnterFromTheRight: function(player){
+            return false;
+        },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
