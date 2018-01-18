@@ -239,11 +239,14 @@ visit: function() {
 ```
 You may add pop-up alert if you'd like, by using the *SweetAlert API*, for example;
 ```javascript
-swal({
-                type: 'info',
-                title: 'Congrats! You got the DISCOVERER badge',
-            });
+visit: function() {
+    alertNormal("title", "text");
+    // ...
+  },
 ```
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](https://sweetalert2.github.io/).
+
+And replace `title` and `text` with whatever title or text you want to display. If you want to only have a title and not any `text`, keep text empty. Like this : `""`.
 
 ## How to add new theme
 Adding new theme is basically adding new tiles in a constant object:
