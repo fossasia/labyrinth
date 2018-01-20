@@ -28,7 +28,7 @@
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
-![](vision-example.jpg)
+![Vision](images/vision-example.jpg)
 
 Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
