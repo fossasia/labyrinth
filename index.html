@@ -80,25 +80,37 @@
 	<div id="slide-out" class="side-nav full row left-column col s12">
 
 			<a href="#" onclick="closeSideBar();" class="close-sidebar"><i class="fa fa-times" aria-hidden="true"></i></a>
-			
+				
 			<div class="border1"></div>
-			<div class="side-nav-card">
+
 			<div class="card-content white-text">
+				<span class="card-title"><a class="lang" data-href="version">Version</a></span>
+				<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
+			</div>
+
+			<div class="border1"></div>
+			
+			<div class="side-nav-card">
+				<div class="card-content white-text">
 					<span class="card-title">
 						<a href="pages/character_select/game.html" class="lang" data-href="contribute">Characters</a>
 					</span>
 				</div>
-				</div>
-				<div class="border1"></div>
+			</div>
+
+			<div class="border1"></div>
+
 			<div class="side-nav-card">
 				<div class="card-content white-text statistics">
 					<span class="card-title"><a class="lang" data-href="statistics">Statistics</a></span>
 					<p><a class="lang" data-href="moved">Player Moved :</a>
 					<span id="playerMoves">0</span><a class="lang" data-href="times"> Times</a></p>
-					<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
-					<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
-					<input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/>
-					<input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/>
+					<div class="stats-btn">
+						<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
+						<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
+						<input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/>
+						<input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/>
+					</div>
 				</div>
 				<div class="border1"></div>
 				<div class="card-content white-text">
@@ -234,13 +246,6 @@
  					</div>
  					<div>Icon made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
  				</div>
-				
-				<div class="border1"></div>
-
-				<div class="card-content white-text">
-					<span class="card-title"><a class="lang" data-href="version">Version</a></span>
-					<span class="versionSpan"><a href="" id="labyrinthVersion"></a></span>
-				</div>
 			</div>  
 	</div>
 

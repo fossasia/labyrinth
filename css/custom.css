@@ -249,6 +249,7 @@ nav .left li a {
   text-transform: initial;
   letter-spacing: initial;
   font-size: 14px;
+  color: #0d5565;
 }
 
 #labyrinthVersion:hover {
@@ -428,4 +429,21 @@ h2.swal2-title {
 .card-content.white-text.statistics a {
   text-decoration: none;
   color: #fff;
+}
+
+.statistics {
+  box-sizing: initial;
+}
+
+.statistics .stats-btn {
+  background: #47a883;
+}
+
+.statistics .stats-btn .waves-effect.waves-light.btn.blue-grey.darken-2 {
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #0e8664;
+  width: 100%;
 }
