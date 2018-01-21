@@ -1,12 +1,4 @@
-dist: trusty
-
 language: node
-
-cache:
-  directories:
-  - .coala-cache
-
-services: docker
 
 script:
   - scripts/check-javascript-syntax-errors.sh

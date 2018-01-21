@@ -395,6 +395,28 @@ h2.swal2-title {
   padding: 15px !important;
 }
 
+#rate-game {
+  text-align: center;
+}
+.rate {
+  width: 100px;
+  height: auto;
+  background-color: #eee;
+  padding: 30px;
+  margin: 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.rate:hover {
+  background-color: #fff;
+}
+.thanks {
+  transition: 0.3s;
+}
+.dislike {
+  transform: rotate(180deg);
+}
+
 .translation-flag {
   height: 1em;
   vertical-align: center;
@@ -404,6 +426,7 @@ h2.swal2-title {
   height: 60px;
   display: block;
   text-align: center;
+  padding-top: 12px;
 }
 
 .languagepicker a {

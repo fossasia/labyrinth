@@ -1,8 +1,5 @@
-<center>
-	<a href="https://github.com/fossasia/labyrinth">
-		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="120">
-	</a>
-</center>
+
+<h1 align="center"><center><img src="images/logos/labyrinthlogofull.png"></center></h1>
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -10,13 +7,9 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
 
-[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
-[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
-[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
-
-
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
+
 
 ## Content Outline
 - [**Motivation**](#motivation)
@@ -35,7 +28,7 @@
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
-![](vision-example.jpg)
+![Vision](images/vision-example.jpg)
 
 Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
@@ -229,7 +222,7 @@ Players will archieve badge when they reachs a certain tiles, you may allow play
 First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
 
 Next, in `tiles.js` add the following to your tile function;
-```
+```javascript
 visit: function() {
         player.badges.add(['badgeName', 'fileName.png']);
         this.wallTop.show();
@@ -237,17 +230,20 @@ visit: function() {
         this.ground.show();
       }
 ```
-You may add pop-up alert if you'd like, by adding *sweet alert*, for example;
+You may add pop-up alert if you'd like, by using the *SweetAlert API*, for example;
+```javascript
+visit: function() {
+    alertNormal("title", "text");
+    // ...
+  },
 ```
-swal({
-                type: 'info',
-                title: 'Congrats! You got the DISCOVERER badge',
-            });
-```
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](https://sweetalert2.github.io/).
+
+And replace `title` and `text` with whatever title or text you want to display. If you want to only have a title and not any `text`, keep text empty. Like this : `""`.
 
 ## How to add new theme
 Adding new theme is basically adding new tiles in a constant object:
-```
+```javascript
 const yourThemeName = {
   your tiles go here
 },
@@ -255,7 +251,7 @@ const yourThemeName = {
 While adding new theme you have to keep in mind theme structure. You can take a look at already existing themes.
 
 After adding your theme to `tiles.js` file, you have to declare it in `levels.js`. Exactly its function, so it's going to create new tiles:
-```
+```javascript
 function createXLevel() {
   return new Level("X", [
     [X.none, X.right, X.right, X.right, X.right, X.none],

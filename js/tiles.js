@@ -903,11 +903,14 @@ const door = {
     }),
     cricketGround: Object.assign({}, OpenDoors, {
         canLeaveToTheRight: function(player){
-            return true;
+            return false;
+        },
+        canEnterFromTheRight: function(player){
+            return false;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/cricketGround.svg");
             alertNormal("Play Time!', 'Come on Let's Play some Cricket", "");
         },
@@ -992,6 +995,24 @@ const door = {
             this.ground.show();
         }
     }),
+    orange: Object.assign({},OpenDoors,{
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return false;
+        },
+       createImages: function() {
+           this.wallTop = this.createImage("tiles/rooms/wall/orangeWall.svg");
+           this.wallRight = this.createImage("tiles/rooms/door/orangeDoor.svg");
+           this.wallTop = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+       },
+       visit: function() {
+           this.wallTop.show();
+           this.wallRight.show();
+           this.ground.show();
+       }
+   }),
     threeHeads: Object.assign({}, OpenDoors, {
     	canEnterFromTheRight() {
             return false;
@@ -1118,6 +1139,31 @@ const forest = {
             this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
         },
     }),
+        CreativeRoomDoor: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canEnterFromTheBottom: function(player) {
+            return true;
+        },
+        canEnterFromTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheBottom: function(player) {
+            return true;
+        },
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/CreativeRoomDoor.png");
+          this.wallRight = this.createImage("tiles/rooms/wall/CreativeRoomWall.png");
+          this.ground = this.createImage("tiles/rooms/floor/CreativeRoomFloor.png");
+        },
+    }),
     top: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -1176,10 +1222,16 @@ const forest = {
         }
     }),
     mushroom: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
         createImages: function() {
-          this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
-          this.ground = this.createImage("tiles/rooms/floor/mushroom.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/topForest.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightForest.svg");
+            this.ground = this.createImage("tiles/rooms/floor/mushroom.svg");
         },
         visit: function() {
             alertInfo("You found some mushroom...", "If something is constantly changing color to purple, doubt if it's poisoned.");
@@ -1630,5 +1682,81 @@ const graphics = {
             this.wallRight = this.createImage("tiles/rooms/wall/graphicsRight.svg");
             this.ground = this.createImage("tiles/rooms/floor/graphics.svg");
         },
+    }),
+};
+const TileMesh = {
+    both: OpenDoors,
+    levelCode: 6,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+             alertInfo("Bubbles!", "Bubbly Bumble.");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/BeautifulMesh.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/BeautifulMesh.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+        },
+        visit: function() {
+            playAudio("dupstep.mp3");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("title/rooms/floor/Random.svg");
+        }
+
     }),
 };

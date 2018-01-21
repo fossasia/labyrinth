@@ -56,6 +56,8 @@ function choosePlayerCharacter(player) {
       "characters/pixie.svg": "Forest Spirit",
       "characters/AngryBot.svg": "Angry Bot",
       "characters/deathnote.svg": "Death Note",
+      // added character cowboy
+      "characters/cowboy.png": "Cowboy",
     });
   });
   swal({
@@ -103,11 +105,10 @@ var keyHandlers = {
     },
 };
 
-// On Screen Keys
-$("#leftKey").on("click", keyHandlers.ArrowLeft);
-$("#rightKey").on("click", keyHandlers.ArrowRight);
-$("#upKey").on("click", keyHandlers.ArrowUp);
-$("#downKey").on("click", keyHandlers.ArrowDown);
+// Reset button
+function reset() {
+    location.reload();
+}
 
 window.addEventListener("keydown", function(event) {
     var handler = keyHandlers[event.key];
