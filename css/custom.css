@@ -55,6 +55,22 @@ div.social-container {
 
 i.fa {background: none !important;}
 
+i.fa.fa-step-backward:hover{
+  color: black;
+}
+
+i.fa.fa-play:hover{
+  color:blue;
+}
+
+i.fa.fa-pause:hover{
+  color: red;
+}
+
+i.fa.fa-step-forward:hover{
+  color: black;
+}
+
 i.fa.fa-times:hover {
   color: red;
 }
