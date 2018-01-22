@@ -9,7 +9,7 @@
 
 [**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
-
+[**Documentation**](http://rawgit.com/fossasia/labyrinth/master/documentation/)
 
 ## Content Outline
 - [**Motivation**](#motivation)
