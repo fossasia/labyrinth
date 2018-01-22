@@ -59,6 +59,18 @@ i.fa.fa-times:hover {
   color: red;
 }
 
+.languagepicker.roundborders.large .select-your-language:hover {
+  background-color: #80BE62 ;
+}
+
+.languagepicker.roundborders.large .hover-black:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.right.hide-on-med-and-down li:hover{
+  background-color: #80BE62;
+}
+
 .btn-floating.transparent.waves-effect.waves-light {
   background: none !important;
   box-shadow: none;
