@@ -266,6 +266,17 @@ function createXLevel() {
 ```
 That's just an example of this function. Note that all these functions in `levels.js` file are looking very similar. Instead of `X` sign insert your theme name.
 
+To make the level available to the player, best if you also add a tile which you place in an 
+existing level which you want the player to explore before.
+This tile then calls `player.addReachableLevel(createXLevel())` to make the level available to the player.
+
+```javascript
+visit: function(player) {
+    player.addReachableLevel(createXLevel());
+    // ...
+  },
+```
+
 ## Hints for GCI students
 
 ### Adding animated tiles
