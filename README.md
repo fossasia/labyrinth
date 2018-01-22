@@ -83,8 +83,8 @@ such as doors, floors etc.
 Currently the tiles are svg images which are embedded into a div via javascript. Floor tiles have a dimension of about 429.544 x 256.314 px (wxh)
 Tiles are present in the `tiles` folder within subdirectories corresponding to particular tiles such as door, floor etc.
 
-To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
-and saved as a svg file with the speccified dimensions.
+To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
+and saved as a svg file with the specified dimensions.
 
 Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
 
@@ -93,7 +93,7 @@ After creating tiles add them to the specific sub folder inside tiles.
 Now, we will move on to the javascript part.
 Each tile's attributes and specifications along with it's declaration is done in the `js/tiles.js` file. You may edit this file defining attributes
 such as how you could enter and exit out of the tile and so on. You can also specify the door it takes, it's closed exit paths etc.
-A sample Implementation should go into the already defined `door` class like:
+A sample implementation should go into the already defined `door` class like:
 
 ```javascript
 tile_name: Object.assign({}, OpenDoors, {
@@ -153,7 +153,7 @@ To add your audio file, please read the following carefully:
 Audio files are usually not licensed under AGPL. They have a different license.
 Please **make sure that the license permits** using the file for the project.
 Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .
-To add the a sound file, we need to respect the license, so please follow this guide:
+To add a sound file, we need to respect the license, so please follow this guide:
 - [ ] Add your sound file to the [audio](audio) directory. Use a name which fits the sound.
 - [ ] Add a file with the license of the sound file. If your file is named `audio.mp3` add a file named `audio.mp3.license`.
 - [ ] If you created this sound, please consider adding the source files.
@@ -202,13 +202,13 @@ Labyrinth allows you to add your characters by customizing the required javascri
 Currently the characters are svg images which are embedded into a div via javascript. Characters have a dimension of about 55 x 60 px (wxh)
 Characters are present in the `characters` folder.
 
-To create a character you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
-and saved as a svg file with the speccified dimensions.
+To create a character you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
+and saved as a svg file with the specified dimensions.
 
 After creating characters add them to the `characters` folder.
 
 Now, we will move on to the javascript part.
-Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`
+Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`.
 Follow the format while adding to gui.js (To be precise add it to the swal box input values collection i.e, into the `inputOptionsPromise` variable
 under the `resolve` sub class.)
 ```javascript
@@ -217,7 +217,7 @@ under the `resolve` sub class.)
 
 ## How to add a new badge
 
-Players will archieve badge when they reachs a certain tiles, you may allow players to recieve badge when they reached youe tile as well. To create a badge we'll need to upload your badge and modify tiles.js. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.
+Players will achieve badge when they reach a certain tile, you may allow players to recieve badge when they reach your tile as well. To create a badge we'll need to upload your badge and modify `tiles.js`. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.
 
 First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
 
@@ -274,14 +274,14 @@ That's just an example of this function. Note that all these functions in `level
 - Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ...
 - While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/flappy-svg/issues).
-- Create a pull-request and have it merged
+- Create a pull-request and have it merged.
 
 ### Adding tiles for landscape
 
-- Download and install [Inkscape](https://inkscape.org/en/)
+- Download and install [Inkscape](https://inkscape.org/en/).
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
-- Create a pull-request and have it merged
+- Create a pull-request and have it merged.
 
 ### Creating a hand-drawn landscape
 
@@ -289,7 +289,7 @@ That's just an example of this function. Note that all these functions in `level
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
 	1. Draw one tile on a sheet of paper
 	2. Scan it or photograph it
-	3. make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
+	3. Make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyrinth.
 - Create a pull-request and have it merged.
 
