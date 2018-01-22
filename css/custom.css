@@ -395,29 +395,21 @@ div#swal2-content.swal2-content {
 h2.swal2-title {
   padding: 15px !important;
 }
+ul.rate-game li{
+  display: inline;
+  margin:0;
+  margin-left:20%;
+}
 
-#rate-game {
-  text-align: center;
+i.fa.fa-thumbs-up.fa-5x:hover{
+  color: #429cd6 ;
 }
-.rate {
-  width: 100px;
-  height: auto;
-  background-color: #eee;
-  padding: 30px;
-  margin: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.rate:hover {
-  background-color: #fff;
+i.fa.fa-thumbs-down.fa-5x:hover{
+  color:red; 
 }
 .thanks {
   transition: 0.3s;
 }
-.dislike {
-  transform: rotate(180deg);
-}
-
 .translation-flag {
   height: 1em;
   vertical-align: center;
@@ -449,6 +441,10 @@ h2.swal2-title {
 
 .statistics .stats-btn {
   background: #47a883;
+}
+
+.stats-btn ul.stats-ul li:hover{
+  background-color: rgba(0,0,0,0.2);
 }
 
 .statistics .stats-btn .waves-effect.waves-light.btn.blue-grey.darken-2 {

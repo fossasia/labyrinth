@@ -107,10 +107,12 @@
 					<p><a class="lang" data-href="moved">Player Moved :</a>
 					<span id="playerMoves">0</span><a class="lang" data-href="times"> Times</a></p>
 					<div class="stats-btn">
-						<input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
-						<input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/>
-						<input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/>
-						<input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/>
+						<ul class="stats-ul">
+							<li><input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+							<li><input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+							<li><input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+							<li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+						</ul>
 					</div>
 				</div>
 				<div class="border1"></div>
@@ -191,7 +193,7 @@
 									<i class="fa fa-google-plus"></i>
 								</a>
 							</li>
-              <li>
+                            <li>
 								<a class="btn-floating transparent waves-effect waves-light github social-icon" target="_blank" href="https://github.com/fossasia">
 									<i class="fa fa-github"></i>
 								</a>
@@ -242,8 +244,10 @@
  					<span class="card-title"><a class="lang" data-href="rate">Rate game</a></span><br>
  					<span><a class="lang" data-href="rate-question">How do you enjoy the game so far?</a></span>
  					<div id="rate-game">
- 						<img class="rate dislike" src="icons/like.png" onClick="thankYouDislike()" alt="dislike">
- 						<img class="rate like" src="icons/like.png" onClick="thankYouLike()" alt="like">
+							<ul class="rate-game">
+								<li><i class="fa fa-thumbs-down fa-5x" aria-hidden="true" onClick="thankYouDislike()"></i></li>
+								<li><i class="fa fa-thumbs-up fa-5x" aria-hidden="true" onClick="thankYouLike()" ></i></li>
+							</ul>		
  					</div>
  					<div>Icon made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
  				</div>
