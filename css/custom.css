@@ -19,6 +19,8 @@ h1, h2, h3 {
   font-size: 2.5em;
   text-transform: capitalize;
   letter-spacing: 0.1em;
+  height: 50px;
+  width: auto;
 }
 
 .card-title, a {

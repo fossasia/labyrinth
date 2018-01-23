@@ -30,6 +30,7 @@
 - **Sidebar BG** #84C79F
 - **Sidebar text** #fff
 - **Blank inventory BG & sidebar border** #23AF92
+- **Hovered tabs within Menu tabs** rgba(0,0,0,0.2)
 
 ---
 
