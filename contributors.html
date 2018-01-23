@@ -1,139 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="description" content="Labyrinth | Game ">
+  <meta charset="utf-8">
+  <meta name="description" content="Labyrinth | Game ">
 
-	<!-- UI Sheets -->
-	<link rel="stylesheet" type="text/css" href="css/materialize.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
-	<script type="text/javascript" src="js/sweetalert2.min.js"></script>
-	<script type="text/javascript" src="js/translate.js"></script>
-	<!-- Include Font Awesome Stylesheet -->
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-	<!-- @0x48piraj custom social section stylesheet -->
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<!-- Engine Scripts -->
-	<script type="text/javascript" src="js/materialize.min.js"></script>
-	<title>Contributors | Labyrinth</title>
-	<link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
-<style type="text/css">
-	html {
-  box-sizing: border-box;
-}
+  <!-- UI Sheets -->
+  <link rel="stylesheet" type="text/css" href="css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+  <script type="text/javascript" src="js/translate.js"></script>
+  <!-- Include Font Awesome Stylesheet -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- @0x48piraj custom social section stylesheet -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+  <!-- Engine Scripts -->
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <title>Contributors | Labyrinth</title>
+  <link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
+  <style type="text/css">
+    html {
+      box-sizing: border-box;
+    }
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
 
-.column {
-  float: left;
-  width: 33.3%;
-  margin-bottom: 16px;
-  padding: 0 8px;
-}
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
 
-@media (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-    text-align: center;
-  }
-}
+    @media (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+        text-align: center;
+      }
+    }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding-top: 1em;
-}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      text-align: center;
+      padding-top: 1em;
+    }
 
-.lol {
-  padding: 0 16px;
-}
+    .lol {
+      padding: 0 16px;
+    }
 
-.lol::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+    .lol::after, .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-p {
-  color: grey;
-  text-align: center;
-}
+    p {
+      color: grey;
+      text-align: center;
+    }
 
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-}
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
 
-.button:hover {
-  background-color: #555;
-}
+    .button:hover {
+      background-color: #555;
+    }
 
-h2 { 
-  text-align: center;
-}
+    h2 { 
+      text-align: center;
+    }
 
-
-</style>
-<script type="text/javascript" src="js/contributors.js"></script>
+  </style>
+  <script type="text/javascript" src="js/contributors.js"></script>
 
 </head>
 
 <body>
-	<div class="navbar-fixed">
-		<nav>
-			<div class="nav-wrapper">
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
         <div class="languagepicker roundborders large">
-				  <a class="lang" data-href="language">Select your language</a>
-					  <a class="translate translate-language-choice" id="en">
-						  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
-				    </a>
-				    <a class="translate translate-language-choice" id="si">
-						  <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-					  </a>
-			  </div>
-				<a href="https://github.com/fossasia/labyrinth">
-					<img class="brand-logo center" alt="FOSSASIA" src="images/logos/labyrinthlogofull.png" width="80" height="60">
-                </a>
-				<ul class="right hide-on-med-and-down">
-					<li>
-						<a href="howtoplay.html" class="lang" data-href="how">How to Play</a>
-					</li>
-                    <li>
-											<a href="credits.html" class="lang" data-href="credit">Credits</a>
-                    <li>
-                    <li>
-						<a href="index.html" class="lang" data-href="game">Game</a>
-					</li>
-					
-				</ul>
-			</div>
-		</nav>
-	</div>
+          <a class="lang" data-href="language">Select your language</a>
+          <a class="translate translate-language-choice" id="en">
+            <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+          </a>
+          <a class="translate translate-language-choice" id="si">
+            <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+          </a>
+        </div>
+        <a href="https://github.com/fossasia/labyrinth">
+          <img class="brand-logo center" alt="FOSSASIA" src="images/logos/labyrinthlogofull.png" width="80" height="60">
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="howtoplay.html" class="lang" data-href="how">How to Play</a>
+          </li>
+          <li>
+            <a href="credits.html" class="lang" data-href="credit">Credits</a>
+          </li>
+          <li>
+            <a href="index.html" class="lang" data-href="game">Game</a>
+          </li>	
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-		
 
-	<!--contributors section-->
+  <!--contributors section-->
 
-	<h2><a class="lang" data-href="contribute">Contributors</a></h2>
-		
-<div class="container">
-		<div class="row" id="contributors"></div>
-</div>
+  <h2><a class="lang" data-href="contribute">Contributors</a></h2>
+
+  <div class="container">
+    <div class="row" id="contributors"></div>
+  </div>
+
 <!--End of contributors section-->
 
 </body>
