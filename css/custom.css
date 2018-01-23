@@ -288,6 +288,18 @@ nav .left li a {
 #inventoryDisplay .collection-item .circle {
   background-color: #84c79f;
   color: rgba(255, 255, 255, 0.62);
+  width:65px;
+  height:65px;
+}
+
+#inventoryDisplay .collection-item .title {
+  font-size:22px;
+  margin-left: 25px;
+}
+
+.collection .collection-item.avatar .prop-title{
+  font-size:22px;
+  margin-left:25px;
 }
 
 #inventoryDisplay .collection-item .secondary-content, #inventoryDisplay .collection-item .secondary-content i {
