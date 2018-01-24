@@ -195,4 +195,9 @@ img {
   height: 1em;
   vertical-align: center;
 }
-
+/*Hover for languages*/
+.translate span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
