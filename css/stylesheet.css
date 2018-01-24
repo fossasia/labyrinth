@@ -27,6 +27,15 @@ a {
   text-decoration: none;
 }
 
+/*Close button*/
+#Close-Button {
+    color: white;
+}
+#Close-Button:hover{
+    cursor: pointer;
+    color: red;
+}
+
 /*Play button*/
 
 button,
