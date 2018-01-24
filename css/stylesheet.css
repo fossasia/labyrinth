@@ -49,6 +49,7 @@ button {
   text-transform: uppercase;
   font-family: 'raleway';
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 button::before,
