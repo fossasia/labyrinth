@@ -47,12 +47,36 @@
 
     .contributorsImage {
       padding: 0 1em 0 1em;
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
     }
 
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       text-align: center;
       padding-top: 1em;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+
+    .card:hover .contributorsImage {
+      opacity: 0.3;
+    }
+
+    .card:hover .middle {
+      opacity: 1;
     }
 
     .lol {
@@ -74,9 +98,10 @@
       border: none;
       outline: 0;
       display: inline-block;
-      padding: 8px;
+      padding: 16px 32px;
       color: white;
-      background-color: #000;
+      background-color: #54BF9C;
+      font-size: 16px;
       text-align: center;
       cursor: pointer;
       width: 100%;
@@ -93,14 +118,14 @@
     .lang {
       padding:0 16px;
     }
-    .translate.translate-language-choice
-    {
+
+    .translate.translate-language-choice {
       padding: 0 16px;
     }
+
     .languagepicker div.select-your-language:hover{
       background-color: #80BE62;
       cursor: pointer;
-      
     }
 
     .languagepicker .property-language:hover{
