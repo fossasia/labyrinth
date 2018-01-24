@@ -14,7 +14,7 @@ window.onload = function(){
       } else {
         html += ' contributions)</p>';
       }
-      html += '<p><button class="button"> ';
+      html += '<p class="middle"><button class="button"> ';
       html += '<a href="'+contributors.html_url+'""> View on Github';
       html += '</button></p>';
       html += '</a></div></div></div>';
