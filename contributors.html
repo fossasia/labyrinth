@@ -85,7 +85,25 @@
     h2 { 
       text-align: center;
     }
+    
+    .lang {
+      padding:0 16px;
+    }
+    .translate.translate-language-choice
+    {
+      padding: 0 16px;
+    }
+    .languagepicker div.select-your-language:hover{
+      background-color: #80BE62;
+      cursor: pointer;
+      
+    }
 
+    .languagepicker .property-language:hover{
+      background-color: rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    
   </style>
   <script type="text/javascript" src="js/contributors.js"></script>
 
@@ -96,13 +114,16 @@
     <nav>
       <div class="nav-wrapper">
         <div class="languagepicker roundborders large">
-          <a class="lang" data-href="language">Select your language</a>
-          <a class="translate translate-language-choice" id="en">
+          <div class="select-your-language"><a class="lang" data-href="language">Select your language</a></div>
+
+          <div class="property-language"><a class="translate translate-language-choice" id="en">
             <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
-          </a>
-          <a class="translate translate-language-choice" id="si">
+          </a></div>
+
+          <div class="property-language"><a class="translate translate-language-choice" id="si">
             <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-          </a>
+          </a></div>
+
         </div>
         <a href="https://github.com/fossasia/labyrinth">
           <img class="brand-logo center" alt="FOSSASIA" src="images/logos/labyrinthlogofull.png" width="80" height="60">
