@@ -1,18 +1,18 @@
 /*Primary Styles*/
 html, body {
-    height: 100%;
+  height: 100%;
 }
 
 html {
-    display: table;
-    margin: auto;
+  display: table;
+  margin: auto;
 }
 
 body {
-    padding-top: 70px;
-    display: table-cell;
-    vertical-align: middle;
-    background: #333;
+  padding-top: 70px;
+  display: table-cell;
+  vertical-align: middle;
+  background: #333;
 }
 
 h1, h2, h3 {
@@ -85,9 +85,9 @@ button:hover {
 }
 
 .play-button {
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
-    height: 50px;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+  height: 50px;
 }
 
 p.site_description {
@@ -98,7 +98,7 @@ p.site_description {
 /*Image on hover*/
 
 img {
-    transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .content img:hover {
