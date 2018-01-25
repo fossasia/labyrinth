@@ -12,4 +12,13 @@ $(document).ready(function(){
 		$("#labyrinthVersion").append(versionWriter);
 		$("#labyrinthVersion").attr("href", "https://github.com/fossasia/labyrinth/commit/"+data.object.sha);
 	});
+
+	var $z=$('.select-your-language>a');
+	var $a=$('.languagepicker.roundborders.large');
+	$a.hover(function(){
+    	$z.html('Select your language <span class="fa fa-caret-up"></span>');
+	},function(){
+    	$z.html('Select your language <span class="fa fa-caret-down"></span>');
+	});
 });
+
