@@ -20,6 +20,13 @@
 			"github" : "yashkumarverma",
 			"file" : "adding-new-music.html",
 			"slug" : "API-Adding-New-Music" 			
+		},
+		{
+			"itemName":"Adding New Badge",
+			"author" : "Yash Kumar Verma",
+			"github" : "yashkumarverma",
+			"file" : "adding-new-badge.html",
+			"slug" : "API-Adding-New-Badge" 			
 		}
 	]
 }
