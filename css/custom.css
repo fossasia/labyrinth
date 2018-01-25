@@ -77,12 +77,16 @@ i.fa.fa-times:hover {
   color: red;
 }
 
-.languagepicker.roundborders.large .select-your-language:hover {
+.select-your-language:hover {
   background-color: #80BE62 ;
 }
 
 .languagepicker.roundborders.large .hover-black:hover {
   background-color: rgba(0,0,0,0.2);
+}
+
+.right.hide-on-med-and-down li,.select-your-language,.stats-ul li,.hover-black{
+  transition:background-color 0.3s;
 }
 
 .right.hide-on-med-and-down li:hover{
