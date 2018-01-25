@@ -126,75 +126,6 @@ If you want to only have a title and not any text, keep `text` empty. Like this 
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
 
-## How to Add Music
-
-If you want to have a sound played when the character reaches your tile, your implementation must be something like this:
-
-```javascript
-    visit: function() {
-      playAudio("audio.mp3", licenseNum);
-      // ...
-     },
-```
-
-The license numbers are as follows : 
-1. Attribution 4.0 International
-2. Attribution-NoDerivatives 4.0 International
-3. Attribution-ShareAlike 4.0 International
-4. Attribution-NonCommercial 4.0 International
-5. Attribution-NonCommercial-NoDerivatives 4.0 International
-6. Attribution-NonCommercial-ShareAlike 4.0 International
-
-<br><br>
-
-Note: if you are adding music to a tile then add it to: `audio/music` and if you are adding music as a background then add it to: `audio/background`! This is so that we can be organised and have a consistent filing system. 
-
-To add your audio file, please read the following carefully:
-Audio files are usually not licensed under AGPL. They have a different license.
-Please **make sure that the license permits** using the file for the project.
-Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .
-To add a sound file, we need to respect the license, so please follow this guide:
-- [ ] Add your sound file to the [audio](audio) directory. Use a name which fits the sound.
-- [ ] Add a file with the license of the sound file. If your file is named `audio.mp3` add a file named `audio.mp3.license`.
-- [ ] If you created this sound, please consider adding the source files.
-
-So, these two structures can exist in the audio folder:
-- A single file with a license:
-  ```
-  audio/
-  +- sound.mp3
-  +- sound.mp3.license
-  ```
-- A folder for many sound files with one license:
-  ```
-  audio/
-  +- source-name/
-     +- LICENSE
-     +- README.md
-     +- sound1.mp3
-     +- sound2.ogg
-  ```
-
-Please note that you **can** have both audio and alert box in your tile as well.
-
-If you want to add a background music, add your music to `audio/background/` in the same way.
-and update the `js/sound.js` file like so
-```javascript
-const backgroundAudio = [
-    {
-        filename : "Path of the file",
-        backgroundSongName: "Name of the song",
-        author: "Name of the author",
-        legalNotice : "Music by author",
-        link : "Link to author's website",
-    },
-];
-```
-Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
-This could be the same as the content of the license file for the file.
-
-<br>
-
 ## How to add a new character
 
 Labyrinth allows you to add your characters by customizing the required javascript and svg files.
@@ -215,31 +146,6 @@ under the `resolve` sub class.)
 "character_src": "character_name",
 ```
 
-## How to add a new badge
-
-Players will achieve badge when they reach a certain tile, you may allow players to recieve badge when they reach your tile as well. To create a badge we'll need to upload your badge and modify `tiles.js`. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.
-
-First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
-
-Next, in `tiles.js` add the following to your tile function;
-```javascript
-visit: function() {
-        player.badges.add(['badgeName', 'fileName.png']);
-        this.wallTop.show();
-        this.wallRight.show();
-        this.ground.show();
-      }
-```
-You may add pop-up alert if you'd like, by using the *SweetAlert API*, for example;
-```javascript
-visit: function() {
-    alertNormal("title", "text");
-    // ...
-  },
-```
-Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](https://sweetalert2.github.io/).
-
-And replace `title` and `text` with whatever title or text you want to display. If you want to only have a title and not any `text`, keep text empty. Like this : `""`.
 
 ## How to add new theme
 Adding new theme is basically adding new tiles in a constant object:
