@@ -13,6 +13,13 @@
 			"github" : "yashkumarverma",
 			"file" : "adding-new-tile.html",
 			"slug" : "API-Adding-New-Tile" 			
+		},
+		{
+			"itemName":"Adding New Music",
+			"author" : "Yash Kumar Verma",
+			"github" : "yashkumarverma",
+			"file" : "adding-new-music.html",
+			"slug" : "API-Adding-New-Music" 			
 		}
 	]
 }
