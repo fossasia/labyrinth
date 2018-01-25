@@ -9,22 +9,22 @@
 		}
 		,{
 			"itemName":"Adding New Tiles",
-			"author" : "Yash Kumar Verma",
-			"github" : "yashkumarverma",
+			"author" : "Labyrinth Team",
+			"github" : "fossasia/labyrinth/",
 			"file" : "adding-new-tile.html",
 			"slug" : "API-Adding-New-Tile" 			
 		},
 		{
 			"itemName":"Adding New Music",
-			"author" : "Yash Kumar Verma",
-			"github" : "yashkumarverma",
+			"author" : "Labyrinth Team",
+			"github" : "fossasia/labyrinth/",
 			"file" : "adding-new-music.html",
 			"slug" : "API-Adding-New-Music" 			
 		},
 		{
 			"itemName":"Adding New Badge",
-			"author" : "Yash Kumar Verma",
-			"github" : "yashkumarverma",
+			"author" : "Labyrinth Team",
+			"github" : "fossasia/labyrinth/",
 			"file" : "adding-new-badge.html",
 			"slug" : "API-Adding-New-Badge" 			
 		}
