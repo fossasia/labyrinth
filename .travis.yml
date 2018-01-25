@@ -1,4 +1,6 @@
-language: node
+sudo: required
+dist: trusty
+language: node_js
 
 script:
   - scripts/check-javascript-syntax-errors.sh
