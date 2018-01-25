@@ -19,6 +19,11 @@
   <link rel="stylesheet" type="text/css" href="css/footer.css">
   <!-- Engine Scripts -->
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  <!-- Scripts for responsive navbar -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js"></script>
   <title>Contributors | Labyrinth</title>
   <link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
   <style type="text/css">
@@ -132,52 +137,153 @@
       background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
     }
+    a.lang{
+      text-decoration: none !important;
+      color:white !important;
+    }
+
+    .button a{
+      text-decoration: none !important;
+      color:white !important;
+    }
+    /* CSS for responsive navbar*/
+    .container-fluid {
+      padding-right: 0px;
+      padding-left: 0px;
+    }
+    ul#menubar {
+      padding-right: 0px;
+    }
+    .navbar-header h1{
+      font-family: 'Abril Fatface';
+      font-size:2.5em;
+      letter-spacing: 0.1em;
+      width:auto;
+      margin-top:6px;
+      margin-left:10px;
+    }
+    #dropdownMenu{
+      width:100%;
+    }
+    .dropdown-menu {
+      width:100%;
+      background-color: #60A550;
+      margin:0;
+      padding-top:0;
+      padding-bottom:0;
+    }
+    .navbar.navbar-default {
+      font-size:1.2em;   
+      background-color: #60A550;
+      color:white;
+    }
+    .nav.navbar-nav.navbar-right li a span{
+      color:white;
+    }
+    .nav.navbar-nav.navbar-right li{
+      padding: 6px;
+    }
+    .nav.navbar-nav.navbar-right>li:hover{
+      background-color: #80BE62;
+      cursor: pointer;
+    }
+    #select-lang ul li>a{
+      color:white;
+      padding-top:20px;
+    } 
+    #select-lang ul li>a:hover{
+      background-color: rgba(0, 0, 0,0.0);
+      cursor: pointer;
     
+    }
+    #select-lang ul li:hover{
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    @media (max-width: 992px) {
+      .navbar-header {
+        float: none;
+      }
+      .navbar-left,.navbar-right {
+        float: none !important;
+      }
+      .navbar-toggle {
+        display: block;
+      }
+      .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      }
+      .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+      }
+      .navbar-collapse.collapse {
+        display: none!important;
+      }
+      .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+      }
+      .navbar-nav>li {
+        float: none;
+      }
+      .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collapse.in{
+        display:block !important;
+      }
+    }
   </style>
   <script type="text/javascript" src="js/contributors.js"></script>
 
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-        <div class="languagepicker roundborders large">
-          <div class="select-your-language"><a class="lang" data-href="language">Select your language</a></div>
-
-          <div class="property-language"><a class="translate translate-language-choice" id="en">
-            <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
-          </a></div>
-
-          <div class="property-language"><a class="translate translate-language-choice" id="si">
-            <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-          </a></div>
-
-        </div>
-        <h1 class="brand-logo center">Labyrinth</h1>
-        <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="howtoplay.html" class="lang" data-href="how">How to Play</a>
-          </li>
-          <li>
-            <a href="credits.html" class="lang" data-href="credit">Credits</a>
-          </li>
-          <li>
-            <a href="index.html" class="lang" data-href="game">Game</a>
-          </li>
-          <li>
-            <a href="https://github.com/fossasia/labyrinth" class="lang" data-href="contribute">Contribute</a>
-          </li>	
-        </ul>
-      </div>
-    </nav>
+  <div class="navbar navbar-default">
+    <div class="container-fluid">
+      <button class="navbar-toggle" data-toggle="collapse" data-target="#menubar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button> 
+      <div class="navbar-header" >
+        <h1>Labyrinth</h1>
+      </div>  
+      <ul class="nav navbar-nav navbar-right collapse navbar-collapse " id="menubar">
+        <li>
+          <a href="howtoplay.html" class="lang " data-href="how"><span>How to Play</span></a>
+        </li>
+        <li>
+          <a href="credits.html" class="lang " data-href="credit"><span>Credits</span></a>
+        </li>
+        <li>
+           <a href="index.html" class="lang " data-href="game"><span>Game</span></a>
+        </li>
+        <li>
+          <a href="https://github.com/fossasia/labyrinth" class="lang"><span>Contribute</span></a>
+        </li>
+        <li class="select-your-lang" id="select-lang">
+          <a class="lang dropdown-toggle" data-href="language" id="dropdownMenu" data-toggle="dropdown" data-hover="dropdown">Select your language <span class="fa fa-caret-down"></span></a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+            <li><a class="translate translate-language-choice" id="en">
+              <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
+            </a></li>
+            <li><a class="translate translate-language-choice" id="si">
+              <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
+            </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </div>
+  
 
 
   <!--contributors section-->
 
   <h2><a class="lang" data-href="contribute">Contributors</a></h2>
-
   <div class="container">
     <div class="row" id="contributors"></div>
   </div>
