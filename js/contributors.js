@@ -22,3 +22,32 @@ window.onload = function(){
     });
   });
 };
+// js for responsive navbar
+$(document).ready(function(){
+  var $id=$('#select-lang');
+  var $a=$('#dropdownMenu');
+  $a.css('color','white');
+  
+
+  $('.select-your-lang').hover(function(){ 
+  $('.dropdown-toggle', this).trigger('click'); 
+  });
+
+  $id.hover(function(){
+    $a.html('Select your language <span class="fa fa-caret-up"></span>');
+    $a.css('background-color','#80BE62');
+  },function(){
+    $a.css('background-color','#60A550');
+    $a.html('Select your language <span class="fa fa-caret-down"></span>');
+  });
+}
+);
+$('#monitor').html($(window).width());
+
+  $(window).resize(function() {
+  var viewportWidth = $(window).width();
+$('#monitor').html(viewportWidth);
+});
+
+
+
