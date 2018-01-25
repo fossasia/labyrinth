@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adding New Badge</title>
+</head>
+<body>
+<h3>How to add a new badge</h3>
+<p>Players will achieve badge when they reach a certain tile, you may allow players to recieve badge when they reach your tile as well. To create a badge we'll need to upload your badge and modify <code>tiles.js</code>. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.</p>
+<p>First, add your badge to <code>images/game/badges</code>, keep the <em>resolution</em> above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.</p>
+<p>Next, in <code>tiles.js</code> add the following to your tile function;</p>
+<pre><code class="javascript">visit: function() {
+        player.badges.add(['badgeName', 'fileName.png']);
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+      }
+</code></pre>
+<p>You may add pop-up alert if you'd like, by using the <em>SweetAlert API</em>, for example;</p>
+<pre><code class="javascript">visit: function() {
+    alertNormal(&quot;title&quot;, &quot;text&quot;);
+    // ...
+  },
+</code></pre>
+<p>Replace <code>alertNormal</code> with either <code>alertNormal</code>, <code>alertInfo</code>, <code>alertQuestion</code>, <code>alertSuccess</code>, <code>alertError</code> or <code>alertWarning</code>. For more info, <a href="https://sweetalert2.github.io/">read this</a>.</p>
+<p>And replace <code>title</code> and <code>text</code> with whatever title or text you want to display. If you want to only have a title and not any <code>text</code>, keep text empty. Like this : <code>&quot;&quot;</code>.</p>
+
+</body>
+</html>
