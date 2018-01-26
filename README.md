@@ -1,5 +1,5 @@
 
-<h1 align="center"><center><img src="images/logos/inline_color.png"></center></h1>
+<img src="images/logos/inline_color.png" height="100px">
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
