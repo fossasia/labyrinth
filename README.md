@@ -1,5 +1,5 @@
 
-<h1 align="center"><center><img src="images/logos/labyrinthlogofull.png"></center></h1>
+<h1 align="center"><center><img src="images/logos/inline_color.png"></center></h1>
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -7,7 +7,7 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
 
-[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
+[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) |
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
 [**Documentation**](http://rawgit.com/fossasia/labyrinth/master/documentation/)
 
@@ -86,7 +86,7 @@ Tiles are present in the `tiles` folder within subdirectories corresponding to p
 To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
 and saved as a svg file with the specified dimensions.
 
-Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
+Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned.
 
 After creating tiles add them to the specific sub folder inside tiles.
 
@@ -172,7 +172,7 @@ function createXLevel() {
 ```
 That's just an example of this function. Note that all these functions in `levels.js` file are looking very similar. Instead of `X` sign insert your theme name.
 
-To make the level available to the player, best if you also add a tile which you place in an 
+To make the level available to the player, best if you also add a tile which you place in an
 existing level which you want the player to explore before.
 This tile then calls `player.addReachableLevel(createXLevel())` to make the level available to the player.
 
@@ -212,7 +212,7 @@ visit: function(player) {
 
 ### Add a new Pull request after solving a issue
 
-- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth). 
+- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth).
 - Go to the [issue tab](https://github.com/fossasia/labyrinth/issues) and find a issue that you want to resolve or improve.
 - Resolve/improve that issue and push those changes into your repo.
 - Copy the issue number from issue tab.
@@ -253,7 +253,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 <tr>
 <td>
      <img src="https://avatars3.githubusercontent.com/u/564768?v=4&s=150" />
-     
+
      Nicco Kunzmann
 
 
@@ -266,7 +266,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars3.githubusercontent.com/u/1583873?v=4&s=150"/>
-     
+
      Mario Behling
 
 <p align="center">
@@ -278,7 +278,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars1.githubusercontent.com/u/4529442?v=4&s=150" />
-     
+
      Harsh Lathwal
 
 <p align="center">
@@ -290,7 +290,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars0.githubusercontent.com/u/15213246?v=4&s=150"/>
-     
+
      Tarun Kumar
 
 <p align="center">
@@ -300,9 +300,9 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 </p>
 </td>
 
-</tr> 
+</tr>
   </table>
-  
+
 Responsibilities:
 
 - merge pull requests

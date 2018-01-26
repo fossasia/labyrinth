@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Labyrinth | Game ">
   <title>Credits | Labyrinth</title>
-  <link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
+  <link rel="icon" type="image/png" href="images/logos/favicon.png" />
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -92,41 +92,43 @@
         color:rgba(0,0,0,0.5);
     }
     </style>
-  
+
 </head>
 <body>
-  <nav class="navbar navbar-default need">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>     
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+          <img class="brand-logo left" src="images/logos/inline_light_bold.png">
+                  <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
+          </li>
+          <li>
+            <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
+          </li>
+          <li>
+            <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
+          </li>
+          <li>
+            <div class="languagepicker roundborders large">
+              <div class="select-your-language"><a class="lang waves-effect waves-light btn blue-grey darken-2" data-href="language">Select your language <span class="fa fa-caret-down"></span></a></div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
+                  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> EN</a>
+                </div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="si">
+                  <img src="icons/SriLanka.png" alt="" class="translation-flag" /> SIN</a>
+                </div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="pl">
+                  <img src="icons/Poland.png" alt="" class="translation-flag" /> PL</a>
+                </div>
+                <!-- When you add more languages do it in the above format-->
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="collapse navbar-collapse" id="bs">
-        <div class="nav-wrapper">
-          <div class="languagepicker roundborders large">
-            <a class="lang" data-href="language">Select your language</a>
-            <a class="translate translate-language-choice" id="en">
-			  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
-            </a>
-            <a class="translate translate-language-choice" id="si">
-              <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-            </a>
-		  </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="index.html" class="lang" data-href="game">GAME</a></li>
-              <li><a href="howtoplay.html" class="lang" data-href="how">HOW TO PLAY</a></li>
-              <li><a href="https://github.com/fossasia/labyrinth" class="lang" data-href="how">CONTRIBUTE</a></li>
-            </ul>
-            <img class="brand-logo center" alt="FOSSASIA" src="images/logos/labyrinthlogofull.png" width="80" height="60">
-        </div>
-      </div>
-    </div>
-  </nav>
-    
+    </nav>
+  </div>
+
 
 	<div class="jumbotron space container">
 	<h1 class="heading">License</h1>
