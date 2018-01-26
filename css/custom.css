@@ -30,13 +30,13 @@ h1, h2, h3 {
   font-family: 'Quicksand';
 }
 
-nav ul a {
-  font-size: 1.7em !important;
-  text-transform: capitalize !important;
+.navbar-fixed nav ul a {
+  font-size: 1.7em;
+  text-transform: capitalize;
 }
 
 nav ul a:hover, nav ul a:focus {
-  background-color: #80BE62 !important;
+  background-color: #80BE62;
 }
 
 p {
