@@ -26,7 +26,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js"></script>
   <title>Contributors | Labyrinth</title>
-  <link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
+  <link rel="icon" type="image/png" href="images/logos/favicon.png" />
   <style type="text/css">
     html {
       box-sizing: border-box;
@@ -117,10 +117,10 @@
       background-color: #555;
     }
 
-    h2 { 
+    h2 {
       text-align: center;
     }
-    
+
     .lang {
       padding:0 16px;
     }
@@ -174,7 +174,7 @@
       padding-bottom:0;
     }
     .navbar.navbar-default {
-      font-size:1.2em;   
+      font-size:1.2em;
       background-color: #60A550;
       color:white;
     }
@@ -191,11 +191,11 @@
     #select-lang ul li>a{
       color:white;
       padding-top:20px;
-    } 
+    }
     #select-lang ul li>a:hover{
       background-color: rgba(0, 0, 0,0.0);
       cursor: pointer;
-    
+
     }
     #select-lang ul li:hover{
       background-color: rgba(0, 0, 0, 0.2);
@@ -242,44 +242,40 @@
 </head>
 
 <body>
-  <div class="navbar navbar-default">
-    <div class="container-fluid">
-      <button class="navbar-toggle" data-toggle="collapse" data-target="#menubar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button> 
-      <div class="navbar-header" >
-        <h1>Labyrinth</h1>
-      </div>  
-      <ul class="nav navbar-nav navbar-right collapse navbar-collapse " id="menubar">
-        <li>
-          <a href="howtoplay.html" class="lang " data-href="how"><span>How to Play</span></a>
-        </li>
-        <li>
-          <a href="credits.html" class="lang " data-href="credit"><span>Credits</span></a>
-        </li>
-        <li>
-           <a href="index.html" class="lang " data-href="game"><span>Game</span></a>
-        </li>
-        <li>
-          <a href="https://github.com/fossasia/labyrinth" class="lang"><span>Contribute</span></a>
-        </li>
-        <li class="select-your-lang" id="select-lang">
-          <a class="lang dropdown-toggle" data-href="language" id="dropdownMenu" data-toggle="dropdown" data-hover="dropdown">Select your language <span class="fa fa-caret-down"></span></a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
-            <li><a class="translate translate-language-choice" id="en">
-              <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English
-            </a></li>
-            <li><a class="translate translate-language-choice" id="si">
-              <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala
-            </a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+          <img class="brand-logo left" src="images/logos/inline_light_bold.png" alt="logo">
+                  <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
+          </li>
+          <li>
+            <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
+          </li>
+          <li>
+            <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
+          </li>
+          <li>
+            <div class="languagepicker roundborders large">
+              <div class="select-your-language"><a class="lang waves-effect waves-light btn blue-grey darken-2" data-href="language">Select your language <span class="fa fa-caret-down"></span></a></div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
+                  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> EN</a>
+                </div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="si">
+                  <img src="icons/SriLanka.png" alt="" class="translation-flag" /> SIN</a>
+                </div>
+                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="pl">
+                  <img src="icons/Poland.png" alt="" class="translation-flag" /> PL</a>
+                </div>
+                <!-- When you add more languages do it in the above format-->
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
-  
+
 
 
   <!--contributors section-->
