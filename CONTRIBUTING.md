@@ -32,7 +32,7 @@ Make sure you keep them in their respective folders in the Github Repository.
 ### Licensing Code
 We recommend you add code and work which you did yourself. By adding this code to the repository, you put it under the [AGPL license](LICENSE).  
 If you embed other work, you need to be compatible with the current license. Licenses compatible are e.g. MIT, GPL, AGPL, LGPL, BSD. **In almost no case is it legal to just copy the code/files without license.**
-- Embedding MIT: You need to keep the license close to the code:
+- [Embedding MIT](https://opensource.stackexchange.com/questions/6342/where-to-put-license-for-mit-licensed-code-on-website): You need to keep the license close to the code:
   - CSS/HTML/Javascript: embed it into the code, it is not that long
   - binary files e.g. fonts: create a file with the same name next to the binary file with `.license` in the end and copy the license in there.
 - Stackoverflow: Link to the answer or question.
