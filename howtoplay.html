@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="css/backToTop.css">
   <meta charset="utf-8">
   <title>How to play</title>
-  <link rel="icon" type="image/png" href="images/logos/labyrinthlogo.png" />
+  <link rel="icon" type="image/png" href="images/logos/favicon.png" />
   <meta name="description" content="Step-by-step guide to play Labyrinth game">
   <meta name="author" content="Ploypiti P.">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
@@ -13,6 +14,7 @@
 	<script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/sweetalert2.min.js"></script>
   <script type="text/javascript" src="js/translate.js"></script>
+  <script type="text/javascript" src="js/backToTop.js"></script>
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         <img class="play-button" src="images/docs/play-button.png" alt="Play" />
         <h1 class="site_title centered lang" data-href="how">HOW TO PLAY</h1>
         <a href="https://github.com/fossasia/labyrinth">
-          <img class="brand-logo center" alt="FOSSASIA" src="images/logos/labyrinthlogofull.png">
+          <img class="brand-logo left" alt="logo" src="images/logos/inline_color.png">
         </a>
         <p class="site_description">Fossasia Labyrinth</p>
       </div>
@@ -31,17 +33,17 @@
       <h3 class="lang" data-href="language">Select your language</h3>
       <div>
         <a class="translate" id="en">
-          <img class="translation-flag" src="icons/UnitedKingdom.png" alt="" /> <span>English</span>
+          <img class="translation-flag" src="icons/UnitedKingdom.png" alt="" /> <span>EN</span>
         </a>
         <div>
         </div>
         <a class="translate" id="si">
-          <img class="translation-flag" src="icons/SriLanka.png" alt="" /> <span>Sinhala</span>
+          <img class="translation-flag" src="icons/SriLanka.png" alt="" /> <span>SIN</span>
         </a>
         <div>
         </div>
         <a class="translate" id="pl">
-          <img class="translation-flag" src="icons/Poland.png" alt="" /> <span>Polski</span>
+          <img class="translation-flag" src="icons/Poland.png" alt="" /> <span>PL</span>
         </a>
       </div>
       <hr>
@@ -74,5 +76,7 @@
       <a href="flaticon.com" class="lang" data-href="flaticon">flaticon.com</a>
     </div>
   </div>
+  <button onclick="topFunction()" id="scrollToTop" title="Back to top">&uarr; TOP &uarr;</button>
+<script type="text/javascript" src="js/backToTop.js"></script>
 </body>
 </html>
