@@ -148,8 +148,7 @@ function startBackgroundAudio() {
     updateLegalBackground();
     console.log(backgroundPlay);
     backgroundPlay.play();
-    $(".fa.fa-play").css("color","#0000FF");
-    $(".fa.fa-pause").css("color","#FFFFFF");
+    togglePlay();
 }
 
 function nextBackgroundAudio() {
@@ -176,8 +175,7 @@ function previousBackgroundAudio() {
 
 function stopBackgroundAudio() {
     backgroundPlay.pause();
-    $(".fa.fa-play").css("color","#0000FF");
-    $(".fa.fa-pause").css("color","#FFFFFF");
+    togglePause();
 }
 
 function setVolume() {
