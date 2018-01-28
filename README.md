@@ -182,6 +182,51 @@ visit: function(player) {
     // ...
   },
 ```
+## How to add a new translation
+
+Labyrinth needs your translations for make the game famous world-wide.
+
+- Go to the `js\translate.js` and find English text(like following) that you have to translate.
+- Check your language where there is or isn't. If not you can go to your language translation and find new strings not tranlated but in English translation
+
+```javascript
+  'language': 'Select your language',
+  'how': 'How to play',
+  'credit': 'Credits',
+  'game': 'Game',
+  'contribute': 'Contributors',
+  'statistics': 'Statistics',
+  'moved': 'Player Moved :',
+  'times': ' Times',
+  'audio': 'Audio',
+  'now': 'Now Playing : ',
+  'by': ' by ',
+  'share': ' Share Game ',
+  'follow': 'Follow us on',
+  'invent': 'Inventory',
+  \\like these
+```
+
+- Copy all the strings in English translate. And paste it after to last translation.
+- Change `en` to two or three letters related for your language. Those two or three letters must be not used earlier for any translate.
+      Ex:- For Sinhala use `si`, for Polski use `pl`
+- Translate all the strings to your language and save it.
+- Add flag that realated to the laguage in icons(You can find flag from this place https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags). The flag must be 255 X 128 pixels and it must be png file. 
+- Go to HTML files(index.html, howtoplay.html, credits.html, contributors.html) from your code editor.
+- Then find following code from all the HTML files given and copy and past it after last language.
+
+```HTML
+<div class="hover-black">
+  <a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
+    <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" />
+     English
+  </a>
+</div>
+```
+
+- Change `img src="icons/UnitedKingdom.png"` to your flag and change " English" to your language name. (There must be a space before language name.)
+- Now check all the pages from your internet browser and see it works.
+- Done, Push your changes and create a pull-request and have it merged.
 
 ## Hints for GCI students
 
@@ -232,6 +277,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 - Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
 - Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
+
 
 ## UI identity guideline
 [Click here to read the full UI guideline](https://github.com/fossasia/labyrinth/UI_Identity.md)
