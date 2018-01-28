@@ -90,7 +90,7 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
     },
         {
-        filename: "audio/background/CuteSong/bensound-cute.mp3",
+        filename: "audio/music/bensound.com/bensound-cute.mp3",
         backgroundSongName: "Cute",
         author: "bensound.com",
         legalNotice: "Music by bensound.com",
@@ -107,8 +107,12 @@ const backgroundAudio = [
         author: "Sing Sing Karaoke",
         legalNotice: "Sound by Sing Sing Karaoke",
     },
-
-
+    {
+        filename: "audio/background/HappyClappy.mp3",
+        backgroundSongName: "HappyClappy",
+        author: "Anirudh Chauhan",
+        legalNotice: "Sound by Anirudh Chauhan",
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International

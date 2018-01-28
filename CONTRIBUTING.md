@@ -7,6 +7,11 @@
 * When you're submitting a PR for a UI-related issue, it would be really awesome if you add a screenshot of your change or a link to a deployment where it can be tested out along with your PR. It makes it very easy for the reviewers and you'll also get reviews quicker.
 * Tip for deployment - You can create the deployment link for the Labyrinth app to check how your commited changes look, you can view the deployed site on this link: http://rawgit.com/YOUR_USERNAME/labyrinth/master/index.html
 
+### Code Style Recommendations
+* In HTML files, there should be no spaces before the html, head and body tags. All the nested tags of HTML have to be indented with 2 spaces. Same goes for CSS and JavaScript. Please follow this in order to keep the indentation style consistent.
+* Please try to avoid obvious comments. Commenting should be done only when it's necessary.
+* Follow the DRY(Don't Repeat Yourself) principle. The same piece of code should not be repeated over and over again.
+
 ### Feature Requests and Bug Reports
 * When you file a feature request or when you are submitting a bug report to the [issue tracker](https://github.com/fossasia/labyrinth/issues), make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
 * Please have a look if someone else suggested something similar and see it a new issue is necessary.

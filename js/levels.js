@@ -11,11 +11,11 @@
 function createFirstLevel()
 {
   return new Level("Starter", [
-    [door.none, door.minecraftEntry, door.minecraft, door.none, door.winter1, door.goal, door.none],
+    [door.none, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
     [door.none, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     [door.none, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.both, door.highLow, door.new, door.wheel, door.plain, door.top],
+    [door.staircase, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.top, door.marina, door.treasureKey, door.drawn, door.top],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
@@ -39,7 +39,7 @@ function createAdvancedLevel() {
 
 function createForestLevel() {
   return new Level("Forest", [
-    [forest.none, forest.right, forest.right, forest.right, forest.right, forest.none],
+    [forest.none, forest.right, forest.CreativeRoomDoor, forest.right, forest.right, forest.right, forest.none],
     [forest.none, forest.top, forest.both, forest.both, forest.both, forest.top],
     [forest.none, forest.top, PlayerStartsAt(forest.start), forest.both, forest.both, forest.top],
     [forest.none, forest.top, forest.mushroom, forest.both, forest.both, forest.top],
@@ -91,5 +91,16 @@ function createGraphicsManiaLevel() {
     [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
     [graphics.none, graphics.top, graphics.both, graphics.both, graphics.both, graphics.top, graphics.top],
     [NullTile, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none, graphics.none],
+  ]);
+}
+function createTileMeshLevel() {
+  return new Level([
+    [TileMesh.none, TileMesh.right, TileMesh.right, TileMesh.right, TileMesh.right, TileMesh.none],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.both],
+    [TileMesh.none, TileMesh.top, PlayerStartsAt(TileMesh.start), TileMesh.both, TileMesh.both, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.top, TileMesh.both, TileMesh.top, TileMesh.top],
+    [TileMesh.none, TileMesh.top, TileMesh.both, TileMesh.both, TileMesh.both, TileMesh.top],
+    [NullTile, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none],
   ]);
 }

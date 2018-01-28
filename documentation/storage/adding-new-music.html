@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adding New Music</title>
+</head>
+<body>
+<h2>How to Add Music</h2>
+<p>If you want to have a sound played when the character reaches your tile, your implementation must be something like this:</p>
+<pre><code class="javascript">    visit: function() {
+      playAudio(&quot;audio.mp3&quot;, licenseNum);
+      // ...
+     },
+</code></pre>
+<p>The license numbers are as follows :</p>
+<ol>
+<li>Attribution 4.0 International</li>
+<li>Attribution-NoDerivatives 4.0 International</li>
+<li>Attribution-ShareAlike 4.0 International</li>
+<li>Attribution-NonCommercial 4.0 International</li>
+<li>Attribution-NonCommercial-NoDerivatives 4.0 International</li>
+<li>Attribution-NonCommercial-ShareAlike 4.0 International</li>
+</ol>
+<p><br><br></p>
+<p>Note: if you are adding music to a tile then add it to: <code>audio/music</code> and if you are adding music as a background then add it to: <code>audio/background</code>! This is so that we can be organised and have a consistent filing system.</p>
+<p>To add your audio file, please read the following carefully:<br>
+Audio files are usually not licensed under AGPL. They have a different license.<br>
+Please <strong>make sure that the license permits</strong> using the file for the project.<br>
+Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .<br>
+To add a sound file, we need to respect the license, so please follow this guide:</p>
+<ul>
+<li>[ ] Add your sound file to the <a href="audio">audio</a> directory. Use a name which fits the sound.</li>
+<li>[ ] Add a file with the license of the sound file. If your file is named <code>audio.mp3</code> add a file named <code>audio.mp3.license</code>.</li>
+<li>[ ] If you created this sound, please consider adding the source files.</li>
+</ul>
+<p>So, these two structures can exist in the audio folder:</p>
+<ul>
+<li>A single file with a license:<pre><code>audio/
++- sound.mp3
++- sound.mp3.license
+</code></pre>
+</li>
+<li>A folder for many sound files with one license:<pre><code>audio/
++- source-name/
+   +- LICENSE
+   +- README.md
+   +- sound1.mp3
+   +- sound2.ogg
+</code></pre>
+</li>
+</ul>
+<p>Please note that you <strong>can</strong> have both audio and alert box in your tile as well.</p>
+<p>If you want to add a background music, add your music to <code>audio/background/</code> in the same way.<br>
+and update the <code>js/sound.js</code> file like so</p>
+<pre><code class="javascript">const backgroundAudio = [
+    {
+        filename : &quot;Path of the file&quot;,
+        backgroundSongName: &quot;Name of the song&quot;,
+        author: &quot;Name of the author&quot;,
+        legalNotice : &quot;Music by author&quot;,
+        link : &quot;Link to author's website&quot;,
+    },
+];
+</code></pre>
+<p>Make sure you comply with the way the person wants this song to be cited and add this to <code>legalNotice</code> in HTML format.<br>
+This could be the same as the content of the license file for the file.</p>
+<br>
+
+</body>
+</html>

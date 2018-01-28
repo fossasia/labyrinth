@@ -6,29 +6,37 @@ body {
 
 .nav-wrapper {
   background-color: #60A550;
+  height: 100px !important;
 }
 
 h1, h2, h3 {
   font-family: "Abril Fatface";
 }
 
-.brand-logo.center {
-  font-family: 'Abril Fatface';
+.brand-logo.left {
+  margin: 0;
+  margin-top: .50%;
+  /*font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.1em;*/
+  height: 80px;
+  width: auto;
+  padding-bottom: 7px;
+  padding-left: 15px;
 }
 
 .card-title, a {
   font-family: 'Quicksand';
 }
 
-nav ul a {
-  font-size: 1.2em;
+.navbar-fixed nav ul a {
+  font-size: 1.7em;
+  text-transform: capitalize;
 }
 
 nav ul a:hover, nav ul a:focus {
-  background-color: #80BE62 !important;
+  background-color: #80BE62;
 }
 
 p {
@@ -51,15 +59,47 @@ div.social-container {
   margin-left: 0px;
 }
 
-input.black-text:hover {
-  background-color:yellow;
-  border:1px solid yellow;
+i.fa {background: none !important;}
+
+i.fa.fa-step-backward:hover{
+  color: black;
 }
 
-i.fa {background: none !important;}
+i.fa.fa-play:hover{
+  color:blue;
+}
+
+i.fa.fa-pause:hover{
+  color: red;
+}
+
+i.fa.fa-step-forward:hover{
+  color: black;
+}
 
 i.fa.fa-times:hover {
   color: red;
+}
+
+.languagepicker.roundborders.large .hover-black:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.right.hide-on-med-and-down li {
+    padding-top: 20px;
+    height: 100px;
+}
+
+.select-your-language {
+  height: 80px;
+}
+
+.right.hide-on-med-and-down li,.select-your-language,.stats-ul li,.hover-black{
+  transition:background-color 0.3s;
+}
+
+.right.hide-on-med-and-down li:hover{
+  background-color: #80BE62;
 }
 
 .btn-floating.transparent.waves-effect.waves-light {
@@ -68,7 +108,11 @@ i.fa.fa-times:hover {
   width: 48px !important;
   padding: 0 !important;
 }
-
+ul.social-icons a i {
+  margin: 0;
+  margin-left: 12px;
+  transition: 0.4s;
+}
 i.fa.fa-facebook:hover {
   color: #446ebf;
 }
@@ -182,7 +226,6 @@ p.trackname {
 }
 
 .social-container {
-  width: 385px;
   text-align: center;
 }
 
@@ -222,8 +265,9 @@ p.trackname {
 }
 
 nav .left li a {
-  padding: 0 30px;
+  padding: 20px 30px 0 30px;
   font-size: 30px;
+  height: 100px;
 }
 
 .close-sidebar {
@@ -249,6 +293,7 @@ nav .left li a {
   text-transform: initial;
   letter-spacing: initial;
   font-size: 14px;
+  color: #0d5565;
 }
 
 #labyrinthVersion:hover {
@@ -287,6 +332,18 @@ nav .left li a {
 #inventoryDisplay .collection-item .circle {
   background-color: #84c79f;
   color: rgba(255, 255, 255, 0.62);
+  width:65px;
+  height:65px;
+}
+
+#inventoryDisplay .collection-item .title {
+  font-size:22px;
+  margin-left: 25px;
+}
+
+.collection .collection-item.avatar .prop-title{
+  font-size:22px;
+  margin-left:25px;
 }
 
 #inventoryDisplay .collection-item .secondary-content, #inventoryDisplay .collection-item .secondary-content i {
@@ -332,7 +389,7 @@ nav .left li a {
 }
 
 .languagepicker:hover {
-  height: 81px;
+  height: auto;
 }
 
 .languagepicker a {
@@ -347,10 +404,6 @@ nav .left li a {
   border-top: 1px solid #EEE;
 }
 
-.languagepicker li:hover {
-  background-color: #EEE;
-}
-
 .languagepicker a:first-child li {
   border: none;
   background: #FFF !important;
@@ -361,7 +414,7 @@ nav .left li a {
 }
 
 .large:hover {
-  height: 245px;
+  height: auto;
 }
 
 div.swal2-popup.swal2-modal {
@@ -382,13 +435,63 @@ div#swal2-content.swal2-content {
 h2.swal2-title {
   padding: 15px !important;
 }
+ul.rate-game li{
+  display: inline;
+  margin:0;
+  margin-left:20%;
+}
 
+i.fa.fa-thumbs-up.fa-5x:hover{
+  color: #429cd6 ;
+}
+i.fa.fa-thumbs-down.fa-5x:hover{
+  color:red;
+}
+.thanks {
+  transition: 0.3s;
+}
 .translation-flag {
   height: 1em;
   vertical-align: center;
 }
 
 .translate-language-choice {
+  height: 60px;
   display: block;
   text-align: center;
+  padding-top: 12px;
+}
+
+.languagepicker a {
+  color: #fff;
+}
+
+.close-sidebar i {
+  transition: 0.4s;
+}
+
+.card-content.white-text.statistics a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.statistics {
+  box-sizing: initial;
+}
+
+.statistics .stats-btn {
+  background: #47a883;
+}
+
+.stats-btn ul.stats-ul li:hover{
+  background-color: rgba(0,0,0,0.2);
+}
+
+.statistics .stats-btn .waves-effect.waves-light.btn.blue-grey.darken-2 {
+  display: block;
+  text-align: left;
+  padding: 10px 0;
+  text-align: center;
+  border-top: 2px solid #0e8664;
+  width: 100%;
 }

@@ -20,8 +20,8 @@ https://google.github.io/material-design-icons/#icon-font-for-the-web
 }
 
 @font-face {
-    font-family: "Quicksand Dash";
-    src: url("../fonts/Quicksand_Dash.otf") format("opentype");
+  font-family: "Quicksand Dash";
+  src: url("../fonts/Quicksand_Dash.otf") format("opentype");
 }
 
 @font-face {
@@ -75,15 +75,35 @@ https://google.github.io/material-design-icons/#icon-font-for-the-web
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
-
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
 
+.material-icons-arrow {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-transform: rotate(-45deg);
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
 }

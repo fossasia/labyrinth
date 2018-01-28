@@ -1,8 +1,5 @@
-<center>
-	<a href="https://github.com/fossasia/labyrinth">
-		<img class="brand-logo center" alt="FOSSASIA" src="labyrinthlogofull.png" width="120">
-	</a>
-</center>
+
+<img src="images/logos/inline_color.png" height="100px">
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -10,13 +7,9 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
 
-[![GitHub forks](https://img.shields.io/github/forks/fossasia/labyrinth.svg?style=social&label=Fork)]()
-[![GitHub stars](https://img.shields.io/github/stars/fossasia/labyrinth.svg?style=social&label=Stars)]()
-[![GitHub watchers](https://img.shields.io/github/watchers/fossasia/labyrinth.svg?style=social&label=Watch)]()
-
-
-[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) | 
+[**Play Now**](http://rawgit.com/fossasia/labyrinth/master/index.html) |
 [**Learn How to Play**](http://rawgit.com/fossasia/labyrinth/master/howtoplay.html)
+[**Documentation**](http://rawgit.com/fossasia/labyrinth/master/documentation/)
 
 ## Content Outline
 - [**Motivation**](#motivation)
@@ -35,7 +28,7 @@
 
 This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
-![](vision-example.jpg)
+![Vision](images/vision-example.jpg)
 
 Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
@@ -90,26 +83,26 @@ such as doors, floors etc.
 Currently the tiles are svg images which are embedded into a div via javascript. Floor tiles have a dimension of about 429.544 x 256.314 px (wxh)
 Tiles are present in the `tiles` folder within subdirectories corresponding to particular tiles such as door, floor etc.
 
-To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
-and saved as a svg file with the speccified dimensions.
+To create a tile you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
+and saved as a svg file with the specified dimensions.
 
-Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned. 
+Note: if you are copying the template of a tile(floor) from an existing tile, then do not edit it as a png but directly as a svg. This is so that errors in alignment do not exist and the tile(floor) is perfectly aligned.
 
 After creating tiles add them to the specific sub folder inside tiles.
 
 Now, we will move on to the javascript part.
 Each tile's attributes and specifications along with it's declaration is done in the `js/tiles.js` file. You may edit this file defining attributes
 such as how you could enter and exit out of the tile and so on. You can also specify the door it takes, it's closed exit paths etc.
-A sample Implementation should go into the already defined `door` class like:
+A sample implementation should go into the already defined `door` class like:
 
 ```javascript
 tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
+    canEnterFromTheRight() {return false;}, /* Set these to false to block movements on the right */
     canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
+    /* Simillarly you can have canLeaveToTheTop(), canEnterFromTheTop() etc. */
     createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
       this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
     },
   }),
@@ -117,24 +110,14 @@ tile_name: Object.assign({}, OpenDoors, {
 
 If you want to display an alert box when the character reaches your tile, your implementation must be something like this :
 ```javascript
-tile_name: Object.assign({}, OpenDoors, {
-    canEnterFromTheRight() {return false;}, /* Don't use this attribute if you do not want the user to enter from right */
-    canLeaveToTheRight() {return false;},
-    /* Simillarly you can have canLeaveToTheLeft(), canEnterFromTheTop() etc. */
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these atrributes to specify a custom wall tile for the floor tile. */
-      this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); /*  svg_name is the name of your svg */
-    },
     visit: function() {
-    alertName("title", "text");
+        alertNormal("title", "text");
         this.wallTop.show();
         this.wallRight.show();
         this.ground.show();
      },
-  }),
 ```
-Replace `alertName` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
+Replace `alertNormal` with either `alertNormal`, `alertInfo`, `alertQuestion`, `alertSuccess`, `alertError` or `alertWarning`. For more info, [read this](http://sweetalert2.github.io/).
 
 And replace `title` and `text` with whatever title or text you want to display.
 If you want to only have a title and not any text, keep `text` empty. Like this : `""`.
@@ -143,75 +126,6 @@ If you want to only have a title and not any text, keep `text` empty. Like this 
 After doing so now let's call the tile from the level so that they are reachable. You may modify `/js/levels.js` (which is currently the only level to include your tile.
 Something like `door.tile_name` since we have added it (our object) to the door (which is a class). You may use css to animate the svg if you wish.
 
-## How to Add Music
-
-If you want to have a sound played when the character reaches your tile, your implementation must be something like this:
-
-```javascript
-    visit: function() {
-      playAudio("audio.mp3", licenseNum);
-      // ...
-     },
-```
-
-The license numbers are as follows : 
-1. Attribution 4.0 International
-2. Attribution-NoDerivatives 4.0 International
-3. Attribution-ShareAlike 4.0 International
-4. Attribution-NonCommercial 4.0 International
-5. Attribution-NonCommercial-NoDerivatives 4.0 International
-6. Attribution-NonCommercial-ShareAlike 4.0 International
-
-<br><br>
-
-Note: if you are adding music to a tile then add it to: `audio/music` and if you are adding music as a background then add it to: `audio/background`! This is so that we can be organised and have a consistent filing system. 
-
-To add your audio file, please read the following carefully:
-Audio files are usually not licensed under AGPL. They have a different license.
-Please **make sure that the license permits** using the file for the project.
-Licenses which allow free usage are e.g. the Creative Commons Licenses: CC-BY, CC-BY-SA, CC-BY-NC, ... .
-To add the a sound file, we need to respect the license, so please follow this guide:
-- [ ] Add your sound file to the [audio](audio) directory. Use a name which fits the sound.
-- [ ] Add a file with the license of the sound file. If your file is named `audio.mp3` add a file named `audio.mp3.license`.
-- [ ] If you created this sound, please consider adding the source files.
-
-So, these two structures can exist in the audio folder:
-- A single file with a license:
-  ```
-  audio/
-  +- sound.mp3
-  +- sound.mp3.license
-  ```
-- A folder for many sound files with one license:
-  ```
-  audio/
-  +- source-name/
-     +- LICENSE
-     +- README.md
-     +- sound1.mp3
-     +- sound2.ogg
-  ```
-
-Please note that you **can** have both audio and alert box in your tile as well.
-
-If you want to add a background music, add your music to `audio/background/` in the same way.
-and update the `js/sound.js` file like so
-```javascript
-const backgroundAudio = [
-    {
-        filename : "Path of the file",
-        backgroundSongName: "Name of the song",
-        author: "Name of the author",
-        legalNotice : "Music by author",
-        link : "Link to author's website",
-    },
-];
-```
-Make sure you comply with the way the person wants this song to be cited and add this to `legalNotice` in HTML format.
-This could be the same as the content of the license file for the file.
-
-<br>
-
 ## How to add a new character
 
 Labyrinth allows you to add your characters by customizing the required javascript and svg files.
@@ -219,45 +133,23 @@ Labyrinth allows you to add your characters by customizing the required javascri
 Currently the characters are svg images which are embedded into a div via javascript. Characters have a dimension of about 55 x 60 px (wxh)
 Characters are present in the `characters` folder.
 
-To create a character you may use an svg editor such as inkscape. However other photo editors and formats do wok if they are imported into the editor
-and saved as a svg file with the speccified dimensions.
+To create a character you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
+and saved as a svg file with the specified dimensions.
 
 After creating characters add them to the `characters` folder.
 
 Now, we will move on to the javascript part.
-Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`
+Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`.
 Follow the format while adding to gui.js (To be precise add it to the swal box input values collection i.e, into the `inputOptionsPromise` variable
 under the `resolve` sub class.)
 ```javascript
 "character_src": "character_name",
 ```
 
-## How to add a new badge
-
-Players will archieve badge when they reachs a certain tiles, you may allow players to recieve badge when they reached youe tile as well. To create a badge we'll need to upload your badge and modify tiles.js. As for designing the badge itself you may use Inkscape, Adobe Illustrator, or other photo editor, please make sure your badge is in .png format.
-
-First, add your badge to `images/game/badges`, keep the *resolution* above ~100px but not above 330px (note that resolution are not dimension) to avoid broken image.
-
-Next, in `tiles.js` add the following to your tile function;
-```
-visit: function() {
-        player.badges.add(['badgeName', 'fileName.png']);
-        this.wallTop.show();
-        this.wallRight.show();
-        this.ground.show();
-      }
-```
-You may add pop-up alert if you'd like, by adding *sweet alert*, for example;
-```
-swal({
-                type: 'info',
-                title: 'Congrats! You got the DISCOVERER badge',
-            });
-```
 
 ## How to add new theme
 Adding new theme is basically adding new tiles in a constant object:
-```
+```javascript
 const yourThemeName = {
   your tiles go here
 },
@@ -265,7 +157,7 @@ const yourThemeName = {
 While adding new theme you have to keep in mind theme structure. You can take a look at already existing themes.
 
 After adding your theme to `tiles.js` file, you have to declare it in `levels.js`. Exactly its function, so it's going to create new tiles:
-```
+```javascript
 function createXLevel() {
   return new Level("X", [
     [X.none, X.right, X.right, X.right, X.right, X.none],
@@ -280,6 +172,17 @@ function createXLevel() {
 ```
 That's just an example of this function. Note that all these functions in `levels.js` file are looking very similar. Instead of `X` sign insert your theme name.
 
+To make the level available to the player, best if you also add a tile which you place in an
+existing level which you want the player to explore before.
+This tile then calls `player.addReachableLevel(createXLevel())` to make the level available to the player.
+
+```javascript
+visit: function(player) {
+    player.addReachableLevel(createXLevel());
+    // ...
+  },
+```
+
 ## Hints for GCI students
 
 ### Adding animated tiles
@@ -288,14 +191,14 @@ That's just an example of this function. Note that all these functions in `level
 - Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ...
 - While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/flappy-svg/issues).
-- Create a pull-request and have it merged
+- Create a pull-request and have it merged.
 
 ### Adding tiles for landscape
 
-- Download and install [Inkscape](https://inkscape.org/en/)
+- Download and install [Inkscape](https://inkscape.org/en/).
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
-- Create a pull-request and have it merged
+- Create a pull-request and have it merged.
 
 ### Creating a hand-drawn landscape
 
@@ -303,13 +206,13 @@ That's just an example of this function. Note that all these functions in `level
 - Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
 	1. Draw one tile on a sheet of paper
 	2. Scan it or photograph it
-	3. make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
+	3. Make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
 - Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyrinth.
 - Create a pull-request and have it merged.
 
 ### Add a new Pull request after solving a issue
 
-- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth). 
+- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth).
 - Go to the [issue tab](https://github.com/fossasia/labyrinth/issues) and find a issue that you want to resolve or improve.
 - Resolve/improve that issue and push those changes into your repo.
 - Copy the issue number from issue tab.
@@ -350,7 +253,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 <tr>
 <td>
      <img src="https://avatars3.githubusercontent.com/u/564768?v=4&s=150" />
-     
+
      Nicco Kunzmann
 
 
@@ -363,7 +266,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars3.githubusercontent.com/u/1583873?v=4&s=150"/>
-     
+
      Mario Behling
 
 <p align="center">
@@ -375,7 +278,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars1.githubusercontent.com/u/4529442?v=4&s=150" />
-     
+
      Harsh Lathwal
 
 <p align="center">
@@ -387,7 +290,7 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 
 <td>
      <img src="https://avatars0.githubusercontent.com/u/15213246?v=4&s=150"/>
-     
+
      Tarun Kumar
 
 <p align="center">
@@ -397,9 +300,9 @@ The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Pleas
 </p>
 </td>
 
-</tr> 
+</tr>
   </table>
-  
+
 Responsibilities:
 
 - merge pull requests
