@@ -2,10 +2,11 @@
 /* https://stackoverflow.com/a/18636523 */
 var arrlang = {
   'en': {
+
     'language': 'Select your language',
-    'how': 'HOW TO PLAY',
-    'credit': 'CREDITS',
-    'game': 'GAME',
+    'how': 'How to play',
+    'credit': 'Credits',
+    'game': 'Game',
     'contribute': 'Contributors',
     'statistics': 'Statistics',
     'moved': 'Player Moved :',
@@ -28,9 +29,24 @@ var arrlang = {
     'how5': "We can see that there's no tile towards the top, so now we cannot move more in that direction. Let's go about making a complete grid. Do you see a way now too ? There is still an open door to explore!",
     'done': 'All done!',
     'finish': "Now it's your turn to explore, you can also contribute & create your own tiles.",
+    'rate': 'Rate game',
+    'rate-question': 'How do you enjoy the game so far?',
+    
+    /*------------------
+    full sentence of following strings from 'made-by' to 'licensed' is like following,
+    Icon made by Gregor Cresnar from www.flaticon.com is licensed by CC 3.0 BY
+    ------------------*/
+    /*------------*/
+    'made-by': 'Icon made by ',
+    'from': 'from',
+    'licensed-by': ' is licensed by ',
+    'licensed': 'CC 3.0 BY',
+    /*------------*/
+
     'play': 'Play',
     'icon': 'Icons by ',
     'flaticon': 'flaticon.com',
+
   },
   'si': {
     'language': 'ඔබගේ භාෂාව තෝරන්න',
@@ -59,6 +75,21 @@ var arrlang = {
     'how5': "අපිට දකුණට (වයඹ දිසාවට) ඇති බිම් දැකිය හැකි ය. අපිට කාමර/බ්ලොක්වල හැම පැත්තකට ම/බිත්තියක් දෙසට ම ඇති දොරවල් දකින්න පුළුවන්. ඉතින් අපි ක්‍රීඩාව තුළ වැඩි වැඩියෙන් ඇවිදිමු.",
     'done': 'ඔක්කොම හරි!',
     'finish': "දැන් එය ගවේෂණය කිරීම සඳහා ඔබේ අවස්ථාව, ඔබට ඔබේම බිම් සැදීමට ද දායක විය හැකිය.",
+    'rate': 'ක්‍රීඩාවට කැමැත්ත ප්‍රකාශ කරන්න',
+    'rate-question': 'ක්‍රීඩාවෙන් ඔබ කොතරම් දුරට සතුටු වූයේ ද?',
+
+    /*------------------
+     full sentence of following strings from 'made-by' to 'licensed' is like following,
+     Icon made by Gregor Cresnar from www.flaticon.com is licensed by CC 3.0 BY
+     ------------------*/
+    /*------------*/
+    'made-by': '',
+    'from': 'මඟින්',
+    'flaticon.com': 'www.flaticon.com ට',
+    'licensed-by': ' සැකසූ අයිකන',
+    'licensed': 'CC 3.0 BY යටතේ බලපත්‍ර ගත කොට ඇත.',
+    /*------------*/
+
     'play': 'ක්‍රීඩා කරන්න.',
     'icon': 'අයිකන ',
     'flaticon': 'flaticon.com මඟිනි',
