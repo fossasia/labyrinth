@@ -297,5 +297,15 @@
   <!-- Game Tiles  -->
   <div id="tiles"></div>
 
+
+  <script>
+    // Purpose: For Preventing overlapping of Menubar on the top-left 
+    // and the logo. 
+      $(document).ready(function(){
+        if($(window).width()<993){
+          $(".brand-logo").removeClass("left");
+        }
+      });
+    </script>
 </body>
 </html>
