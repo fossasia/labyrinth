@@ -8,7 +8,8 @@ window.onload = function () {
             html += '<img src="https://github.com/' + contributors.login + '.png?size=300x300" style="width:100%">';
             html += '</div>';
             html += '<br>';
-            html += '<div class="lol"><p>' + contributors.login + ' (' + contributors.contributions;
+            html += '<div class="lol"><p>' + contributors.login + '</p>';
+            html +=  '(' + contributors.contributions;
             if (contributors.contributions === 1) {
                 html += ' contribution)</p>';
             } else {

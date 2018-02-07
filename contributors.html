@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="description" content="Labyrinth | Game ">
+  <head>
+    <title>Contributors | Labyrinth</title>
 
-  <!-- UI Sheets -->
-  <link rel="stylesheet" type="text/css" href="css/materialize.css">
-  <link rel="stylesheet" type="text/css" href="css/fonts.css">
-  <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <link rel="stylesheet" type="text/css" href="css/backToTop.css">
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/sweetalert2.min.js"></script>
-  <script type="text/javascript" src="js/translate.js"></script>
-  <!-- Include Font Awesome Stylesheet -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <!-- @0x48piraj custom social section stylesheet -->
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
-  <!-- Engine Scripts -->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
-  <!-- Scripts for responsive navbar -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js"></script>
-  <title>Contributors | Labyrinth</title>
-  <link rel="icon" type="image/png" href="images/logos/favicon.png" />
-  <style type="text/css">
-    html {
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="Labyrinth | Game ">
+
+    <!-- UI Sheets -->
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/backToTop.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script>
+    <script type="text/javascript" src="js/translate.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- javascripts -->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/backToTop.js"></script>
+    <script type="text/javascript" src="js/contributors.js"></script>
+    <!-- Scripts for responsive navbar. -->
+    <!-- Both Bootstrap and materialize css are not recommended. Delegation Required. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.js"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="images/logos/favicon.png" />
+
+    <!-- inline css. Not Recommended. Delegation required. -->
+    <style type="text/css">
+      html {
       box-sizing: border-box;
-    }
-
-    *, *:before, *:after {
+      }
+      *, *:before, *:after {
       box-sizing: inherit;
-    }
-
-    .column {
+      }
+      .column {
       float: left;
       width: 33.3%;
       margin-bottom: 16px;
       padding: 0 8px;
-    }
-
-    @media (max-width: 650px) {
-      .column {
-        width: 100%;
-        display: block;
-        text-align: center;
       }
-    }
-
-    .contributorsImage {
+      @media (max-width: 650px) {
+      .column {
+      width: 100%;
+      display: block;
+      text-align: center;
+      }
+      }
+      .contributorsImage {
       padding: 0 1em 0 1em;
       opacity: 1;
       display: block;
@@ -59,15 +61,13 @@
       height: auto;
       transition: .5s ease;
       backface-visibility: hidden;
-    }
-
-    .card {
+      }
+      .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       text-align: center;
       padding-top: 1em;
-    }
-
-    .middle {
+      }
+      .middle {
       transition: .5s ease;
       opacity: 0;
       position: absolute;
@@ -75,32 +75,34 @@
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-    }
-
-    .card:hover .contributorsImage {
+      }
+      .card:hover .contributorsImage {
       opacity: 0.3;
-    }
-
-    .card:hover .middle {
+      }
+      .card:hover .middle {
       opacity: 1;
-    }
-
-    .lol {
+      }
+      .lol {
       padding: 0 16px;
-    }
-
-    .lol::after, .row::after {
+      font-size:18px;
+      color: grey;
+      }
+      .lol::after, .row::after {
       content: "";
       clear: both;
       display: table;
-    }
-
-    p {
+      }
+      p {
       color: grey;
       text-align: center;
-    }
-
-    .button {
+      }
+      #contri{
+        margin-top: 60px;
+        font-size: 3em;
+        font-weight: bold;
+        padding-bottom: 20px;
+      }
+      .button {
       border: none;
       outline: 0;
       display: inline-block;
@@ -111,154 +113,147 @@
       text-align: center;
       cursor: pointer;
       width: 100%;
-    }
-
-    .button:hover {
+      }
+      .button:hover {
       background-color: #555;
-    }
-
-    h2 {
+      }
+      h2 {
       text-align: center;
-    }
-
-    .lang {
-      padding:0 16px;
-    }
-
-    .translate.translate-language-choice {
+      }
+      .lang {
+        margin-top: 10px;
+        padding:0 16px;
+      }
+      .translate.translate-language-choice {
       padding: 0 16px;
-    }
-
-    .languagepicker div.select-your-language:hover{
+      }
+      .languagepicker div.select-your-language:hover{
       background-color: #80BE62;
       cursor: pointer;
-    }
-
-    .languagepicker .property-language:hover{
+      }
+      .languagepicker .property-language:hover{
       background-color: rgba(0, 0, 0, 0.2);
       cursor: pointer;
-    }
-    a.lang{
+      }
+      a.lang{
       text-decoration: none !important;
       color:white !important;
-    }
-
-    .button a{
+      }
+      .button a{
       text-decoration: none !important;
       color:white !important;
-    }
-    /* CSS for responsive navbar*/
-    .container-fluid {
+      }
+      /* CSS for responsive navbar*/
+      .container-fluid {
       padding-right: 0px;
       padding-left: 0px;
-    }
-    ul#menubar {
+      }
+      ul#menubar {
       padding-right: 0px;
-    }
-    .navbar-header h1{
+      }
+      .navbar-header h1{
       font-family: 'Abril Fatface';
       font-size:2.5em;
       letter-spacing: 0.1em;
       width:auto;
       margin-top:6px;
       margin-left:10px;
-    }
-    #dropdownMenu{
+      }
+      #dropdownMenu{
       width:100%;
-    }
-    .dropdown-menu {
+      }
+      .dropdown-menu {
       width:100%;
       background-color: #60A550;
       margin:0;
       padding-top:0;
       padding-bottom:0;
-    }
-    .navbar.navbar-default {
+      }
+      .navbar.navbar-default {
       font-size:1.2em;
       background-color: #60A550;
       color:white;
-    }
-    .nav.navbar-nav.navbar-right li a span{
+      }
+      .nav.navbar-nav.navbar-right li a span{
       color:white;
-    }
-    .nav.navbar-nav.navbar-right li{
+      }
+      .nav.navbar-nav.navbar-right li{
       padding: 6px;
-    }
-    .nav.navbar-nav.navbar-right>li:hover{
+      }
+      .nav.navbar-nav.navbar-right>li:hover{
       background-color: #80BE62;
       cursor: pointer;
-    }
-    #select-lang ul li>a{
+      }
+      #select-lang ul li>a{
       color:white;
       padding-top:20px;
-    }
-    #select-lang ul li>a:hover{
+      }
+      #select-lang ul li>a:hover{
       background-color: rgba(0, 0, 0,0.0);
       cursor: pointer;
-
-    }
-    #select-lang ul li:hover{
+      }
+      #select-lang ul li:hover{
       background-color: rgba(0, 0, 0, 0.2);
-    }
-    @media (max-width: 992px) {
+      }
+      @media (max-width: 992px) {
       .navbar-header {
-        float: none;
+      float: none;
       }
       .navbar-left,.navbar-right {
-        float: none !important;
+      float: none !important;
       }
       .navbar-toggle {
-        display: block;
+      display: block;
       }
       .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
       }
       .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
+      top: 0;
+      border-width: 0 0 1px;
       }
       .navbar-collapse.collapse {
-        display: none!important;
+      display: none!important;
       }
       .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
+      float: none!important;
+      margin-top: 7.5px;
       }
       .navbar-nav>li {
-        float: none;
+      float: none;
       }
       .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       }
       .collapse.in{
-        display:block !important;
+      display:block !important;
       }
-    }
-  </style>
-  <script type="text/javascript" src="js/contributors.js"></script>
+      }
+    </style>
+  </head>
 
-</head>
+  <body>
 
-<body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper">
-          <img class="brand-logo left" src="images/logos/inline_light_bold.png" alt="logo">
-                  <ul class="right hide-on-med-and-down">
-          <li>
-            <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
-          </li>
-          <li>
-            <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
-          </li>
-          <li>
-            <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
-          </li>
-          <li>
-            <div class="languagepicker roundborders large">
-              <div class="select-your-language"><a class="lang waves-effect waves-light btn blue-grey darken-2" data-href="language">Select your language <span class="fa fa-caret-down"></span></a></div>
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a href="index.html"><img class="brand-logo left" src="images/logos/inline_light_bold.png" alt="logo"></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
+            </li>
+            <li>
+              <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
+            </li>
+            <li>
+              <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
+            </li>
+            <li>
+              <div class="languagepicker roundborders large">
+                <div class="select-your-language"><a class="lang waves-effect waves-light btn blue-grey darken-2" data-href="language">Select your language <span class="fa fa-caret-down"></span></a></div>
                 <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
                   <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> EN</a>
                 </div>
@@ -269,24 +264,21 @@
                   <img src="icons/Poland.png" alt="" class="translation-flag" /> PL</a>
                 </div>
                 <!-- When you add more languages do it in the above format-->
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Contributors Section-->
+    <h2 id="contri"><a class="lang" data-href="contribute">Contributors</a></h2>
+    <div class="container">
+      <div class="row" id="contributors"></div>
+    </div>
+    <!--End of contributors section-->
 
 
-
-  <!--contributors section-->
-
-  <h2><a class="lang" data-href="contribute">Contributors</a></h2>
-  <div class="container">
-    <div class="row" id="contributors"></div>
-  </div>
-
-<!--End of contributors section-->
-<button onclick="topFunction()" id="scrollToTop" title="Back to top">&uarr; TOP &uarr;</button>
-<script type="text/javascript" src="js/backToTop.js"></script>
-</body>
+    <button onclick="topFunction()" id="scrollToTop" title="Back to top">&uarr; TOP &uarr;</button>
+  </body>
 </html>
