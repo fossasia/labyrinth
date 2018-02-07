@@ -16,6 +16,7 @@ h1, h2, h3 {
 .brand-logo {
   margin: 0;
   margin-top: .50%;
+  margin-left: 15px;
   /*font-family: 'Abril Fatface';
   font-size: 2.5em;
   text-transform: capitalize;
@@ -23,7 +24,7 @@ h1, h2, h3 {
   height: 80px;
   width: auto;
   padding-bottom: 7px;
-  padding-left: 15px;
+  
 }
 
 .card-title, a {
