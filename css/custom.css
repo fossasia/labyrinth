@@ -13,7 +13,7 @@ h1, h2, h3 {
   font-family: "Abril Fatface";
 }
 
-.brand-logo.left {
+.brand-logo {
   margin: 0;
   margin-top: .50%;
   /*font-family: 'Abril Fatface';
@@ -494,4 +494,22 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   text-align: center;
   border-top: 2px solid #0e8664;
   width: 100%;
+}
+
+/* Media Quries for Responsive Design */
+
+@media screen and (max-width: 1420px) {
+  .right.hide-on-med-and-down li {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 1295px) {
+  .right.hide-on-med-and-down li {
+    font-size: 0.7em;
+  }
+
+  .right.hide-on-med-and-down li:nth-child(2) {
+    display: none;
+  }
 }
