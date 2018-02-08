@@ -26,7 +26,15 @@ function badges() {
             "<img src='" + imageDirectory + obj.image + "' alt='" + obj.name + "' title='" + obj.name + "' class='badgesImg'>" +
             "</li>";
             $("#badgesDisplay").append(data);
-            $("#badge_count").html("(" + obj.id + "/4)");
+            $("#badge_count").html("(" + count() + "/4)");
+    }
+
+
+    function count() {
+        if( typeof count.counter == 'undefined' ) {
+            count.counter = 0;
+        }
+        return ++(count.counter);
     }
 
     function collisionCheck(itemName, dataset) {
