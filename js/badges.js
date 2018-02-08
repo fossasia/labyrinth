@@ -25,7 +25,8 @@ function badges() {
         var data = "<li id='badgesItem_" + obj.id + "' class='collection-badges'>" +
             "<img src='" + imageDirectory + obj.image + "' alt='" + obj.name + "' title='" + obj.name + "' class='badgesImg'>" +
             "</li>";
-        $("#badgesDisplay").append(data);
+            $("#badgesDisplay").append(data);
+            $("#badge_count").html("(" + obj.id + "/4)");
     }
 
     function collisionCheck(itemName, dataset) {
