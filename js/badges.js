@@ -17,24 +17,16 @@ function badges() {
         if (collisionCheck(itemStr.name, this.itemCollision)) {
             this.items.push(itemStr);
             this.itemCollision.push(itemStr.name);
-            addItem(itemStr);
+            addItem(itemStr, this.items.length);
         }
     };
 
-    function addItem(obj) {
+    function addItem(obj, badgeCount) {
         var data = "<li id='badgesItem_" + obj.id + "' class='collection-badges'>" +
             "<img src='" + imageDirectory + obj.image + "' alt='" + obj.name + "' title='" + obj.name + "' class='badgesImg'>" +
             "</li>";
             $("#badgesDisplay").append(data);
-            $("#badge_count").html("(" + count() + "/4)");
-    }
-
-
-    function count() {
-        if( typeof count.counter == 'undefined' ) {
-            count.counter = 0;
-        }
-        return ++(count.counter);
+            $("#badge_count").html("(" + badgeCount + "/4)");
     }
 
     function collisionCheck(itemName, dataset) {
