@@ -29,7 +29,7 @@ function choosePlayerCharacter(player) {
     resolve({
       "characters/golem.svg": "Golem",
       "characters/witch.svg": "Witch",
-
+      "characters/Zeichnung Lasse.svg": "The men",
       "characters/block.svg": "Block",
       "characters/coolcat.svg": "Cool Cat",
       "characters/sheep.svg": "Intelligent Sheep",
