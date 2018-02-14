@@ -86,7 +86,7 @@ var arrlang = {
       /*------------*/
       'made-by': 'Icon made by ',
       'from': 'से',
-      'licensed-by': ' is licensed by ',
+      'licensed-by': ' द्वारा लाइसेंस प्राप्त है ',
       'licensed': 'CC 3.0 BY',
       /*------------*/
   
