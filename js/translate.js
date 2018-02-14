@@ -65,7 +65,7 @@ var arrlang = {
       'follow': 'हमारा अनुसरण इस पर कीजिये',
       'invent': 'सुचि',
       'badge': 'आपके बैज',
-      'version': 'Version',
+      'version': 'संस्करण',
       'license': 'अनुज्ञप्ति',
       'start': "चलो शुरू करें",
       'how1': "You'll see the base room with doors on it's walls. Notice the red and grey tile, there are 4 doors/openings on 4 walls.",
@@ -74,9 +74,9 @@ var arrlang = {
       'code': 'press right arrow',
       'how4': "We can see the tiles to the right (top-right precisely). We can see the doors towards all sides/walls of the room/block. So let's move more in the game.", 
       'how5': "We can see that there's no tile towards the top, so now we cannot move more in that direction. Let's go about making a complete grid. Do you see a way now too ? There is still an open door to explore!",
-      'done': 'All done!',
+      'done': 'सब कुछ कर दिया!!',
       'finish': "Now it's your turn to explore, you can also contribute & create your own tiles.",
-      'rate': 'Rate game',
+      'rate': 'खेल का मूल्यांकन करें',
       'rate-question': 'How do you enjoy the game so far?',
       
       /*------------------
@@ -90,7 +90,7 @@ var arrlang = {
       'licensed': 'CC 3.0 BY',
       /*------------*/
   
-      'play': 'Play',
+      'play': 'खेल',
       'icon': 'Icons by ',
       'flaticon': 'flaticon.com',
   
