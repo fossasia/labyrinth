@@ -48,6 +48,53 @@ var arrlang = {
     'flaticon': 'flaticon.com',
 
   },
+    'hi': {
+  
+      'language': 'Select your language',
+      'how': 'How to play',
+      'credit': 'Credits',
+      'game': 'Game',
+      'contribute': 'Contributors',
+      'statistics': 'Statistics',
+      'moved': 'Player Moved :',
+      'times': ' Times',
+      'audio': 'Audio',
+      'now': 'Now Playing : ',
+      'by': ' by ',
+      'share': ' Share Game ',
+      'follow': 'Follow us on',
+      'invent': 'Inventory',
+      'badge': 'Your Badges',
+      'version': 'Version',
+      'license': 'License',
+      'start': "Let's start",
+      'how1': "You'll see the base room with doors on it's walls. Notice the red and grey tile, there are 4 doors/openings on 4 walls.",
+      'how2': "Press the upward arrow button for go to room above the current room (precisely, top left corner of your screen or north-west direction taking north towards the top of your screen)",
+      'how3': "Now you can see a new block/room added. Also see that the color difference of the tiles. The bring red shows the current (red) active tile and the dark (black) tile shows the rest of tiles. Let's move a bit towards right now",
+      'code': 'press right arrow',
+      'how4': "We can see the tiles to the right (top-right precisely). We can see the doors towards all sides/walls of the room/block. So let's move more in the game.", 
+      'how5': "We can see that there's no tile towards the top, so now we cannot move more in that direction. Let's go about making a complete grid. Do you see a way now too ? There is still an open door to explore!",
+      'done': 'All done!',
+      'finish': "Now it's your turn to explore, you can also contribute & create your own tiles.",
+      'rate': 'Rate game',
+      'rate-question': 'How do you enjoy the game so far?',
+      
+      /*------------------
+      full sentence of following strings from 'made-by' to 'licensed' is like following,
+      Icon made by Gregor Cresnar from www.flaticon.com is licensed by CC 3.0 BY
+      ------------------*/
+      /*------------*/
+      'made-by': 'Icon made by ',
+      'from': 'from',
+      'licensed-by': ' is licensed by ',
+      'licensed': 'CC 3.0 BY',
+      /*------------*/
+  
+      'play': 'Play',
+      'icon': 'Icons by ',
+      'flaticon': 'flaticon.com',
+  
+    },
   'pl': {
       'language': 'Wybierz swój język',
       'how': 'Jak grać?',
