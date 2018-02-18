@@ -8,3 +8,6 @@ Please use this link to link to the weekathon website:
 > or https://shorturl.at/agEKO
 
 See issue [732](https://github.com/fossasia/labyrinth/issues/732) for more details and a discussion on the redirect.
+
+To edit the weekathon site, please create a pull request from and to [Ploypiti:master](https://github.com/Ploypiti/labyrinth).
+
