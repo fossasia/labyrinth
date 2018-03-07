@@ -13,10 +13,10 @@
        and "master" with the branch you are working on. -->
   http://rawgit.com/USERNAME/labyrinth/master/index.html
 
-- <!-- If you fully fixed some issue(s), 
+<!-- If you fully fixed some issue(s), 
 please insert the issue number after the #.
 If you have not fixed some issue(s) completely but only some of the step(s) in issue then remove “Fixes #” and please mention the related issue number(s) along with the step number(s). -->
-  Fixes #<Add issue number here>
+- Fixes #<Add issue number here>
 
 
 <!-- please summarize the problem you faced -->
@@ -28,7 +28,7 @@ If you have not fixed some issue(s) completely but only some of the step(s) in i
 <!-- Please summarize the solution you chose.
      Mention the files changed. Add what changes you have done. -->
 
-### Screenshots,
+### Screenshots
 <!-- If any -->
 
 
