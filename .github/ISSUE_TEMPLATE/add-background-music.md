@@ -10,10 +10,10 @@
 
 - [ ] Compose or play the music and record it.
   - You can sing or play an instrument like guitar and piano and record it using [Audacity]
-  - You can use [Sonic Pi](sonic-pi.net/) to program the music.
-- [ ] Add one file containing the song to the [/audio/background][audio] folder.
-- [ ] Add the license as a file according to [documentation][docs]
-- [ ] Add it to the API in the [sound.js][sound.js] file.
+  - You can use [Sonic Pi] to program the music.
+- [ ] Add one file containing the song to the [/audio/background] folder.
+- [ ] Add the license as a file according to [documentation]
+- [ ] Add it to the API in the [sound.js] file.
 
 ### Closing Criteria
 <!-- When these criteria are met, we can close the issue. -->
@@ -22,7 +22,7 @@
 - The license of the music is
   - [ ] in the file next to the music so it belongs to the music file without doubt:
     same file name + `.license`
-  - [ ] added to the [sound.js][sound.js] file so we can give credit to the artist while
+  - [ ] added to the [sound.js] file so we can give credit to the artist while
     playing the music.
 
 ### Hints
@@ -39,8 +39,9 @@
 
 
 
-[audio]: https://github.com/fossasia/labyrinth/tree/master/audio/background
-[docs]: https://rawgit.com/fossasia/labyrinth/master/documentation/#API-Adding-New-Music
+[/audio/background]: https://github.com/fossasia/labyrinth/tree/master/audio/background
+[documentation]: https://rawgit.com/fossasia/labyrinth/master/documentation/#API-Adding-New-Music
 [sound.js]: https://github.com/fossasia/labyrinth/tree/master/js/sound.js
 [Audacity]: https://www.audacityteam.org/
+[Sonic Pi]: http://sonic-pi.net/
 
