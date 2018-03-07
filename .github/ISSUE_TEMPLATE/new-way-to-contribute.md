@@ -20,7 +20,7 @@
 ### Closing Criteria
 <!-- When these criteria are met, we can close the issue. -->
 
-- [ ] A shot description is in the [CONTRIBUTING.md] file.
+- [ ] A short description is in the [CONTRIBUTING.md] file.
 - [ ] There is an issue template or a link to the chat to coordinate
   - [ ] The issue template has an implementation plan.
   - [ ] The issue template has closing criteria.
