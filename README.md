@@ -30,7 +30,7 @@ This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
 ![Vision](images/vision-example.jpg)
 
-Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
+Our goal is to have contributors like you draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
 
 Motivation
@@ -50,15 +50,45 @@ Implementation
 --------------
 
 This will be an HTML/JS only site.
-Levels can be created by editing a table specification.
 
 Contributions, Bug Reports, Feature Requests
---------------
-This is an Open Source project and we would be happy to see contributors who report bugs and file feature requests by submitting pull requests as well. Please report issues in the [GitHub tracker](https://github.com/fossasia/labyrinth/issues/new).
+--------------------------------------------
+
+This is an Open Source project.
+We would be happy to see contributors who report bugs, file feature requests and submit pull requests as well.
+These are the ways you can follow to help us improve the game:
+
+- [report a bug](https://github.com/fossasia/labyrinth/issues/new?template=bug-report.md&title=BUG:+...) - if you found a bug like unexpected behavior or broken style
+- [request a feature](https://github.com/fossasia/labyrinth/issues/new?template=feature-request.md&title=FEATURE:+...) - if you have a new idea of how to improve the game
+- [fix a bug]()
+
+- add a functionality
+- add a new feature
+- add background music
+- add music to tiles
+- add clues
+- cooperate on a pull request
+- create a hand-drawn tile
+- create a new level
+- create a new theme
+- animate a tile
+- create a wall
+- create a character
+- create a promotional video
+- document how to contribute
+- add new ways to contribute
+- enhance the game
+- improve code quality
+- improve the UI of the game
+- solve an advanced issue
+- solve an issue
 
 ## Issue and Branch Policy
 
-Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details. Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
+- Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details.
+- After writing your first commit, please open a pull request. 
+
+Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
 
 We have the following branch   
  * **master**   
