@@ -89,6 +89,15 @@ When you enter a tile, the game can play sounds.
 Please follow the [issue template for tile music][issue-add-tile-sound] to add music to certain tiles on entering.
 Consider that the music should be your own.
 
+### Create a Tile
+
+### Create a Hand-Drawn Tile
+
+The labyrinth not only contains computer-generated tiles but also tiles draw by hand.
+Please open an issue if you like to [create a hand-drawn tile][issue-add-hand-drawn-tile] to track the progress.
+
+
+
 
 
 
