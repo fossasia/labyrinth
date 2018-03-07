@@ -27,7 +27,7 @@
 
 ### Hints
 
-- For your own recodrings, we recommend choosing the license `CC-BY` or `CC-BY-SA` if you
+- For your own recordings, we recommend choosing the license `CC-BY` or `CC-BY-SA` if you
   like others to remix or `CC-BY-ND` if you do not like people editing your song.
   Choose a license here: https://creativecommons.org/choose/
   Please do not choose NC as this might disable it for GSoC.
