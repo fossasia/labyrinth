@@ -30,7 +30,7 @@ This is a labyrinth software which can be edited by you.
 This is an example in which direction we go:
 ![Vision](images/vision-example.jpg)
 
-Our goal is to have contributors draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
+Our goal is to have contributors like you draw parts of the labyrinth (Inkscape or hand drawn or other techniques), embed them into a huge labyrinth.
 Possibly, we can have multiple levels all stuck together.
 
 Motivation
@@ -50,15 +50,20 @@ Implementation
 --------------
 
 This will be an HTML/JS only site.
-Levels can be created by editing a table specification.
 
 Contributions, Bug Reports, Feature Requests
---------------
-This is an Open Source project and we would be happy to see contributors who report bugs and file feature requests by submitting pull requests as well. Please report issues in the [GitHub tracker](https://github.com/fossasia/labyrinth/issues/new).
+--------------------------------------------
+
+This is an Open Source project.
+We would be happy to see contributors who report bugs, file feature requests and submit pull requests as well.
+Please have a look at the [Contributing file](CONTRIBUTING.md) for ways to contribute.
 
 ## Issue and Branch Policy
 
-Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details. Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
+- Before making a pull request, please file an issue. So, other developers have the chance to give feedback or discuss details.
+- After writing your first commit, please open a pull request. 
+
+Match every pull request with an issue please and add the issue number in description e.g. like "Fixes #123".
 
 We have the following branch   
  * **master**   

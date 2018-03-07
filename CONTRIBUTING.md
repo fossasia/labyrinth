@@ -1,4 +1,110 @@
-## Contributions Best Practices
+# Contributions Best Practices
+
+This document shall give you an overview of how you can contribute to the project.
+It is split up in these parts:
+
+- [Ways to go for your contribution][how-to-contribute]
+- [General Practices to keep in mind when contributing][general-practices]
+
+## How To Contribute
+[how-to-contribute]: #how-to-contribute
+
+This section includes a collection of ways to contribute.
+The purpose of the different issue templates is to guide contributors and to allow synchronization with other developers.
+
+### Report A Bug
+
+Please see if the bug was reported before by searching the [issue tracker][issues] for some key words you would say.
+In case it was, you can collaborate, leave a comment and get into discussion.
+
+To report a bug, please open a new issue following [this issue template]().
+A bug might be unexpected behavior or a clear violation of design principles.
+
+### Request a Feature
+
+Please see if the feature was reported before by searching the [issue tracker][issues] for some key words you would say.
+In case it was, you can collaborate, leave a comment and get into discussion.
+
+If you have a new idea about how to improve the game, please open [an issue for your feature request][issue-new-feature].
+
+### Fix a Bug
+
+If you like to help improve the game or a bug caught your eye and you like to fix it:
+
+1. Please [visit the issue][issues-bug] and leave a comment that you like to work on it.
+2. See if someone else opened a pull request. If so, you can choose to comment that [you like to cooperate][cooperate].
+3. If there is no pull request by other people within a day, feel free to [create your own pull request][create-pr] within one day.
+
+### Create a Pull Request
+[create-pr]: #create-a-pull-request
+
+If you [create a pull request][new-pr], you do not need to solve all problems at once.
+We like little steps more because they are easier to understand.
+Please follow the [pull request template][pr-template] or change it.
+
+To inform other people about your work and to enable them to use our work,
+consider to create pull requests as soon as possible, after the first small commit.
+
+### Add a Dependency
+
+To make the game more interesting, please add a place which can only be entered
+if something else was done before,
+e.g. a door with a key to find, a troll and a meal to prepare, a river and a boat to build, ... .
+
+To do this, please open [a dependency issue][issue-add-a-dependency].
+You will be guided from there.
+
+### Add Self-Made Background Music
+
+To make the game more interesting, please add background music.
+Please follow the [issue template for adding background music][issue-add-background-music]
+for doing so.
+
+### Add New Ways to Contribute
+
+You can add new of these entries to [this section][how-to-contribute].
+Please evaluate your idea like this:
+- If it can be done once and is completed, it is an issue, not a task.
+- If it can be done endlessly and is done once, it is a task.
+- If you mix both in a task, think about adding a task enablement issue.
+
+Then, open a [new issue][issue-new-way-to-contribute].
+
+
+### Cooperate on a Pull Request
+[cooperate]: #cooperate-on-a-pull-request
+
+You can cooperate on pull requests with other contributors.
+You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or
+collaborate together on branches of your forks.
+You can attribute a pull-request also to other people who helped you out or submit a pull-request
+where you and an other person contributed together.
+
+You can comment on an existing [issue][issues] that you like to cooperate with specific people or
+ask in the [chat] if anyone would be interested in cooperating.
+
+
+
+
+
+
+
+
+[pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
+[new-pr]:                       https://github.com/fossasia/labyrinth/pulls/new
+[issues]:                       https://github.com/fossasia/labyrinth/issues
+[issues-bug]:                   https://github.com/fossasia/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
+[issue-new-feature]:            https://github.com/fossasia/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
+[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[issue-add-a-dependency]:       https://github.com/fossasia/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
+[issue-add-background-music]:   https://github.com/fossasia/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
+[issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
+[chat]:                         https://gitter.im/fossasia/labyrinth
+
+
+
+## General Contribution Practices
+[general-practices]: #general-contribution-practices
 
 ### Commits
 * Write clear meaningful git commit messages (Do read http://chris.beams.io/posts/git-commit/)
@@ -13,7 +119,7 @@
 * Follow the DRY(Don't Repeat Yourself) principle. The same piece of code should not be repeated over and over again.
 
 ### Feature Requests and Bug Reports
-* When you file a feature request or when you are submitting a bug report to the [issue tracker](https://github.com/fossasia/labyrinth/issues), make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
+* When you file a feature request or when you are submitting a bug report to the [issue tracker][issues], make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
 * Please have a look if someone else suggested something similar and see it a new issue is necessary.
 * Please follow the issue template as it focusses on the motivation and how life and the game is improved. This can not be reflected by code as well. 
 

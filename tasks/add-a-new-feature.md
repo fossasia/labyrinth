@@ -16,7 +16,7 @@ Requirements:
 - Get feedback from one maintainer (it is labeled as [new feature](https://github.com/fossasia/labyrinth/labels/new%20feature))
   or two other participants (they say this feature is good for the game).
 - Create at least one pull request to create the feature. 
-- If other people collaborate with you, this is a sing the issue is descriptive.
+- If other people collaborate with you, this is a sign the issue is descriptive.
 
 Expected outcome:
 - The issue is tagged as [new feature](https://github.com/fossasia/labyrinth/labels/new%20feature) and resolved.
