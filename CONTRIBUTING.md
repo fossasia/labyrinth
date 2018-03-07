@@ -91,41 +91,16 @@ ask in the [chat] if anyone would be interested in cooperating.
 
 
 [pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
-[new-pr]:                       https://github.com/niccokunzmann/labyrinth/pulls/new
-[issues]:                       https://github.com/niccokunzmann/labyrinth/issues
-[issues-bug]:                   https://github.com/niccokunzmann/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
-[issue-new-feature]:            https://github.com/niccokunzmann/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
-[issue-new-bug]:                https://github.com/niccokunzmann/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
-[issue-add-a-dependency]:       https://github.com/niccokunzmann/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
-[issue-add-background-music]:   https://github.com/niccokunzmann/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
-[issue-new-way-to-contribute]:  https://github.com/niccokunzmann/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
+[new-pr]:                       https://github.com/fossasia/labyrinth/pulls/new
+[issues]:                       https://github.com/fossasia/labyrinth/issues
+[issues-bug]:                   https://github.com/fossasia/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
+[issue-new-feature]:            https://github.com/fossasia/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
+[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[issue-add-a-dependency]:       https://github.com/fossasia/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
+[issue-add-background-music]:   https://github.com/fossasia/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
+[issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
 [chat]:                         https://gitter.im/fossasia/labyrinth
 
-
-
-
-
-
-- add a functionality DONE
-- add a new feature DONE
-- add background music DONE
-- add music to tiles
-- add clues
-- cooperate on a pull request
-- create a hand-drawn tile
-- create a new level
-- create a new theme
-- animate a tile
-- create a wall
-- create a character
-- create a promotional video
-- document how to contribute
-- add new ways to contribute
-- enhance the game
-- improve code quality
-- improve the UI of the game
-- solve an advanced issue
-- solve an issue
 
 
 ## General Contribution Practices
@@ -152,7 +127,7 @@ ask in the [chat] if anyone would be interested in cooperating.
 * Before you join development, please set up the project on your local machine, run it and go through the application completely. Press on any button you can find and see where it leads to. Explore. (Don't worry ... Nothing will happen to the app or to you due to the exploring :wink: Only thing that will happen is, you'll be more familiar with what is where and might even get some cool ideas on how to improve various aspects of the app.)
 * If you would like to work on an issue, drop in a comment at the issue. If it is already assigned to someone, but there is no sign of any work being done, please free to drop in a comment so that the issue can be assigned to you if the previous assignee has dropped it entirely.
 
-Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.niccokunzmann.org/open-source-developer-guide-and-best-practices-at-fossasia).
+Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia).
 
 ### Hosting Assets
 Usage of CDNs and other online hosts for assets used in the Labyrinth is not recommended. 
