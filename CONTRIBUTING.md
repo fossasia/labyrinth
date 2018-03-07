@@ -113,6 +113,7 @@ Please open an issue if you like to [create a hand-drawn tile][issue-add-hand-dr
 [issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
 [chat]:                         https://gitter.im/fossasia/labyrinth
 [issue-add-tile-sound]:         https://github.com/fossasia/labyrinth/issues/new?template=add-tile-sound.md&title=New+Tile+Sound:+fill+in+the+title+here
+[issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-hand-drawn-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
 
 
 ## General Contribution Practices
