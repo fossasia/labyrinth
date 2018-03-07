@@ -83,8 +83,11 @@ where you and an other person contributed together.
 You can comment on an existing [issue][issues] that you like to cooperate with specific people or
 ask in the [chat] if anyone would be interested in cooperating.
 
+### Add Sound to Tiles
 
-
+When you enter a tile, the game can play sounds.
+Please follow the [issue template for tile music][issue-add-tile-sound] to add music to certain tiles on entering.
+Consider that the music should be your own.
 
 
 
@@ -100,7 +103,7 @@ ask in the [chat] if anyone would be interested in cooperating.
 [issue-add-background-music]:   https://github.com/fossasia/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
 [issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
 [chat]:                         https://gitter.im/fossasia/labyrinth
-
+[issue-add-tile-sound]:         https://github.com/fossasia/labyrinth/issues/new?template=add-tile-sound.md&title=New+Tile+Sound:+fill+in+the+title+here
 
 
 ## General Contribution Practices
