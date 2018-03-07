@@ -10,6 +10,7 @@ It is split up in these parts:
 [how-to-contribute]: #how-to-contribute
 
 This section includes a collection of ways to contribute.
+The purpose of the different issue templates is to guide contributors and to allow synchronization with other developers.
 
 ### Report A Bug
 
@@ -53,10 +54,16 @@ e.g. a door with a key to find, a troll and a meal to prepare, a river and a boa
 To do this, please open [a dependency issue][issue-add-a-dependency].
 You will be guided from there.
 
+### Add Self-Made Background Music
+
+To make the game more interesting, please add background music.
+Please follow the [issue template for adding background music][issue-add-background-music]
+for doing so.
 
 ### Cooperate on a Pull Request
 [cooperate]: #cooperate-on-a-pull-request
 
+You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.
 
 
 
@@ -67,13 +74,14 @@ You will be guided from there.
 
 
 
-[pr-template]:          .github/PULL_REQUEST_TEMPLATE.md
-[new-pr]:               https://github.com/fossasia/labyrinth/pulls/new
-[issues]:               https://github.com/fossasia/labyrinth/issues
-[issues-bug]:           https://github.com/fossasia/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
-[issue-new-feature]:    https://github.com/fossasia/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
-[issue-new-bug]:        https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
-[issue-add-a-dependency]: https://github.com/fossasia/labyrinth/issues/new?template=add-a-dependency.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
+[new-pr]:                       https://github.com/niccokunzmann/labyrinth/pulls/new
+[issues]:                       https://github.com/niccokunzmann/labyrinth/issues
+[issues-bug]:                   https://github.com/niccokunzmann/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
+[issue-new-feature]:            https://github.com/niccokunzmann/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
+[issue-new-bug]:                https://github.com/niccokunzmann/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[issue-add-a-dependency]:       https://github.com/niccokunzmann/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
+[issue-add-background-music]:   https://github.com/niccokunzmann/labyrinth/issues/new?template=add-background-music.md&title=New+Dependency:+fill+in+the+title+here
 
 
 
@@ -118,7 +126,7 @@ You will be guided from there.
 * Follow the DRY(Don't Repeat Yourself) principle. The same piece of code should not be repeated over and over again.
 
 ### Feature Requests and Bug Reports
-* When you file a feature request or when you are submitting a bug report to the [issue tracker](https://github.com/fossasia/labyrinth/issues), make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
+* When you file a feature request or when you are submitting a bug report to the [issue tracker][issues], make sure you add steps to reproduce it. Especially if that bug is some weird/rare one.
 * Please have a look if someone else suggested something similar and see it a new issue is necessary.
 * Please follow the issue template as it focusses on the motivation and how life and the game is improved. This can not be reflected by code as well. 
 
@@ -126,7 +134,7 @@ You will be guided from there.
 * Before you join development, please set up the project on your local machine, run it and go through the application completely. Press on any button you can find and see where it leads to. Explore. (Don't worry ... Nothing will happen to the app or to you due to the exploring :wink: Only thing that will happen is, you'll be more familiar with what is where and might even get some cool ideas on how to improve various aspects of the app.)
 * If you would like to work on an issue, drop in a comment at the issue. If it is already assigned to someone, but there is no sign of any work being done, please free to drop in a comment so that the issue can be assigned to you if the previous assignee has dropped it entirely.
 
-Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.fossasia.org/open-source-developer-guide-and-best-practices-at-fossasia).
+Do read the [Open Source Developer Guide and Best Practices at FOSSASIA](https://blog.niccokunzmann.org/open-source-developer-guide-and-best-practices-at-fossasia).
 
 ### Hosting Assets
 Usage of CDNs and other online hosts for assets used in the Labyrinth is not recommended. 

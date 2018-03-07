@@ -1,11 +1,11 @@
-### Desctiption of the Dependency
+### Description of the Dependency
 <!-- Please describe which behavior you want to add to the labyrinth. -->
 
 
 
-### Implemementation
+### Implementation Plan
 <!-- These are implementation hints that should help you complete the task.
-     Please check them when you completed them. -->
+     Please check them when you completed them and include the pull request link. -->
 
 - [ ] Create a pull request as soon as possible.
 - [ ] Create a picture for the item you need (key/boat/...). The pictures MUST be your own work.
