@@ -50,7 +50,7 @@ To make the game more interesting, please add a place which can only be entered
 if something else was done before,
 e.g. a door with a key to find, a troll and a meal to prepare, a river and a boat to build, ... .
 
-To do this, please open [a dependency issue][issue-new-dependency].
+To do this, please open [a dependency issue][issue-add-a-dependency].
 You will be guided from there.
 
 
