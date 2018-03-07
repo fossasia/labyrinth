@@ -56,32 +56,7 @@ Contributions, Bug Reports, Feature Requests
 
 This is an Open Source project.
 We would be happy to see contributors who report bugs, file feature requests and submit pull requests as well.
-These are the ways you can follow to help us improve the game:
-
-- [report a bug](https://github.com/fossasia/labyrinth/issues/new?template=bug-report.md&title=BUG:+...) - if you found a bug like unexpected behavior or broken style
-- [request a feature](https://github.com/fossasia/labyrinth/issues/new?template=feature-request.md&title=FEATURE:+...) - if you have a new idea of how to improve the game
-- [fix a bug]()
-
-- add a functionality
-- add a new feature
-- add background music
-- add music to tiles
-- add clues
-- cooperate on a pull request
-- create a hand-drawn tile
-- create a new level
-- create a new theme
-- animate a tile
-- create a wall
-- create a character
-- create a promotional video
-- document how to contribute
-- add new ways to contribute
-- enhance the game
-- improve code quality
-- improve the UI of the game
-- solve an advanced issue
-- solve an issue
+Please have a look at the [Contributing file](CONTRIBUTING.md) for ways to contribute.
 
 ## Issue and Branch Policy
 

@@ -60,12 +60,28 @@ To make the game more interesting, please add background music.
 Please follow the [issue template for adding background music][issue-add-background-music]
 for doing so.
 
+### Add New Ways to Contribute
+
+You can add new of these entries to [this section][how-to-contribute].
+Please evaluate your idea like this:
+- If it can be done once and is completed, it is an issue, not a task.
+- If it can be done endlessly and is done once, it is a task.
+- If you mix both in a task, think about adding a task enablement issue.
+
+Then, open a [new issue][issue-new-way-to-contribute].
+
+
 ### Cooperate on a Pull Request
 [cooperate]: #cooperate-on-a-pull-request
 
-You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or collaborate together on branches of your forks. You can attribute a pull-request also to other people who helped you out or submit a pull-request where you and an other person contributed together.
+You can cooperate on pull requests with other contributors.
+You can use techniques like [pair programming](https://www.youtube.com/watch?v=vgkahOzFH2Q) or
+collaborate together on branches of your forks.
+You can attribute a pull-request also to other people who helped you out or submit a pull-request
+where you and an other person contributed together.
 
-
+You can comment on an existing [issue][issues] that you like to cooperate with specific people or
+ask in the [chat] if anyone would be interested in cooperating.
 
 
 
@@ -81,7 +97,9 @@ You can use techniques like [pair programming](https://www.youtube.com/watch?v=v
 [issue-new-feature]:            https://github.com/niccokunzmann/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
 [issue-new-bug]:                https://github.com/niccokunzmann/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
 [issue-add-a-dependency]:       https://github.com/niccokunzmann/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
-[issue-add-background-music]:   https://github.com/niccokunzmann/labyrinth/issues/new?template=add-background-music.md&title=New+Dependency:+fill+in+the+title+here
+[issue-add-background-music]:   https://github.com/niccokunzmann/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
+[issue-new-way-to-contribute]:  https://github.com/niccokunzmann/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
+[chat]:                         https://gitter.im/fossasia/labyrinth
 
 
 
@@ -89,8 +107,8 @@ You can use techniques like [pair programming](https://www.youtube.com/watch?v=v
 
 
 - add a functionality DONE
-- add a new feature
-- add background music
+- add a new feature DONE
+- add background music DONE
 - add music to tiles
 - add clues
 - cooperate on a pull request
