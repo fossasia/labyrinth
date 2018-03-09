@@ -105,6 +105,19 @@ Although you see only one level, you can reach the goal tile of this and other l
 You can add new levels to the labyrinth.
 Please open an [issue for adding a new level][issue-add-level] which will guide you through the process.
 
+### Create a Theme
+
+If you like to design a huge part of the labyrinth to one topic, you can do that.
+We call it a theme.
+Currently, we have the a theme of rooms and doors. There could be more themes of your imagination:
+pipes, riffs in the sea, bridges, Minecraft, ...
+This tasks takes several hours, maybe days.
+In the end you have an own labyrinth theme.
+If you like, you can embed it or create a new level for it.
+
+Please [open an issue to let us know about the progess and invite others to collaborate and give feedback][issue-add-theme].
+
+
 
 
 
@@ -122,7 +135,7 @@ Please open an [issue for adding a new level][issue-add-level] which will guide 
 [issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
 [issue-add-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
 [issue-add-level]:    https://github.com/fossasia/labyrinth/issues/new?template=add-level.md&title=New+Level:+fill+in+the+title+here
-
+[issue-add-theme]:    https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
