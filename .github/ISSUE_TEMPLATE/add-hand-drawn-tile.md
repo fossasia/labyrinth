@@ -13,6 +13,7 @@
 - [ ] Draw a floor.
 - [ ] Draw a wall.
 - [ ] Draw another wall or mirror the existing one.
+- [ ] Scan or photograph the pictures.
 - [ ] Add the pictures to the [tiles folder].
 - [ ] Edit the [tiles.js] file to include the new tile.
 - [ ] Place the tile in the labyrinth.
@@ -35,4 +36,5 @@
 
 [documentation about adding new tiles]: https://github.com/fossasia/labyrinth#how-to-add-new-tiles
 [tiles folder]: https://github.com/fossasia/labyrinth/tree/master/tiles
+[tiles.js]: https://github.com/fossasia/labyrinth/blob/master/js/tiles.js
 
