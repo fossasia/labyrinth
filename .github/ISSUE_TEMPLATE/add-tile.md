@@ -13,7 +13,7 @@
 - [ ] Draw a floor.
 - [ ] Draw a wall.
 - [ ] Draw another wall or mirror the existing one.
-- [ ] Scan or photograph the pictures.
+- [ ] Scan or photograph the pictures if they are hand-drawn.
 - [ ] Add the pictures to the [tiles folder].
 - [ ] Edit the [tiles.js] file to include the new tile.
 - [ ] Place the tile in the labyrinth.
@@ -22,7 +22,7 @@
 ### Closing Criteria
 <!-- When these criteria are met, we can close the issue. -->
 
-- [ ] The tile is added to the labyrinth and reachable. Please provide the path.
+- [ ] The tile is added to the labyrinth and reachable. Please provide the directions.
 - [ ] The tile is properly rendered.
 
 

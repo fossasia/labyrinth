@@ -91,11 +91,13 @@ Consider that the music should be your own.
 
 ### Create a Tile
 
+You can add small parts of the labyrinth for people to walk through it.
+Please open an issue if you like to [create a tile][issue-add-tile] to help us help you customize the game.
+
 ### Create a Hand-Drawn Tile
 
 The labyrinth not only contains computer-generated tiles but also tiles draw by hand.
 Please open an issue if you like to [create a hand-drawn tile][issue-add-hand-drawn-tile] to track the progress.
-
 
 
 
@@ -113,7 +115,8 @@ Please open an issue if you like to [create a hand-drawn tile][issue-add-hand-dr
 [issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
 [chat]:                         https://gitter.im/fossasia/labyrinth
 [issue-add-tile-sound]:         https://github.com/fossasia/labyrinth/issues/new?template=add-tile-sound.md&title=New+Tile+Sound:+fill+in+the+title+here
-[issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-hand-drawn-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
+[issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
+[issue-add-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
 
 
 ## General Contribution Practices
