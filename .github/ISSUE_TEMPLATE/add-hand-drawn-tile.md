@@ -9,16 +9,20 @@
 <!-- These are implementation hints that should help you complete the task.
      Please check them when you completed them and include the pull request link. -->
 
-- [ ] 
-- [ ] 
+- [ ] Read the [documentation about adding new tiles].
+- [ ] Draw a floor.
+- [ ] Draw a wall.
+- [ ] Draw another wall or mirror the existing one.
+- [ ] Add the pictures to the [tiles folder].
+- [ ] Edit the [tiles.js] file to include the new tile.
+- [ ] Place the tile in the labyrinth.
+- [ ] Check that you can not walk through walls in the code and the labyrinth.
 
 ### Closing Criteria
 <!-- When these criteria are met, we can close the issue. -->
 
-- [ ] A short description is in the [CONTRIBUTING.md] file.
-- [ ] There is an issue template or a link to the chat to coordinate
-  - [ ] The issue template has an implementation plan.
-  - [ ] The issue template has closing criteria.
+- [ ] The tile is added to the labyrinth and reachable. Please provide the path.
+- [ ] The tile is properly rendered.
 
 
 
@@ -29,7 +33,6 @@
 
 
 
-
-[CONTRIBUTING.md]: https://github.com/fossasia/labyrinth/tree/master/CONTRIBUTING.md
-[issue template]: https://github.com/fossasia/labyrinth/tree/master/.github/ISSUE_TEMPLATE
+[documentation about adding new tiles]: https://github.com/fossasia/labyrinth#how-to-add-new-tiles
+[tiles folder]: https://github.com/fossasia/labyrinth/tree/master/tiles
 
