@@ -124,7 +124,11 @@ All of them can be animated: footsteps walking around, birds flapping, light bul
 You can choose to create a new tile and animate it or
 [animate an existing tile][issue-animate-tile] either by modifying it or copying.
 
+### Create a Wall
 
+Many tiles use the same walls.
+You can make this game more divers by creating different kinds of walls.
+Please [open an issue][issue-create-wall] to share your ideas and let us know.
 
 
 [pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
@@ -142,8 +146,8 @@ You can choose to create a new tile and animate it or
 [issue-add-tile]:               https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
 [issue-add-level]:              https://github.com/fossasia/labyrinth/issues/new?template=add-level.md&title=New+Level:+fill+in+the+title+here
 [issue-add-theme]:              https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
-[issue-add-animated-tile]:      https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Animated+Tile:+fill+in+the+title+here
 [issue-animate-tile]:           https://github.com/fossasia/labyrinth/issues/new?template=animate-tile.md&title=Animate+Tile:+fill+in+the+title+here
+[issue-create-wall]:            https://github.com/fossasia/labyrinth/issues/new?template=add-wall.md&title=Create+Wall:+fill+in+the+title+here
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
