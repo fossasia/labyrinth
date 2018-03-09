@@ -117,6 +117,12 @@ If you like, you can embed it or create a new level for it.
 
 Please [open an issue to let us know about the progess and invite others to collaborate and give feedback][issue-add-theme].
 
+### Animate a Tile
+
+Tiles may consist of several parts.
+All of them can be animated: footsteps walking around, birds flapping, light bulb flickering, ...
+You can choose to create a new tile and animate it or
+[animate an existing tile][issue-animate-tile] either by modifying it or copying.
 
 
 
@@ -133,9 +139,11 @@ Please [open an issue to let us know about the progess and invite others to coll
 [chat]:                         https://gitter.im/fossasia/labyrinth
 [issue-add-tile-sound]:         https://github.com/fossasia/labyrinth/issues/new?template=add-tile-sound.md&title=New+Tile+Sound:+fill+in+the+title+here
 [issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
-[issue-add-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
-[issue-add-level]:    https://github.com/fossasia/labyrinth/issues/new?template=add-level.md&title=New+Level:+fill+in+the+title+here
-[issue-add-theme]:    https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
+[issue-add-tile]:               https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
+[issue-add-level]:              https://github.com/fossasia/labyrinth/issues/new?template=add-level.md&title=New+Level:+fill+in+the+title+here
+[issue-add-theme]:              https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
+[issue-add-animated-tile]:      https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Animated+Tile:+fill+in+the+title+here
+[issue-animate-tile]:           https://github.com/fossasia/labyrinth/issues/new?template=animate-tile.md&title=Animate+Tile:+fill+in+the+title+here
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices

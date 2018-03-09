@@ -233,6 +233,23 @@ Labyrinth needs your translations for make the game famous world-wide.
 - Now check all the pages from your internet browser and see it works.
 - Done, Push your changes and create a pull-request and have it merged.
 
+## How to Animate a Tile
+
+1. Open the SVG file in Inkscape.
+2. Click on the element you like to animate.
+3. Go to `Object` > `Object Properties` or press `Control`+`Shift`+`o`.
+4. Choose an Id for the object e.g. `asdf`. Please be aware that if you choose to animate a group, 
+   you may need to set the id again after you ungroup it.
+
+Now, you described what to animate.
+Here is what you can do to add an animation:
+
+1. Close Inkscape
+2. Edit the SVG-File with a Text-Editor
+3. Add the tag `<style>` to it and close it with `</style>`.
+4. In between, you can add animations, see [this tutorial](https://www.w3schools.com/css/css3_animations.asp) using your Id, e.g. `#asdf {}`
+5. When you animated something, you can view it in your browser.
+
 ## Hints for GCI students
 
 ### Adding animated tiles
@@ -240,7 +257,7 @@ Labyrinth needs your translations for make the game famous world-wide.
 - Download and install [Inkscape](https://inkscape.org/en/)
 - Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ...
-- While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/flappy-svg/issues).
+- While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/labyrinth/issues).
 - Create a pull-request and have it merged.
 
 ### Adding tiles for landscape
