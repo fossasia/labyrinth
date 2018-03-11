@@ -76,7 +76,6 @@ Please evaluate your idea like this:
 
 Then, open a [new issue][issue-new-way-to-contribute].
 
-
 ### Cooperate on a Pull Request
 [cooperate]: #cooperate-on-a-pull-request
 
@@ -136,6 +135,14 @@ Many tiles use the same walls.
 You can make this game more divers by creating different kinds of walls.
 Please [open an issue][issue-create-wall] to share your ideas and let us know.
 
+### Create a Promotional Video
+
+To promote the game and draw new contributors,
+you can create a promotional video about the game.
+Please [follow the guidelines][issue-promotional-video] to create this video.
+
+
+
 
 [pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
 [new-pr]:                       https://github.com/fossasia/labyrinth/pulls/new
@@ -155,6 +162,7 @@ Please [open an issue][issue-create-wall] to share your ideas and let us know.
 [issue-animate-tile]:           https://github.com/fossasia/labyrinth/issues/new?template=animate-tile.md&title=Animate+Tile:+fill+in+the+title+here
 [issue-create-wall]:            https://github.com/fossasia/labyrinth/issues/new?template=add-wall.md&title=Create+Wall:+fill+in+the+title+here
 [issue-add-character]:          https://github.com/fossasia/labyrinth/issues/new?template=add-character.md&title=New+Character:+fill+in+the+title+here
+[issue-promotional-video]:      https://github.com/fossasia/labyrinth/issues/new?template=add-promotional-video.md&title=New+Promotional+Video+by+...
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
