@@ -180,6 +180,12 @@ contribution to existing code while learning it.
 
 If you like to improve the code, please [open an issue][issue-code-quality] to let us know what you are working on and coordinate the effort.
 
+### Improve the User Interface of the Game
+
+We strive to have a pleasant user experience by providing a uniform design as stated in the
+UI Guidelines.
+If you find a mismatch or like to improve the UI, please [open an issue for this][issue-ui-bug] and describe the bug.
+
 
 
 [pr-template]:                  .github/PULL_REQUEST_TEMPLATE.md
@@ -187,7 +193,8 @@ If you like to improve the code, please [open an issue][issue-code-quality] to l
 [issues]:                       https://github.com/fossasia/labyrinth/issues
 [issues-bug]:                   https://github.com/fossasia/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
 [issue-new-feature]:            https://github.com/fossasia/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
-[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+Bug:+fill+in+the+title+here
+[issue-ui-bug]:                 https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=UI+Style:+fill+in+the+title+here
 [issue-add-a-dependency]:       https://github.com/fossasia/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
 [issue-add-background-music]:   https://github.com/fossasia/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
 [issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
