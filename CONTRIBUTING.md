@@ -33,6 +33,26 @@ When the game starts, you can choose your game character from a menu.
 You can add your own character to this menu.
 Please [open an issue which can guide you further on how to add a character][issue-add-character].
 
+### Solve an Issue
+
+We have an [issue tracker][issues] which lists issues of this game.
+You can choose to comment on an issue that you like to work on it.
+Please share your progress as soon as possible by [creating a pull request][create-pr].
+You do not have to ask for permission to solve an issue.
+You can just do it.
+To reduce duplicated work however, please coordinate in the issue with other people.
+If you do not get a response, feel free to solve the issue yourself.
+
+### Create First-Timer Issues
+
+In case the issue is easy and you are an advanced programmer, you can use the issue to
+guide new contributors by choosing not to solve it but telling that you like to help out and
+giving hints for a solution.
+
+You can use the [issue template][issue-first-timer] with the label [good first issue][good-first-issue]
+to indicate that this issue is suitable for beginners.
+Also, please describe in the issue what steps are to be taken to solve it (Implementation Plan) and what a solution looks like (Closing Criteria).
+
 ### Fix a Bug
 
 If you like to help improve the game or a bug caught your eye and you like to fix it:
@@ -183,6 +203,10 @@ If you like to improve the code, please [open an issue][issue-code-quality] to l
 [issue-promotional-video]:      https://github.com/fossasia/labyrinth/issues/new?template=add-promotional-video.md&title=New+Promotional+Video+by+...
 [issue-document-contribution]:  https://github.com/fossasia/labyrinth/issues/new?template=document-how-to-contribute.md&title=Document+Way+to+Contribute:+fill+in+the+title+here
 [issue-code-quality]:           https://github.com/fossasia/labyrinth/issues/new?template=improve-code-quality.md&title=Improve+Code+Quality:+fileXY
+[good-first-issue]:             https://github.com/fossasia/labyrinth/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
+[issue-first-timer]:            https://github.com/fossasia/labyrinth/issues/new?template=first-timer-issue.md&title=Good+First+Issue:+fill+in+title+here
+
+
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
