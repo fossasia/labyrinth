@@ -51,6 +51,27 @@ Please follow the [pull request template][pr-template] or change it.
 To inform other people about your work and to enable them to use our work,
 consider to create pull requests as soon as possible, after the first small commit.
 
+### Document How to Contribute
+
+Contribution is made easy through well documented APIs.
+You can find documentation on how to contribute here:
+- [CONTRIBUTING.md](CONTRIBUTING.md) summarizes ways to contribute and motivates them
+- [README.md](README.md) includes old documentation on how to go about contributions
+- [documentation](documentation) directory includes the files used to document how the
+  labyrinth can be modified.
+
+Please open [an issue to let us know where to improve the documentation][issue-document-contribution].
+
+### Add New Ways to Contribute
+
+You can add new of these entries to [this section][how-to-contribute].
+Please evaluate your idea like this:
+- If it can be done once and is completed, it is an issue, not a task.
+- If it can be done endlessly and is done once, it is a task.
+- If you mix both in a task, think about adding a task enablement issue.
+
+Then, open a [new issue][issue-new-way-to-contribute].
+
 ### Add a Dependency
 
 To make the game more interesting, please add a place which can only be entered
@@ -65,16 +86,6 @@ You will be guided from there.
 To make the game more interesting, please add background music.
 Please follow the [issue template for adding background music][issue-add-background-music]
 for doing so.
-
-### Add New Ways to Contribute
-
-You can add new of these entries to [this section][how-to-contribute].
-Please evaluate your idea like this:
-- If it can be done once and is completed, it is an issue, not a task.
-- If it can be done endlessly and is done once, it is a task.
-- If you mix both in a task, think about adding a task enablement issue.
-
-Then, open a [new issue][issue-new-way-to-contribute].
 
 ### Cooperate on a Pull Request
 [cooperate]: #cooperate-on-a-pull-request
@@ -163,6 +174,7 @@ Please [follow the guidelines][issue-promotional-video] to create this video.
 [issue-create-wall]:            https://github.com/fossasia/labyrinth/issues/new?template=add-wall.md&title=Create+Wall:+fill+in+the+title+here
 [issue-add-character]:          https://github.com/fossasia/labyrinth/issues/new?template=add-character.md&title=New+Character:+fill+in+the+title+here
 [issue-promotional-video]:      https://github.com/fossasia/labyrinth/issues/new?template=add-promotional-video.md&title=New+Promotional+Video+by+...
+[issue-document-contribution]:  https://github.com/fossasia/labyrinth/issues/new?template=document-how-to-contribute.md&title=Document+Way+to+Contribute:+fill+in+the+title+here
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
