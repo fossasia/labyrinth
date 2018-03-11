@@ -152,6 +152,13 @@ To promote the game and draw new contributors,
 you can create a promotional video about the game.
 Please [follow the guidelines][issue-promotional-video] to create this video.
 
+### Improve the Code Quality
+
+Improving the code quality makes it easier to add new code which is flawless.
+This is also a traning for you to write good code and to make a meaningful
+contribution to existing code while learning it.
+
+If you like to improve the code, please [open an issue][issue-code-quality] to let us know what you are working on and coordinate the effort.
 
 
 
@@ -175,6 +182,7 @@ Please [follow the guidelines][issue-promotional-video] to create this video.
 [issue-add-character]:          https://github.com/fossasia/labyrinth/issues/new?template=add-character.md&title=New+Character:+fill+in+the+title+here
 [issue-promotional-video]:      https://github.com/fossasia/labyrinth/issues/new?template=add-promotional-video.md&title=New+Promotional+Video+by+...
 [issue-document-contribution]:  https://github.com/fossasia/labyrinth/issues/new?template=document-how-to-contribute.md&title=Document+Way+to+Contribute:+fill+in+the+title+here
+[issue-code-quality]:           https://github.com/fossasia/labyrinth/issues/new?template=improve-code-quality.md&title=Improve+Code+Quality:+fileXY
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
