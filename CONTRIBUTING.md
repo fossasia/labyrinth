@@ -27,6 +27,12 @@ In case it was, you can collaborate, leave a comment and get into discussion.
 
 If you have a new idea about how to improve the game, please open [an issue for your feature request][issue-new-feature].
 
+### Add a Character
+
+When the game starts, you can choose your game character from a menu.
+You can add your own character to this menu.
+Please [open an issue which can guide you further on how to add a character][issue-add-character].
+
 ### Fix a Bug
 
 If you like to help improve the game or a bug caught your eye and you like to fix it:
@@ -148,6 +154,7 @@ Please [open an issue][issue-create-wall] to share your ideas and let us know.
 [issue-add-theme]:              https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
 [issue-animate-tile]:           https://github.com/fossasia/labyrinth/issues/new?template=animate-tile.md&title=Animate+Tile:+fill+in+the+title+here
 [issue-create-wall]:            https://github.com/fossasia/labyrinth/issues/new?template=add-wall.md&title=Create+Wall:+fill+in+the+title+here
+[issue-add-character]:          https://github.com/fossasia/labyrinth/issues/new?template=add-character.md&title=New+Character:+fill+in+the+title+here
 
 ## General Contribution Practices
 [general-practices]: #general-contribution-practices
