@@ -27,6 +27,32 @@ In case it was, you can collaborate, leave a comment and get into discussion.
 
 If you have a new idea about how to improve the game, please open [an issue for your feature request][issue-new-feature].
 
+### Add a Character
+
+When the game starts, you can choose your game character from a menu.
+You can add your own character to this menu.
+Please [open an issue which can guide you further on how to add a character][issue-add-character].
+
+### Solve an Issue
+
+We have an [issue tracker][issues] which lists issues of this game.
+You can choose to comment on an issue that you like to work on it.
+Please share your progress as soon as possible by [creating a pull request][create-pr].
+You do not have to ask for permission to solve an issue.
+You can just do it.
+To reduce duplicated work however, please coordinate in the issue with other people.
+If you do not get a response, feel free to solve the issue yourself.
+
+### Create First-Timer Issues
+
+In case the issue is easy and you are an advanced programmer, you can use the issue to
+guide new contributors by choosing not to solve it but telling that you like to help out and
+giving hints for a solution.
+
+You can use the [issue template][issue-first-timer] with the label [good first issue][good-first-issue]
+to indicate that this issue is suitable for beginners.
+Also, please describe in the issue what steps are to be taken to solve it (Implementation Plan) and what a solution looks like (Closing Criteria).
+
 ### Fix a Bug
 
 If you like to help improve the game or a bug caught your eye and you like to fix it:
@@ -45,6 +71,27 @@ Please follow the [pull request template][pr-template] or change it.
 To inform other people about your work and to enable them to use our work,
 consider to create pull requests as soon as possible, after the first small commit.
 
+### Document How to Contribute
+
+Contribution is made easy through well documented APIs.
+You can find documentation on how to contribute here:
+- [CONTRIBUTING.md](CONTRIBUTING.md) summarizes ways to contribute and motivates them
+- [README.md](README.md) includes old documentation on how to go about contributions
+- [documentation](documentation) directory includes the files used to document how the
+  labyrinth can be modified.
+
+Please open [an issue to let us know where to improve the documentation][issue-document-contribution].
+
+### Add New Ways to Contribute
+
+You can add new of these entries to [this section][how-to-contribute].
+Please evaluate your idea like this:
+- If it can be done once and is completed, it is an issue, not a task.
+- If it can be done endlessly and is done once, it is a task.
+- If you mix both in a task, think about adding a task enablement issue.
+
+Then, open a [new issue][issue-new-way-to-contribute].
+
 ### Add a Dependency
 
 To make the game more interesting, please add a place which can only be entered
@@ -60,17 +107,6 @@ To make the game more interesting, please add background music.
 Please follow the [issue template for adding background music][issue-add-background-music]
 for doing so.
 
-### Add New Ways to Contribute
-
-You can add new of these entries to [this section][how-to-contribute].
-Please evaluate your idea like this:
-- If it can be done once and is completed, it is an issue, not a task.
-- If it can be done endlessly and is done once, it is a task.
-- If you mix both in a task, think about adding a task enablement issue.
-
-Then, open a [new issue][issue-new-way-to-contribute].
-
-
 ### Cooperate on a Pull Request
 [cooperate]: #cooperate-on-a-pull-request
 
@@ -83,10 +119,72 @@ where you and an other person contributed together.
 You can comment on an existing [issue][issues] that you like to cooperate with specific people or
 ask in the [chat] if anyone would be interested in cooperating.
 
+### Add Sound to Tiles
 
+When you enter a tile, the game can play sounds.
+Please follow the [issue template for tile music][issue-add-tile-sound] to add music to certain tiles on entering.
+Consider that the music should be your own.
 
+### Create a Tile
 
+You can add small parts of the labyrinth for people to walk through it.
+Please open an issue if you like to [create a tile][issue-add-tile] to help us help you customize the game.
 
+### Create a Hand-Drawn Tile
+
+The labyrinth not only contains computer-generated tiles but also tiles draw by hand.
+Please open an issue if you like to [create a hand-drawn tile][issue-add-hand-drawn-tile] to track the progress.
+
+### Create a New Level
+
+Although you see only one level, you can reach the goal tile of this and other levels to switch between the levels.
+You can add new levels to the labyrinth.
+Please open an [issue for adding a new level][issue-add-level] which will guide you through the process.
+
+### Create a Theme
+
+If you like to design a huge part of the labyrinth to one topic, you can do that.
+We call it a theme.
+Currently, we have the a theme of rooms and doors. There could be more themes of your imagination:
+pipes, riffs in the sea, bridges, Minecraft, ...
+This tasks takes several hours, maybe days.
+In the end you have an own labyrinth theme.
+If you like, you can embed it or create a new level for it.
+
+Please [open an issue to let us know about the progess and invite others to collaborate and give feedback][issue-add-theme].
+
+### Animate a Tile
+
+Tiles may consist of several parts.
+All of them can be animated: footsteps walking around, birds flapping, light bulb flickering, ...
+You can choose to create a new tile and animate it or
+[animate an existing tile][issue-animate-tile] either by modifying it or copying.
+
+### Create a Wall
+
+Many tiles use the same walls.
+You can make this game more divers by creating different kinds of walls.
+Please [open an issue][issue-create-wall] to share your ideas and let us know.
+
+### Create a Promotional Video
+
+To promote the game and draw new contributors,
+you can create a promotional video about the game.
+Please [follow the guidelines][issue-promotional-video] to create this video.
+
+### Improve the Code Quality
+
+Improving the code quality makes it easier to add new code which is flawless.
+This is also a traning for you to write good code and to make a meaningful
+contribution to existing code while learning it.
+
+If you like to improve the code, please [open an issue][issue-code-quality] to let us know what you are working on and coordinate the effort.
+
+### Improve the User Interface of the Game
+
+We strive to have a pleasant user experience by providing a uniform design as stated in the
+UI Guidelines.
+If you find a mismatch or like to improve the UI, please [open an issue for this][issue-ui-bug] and describe the bug.
 
 
 
@@ -95,11 +193,25 @@ ask in the [chat] if anyone would be interested in cooperating.
 [issues]:                       https://github.com/fossasia/labyrinth/issues
 [issues-bug]:                   https://github.com/fossasia/labyrinth/issues?q=is%3Aissue+is%3Aopen+label%3Abug
 [issue-new-feature]:            https://github.com/fossasia/labyrinth/issues/new?template=request-a-feature.md&labels=new+featuretitle=Add+a+new+feature:+fill+in+the+title+here
-[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+bug:+fill+in+the+title+here
+[issue-new-bug]:                https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=Found+Bug:+fill+in+the+title+here
+[issue-ui-bug]:                 https://github.com/fossasia/labyrinth/issues/new?template=report-a-bug.md&labels=bug&title=UI+Style:+fill+in+the+title+here
 [issue-add-a-dependency]:       https://github.com/fossasia/labyrinth/issues/new?template=add-a-dependency.md&title=New+Dependency:+fill+in+the+title+here
 [issue-add-background-music]:   https://github.com/fossasia/labyrinth/issues/new?template=add-background-music.md&title=New+Background+Music:+fill+in+the+title+here
 [issue-new-way-to-contribute]:  https://github.com/fossasia/labyrinth/issues/new?template=new-way-to-contribute.md&title=New+Background+Music:+fill+in+the+title+here
 [chat]:                         https://gitter.im/fossasia/labyrinth
+[issue-add-tile-sound]:         https://github.com/fossasia/labyrinth/issues/new?template=add-tile-sound.md&title=New+Tile+Sound:+fill+in+the+title+here
+[issue-add-hand-drawn-tile]:    https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Hand-Drawn+Tile:+fill+in+the+title+here
+[issue-add-tile]:               https://github.com/fossasia/labyrinth/issues/new?template=add-tile.md&title=New+Tile:+fill+in+the+title+here
+[issue-add-level]:              https://github.com/fossasia/labyrinth/issues/new?template=add-level.md&title=New+Level:+fill+in+the+title+here
+[issue-add-theme]:              https://github.com/fossasia/labyrinth/issues/new?template=add-theme.md&title=New+Theme:+fill+in+the+title+here
+[issue-animate-tile]:           https://github.com/fossasia/labyrinth/issues/new?template=animate-tile.md&title=Animate+Tile:+fill+in+the+title+here
+[issue-create-wall]:            https://github.com/fossasia/labyrinth/issues/new?template=add-wall.md&title=Create+Wall:+fill+in+the+title+here
+[issue-add-character]:          https://github.com/fossasia/labyrinth/issues/new?template=add-character.md&title=New+Character:+fill+in+the+title+here
+[issue-promotional-video]:      https://github.com/fossasia/labyrinth/issues/new?template=add-promotional-video.md&title=New+Promotional+Video+by+...
+[issue-document-contribution]:  https://github.com/fossasia/labyrinth/issues/new?template=document-how-to-contribute.md&title=Document+Way+to+Contribute:+fill+in+the+title+here
+[issue-code-quality]:           https://github.com/fossasia/labyrinth/issues/new?template=improve-code-quality.md&title=Improve+Code+Quality:+fileXY
+[good-first-issue]:             https://github.com/fossasia/labyrinth/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22
+[issue-first-timer]:            https://github.com/fossasia/labyrinth/issues/new?template=first-timer-issue.md&title=Good+First+Issue:+fill+in+title+here
 
 
 

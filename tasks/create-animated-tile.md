@@ -11,7 +11,7 @@ Requirements:
 - Download and install [Inkscape](http://inkscape.org/)
 - Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
 - Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ... 
-- While editing the game you may have ideas for improvement - add them as [github issue](https://github.com/fossasia/flappy-svg/issues).
+- While editing the game you may have ideas for improvement - add them as [github issue](https://github.com/fossasia/labyrinth/issues).
 - create a pull-request and have it merged and reviewed
 
 Expected Outcome:

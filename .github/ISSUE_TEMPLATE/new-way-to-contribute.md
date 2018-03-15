@@ -16,16 +16,20 @@
 
 - [ ] Edit the [CONTRIBUTING.md] and add a new short motivation about how to contribute again.
 - [ ] Write how to coordinate with other contributors. I.e. an [issue template] or the chat.
+- [ ] Link relevant documentation in the issue template.
 
 ### Closing Criteria
 <!-- When these criteria are met, we can close the issue. -->
 
-- [ ] A shot description is in the [CONTRIBUTING.md] file.
+- [ ] A short description is in the [CONTRIBUTING.md] file.
 - [ ] There is an issue template or a link to the chat to coordinate
   - [ ] The issue template has an implementation plan.
   - [ ] The issue template has closing criteria.
 
 
+### Hints
+
+- As a follow-up issue, you may want to [document how to contribute].
 
 
 
@@ -37,4 +41,5 @@
 
 [CONTRIBUTING.md]: https://github.com/fossasia/labyrinth/tree/master/CONTRIBUTING.md
 [issue template]: https://github.com/fossasia/labyrinth/tree/master/.github/ISSUE_TEMPLATE
+[document how to contribute]: https://github.com/fossasia/labyrinth/tree/master/CONTRIBUTING.md#document-how-to-contribute
 
