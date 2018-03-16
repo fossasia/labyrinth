@@ -1,5 +1,5 @@
+<h1 align="center"><center><img src="images/logos/inline_color.png" height="100px"></center></h1>
 
-<img src="images/logos/inline_color.png" height="100px">
 
 [![Join the chat at https://gitter.im/fossasia/labyrinth](https://badges.gitter.im/fossasia/labyrinth.svg)](https://gitter.im/fossasia/labyrinth?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://travis-ci.org/fossasia/labyrinth.svg?branch=master)](https://travis-ci.org/fossasia/labyrinth)
@@ -20,8 +20,6 @@
 - [**How to add a new character**](#how-to-add-a-new-character)
 - [**How to add a new badge**](#how-to-add-a-new-badge)
 - [**How to add new theme**](#how-to-add-new-theme)
-- [**Hints for GCI students**](#hints-for-gci-students)
-- [**Solve an Issue**](#solve-an-issue)
 - [**UI identity guideline**](#ui-identity-guideline)
 - [**Videos about the Labyrinth**](#videos-by-students)
 - [**Maintainers**](#maintainers)
@@ -249,57 +247,6 @@ Here is what you can do to add an animation:
 3. Add the tag `<style>` to it and close it with `</style>`.
 4. In between, you can add animations, see [this tutorial](https://www.w3schools.com/css/css3_animations.asp) using your Id, e.g. `#asdf {}`
 5. When you animated something, you can view it in your browser.
-
-## Hints for GCI students
-
-### Adding animated tiles
-
-- Download and install [Inkscape](https://inkscape.org/en/)
-- Create a tile with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
-- Use CSS to animate the tile in a way: Bird flapping/oven cooking/water dropping, ...
-- While editing the game you may have ideas for improvement - add them as github [issue](https://github.com/fossasia/labyrinth/issues).
-- Create a pull-request and have it merged.
-
-### Adding tiles for landscape
-
-- Download and install [Inkscape](https://inkscape.org/en/).
-- Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges.
-- Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyinth.
-- Create a pull-request and have it merged.
-
-### Creating a hand-drawn landscape
-
-- Download and install [Inkscape](https://inkscape.org/en/)
-- Create tiles with the same dimensions as those which are there. Ways of his tile must end at the middle of the edges. These tiles must be hand-drawn. A work-flow could be:
-	1. Draw one tile on a sheet of paper
-	2. Scan it or photograph it
-	3. Make the unnecessary pixels/sections transparent - you can do that by using a PNG file or by clipping in Inkscape.
-- Add the tiles to the labyrinth, so they are reachable. Please create a small portion of the labyrinth with them to make it more exciting. You may get inspiration from other parts of the labyrinth.
-- Create a pull-request and have it merged.
-
-### Add a new Pull request after solving a issue
-
-- Go to the labyrinth [repository](https://github.com/fossasia/labyrinth).
-- Go to the [issue tab](https://github.com/fossasia/labyrinth/issues) and find a issue that you want to resolve or improve.
-- Resolve/improve that issue and push those changes into your repo.
-- Copy the issue number from issue tab.
-- Go to your forked repository.
-- Go to Pull Reqest tab.
-- Click on New pull request.
-- See there all files changes are ready or not(If not not follow next steps, please add your changes before proceed).
-- Select base fork and head fork if it isn't not selected automatically.
-- Click on Create Pull request.
-- Change PR topic and message as instructions on it.
-- Then click on create pull request.
-<b>Now your pull request is ready!</b> See on [Pull requests](https://github.com/fossasia/labyrinth/pulls)
-
-Solve an Issue
---------------
-The FOSSASIA Labyrinth allows you to contribute parts to a huge labyrinth. Please improve the game by solving an issue.
-
-- Comment on an issue that you want to do it. If you have solved several tasks on this game before, you can not claim tasks that are too easy for you because we need them to give others an easy start.
-- Get assigned to the issue you work on, so other people coordinate with you. Being assigned an issue does not mean you can block progress by not answering.
-
 
 ## UI identity guideline
 [Click here to read the full UI guideline](https://github.com/fossasia/labyrinth/UI_Identity.md)
