@@ -443,10 +443,14 @@ ul.rate-game li{
 }
 
 i.fa.fa-thumbs-up.fa-5x:hover{
-  color: #429cd6 ;
+  color: #5f70ed;
+  transition: 0.3s;
+  cursor: pointer;
 }
 i.fa.fa-thumbs-down.fa-5x:hover{
-  color:red;
+  color:#c85252;
+  transition: 0.3s;
+  cursor: pointer;
 }
 .thanks {
   transition: 0.3s;
