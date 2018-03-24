@@ -480,10 +480,6 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   box-sizing: initial;
 }
 
-.statistics .stats-btn {
-  background: #47a883;
-}
-
 .stats-btn ul.stats-ul li:hover{
   background-color: rgba(0,0,0,0.2);
 }
@@ -493,8 +489,9 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   text-align: left;
   padding: 10px 0;
   text-align: center;
-  border-top: 2px solid #0e8664;
+  border: 2px solid #0e8664;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /* Media Quries for Responsive Design */
