@@ -62,24 +62,9 @@ div.social-container {
 
 i.fa {background: none !important;}
 
-i.fa.fa-step-backward:hover{
-  color: black;
-}
-
-i.fa.fa-play:hover{
-  color:blue;
-}
-
-i.fa.fa-pause:hover{
-  color: red;
-}
-
-i.fa.fa-step-forward:hover{
-  color: black;
-}
-
-i.fa.fa-times:hover {
-  color: red;
+i.fa.fa-play:hover, i.fa.fa-pause:hover, i.fa.fa-step-forward:hover, i.fa.fa-times:hover, i.fa.fa-step-backward:hover {
+  color:#0e8664;
+  transition: 0.3s;
 }
 
 .languagepicker.roundborders.large .hover-black:hover {
@@ -513,4 +498,8 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   .right.hide-on-med-and-down li:nth-child(2) {
     display: none;
   }
+}
+
+.play-pause-div {
+  bottom: 90px;
 }

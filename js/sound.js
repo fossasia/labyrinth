@@ -198,3 +198,13 @@ function playAudio(audio, licenseNum) {
     audioPlay.play();
     $("#tileLicense").html(creativeCommonsLicense[licenseNum - 1]);
 }
+
+function playPauseFloat() {
+    if(backgroundPlay.paused === true) {
+        startBackgroundAudio();
+        document.getElementById("play-pause-float").innerHTML = '<i class="fa fa-pause play-pause-float-i"></i>'; 
+    } else {
+        stopBackgroundAudio();
+        document.getElementById("play-pause-float").innerHTML = '<i class="fa fa-play play-pause-float-i"></i>';
+    }
+}
