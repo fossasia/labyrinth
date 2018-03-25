@@ -148,6 +148,8 @@ function startBackgroundAudio() {
     updateLegalBackground();
     console.log(backgroundPlay);
     backgroundPlay.play();
+    document.getElementById("play-pause-float").children[0].classList.remove("fa-play");
+    document.getElementById("play-pause-float").children[0].classList.add("fa-pause");
     togglePlay();
 }
 
@@ -175,6 +177,8 @@ function previousBackgroundAudio() {
 
 function stopBackgroundAudio() {
     backgroundPlay.pause();
+    document.getElementById("play-pause-float").children[0].classList.remove("fa-pause");
+    document.getElementById("play-pause-float").children[0].classList.add("fa-play");
     togglePause();
 }
 
@@ -202,9 +206,7 @@ function playAudio(audio, licenseNum) {
 function playPauseFloat() {
     if(backgroundPlay.paused === true) {
         startBackgroundAudio();
-        document.getElementById("play-pause-float").innerHTML = '<i class="fa fa-pause play-pause-float-i"></i>'; 
     } else {
         stopBackgroundAudio();
-        document.getElementById("play-pause-float").innerHTML = '<i class="fa fa-play play-pause-float-i"></i>';
     }
 }
