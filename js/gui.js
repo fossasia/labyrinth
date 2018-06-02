@@ -67,7 +67,10 @@ function choosePlayerCharacter(player) {
     /* This is a way to get data quickly from swal */
     inputValidator: function(value) {
       player.changeCharacter(value);
-    }
+    },
+    allowOutsideClick: false,
+    allowEscapeKey: true,
+    allowEnterKey: true,
   });
 }
 
