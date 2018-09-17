@@ -142,7 +142,7 @@ and saved as a svg file with the specified dimensions.
 After creating characters add them to the `characters` folder.
 
 Now, we will move on to the javascript part.
-Each character has only difference in it's appearance and hence can be injected via putting it's name and location to the svg file in `gui.js`.
+Each character has only difference in it's appearance and hence can be injected via putting its name and location to the svg file in `gui.js`.
 Follow the format while adding to gui.js (To be precise add it to the swal box input values collection i.e, into the `inputOptionsPromise` variable
 under the `resolve` sub class.)
 ```javascript
