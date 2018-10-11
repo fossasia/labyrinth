@@ -24,11 +24,15 @@ h1, h2, h3 {
   height: 80px;
   width: auto;
   padding-bottom: 7px;
-  
+
 }
 
 .card-title, a {
   font-family: 'Quicksand';
+}
+
+.navbar-fixed {
+  z-index: 1500;
 }
 
 .navbar-fixed nav ul a {
