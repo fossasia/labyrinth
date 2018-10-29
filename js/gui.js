@@ -58,7 +58,7 @@ function choosePlayerCharacter(player) {
       "characters/deathnote.svg": "Death Note",
       // added character cowboy
       "characters/cowboy.png": "Cowboy",
-	  "characters/pixelthumbsup.svg": "Thumbs Up",
+	  "characters/pixelthumbsup.png": "Thumbs Up",
     });
   });
   swal({
