@@ -6,3 +6,5 @@ script:
   - scripts/check-javascript-syntax-errors.sh
   - scripts/check-html-syntax-errors.sh
   
+after_success:
+- bash ./deploy.sh 
