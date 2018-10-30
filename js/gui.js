@@ -41,6 +41,7 @@ function choosePlayerCharacter(player) {
       "characters/santa.svg": "Santa Clause",
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
+      "characters/joker.svg": "Joker",
 
 	  //added Character from RuKoBe
       "characters/OwnChar.png": "OwnChar",
