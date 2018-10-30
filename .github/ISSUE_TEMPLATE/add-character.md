@@ -30,6 +30,6 @@
 
 [documentation about adding characters]: https://github.com/fossasia/labyrinth#how-to-add-a-new-character
 [characters folder]: https://github.com/fossasia/labyrinth/tree/master/characters
-[gio.js]: https://github.com/fossasia/labyrinth/blob/master/js/gui.js#L47
+[gui.js]: https://github.com/fossasia/labyrinth/blob/master/js/gui.js#L47
 [Inkscape]: https://inkscape.org/
 
