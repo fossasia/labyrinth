@@ -967,7 +967,7 @@ const door = {
         },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/yellowright.svg");
           this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
         },
         visit: function() {
@@ -1074,7 +1074,7 @@ const door = {
         },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/humptywall.svg");
           this.ground = this.createImage("tiles/animations/winter1.svg");
         },
         visit: function() {
