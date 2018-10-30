@@ -59,6 +59,7 @@ function choosePlayerCharacter(player) {
       "characters/deathnote.svg": "Death Note",
       // added character cowboy
       "characters/cowboy.png": "Cowboy",
+      "characters/ant.svg": "The AntMan",
       "characters/fireman.svg": "Fire Man",
     });
   });
