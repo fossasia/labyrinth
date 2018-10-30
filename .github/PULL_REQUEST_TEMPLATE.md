@@ -4,7 +4,7 @@
 - [ ] Read and understood [see CONTRIBUTING.md](https://github.com/fossasia/labyrinth/blob/master/CONTRIBUTING.md)
 - [ ] Included a preview link and screenshot showing after and before the changes.
 - [ ] Included a description of change below.
-- [ ] Squashed the commits.
+- [ ] Tried to [squash the commits][squash].
 
 ### Changes done in this Pull Request
 
@@ -32,3 +32,5 @@ If you have not fixed some issue(s) completely but only some of the step(s) in i
 <!-- If any -->
 
 
+
+[squash]: https://stackoverflow.com/questions/5189560/squash-my-last-x-commits-together-using-git
