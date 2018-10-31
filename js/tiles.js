@@ -320,7 +320,7 @@ const door = {
 	
 	sea: Object.assign({}, OpenDoors, {
 		createImages: function(){
-			this.wallTop = this.createImage("tiles/rooms/door/seasidewalltop.svg");
+			this.wallTop = this.createImage("tiles/rooms/door/seasidedoortop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/seasidedoor.svg");
             this.ground = this.createImage("tiles/rooms/floor/caro.svg");
 		},
