@@ -340,6 +340,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/orchestra.svg");
         },
         visit: function() {
+            playAudio("saarthakchats/newtracker.wav", 1);
             if (player.inventory.has('Guitar')) {
                 playAudio("guitar_strings.mp3");
                 alertSuccess("Wow, an awesome solo perfomance, keep it up", "Your guitar skills looks fantastic");
