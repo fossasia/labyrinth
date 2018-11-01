@@ -61,7 +61,8 @@ function choosePlayerCharacter(player) {
       "characters/cowboy.png": "Cowboy",
       "characters/ant.svg": "The AntMan",
       "characters/fireman.svg": "Fire Man",
-      "characters/Archer.png": "Archer"
+      "characters/Archer.png": "Archer",
+      "characters/prorammer.png" : "Programmer"
     });
   });
   swal({
