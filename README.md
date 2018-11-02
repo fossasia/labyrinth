@@ -7,9 +7,9 @@
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
 
-[**Play Now**](http://labyrinth-live.surge.sh/) |
-[**Learn How to Play**](http://lsppublicschool.org/projectx/labyrinth/howtoplay.html) |
-[**Documentation**](http://www.lsppublicschool.org/projectx/labyrinth/documentation/)
+[**Play Now**](http://labyrinth-game.surge.sh/) |
+[**Learn How to Play**](http://labyrinth-game.surge.sh/howtoplay.html) |
+[**Documentation**](http://labyrinth-game.surge.sh/documentation/)
 
 ## Content Outline
 - [**Motivation**](#motivation)
