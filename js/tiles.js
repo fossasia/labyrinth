@@ -324,7 +324,17 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/seasidedoor.svg");
             this.ground = this.createImage("tiles/rooms/floor/caro.svg");
 		},
-	}),
+    }),
+    
+    mountains: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {return false;},
+        canLeaveToTheRight() {return false;},
+        createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/mountainsright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
+        },
+      }),
     
 	black: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -1781,13 +1791,5 @@ const TileMesh = {
 
     }),
 
-    mountains: Object.assign({}, OpenDoors, {
-        canEnterFromTheRight() {return false;},
-        canLeaveToTheRight() {return false;},
-        createImages: function() {
-          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/mountainsright.svg");
-          this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
-        },
-      }),
+
 };
