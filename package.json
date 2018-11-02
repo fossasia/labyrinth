@@ -1,0 +1,17 @@
+{
+  "name": "@Labyrinth/labyrinth",
+  "version": "0.1.0",
+  "description": "The Labyrinth Game",
+  "repository": "https://github.com/yashkumarverma/labyrinth",
+  "license": "MIT",
+  "private": false,
+  "author": "Yash Kumar Verma <kenneth@surge.sh> (http://kennethormandy.com)",
+  "devDependencies": {
+    "mocha":"2.2.5",
+    "surge": "latest"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha",
+    "compile": "echo \"If you’re using a static site generator or other compilation step, you could run it here!\""
+  }
+}

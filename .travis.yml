@@ -1,8 +1,21 @@
 sudo: required
 dist: trusty
-language: node_js
 
+language: node_js
+node_js:
+  - "node"
+
+#for faster builds
+cache:
+    bundler: true
+    directories:
+    - node_modules
+
+#quality checks
 script:
   - scripts/check-javascript-syntax-errors.sh
   - scripts/check-html-syntax-errors.sh
   
+# deploy pr 
+after_success:
+- bash ./deploy.sh 

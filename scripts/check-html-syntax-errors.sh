@@ -11,7 +11,8 @@ cd "`dirname \"$0\"`"
   cd ..
   allFine="true"
   for file in `find`; do
-    if ! echo "$file" | grep -Eq '\.html'
+    if ! echo "$file" | grep -Eq '\.html' || \
+       echo "$file" | grep -Eq '/node_modules/'
     then
       continue
     fi
