@@ -8,10 +8,9 @@
 
 ### Changes done in this Pull Request
 
-- If your change will be reflected on the website, please provide a **Test-Link**
-  <!-- Here you can add your preview link. Please replace "USERNAME" with your GitHub username 
-       and "master" with the branch you are working on. -->
-  http://rawgit.com/USERNAME/labyrinth/master/index.html
+- View my work at https://pr-{PULL-REQUEST-NUMBER}-fossasia-labyrinth.surge.sh
+<!-- Here you can add your preview link. Please replace "PULL-REQUEST-NUMBER" with your PR number -->
+
 
 <!-- If you fully fixed some issue(s), 
 please insert the issue number after the #.
