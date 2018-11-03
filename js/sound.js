@@ -113,6 +113,13 @@ const backgroundAudio = [
         author: "Anirudh Chauhan",
         legalNotice: "Sound by Anirudh Chauhan",
     },
+    {
+        filename: "audio/saarthakchats/SuperFunk007.wav",
+        backgroundSongName: "Super Funk",
+        author: "Saarthak Chaturvedi",
+        legalNotice: "Sound by Saarthak Chaturvedi",
+        link: "http://github.com/saarthakchats",
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
