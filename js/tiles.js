@@ -330,9 +330,9 @@ const door = {
         canEnterFromTheRight() {return false;},
         canLeaveToTheRight() {return false;},
         createImages: function() {
-          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/mountainsright.svg");
-          this.ground = this.createImage("tiles/rooms/floor/winter2.svg");
+          this.wallTop = this.createImage("tiles/rooms/door/mountainsDoor.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/mountainsRight.svg");
+          this.ground = this.createImage("tiles/rooms/floor/mountainsFloor.svg");
         },
       }),
     
