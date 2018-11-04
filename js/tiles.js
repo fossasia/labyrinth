@@ -335,6 +335,15 @@ const door = {
 
         },
     }),
+    	blood: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
+            this.ground = this.createImage("tiles/rooms/floor/texture.svg");
+            alertInfo("As red as bloo-, oh wait, this is blood.", "");
+
+        },
+    }),
     drawn: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
