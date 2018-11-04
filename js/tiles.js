@@ -337,8 +337,8 @@ const door = {
     }),
     	blood: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
-            this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/redDoor.svg");
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
 
         },
