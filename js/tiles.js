@@ -336,6 +336,8 @@ const door = {
         },
     }),
     	blood: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {return false;},
+        canLeaveToTheRight() {return false;},
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
             this.wallRight = this.createImage("tiles/rooms/door/redDoor.svg");
