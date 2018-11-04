@@ -341,7 +341,7 @@ const door = {
             },
             CanLeaveFromTheRight() {
                 return false;
-            }
+            },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
