@@ -345,6 +345,20 @@ const door = {
 
         },
     }),
+    	blood: Object.assign({}, OpenDoors, {
+            CanEnterFromTheRight() {
+                return false;
+            },
+            CanLeaveFromTheRight() {
+                return false;
+            },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
+            this.ground = this.createImage("tiles/rooms/floor/blood.svg");
+
+        },
+    }),
     drawn: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
