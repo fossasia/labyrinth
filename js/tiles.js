@@ -340,7 +340,7 @@ const door = {
         canLeaveToTheRight() {return false;},
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/redWall.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/redWall.svg");
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
 
         },
