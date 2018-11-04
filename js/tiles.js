@@ -346,7 +346,6 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
-            alertInfo("As red as bloo-, oh wait, this is blood.", "");
 
         },
     }),
