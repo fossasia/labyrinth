@@ -67,16 +67,16 @@ i.fa.fa-play:hover, i.fa.fa-pause:hover, i.fa.fa-step-forward:hover, i.fa.fa-tim
   transition: 0.3s;
 }
 
-.right.hide-on-med-and-down li[id="menu"]{
+.right.hide-on-med-and-down li[class="menu"]{
     padding-top: 20px;
     height: 100px;
 }
 
-.right.hide-on-med-and-down li[id="menu"],.stats-ul li[id="menu"],.hover-black{
+.right.hide-on-med-and-down li[class="menu"],.stats-ul li[class="menu"],.hover-black{
   transition:background-color 0.3s;
 }
 
-.right.hide-on-med-and-down li[id="menu"]:hover{
+.right.hide-on-med-and-down li[class="menu"]:hover{
   background-color: #80BE62;
 }
 
@@ -373,7 +373,7 @@ nav .left li a {
 }
 
 .languagepicker .item:hover{
-  background-color: #0e8664 !important;
+  background-color: #0e8664;
 }
 
 /*---*/
@@ -479,5 +479,5 @@ i.fa.fa-thumbs-down.fa-5x:hover{
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: white !important;
+  color: white;
 }
