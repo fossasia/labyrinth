@@ -390,6 +390,17 @@ const door = {
             this.ground.show();
         }
     }),
+    navypink: Object.assign({}, OpenDoors, {
+            CanEnterFromTheRight() {
+                return false;
+            },
+            CanLeaveFromTheRight() {
+                return false;
+            },
+        createImages: function() {
+            this.wallRight = this.createImage("tiles/rooms/wall/navypink.svg");
+         },
+    }),
     sun: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
