@@ -20,11 +20,7 @@ function createFirstLevel()
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.top, door.marina, door.treasureKey, door.drawn, door.night],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
-    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],
-
-
-
-    
+    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains]
   ]);
 }
 
