@@ -120,10 +120,6 @@
       h2 {
       text-align: center;
       }
-      .lang {
-        margin-top: 10px;
-        padding:0 16px;
-      }
       .translate.translate-language-choice {
       padding: 0 16px;
       }
@@ -242,31 +238,36 @@
       <nav>
         <div class="nav-wrapper">
           <a href="index.html"><img class="brand-logo left" src="images/logos/inline_light_bold.png" alt="logo"></a>
-          <ul class="right hide-on-med-and-down">
-            <li>
+         <ul class="right hide-on-med-and-down">
+            <li id="menu">
+                <a href="index.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="game">Game</a>
+            </li>
+            <li id="menu">
               <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
             </li>
-            <li>
+            <li id="menu">
               <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
             </li>
-            <li>
-              <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
-            </li>
-            <li>
+            <li id="lan">
               <div class="languagepicker roundborders large">
-                <div class="select-your-language"><a class="lang waves-effect waves-light btn blue-grey darken-2" data-href="language">Select your language <span class="fa fa-caret-down"></span></a></div>
-                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="en">
-                  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> EN</a>
-                </div>                
-                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="hi">
-                  <img src="icons/India.png" alt="" class="translation-flag" /> HI</a>
+                <div id="select">
+                  <a class="waves-effect waves-light btn blue-grey darken-2">
+                    <div class="lang" data-href="language">Select your language</div>
+                  </a>
                 </div>
-                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="pl">
-                  <img src="icons/Poland.png" alt="" class="translation-flag" /> PL</a>
+                <div class="item"><a class="translate" id="en">
+                  <img src="icons/UnitedKingdom.png" alt="" class="translation-flag" /> English</a>
                 </div>
-                <div class="hover-black"><a class="translate translate-language-choice waves-effect waves-light btn blue-grey darken-2" id="si">
-                  <img src="icons/SriLanka.png" alt="" class="translation-flag" /> SIN</a>
+                <div class="item"><a class="translate" id="si">
+                    <img src="icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala</a>
+                </div>  
+                <div class="item"><a class="translate" id="hi">
+                  <img src="icons/India.png" alt="" class="translation-flag" /> Hindi</a>
+                </div>  
+                <div class="item"><a class="translate" id="pl">
+                  <img src="icons/Poland.png" alt="" class="translation-flag" /> Polski</a>
                 </div>
+                
                 <!-- When you add more languages do it in the above format-->
               </div>
             </li>

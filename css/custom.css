@@ -40,10 +40,6 @@ h1, h2, h3 {
   text-transform: capitalize;
 }
 
-nav ul a:hover, nav ul a:focus {
-  background-color: #80BE62;
-}
-
 p {
   font-size: 20px;
   font-family: 'Quicksand';
@@ -71,24 +67,16 @@ i.fa.fa-play:hover, i.fa.fa-pause:hover, i.fa.fa-step-forward:hover, i.fa.fa-tim
   transition: 0.3s;
 }
 
-.languagepicker.roundborders.large .hover-black:hover {
-  background-color: rgba(0,0,0,0.2);
-}
-
-.right.hide-on-med-and-down li {
+.right.hide-on-med-and-down li[id="menu"]{
     padding-top: 20px;
     height: 100px;
 }
 
-.select-your-language {
-  height: 80px;
-}
-
-.right.hide-on-med-and-down li,.select-your-language,.stats-ul li,.hover-black{
+.right.hide-on-med-and-down li[id="menu"],.stats-ul li[id="menu"],.hover-black{
   transition:background-color 0.3s;
 }
 
-.right.hide-on-med-and-down li:hover{
+.right.hide-on-med-and-down li[id="menu"]:hover{
   background-color: #80BE62;
 }
 
@@ -369,39 +357,26 @@ nav .left li a {
 .languagepicker {
   background-color: rgb(96, 165, 82);
   display: inline-block;
-  padding: 0;
-  height: 40px;
+  height: 80px;
   overflow: hidden;
   transition: all .3s ease;
-  margin: 0 50px 10px 0;
-  vertical-align: top;
-  float: left;
+  padding-top: 20px;
+  transition:background-color 0.3s;
 }
 
-.languagepicker:hover {
-  height: auto;
-}
-
-.languagepicker a {
-  color: #000;
-  text-decoration: none;
-}
-
-.languagepicker li {
-  display: block;
-  padding: 0px 20px;
-  line-height: 40px;
-  border-top: 1px solid #EEE;
-}
-
-.languagepicker a:first-child li {
-  border: none;
-  background: #FFF !important;
+.languagepicker #select:hover{
+  background-color: #80BE62;
 }
 
 .languagepicker li img {
-  margin-right: 5px;
+  margin-right: 10px;
 }
+
+.languagepicker .item:hover{
+  background-color: #0e8664 !important;
+}
+
+/*---*/
 
 .large:hover {
   height: auto;
@@ -451,13 +426,8 @@ i.fa.fa-thumbs-down.fa-5x:hover{
 
 .translate-language-choice {
   height: 60px;
-  display: block;
-  text-align: center;
+  text-align: left;
   padding-top: 12px;
-}
-
-.languagepicker a {
-  color: #fff;
 }
 
 .close-sidebar i {
@@ -478,7 +448,6 @@ i.fa.fa-thumbs-down.fa-5x:hover{
 }
 
 .statistics .stats-btn .waves-effect.waves-light.btn.blue-grey.darken-2 {
-  display: block;
   text-align: left;
   padding: 10px 0;
   text-align: center;
@@ -507,4 +476,8 @@ i.fa.fa-thumbs-down.fa-5x:hover{
 
 .play-pause-div {
   bottom: 90px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white !important;
 }
