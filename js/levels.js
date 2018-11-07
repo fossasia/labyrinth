@@ -21,6 +21,7 @@ function createFirstLevel()
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],
+    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],  
   ]);
 }
 
