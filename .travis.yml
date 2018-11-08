@@ -18,4 +18,4 @@ script:
   
 # deploy pr 
 after_success:
-- bash ./deploy.sh 
+- bash ./scripts/deploy.sh 
