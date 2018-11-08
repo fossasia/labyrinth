@@ -469,6 +469,9 @@ const door = {
           this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
           alertWarning("Be alert!!!", "You entered to the night!");
         },
+        visit: function() {
+            playAudio("ste/voice.ogg", 1);
+        },
       }),
     marina: Object.assign({}, OpenDoors, {
         createImages: function() {
