@@ -404,6 +404,19 @@ const door = {
             this.ground.show();
         }
     }),
+    navypink: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/navypink.svg");
+            this.ground = this.createImage("tiles/rooms/floor/blood.svg");
+          },
+        visit: function() {
+            alertInfo("Navy Pink");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
     newlines: Object.assign({}, OpenDoors, {
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
