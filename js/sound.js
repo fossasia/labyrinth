@@ -120,6 +120,13 @@ const backgroundAudio = [
         legalNotice: "Sound by Saarthak Chaturvedi",
         link: "http://github.com/saarthakchats",
     },
+    {
+        filename: "audio/ste/voice-bg.ogg",
+        backgroundSongName: "Voice",
+        author: "Supun Tharinda Edirisuriya",
+        legalNotice: "Voice",
+        link: "http://github.com/STEdirisuriya",
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
