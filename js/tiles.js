@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+﻿/*jshint esversion: 6 */
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -484,6 +484,14 @@ const door = {
         },
         visit: function() {
             playAudio("ste/voice.ogg", 1);
+        },
+      }),
+    reddish: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {return false;},
+        canLeaveToTheRight() {return false;},
+        createImages: function() {
+          this.wallRight = this.createImage("tiles/rooms/wall/redright.svg");
+          alertWarning("Hello");
         },
       }),
     marina: Object.assign({}, OpenDoors, {
