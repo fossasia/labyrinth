@@ -722,7 +722,7 @@ const door = {
             return false;
         },
         visit: function() {
-            playAudio("music/trumpet.mp3", 1)
+            playAudio("music/trumpet.mp3", 1);
             alertInfo("All hail FOSSASIA!", "");
             this.wallTop.show();
             this.wallRight.show();
