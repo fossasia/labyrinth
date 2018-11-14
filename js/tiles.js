@@ -301,13 +301,6 @@ const door = {
             alertInfo("More to Go !", "");
         },
     }),
-    drawned: Object.assign({}, OpenDoors, {
-        createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
-            this.ground = this.createImage("tiles/rooms/floor/RedStars.svg"); 
-        },
-    }),
     design: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -491,6 +484,14 @@ const door = {
         },
         visit: function() {
             playAudio("ste/voice.ogg", 1);
+        },
+      }),
+    red: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {return false;},
+        canLeaveToTheRight() {return false;},
+        createImages: function() {
+          this.wallRight = this.createImage("tiles/rooms/wall/redright.svg");
+          alertWarning("Hello");
         },
       }),
     marina: Object.assign({}, OpenDoors, {
