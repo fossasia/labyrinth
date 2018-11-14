@@ -722,8 +722,7 @@ const door = {
             return false;
         },
         visit: function() {
-            // would show a message onto screen.
-            // left open for future because no output div in hand
+            playAudio("music/trumpet.mp3", 1);
             alertInfo("All hail FOSSASIA!", "");
             this.wallTop.show();
             this.wallRight.show();
