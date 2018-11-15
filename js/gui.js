@@ -46,7 +46,7 @@ function choosePlayerCharacter(player) {
 	  //added Character from RuKoBe
       "characters/OwnChar.png": "OwnChar",
 
-
+      "characters/tardis.svg":"TARDIS",
       "characters/ninja.svg": "Ninja",
       "characters/Mr zero.svg":"Mr. Zero",
       "characters/Mrs zero.svg": "Mrs. Zero",
