@@ -494,6 +494,7 @@ const door = {
             player.addReachableLevel(createNightLevel());
             alertWarning("Be alert!!!", "You entered to the night!");         
         },
+      }),
     marina: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
