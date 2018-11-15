@@ -107,3 +107,14 @@ function createTileMeshLevel() {
     [NullTile, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none, TileMesh.none],
   ]);
 }
+function createNightLevel() {
+  return new Level("Grpahics Mania", [
+    [night.none, night.top, night.top, night.top, night.top, night.none],
+    [night.none, night.top, night.top, night.top, night.top, night.none],
+    [night.none, night.top, night.top, night.top, night.top, night.none],
+    [night.none, night.top, night.top, night.top, night.top, night.none],
+    [night.none, night.top, night.top, night.top, night.top, night.none],
+    [night.none, night.top, PlayerStartsAt(night.start), night.top, night.top, night.none],
+    [night.none, night.none, night.none, night.none, night.none, night.none],
+  ]);
+}

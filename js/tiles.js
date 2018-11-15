@@ -474,18 +474,27 @@ const door = {
         },
     }),
     night: Object.assign({}, OpenDoors, {
-        canEnterFromTheRight() {return false;},
-        canLeaveToTheRight() {return false;},
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
         createImages: function() {
-          this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
-          this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
-          this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
-          alertWarning("Be alert!!!", "You entered to the night!");
+            this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
+            this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
         },
-        visit: function() {
+        visit: function(player) {
             playAudio("ste/voice.ogg", 1);
+            console.log("This tile was added by STE.");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+            player.addReachableLevel(createNightLevel());
+            alertWarning("Be alert!!!", "You entered to the night!");         
         },
-      }),
+    }),
     marina: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -1185,6 +1194,66 @@ const door = {
     }),
 };
 
+const night = {
+    both: OpenDoors,
+    levelCode: 9,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
+            this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/");
+            this.wallRight = this.createImage("tiles/rooms/wall/");
+            this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/nightfloor.svg");
+        },
+        visit: function() {
+            alertWarning("Be alert!!!", "You have entered to the night!");  
+        }
+    }),
+    
+};
 const forest = {
     both: Object.assign({}, OpenDoors, {
         createImages: function() {
