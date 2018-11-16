@@ -116,6 +116,40 @@
           <p><a class="lang" data-href="moved">Player Moved :</a>
             <span id="playerMoves">0</span><a class="lang" data-href="times"> Times</a>
           </p>
+          <p><a class="lang" data-href="spent">Time spent :</a></p>
+            <div class="contTimer">
+               <span id="timer">00 : 00 : 00</span>
+            </div>
+          
+            <script>
+                let eleBtnStart = document.querySelector("#btnStart");
+                let eleTimer = document.querySelector("#timer");
+                
+                let timeTicker = (() => {
+                  var hours = minutes = seconds = 0;
+                  var timerTick;
+                  return {
+                    start : () => {
+                      if(!timerTick) {
+                      timerTick = setInterval(() => {
+                        seconds++;
+                        if(seconds == 60) {
+                          minutes += 1;
+                          seconds = 0;
+                          if(minutes == 60) {
+                            hours += 1;
+                            minutes = 0;
+                          }
+                        }
+                        eleTimer.innerHTML = `${hours.toString().length == 1 ? "0" + hours : hours}
+                : ${minutes.toString().length == 1 ? "0" + minutes : minutes}
+                : ${seconds.toString().length == 1 ? "0" + seconds : seconds}`;
+                      },25);
+                      }
+                    },
+                  }
+                })();
+            </script>
           <div class="stats-btn">
             <ul class="stats-ul">
               <li><input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
