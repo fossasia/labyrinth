@@ -27,6 +27,7 @@ function choosePlayerCharacter(player) {
   var inputOptionsPromise = new Promise(function(resolve) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
+      "characters/runner.svg": "Runner",
       "characters/golem.svg": "Golem",
       "characters/witch.svg": "Witch",
       "characters/Zeichnung Lasse.svg": "The men",
