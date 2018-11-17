@@ -481,3 +481,17 @@ i.fa.fa-thumbs-down.fa-5x:hover{
 .navbar-default .navbar-nav>li>a {
   color: white;
 }
+
+/* TImer */
+.contTimer {
+  display:flex;
+  flex-flow:column;
+  width:100%;
+}
+#timer {
+  font-size:20px;
+  border: 1px solid rgba(0,0,0,0.21);
+  border-radius: 4px;
+  text-align:center;
+  background:rgb(48, 187, 104);
+}
