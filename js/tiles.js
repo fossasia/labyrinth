@@ -488,11 +488,16 @@ const door = {
         visit: function(player) {
             playAudio("ste/voice.ogg", 1);
             console.log("This tile was added by STE.");
+            if (player.inventory.has('Lantern')) {
+                alertSuccess("Nothing to fear!", "You have a lantern to face the darkness.");
+               } else {
+                alertWarning("Be alert!!!", "You entered to the night without a lantern!");         
+               }
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createNightLevel());
-            alertWarning("Be alert!!!", "You entered to the night!");         
+            
         },
     }),
     marina: Object.assign({}, OpenDoors, {
@@ -1760,11 +1765,8 @@ const Superhero = {
         },
         visit: function () {
             playAudio("audio/art/art.mp3");
-            swal({
-                type: 'info',
-                title: 'Do you know this fact about, Mona Lisa?',
-                text: "While some claim that Leonardo da Vinci’s most famous painting is a self-portrait of the artist himself in drag, research has concluded it is likely a portrait of a woman named Lisa Gherardini, a member of a prominent Florentine family and wife of a wealthy silk merchant.",
-            });
+            player.inventory.add(['Lantern', 'Lantern.svg']);
+            alertInfo("You found a lantern!", "You can expore the night now!!!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
