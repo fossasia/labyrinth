@@ -276,6 +276,35 @@ const door = {
             alertInfo("Welcome to the Labyrinth !", "Explore More ! Let's see what can find ...");
         },
     }),
+    quirky: Object.assign({},OpenDoors,{
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
     fairysWheel: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -1893,6 +1922,4 @@ const TileMesh = {
         }
 
     }),
-
-
 };
