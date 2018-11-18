@@ -28,6 +28,7 @@ function choosePlayerCharacter(player) {
     // input your character here in the form, "src_url": "character_name",
     resolve({
       "characters/golem.svg": "Golem",
+      "characters/blackman.svg": "Blackman",
       "characters/witch.svg": "Witch",
       "characters/Zeichnung Lasse.svg": "The men",
       "characters/block.svg": "Block",
