@@ -526,17 +526,35 @@ const door = {
         },
     }),
     reddish: Object.assign({}, OpenDoors, {
-    	canEnterFromTheRight() {
-	    return false;
-    },
+            canEnterFromTheRight() {
+            return false;
+        },
+            canLeaveToTheRight() {
+                return false;
+        },
+        
+        createImages: function() {
+        this.wallTop = this.createImage("tiles/rooms/wall/redright.svg"); 
+        this.wallRight = this.createImage("tiles/rooms/door/top.svg");
+        this.ground = this.createImage("tiles/rooms/floor/new.svg");
+        },
+    }),
+    square: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
         canLeaveToTheRight() {
             return false;
-    },
-    
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/redright.svg"); 
-      this.wallRight = this.createImage("tiles/rooms/door/top.svg");
-      this.ground = this.createImage("tiles/rooms/floor/new.svg");
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
+            this.ground = this.createImage("tiles/animations/square.svg");
+        },
+        visit: function(player) {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         },
     }),
     marina: Object.assign({}, OpenDoors, {
