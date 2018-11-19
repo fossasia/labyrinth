@@ -258,7 +258,7 @@ Here is what you can do to add an animation:
 ## Videos by students
 - [Labyrinth | A short intro](https://youtu.be/vc4GgDbx8WA)
 - https://www.youtube.com/watch?v=5vXDJOYqWvk
-- https://www.youtube.com/watch?v=XvoHY3QCJtw
+- [Labyrinth : The Never Ending Maze by FOSSASIA](https://www.youtube.com/watch?v=XvoHY3QCJtw)
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
 - [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)
