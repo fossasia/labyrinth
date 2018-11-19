@@ -114,6 +114,12 @@ const backgroundAudio = [
         legalNotice: "Sound by Anirudh Chauhan",
     },
     {
+        filename: "audio/background/ChaarKadam.ogg",
+        backgroundSongName: "ChaarKadam",
+        author: "Akshit Goyal",
+        legalNotice: "Sound by Akshit Goyal",
+    },
+    {
         filename: "audio/saarthakchats/SuperFunk007.wav",
         backgroundSongName: "Super Funk",
         author: "Saarthak Chaturvedi",
