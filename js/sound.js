@@ -133,6 +133,13 @@ const backgroundAudio = [
         legalNotice: "Voice",
         link: "http://github.com/STEdirisuriya",
     },
+	{
+        filename: "audio/background/ExploringThroughout.wav",
+        backgroundSongName: "Exploring Throughout",
+        author: "Hubert Zimny (AppleCat)",
+        legalNotice: "ExploringThroughout",
+        link: "http://github.com/AppleC4T",
+    }
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
