@@ -42,6 +42,7 @@ function choosePlayerCharacter(player) {
       "characters/detective.svg":"Agent X",
       "characters/Geekomoji.svg": "Geekomoji",
       "characters/joker.svg": "Joker",
+      "characters/Thanos.svg": "Thanos",
 
 	  //added Character from RuKoBe
       "characters/OwnChar.png": "OwnChar",
