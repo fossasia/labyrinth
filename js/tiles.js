@@ -548,6 +548,13 @@ const door = {
         this.wallRight = this.createImage("tiles/rooms/door/top.svg");
         this.ground = this.createImage("tiles/rooms/floor/new.svg");
         },
+	visit: function() {
+            playAudio("music/GuitarSound.mp3");
+            alertInfo("It's party time");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        },
     }),
     square: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
