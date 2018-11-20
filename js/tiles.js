@@ -310,10 +310,17 @@ const door = {
     canLeaveToTheRight() {return false;},
    
     createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/door/dark.svg"); 
-      this.wallRight = this.createImage("tiles/rooms/wall/dark.svg");
-      this.ground = this.createImage("tiles/animations/glow.svg"); 
+      	this.wallTop = this.createImage("tiles/rooms/door/dark.svg"); 
+      	this.wallRight = this.createImage("tiles/rooms/wall/dark.svg");
+      	this.ground = this.createImage("tiles/animations/glow.svg"); 
     },
+	visit: function() {
+		    playAudio("music/darknessLeaking.wav", 1); 
+      	alertNormal("??", "You feel a strange feeling of darkness sweeping in");
+      	this.wallTop.show();
+      	this.wallRight.show();
+      	this.ground.show();
+    }
   }),
     fairysWheel: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
