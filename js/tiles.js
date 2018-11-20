@@ -315,7 +315,7 @@ const door = {
       	this.ground = this.createImage("tiles/animations/glow.svg"); 
     },
 	visit: function() {
-		playAudio("music/darknessLeaking.wav", 1); 
+		    playAudio("music/darknessLeaking.wav", 1); 
       	alertNormal("??", "You feel a strange feeling of darkness sweeping in");
       	this.wallTop.show();
       	this.wallRight.show();
