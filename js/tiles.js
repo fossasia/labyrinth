@@ -1954,4 +1954,15 @@ const TileMesh = {
         }
 
     }),
+start: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight: function(player) {return false;}, 
+    canLeaveToTheRight: function(player) {return false;},
+    canEnterFromTheTop() {return false;},
+    canLeaveToTheTop() {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/door/rightwaves.svg");
+      this.ground = this.createImage("tiles/rooms/floor/svg_name.svg"); 
+    },
+  }),
 };
