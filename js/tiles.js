@@ -299,6 +299,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
         },
         visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();
