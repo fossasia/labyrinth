@@ -1987,6 +1987,25 @@ const TileMesh = {
         }
 
     }),
+    waves: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return true;
+        },
+        canLeaveToTheTop: function(player) {
+            return true;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightwaves.svg");
+            this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+        },
+    }),
 };
 const dark = {
     both: OpenDoors,
