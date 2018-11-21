@@ -21,12 +21,13 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
         link: "http://bensound.com/",
     },
+
     {
-        filename: "audio/background/NCS/onandon.mp3",
-        backgroundSongName: "Cartoon - On & On (feat. Daniel Levi)",
-        author: "NCS",
-        legalNotice: "Music provided by http://spoti.fi/NCS",
-        link: "http://spoti.fi/NCS",
+        filename: "audio/background/NCS/bensound-summer.mp3",
+        backgroundSongName: "Summer",
+        author: "bensound.com",
+        legalNotice: "Music by bensound.com",
+        link: "https://www.bensound.com/",
     },
     {
         filename: "audio/music/Drumplo.m4a",
