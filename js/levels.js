@@ -117,3 +117,14 @@ function createNightLevel() {
     [night.none, night.none, night.none, night.none, night.none, night.none],
   ]);
 }
+function createDarkLevel() {
+  return new Level("Dark Realm", [
+    [dark.none, dark.none, dark.top, dark.none, dark.none, dark.none, dark.none],
+    [dark.none, dark.right, dark.cross, dark.right, dark.right, dark.right, dark.cross],
+    [dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, dark.top, dark.right, dark.cross, dark.end, dark.top],
+	[dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, PlayerStartsAt(dark.start), dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
+  ]);
+}

@@ -310,16 +310,17 @@ const door = {
     canLeaveToTheRight() {return false;},
    
     createImages: function() {
-      	this.wallTop = this.createImage("tiles/rooms/door/dark.svg"); 
-      	this.wallRight = this.createImage("tiles/rooms/wall/dark.svg");
+      	this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg"); 
+      	this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
       	this.ground = this.createImage("tiles/animations/glow.svg"); 
     },
 	visit: function() {
 		    playAudio("music/darknessLeaking.wav", 1); 
-      	alertNormal("??", "You feel a strange feeling of darkness sweeping in");
+      	alertNormal("??", "You feel a strange feeling of darkness sweeping in.");
       	this.wallTop.show();
       	this.wallRight.show();
       	this.ground.show();
+		player.addReachableLevel(createDarkLevel());
     }
   }),
     fairysWheel: Object.assign({}, OpenDoors, {
@@ -1978,4 +1979,87 @@ const TileMesh = {
         }
 
     }),
+};
+const dark = {
+    both: OpenDoors,
+    levelCode: 2,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/darktop.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+			this.wallTop = this.createImage("tiles/rooms/wall/darktop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+        visit: function() {
+            alertWarning("???", "You find yourself in a strange dark realm...");
+			this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("tiles/animations/glow.svg");
+        },
+    }),
+	cross: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+	end: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+        visit: function() {
+            player.addReachableLevel(createFirstLevel()); 
+			this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("tiles/animations/glow.svg");
+        }
+    }),
+    
 };
