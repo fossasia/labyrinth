@@ -1971,17 +1971,23 @@ const TileMesh = {
         }
 
     }),
-    start: Object.assign({}, OpenDoors, {
-        canEnterFromTheRight() {
+    waves: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
             return false;
         },
-        canLeaveToTheRight() {
+        canEnterFromTheBottom: function(player) {
             return false;
         },
-        canEnterFromTheTop: function(player) {
-            return false;
+        canEnterFromTheLeft: function(player) {
+            return true;
         },
-        canLeaveToTheTop: function(player) {
+        canLeaveToTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheLeft: function(player) {
+            return true;
+        },
+        canLeaveToTheBottom: function(player) {
             return false;
         },
         createImages: function() {
