@@ -67,6 +67,7 @@ function choosePlayerCharacter(player) {
       "characters/Archer.png": "Archer",
       "characters/programmer.png" : "Programmer",
       "characters/oldman.svg" : "oldman.svg",
+      "characters/demonknight.png": "Demon Knight",
 
     });
   });
