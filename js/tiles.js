@@ -1975,20 +1975,14 @@ const TileMesh = {
         canEnterFromTheRight: function(player) {
             return false;
         },
-        canEnterFromTheBottom: function(player) {
-            return false;
-        },
-        canEnterFromTheLeft: function(player) {
-            return true;
-        },
         canLeaveToTheRight: function(player) {
-            return true;
-        },
-        canLeaveToTheLeft: function(player) {
-            return true;
+            return false;
         },
         canLeaveToTheBottom: function(player) {
-            return false;
+            return true;
+        },
+        canLeaveToTheTop: function(player) {
+            return true;
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
