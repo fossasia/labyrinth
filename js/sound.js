@@ -22,13 +22,6 @@ const backgroundAudio = [
         link: "http://bensound.com/",
     },
     {
-        filename: "audio/background/NCS/onandon.mp3",
-        backgroundSongName: "Cartoon - On & On (feat. Daniel Levi)",
-        author: "NCS",
-        legalNotice: "Music provided by http://spoti.fi/NCS",
-        link: "http://spoti.fi/NCS",
-    },
-    {
         filename: "audio/music/Drumplo.m4a",
         backgroundSongName: "Drumplo",
         author: "Samyak Jain",
