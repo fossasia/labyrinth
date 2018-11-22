@@ -407,7 +407,6 @@ const door = {
             this.wallRight.show();
             this.ground.show();
          }
-       },
     }),
     drawn: Object.assign({}, OpenDoors, {
         createImages: function() {
