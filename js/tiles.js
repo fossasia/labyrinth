@@ -2073,7 +2073,20 @@ const dark = {
             this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
             this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
             this.ground = this.createImage("tiles/animations/glow.svg");
+        }}),
+	light: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/lighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+            this.ground = this.createImage("tiles/rooms/floor/glowL.svg");
         },
+		visit: function() {
+            alertInfo("At last you find peaceful light in this dark world, you may now come back to your own dimension.");
+            player.inventory.add(['Light Vortex', 'vortex.svg']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
     }),
 	end: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -2082,11 +2095,20 @@ const dark = {
             this.ground = this.createImage("tiles/animations/glow.svg");
         },
         visit: function() {
-            player.addReachableLevel(createFirstLevel()); 
-			this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show("tiles/animations/glow.svg");
+			if (player.inventory.has('Light Vortex')) {
+                alertSuccess("You found a door to the original world.");
+				player.addReachableLevel(createFirstLevel()); 
+				this.wallTop.show();
+            	this.wallRight.show();
+            	this.ground.show("tiles/animations/glow.svg");
+            } else {
+                alertNormal(
+                    "You found a portal to the main world...",
+                    "but the darkness keeps it closed, you need to find a vortex to overcome it first!");
+				this.wallTop.show();
+            	this.wallRight.show();
+            	this.ground.show("tiles/animations/glow.svg");
+            }
         }
     }),
-    
 };
