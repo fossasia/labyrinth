@@ -748,6 +748,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
         },
         visit: function() {
+        	playAudio("music/treasure-sound-dxa_kly.wav", 1);
             if (player.inventory.has('Key')) {
                 alertSuccess("You got the treasure !", "there's more to find !");
                 player.inventory.remove('Key');
