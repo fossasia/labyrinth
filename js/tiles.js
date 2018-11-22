@@ -560,6 +560,11 @@ const door = {
 	visit: function() {
             playAudio("music/GuitarSound.mp3");
             alertInfo("It's party time");
+	    if (player.inventory.has('card')) {
+                alertSuccess("You have a card for the party");
+               } else {
+                alertWarning("You are going to the party without a card");         
+               }
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -591,6 +596,8 @@ const door = {
         },
         visit: function() {
             playAudio("Runnergarage.m4a", 1);
+            player.inventory.add(['card', 'card.svg']);
+            alertInfo("You found a card!", "You can go to the party now!!!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
