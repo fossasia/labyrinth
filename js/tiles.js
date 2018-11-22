@@ -400,7 +400,8 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall2.svg");
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
-        } visit: function() {
+        },
+            visit: function() {
             alertInfo("Be careful, Many people died in this tsunami");
             playAudio("spook.mp3");
             this.wallTop.show();
