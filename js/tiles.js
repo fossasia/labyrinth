@@ -404,7 +404,11 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
     },
     visit: function() {
-         alertInfo("Let's explore the space.");
+        if (player.inventory.has('Rocket')) {
+            alertSuccess("You have a Rocket to explore space.");
+            } else {
+             alertWarning("You can not go to the space without a rocket.");         
+            }
          this.wallTop.show();
          this.wallRight.show();
          this.ground.show();
@@ -515,7 +519,8 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
           },
         visit: function() {
-            alertInfo("Navy Pink");
+            player.inventory.add(['Rocket', 'Rocket.svg']);
+            alertInfo("You found a Rocket made by Sahil Saha!", "You can go to Space!!!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
