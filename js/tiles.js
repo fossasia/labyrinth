@@ -401,7 +401,7 @@ const door = {
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
       this.wallRight = this.createImage("tiles/rooms/wall/wallstary.svg");
-      this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+      this.ground = this.createImage("tiles/rooms/floor/BeautifulMesh.svg");
     },
     visit: function() {
          alertInfo("Let's explore the space.");
