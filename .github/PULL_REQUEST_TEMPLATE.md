@@ -5,7 +5,7 @@
 - [ ] Included a preview link and screenshot showing after and before the changes.
 - [ ] Included a description of change below.
 - [ ] Tried to [squash the commits][squash].
-- [ ] Added Screenshot to Indidate Location of Change in Game
+- [ ] Added Screenshot to Indicate Location of Change in Game
 
 ### Changes done in this Pull Request
 
