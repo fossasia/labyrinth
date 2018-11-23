@@ -306,6 +306,34 @@ const door = {
             this.ground.show();
          },
     }),
+
+    quake: Object.assign({},OpenDoors,{
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.ground = this.createImage("tiles/rooms/floor/quake.svg");
+        },
+        visit: function() {
+            
+            alertWarning("Quake", "The ground is shaking! RUN!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
 	dark1: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;}, 
     canLeaveToTheRight() {return false;},
