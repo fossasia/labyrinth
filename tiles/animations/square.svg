@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="500"
+   height="320"
+   viewBox="0 0 400 320"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="square.svg"
+   style="fill:none;stroke:#000000;stroke-linecap:round">
+  <metadata
+     id="metadata86">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     id="namedview84"
+     showgrid="false"
+     borderlayer="false"
+     inkscape:zoom="0.7375"
+     inkscape:cx="160"
+     inkscape:cy="164.32441"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <path
+       id="r1"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         id="p1"
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin" />
+    </path>
+    <path
+       id="r2"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+1s" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+1s" />
+    </path>
+    <path
+       id="r3"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+2s" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+2s" />
+    </path>
+    <path
+       id="r4"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         id="p1"
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+3s" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+3s" />
+    </path>
+    <path
+       id="r5"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+4s" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+4s" />
+    </path>
+    <path
+       id="r6"
+       d=""
+       inkscape:connector-curvature="0">
+      <animate
+         attributeName="d"
+         values="m160,160l0,0 0,0;m130,110l30,-17 30,17;m130,60l30,-17 30,17;m160,20l0,0 0,0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+5s" />
+      <animate
+         attributeName="stroke-width"
+         values="0;4;4;4;0"
+         dur="6s"
+         repeatCount="indefinite"
+         begin="p1.begin+5s" />
+    </path>
+  </defs>
+  <use
+     xlink:href="#r1"
+     id="use12"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     transform="translate(6,0)"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r1"
+     transform="matrix(0.5,0.8660254,-0.8660254,0.5,224.56406,-58.564065)"
+     id="use14"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r1"
+     transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,384.56406,101.43594)"
+     id="use16"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r1"
+     transform="matrix(-1,0,0,-1,326,320)"
+     id="use18"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r1"
+     transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,107.43594,378.56406)"
+     id="use20"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r1"
+     transform="matrix(0.5,-0.8660254,0.8660254,0.5,-52.564065,218.56406)"
+     id="use22"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(0.8660254,0.5,-0.5,0.8660254,107.43594,-58.564065)"
+     id="use24"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(0,1,-1,0,326,0)"
+     id="use26"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(-0.8660254,0.5,-0.5,-0.8660254,384.56406,218.56406)"
+     id="use28"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(-0.8660254,-0.5,0.5,-0.8660254,224.56406,378.56406)"
+     id="use30"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(0,-1,1,0,6,320)"
+     id="use32"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r2"
+     transform="matrix(0.8660254,-0.5,0.5,0.8660254,-52.564065,101.43594)"
+     id="use34"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     id="use36"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     transform="translate(6,0)"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     transform="matrix(0.5,0.8660254,-0.8660254,0.5,224.56406,-58.564065)"
+     id="use38"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,384.56406,101.43594)"
+     id="use40"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     transform="matrix(-1,0,0,-1,326,320)"
+     id="use42"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,107.43594,378.56406)"
+     id="use44"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r3"
+     transform="matrix(0.5,-0.8660254,0.8660254,0.5,-52.564065,218.56406)"
+     id="use46"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(0.8660254,0.5,-0.5,0.8660254,107.43594,-58.564065)"
+     id="use48"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(0,1,-1,0,326,0)"
+     id="use50"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(-0.8660254,0.5,-0.5,-0.8660254,384.56406,218.56406)"
+     id="use52"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(-0.8660254,-0.5,0.5,-0.8660254,224.56406,378.56406)"
+     id="use54"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(0,-1,1,0,6,320)"
+     id="use56"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r4"
+     transform="matrix(0.8660254,-0.5,0.5,0.8660254,-52.564065,101.43594)"
+     id="use58"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     id="use60"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     transform="translate(6,0)"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     transform="matrix(0.5,0.8660254,-0.8660254,0.5,224.56406,-58.564065)"
+     id="use62"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     transform="matrix(-0.5,0.8660254,-0.8660254,-0.5,384.56406,101.43594)"
+     id="use64"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     transform="matrix(-1,0,0,-1,326,320)"
+     id="use66"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     transform="matrix(-0.5,-0.8660254,0.8660254,-0.5,107.43594,378.56406)"
+     id="use68"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r5"
+     transform="matrix(0.5,-0.8660254,0.8660254,0.5,-52.564065,218.56406)"
+     id="use70"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(0.8660254,0.5,-0.5,0.8660254,107.43594,-58.564065)"
+     id="use72"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(0,1,-1,0,326,0)"
+     id="use74"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(-0.8660254,0.5,-0.5,-0.8660254,384.56406,218.56406)"
+     id="use76"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(-0.8660254,-0.5,0.5,-0.8660254,224.56406,378.56406)"
+     id="use78"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(0,-1,1,0,6,320)"
+     id="use80"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+  <use
+     xlink:href="#r6"
+     transform="matrix(0.8660254,-0.5,0.5,0.8660254,-52.564065,101.43594)"
+     id="use82"
+     x="0"
+     y="0"
+     width="100%"
+     height="100%"
+     style="fill:#000000" />
+</svg>

@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+﻿/*jshint esversion: 6 */
 // PlayerStartsAt is used in /js/levels.js, /js/level.js, /js/player.js ignoring the error
 // ignore JSHintBear
 const NullTile = {
@@ -276,6 +276,82 @@ const door = {
             alertInfo("Welcome to the Labyrinth !", "Explore More ! Let's see what can find ...");
         },
     }),
+    quirky: Object.assign({},OpenDoors,{
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
+
+    quake: Object.assign({},OpenDoors,{
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.ground = this.createImage("tiles/rooms/floor/quake.svg");
+        },
+        visit: function() {
+            
+            alertWarning("Quake", "The ground is shaking! RUN!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
+	dark1: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, 
+    canLeaveToTheRight() {return false;},
+   
+    createImages: function() {
+      	this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg"); 
+      	this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
+      	this.ground = this.createImage("tiles/animations/glow.svg"); 
+    },
+	visit: function() {
+		    playAudio("music/darknessLeaking.wav", 1); 
+      	alertNormal("??", "You feel a strange feeling of darkness sweeping in.");
+      	this.wallTop.show();
+      	this.wallRight.show();
+      	this.ground.show();
+		player.addReachableLevel(createDarkLevel());
+    }
+  }),
     fairysWheel: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
@@ -372,18 +448,20 @@ const door = {
         },
     }),
     	blood: Object.assign({}, OpenDoors, {
-            CanEnterFromTheRight() {
-                return false;
-            },
-            CanLeaveFromTheRight() {
-                return false;
-            },
+        canEnterFromTheRight() {return false;},
+        canLeaveToTheRight() {return false;},
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
-            this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall2.svg");
             this.ground = this.createImage("tiles/rooms/floor/blood.svg");
-
         },
+            visit: function() {
+            alertInfo("Be careful, Many people died in this tsunami");
+            playAudio("spook.mp3");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         }
     }),
     drawn: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -514,11 +592,60 @@ const door = {
         visit: function(player) {
             playAudio("ste/voice.ogg", 1);
             console.log("This tile was added by STE.");
+            if (player.inventory.has('Lantern')) {
+                alertSuccess("Nothing to fear!", "You have a lantern to face the darkness.");
+               } else {
+                alertWarning("Be alert!!!", "You entered to the night without a lantern!");         
+               }
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createNightLevel());
-            alertWarning("Be alert!!!", "You entered to the night!");         
+            
+        },
+    }),
+    reddish: Object.assign({}, OpenDoors, {
+            canEnterFromTheRight() {
+            return false;
+        },
+            canLeaveToTheRight() {
+                return false;
+        },
+        
+        createImages: function() {
+        this.wallTop = this.createImage("tiles/rooms/wall/redright.svg"); 
+        this.wallRight = this.createImage("tiles/rooms/door/top.svg");
+        this.ground = this.createImage("tiles/rooms/floor/new.svg");
+        },
+	visit: function() {
+            playAudio("music/GuitarSound.mp3");
+            alertInfo("It's party time");
+            if (player.inventory.has('card')) {
+                alertSuccess("You have a card for the party");
+               } else {
+                alertWarning("You are going to the party without a card");         
+               }
+	    this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        },
+    }),
+    square: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
+            this.ground = this.createImage("tiles/animations/square.svg");
+        },
+        visit: function(player) {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         },
     }),
     marina: Object.assign({}, OpenDoors, {
@@ -529,6 +656,8 @@ const door = {
         },
         visit: function() {
             playAudio("Runnergarage.m4a", 1);
+	    player.inventory.add(['card', 'card.svg']);
+            alertInfo("You found a card!", "You can go to the party now!!!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -539,6 +668,13 @@ const door = {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/self_made.svg");
+        },
+    }),
+    drawnbyhand: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/drawnbyhand.svg");
         },
     }),
     fabricate: Object.assign({}, OpenDoors, {
@@ -679,6 +815,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/treasure.svg");
         },
         visit: function() {
+        	playAudio("music/treasure-sound-dxa_kly.wav", 1);
             if (player.inventory.has('Key')) {
                 alertSuccess("You got the treasure !", "there's more to find !");
                 player.inventory.remove('Key');
@@ -1786,11 +1923,8 @@ const Superhero = {
         },
         visit: function () {
             playAudio("audio/art/art.mp3");
-            swal({
-                type: 'info',
-                title: 'Do you know this fact about, Mona Lisa?',
-                text: "While some claim that Leonardo da Vinci’s most famous painting is a self-portrait of the artist himself in drag, research has concluded it is likely a portrait of a woman named Lisa Gherardini, a member of a prominent Florentine family and wife of a wealthy silk merchant.",
-            });
+            player.inventory.add(['Lantern', 'Lantern.svg']);
+            alertInfo("You found a lantern!", "You can expore the night now!!!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -1921,6 +2055,128 @@ const TileMesh = {
         }
 
     }),
-
-
+    waves: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheRight: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return true;
+        },
+        canLeaveToTheTop: function(player) {
+            return true;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightwaves.svg");
+            this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+        },
+    }),
+};
+const dark = {
+    both: OpenDoors,
+    levelCode: 2,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/darktop.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+			this.wallTop = this.createImage("tiles/rooms/wall/darktop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/darkright.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+        visit: function() {
+            alertWarning("???", "You find yourself in a strange dark realm...");
+			this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("tiles/animations/glow.svg");
+        },
+    }),
+	cross: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        }}),
+	light: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/lighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+            this.ground = this.createImage("tiles/rooms/floor/glowL.svg");
+        },
+		visit: function() {
+            alertInfo("At last you find peaceful light in this dark world, you may now come back to your own dimension.");
+            player.inventory.add(['Light Vortex', 'vortex.svg']);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+	end: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/darkdt.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/darkdr.svg");
+            this.ground = this.createImage("tiles/animations/glow.svg");
+        },
+        visit: function() {
+			if (player.inventory.has('Light Vortex')) {
+                alertSuccess("You found a door to the original world.");
+				player.addReachableLevel(createFirstLevel()); 
+				this.wallTop.show();
+            	this.wallRight.show();
+            	this.ground.show("tiles/animations/glow.svg");
+            } else {
+                alertNormal(
+                    "You found a portal to the main world...",
+                    "but the darkness keeps it closed, you need to find a vortex to overcome it first!");
+				this.wallTop.show();
+            	this.wallRight.show();
+            	this.ground.show("tiles/animations/glow.svg");
+            }
+        }
+    }),
 };

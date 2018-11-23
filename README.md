@@ -6,6 +6,8 @@
 [![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Average time to resolve an issue")
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/fossasia/labyrinth.svg)](http://isitmaintained.com/project/fossasia/labyrinth "Percentage of issues still open")
 [![license](https://img.shields.io/github/license/fossasia/labyrinth.svg)](LICENSE)
+![GitHub repo size in bytes](https://img.shields.io/github/repo-size/fossasia/labyrinth.svg)
+![Website](https://img.shields.io/website-up-down-green-red/https/labyrinth-game.surge.sh.svg?label=Deploy%20Status)
 
 [**Play Now**](http://labyrinth-game.surge.sh/) |
 [**Learn How to Play**](http://labyrinth-game.surge.sh/howtoplay.html) |
@@ -256,7 +258,7 @@ Here is what you can do to add an animation:
 ## Videos by students
 - [Labyrinth | A short intro](https://youtu.be/vc4GgDbx8WA)
 - https://www.youtube.com/watch?v=5vXDJOYqWvk
-- https://www.youtube.com/watch?v=XvoHY3QCJtw
+- [Labyrinth : The Never Ending Maze by FOSSASIA](https://www.youtube.com/watch?v=XvoHY3QCJtw)
 - https://www.youtube.com/watch?v=0Z144cuITCE
 - [Labyrinth promotional video by Supun Tharinda Edirisuriya](https://www.youtube.com/watch?v=tHeScGOkJ3M)
 - [Labyrinth - The Maze Game | Promo by Naveen Rajan](https://www.youtube.com/watch?v=R8dZjl7qqY8)

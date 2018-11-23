@@ -11,16 +11,18 @@
 function createFirstLevel()
 {
   return new Level("Starter", [
+
     [door.navypink, door.blood, door.marina, door.treasureKey, door.starywall, door.night],
     [door.none, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
+    [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
+    [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
     [door.newlines, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     [door.sea, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
-    [door.staircase, door.highLow, door.new, door.wheel, door.plain, door.top],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
-    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],
+    [door.quirky, door.square, door.quake, desert.universe, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],  
   ]);
 }
@@ -118,3 +120,15 @@ function createNightLevel() {
     [night.none, night.none, night.none, night.none, night.none, night.none],
   ]);
 }
+function createDarkLevel() {
+  return new Level("Dark Realm", [
+    [dark.none, dark.none, dark.top, dark.none, dark.none, dark.none, dark.light],
+    [dark.none, dark.right, dark.cross, dark.right, dark.right, dark.right, dark.cross],
+    [dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, dark.top, dark.right, dark.cross, dark.end, dark.top],
+	[dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, PlayerStartsAt(dark.start), dark.none, dark.top, dark.none, dark.top],
+    [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
+  ]);
+}
+

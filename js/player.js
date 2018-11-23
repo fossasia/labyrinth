@@ -72,6 +72,8 @@ function Player() {
     this.logPosition = function() {
         console.log("Player position:", this.currentTile.position);
         $("#playerMoves").html(this.moves);
+        //Timer starts
+        timeTicker.start();
     };
     this.showPictureIn = function(element) {
         element.appendChild(this.picture);

@@ -21,6 +21,14 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
         link: "http://bensound.com/",
     },
+
+    {
+        filename: "audio/background/NCS/bensound-summer.mp3",
+        backgroundSongName: "Summer",
+        author: "bensound.com",
+        legalNotice: "Music by bensound.com",
+        link: "https://www.bensound.com/",
+    },
     {
         filename: "audio/music/Drumplo.m4a",
         backgroundSongName: "Drumplo",
@@ -114,6 +122,12 @@ const backgroundAudio = [
         legalNotice: "Sound by Anirudh Chauhan",
     },
     {
+        filename: "audio/background/ChaarKadam.ogg",
+        backgroundSongName: "ChaarKadam",
+        author: "Akshit Goyal",
+        legalNotice: "Sound by Akshit Goyal",
+    },
+    {
         filename: "audio/saarthakchats/SuperFunk007.wav",
         backgroundSongName: "Super Funk",
         author: "Saarthak Chaturvedi",
@@ -127,6 +141,20 @@ const backgroundAudio = [
         legalNotice: "Voice",
         link: "http://github.com/STEdirisuriya",
     },
+	{
+        filename: "audio/background/ExploringThroughout.wav",
+        backgroundSongName: "Exploring Throughout",
+        author: "Hubert Zimny (AppleCat)",
+        legalNotice: "ExploringThroughout",
+        link: "http://github.com/AppleC4T",
+    },
+    {
+        filename: "audio/background/PopRemixed/Remix.mp3",
+        backgroundSongName: "Popping it up!",
+        author: "Arihant Bansal",
+        legalNotice: "It's mine!",
+        link: "http://github.com/arihantbansal",
+    }
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
