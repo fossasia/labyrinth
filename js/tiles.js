@@ -405,20 +405,7 @@ const door = {
             this.ground.show();
         }
     }),
-    starywall: Object.assign({}, OpenDoors, {
-    createImages: function() {
-      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
-      this.wallRight = this.createImage("tiles/rooms/wall/wallstary.svg");
-      this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
-    },
-    visit: function() {
-         alertInfo("Let's explore the space.");
-         this.wallTop.show();
-         this.wallRight.show();
-         this.ground.show();
-        }   
-  }),
-    navypink: Object.assign({}, OpenDoors, {
+   navypink: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/navypink.svg");
@@ -1711,6 +1698,19 @@ const Superhero = {
             this.ground.show();
         },
     }),
+    starywall: Object.assign({}, OpenDoors, {
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/wallstary.svg");
+      this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+    },
+    visit: function() {
+         alertInfo("Let's explore the space.");
+         this.wallTop.show();
+         this.wallRight.show();
+         this.ground.show();
+        }   
+  }),
     second: Object.assign({},OpenDoors,{
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/");
