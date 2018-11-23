@@ -21,3 +21,6 @@ surge --project temp --domain http://labyrinth-game.surge.sh
 
 # All done folks
 echo "DEPLOYED"
+
+#Notify On Gitter Channel
+curl -d '{"text":"Support the Development of the Game. \n\n Review The Pull Request: #'${TRAVIS_PULL_REQUEST}'"}' -H "Accept: application/json" -H "Content-Type: application/json" -X POST https://api.gitter.im/v1/rooms/${ROOM}/chatMessages?access_token=${TOKEN} > /dev/null
