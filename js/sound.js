@@ -147,6 +147,13 @@ const backgroundAudio = [
         author: "Hubert Zimny (AppleCat)",
         legalNotice: "ExploringThroughout",
         link: "http://github.com/AppleC4T",
+    },
+    {
+        filename: "audio/background/PopRemixed/Remix.mp3",
+        backgroundSongName: "Popping it up!",
+        author: "Arihant Bansal",
+        legalNotice: "It's mine!",
+        link: "http://github.com/arihantbansal",
     }
 ];
 /*
