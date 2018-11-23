@@ -11,6 +11,9 @@
 function createFirstLevel()
 {
   return new Level("Starter", [
+
+    [door.navypink, door.blood, door.marina, door.treasureKey, door.starywall, door.night],
+    [door.none, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
     [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
     [door.newlines, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
@@ -128,3 +131,4 @@ function createDarkLevel() {
     [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
   ]);
 }
+

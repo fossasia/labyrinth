@@ -377,6 +377,7 @@ const door = {
             alertInfo("More to Go !", "");
         },
     }),
+  
     design: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -384,6 +385,31 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handarjun.svg");
         },
     }),
+    starywall: Object.assign({}, OpenDoors, {
+    canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+         CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },    
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/wallstary.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+    },
+    visit: function() {
+         alertInfo("Let's explore the space.");
+         this.wallTop.show();
+         this.wallRight.show();
+         this.ground.show();
+        }   
+  }),
 
     drawnbyme: Object.assign({}, OpenDoors, {
         createImages: function() {
@@ -482,7 +508,7 @@ const door = {
             this.ground.show();
         }
     }),
-    navypink: Object.assign({}, OpenDoors, {
+   navypink: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/navypink.svg");
