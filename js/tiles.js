@@ -453,7 +453,7 @@ const door = {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/redDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/bloodsidewall2.svg");
-            this.ground = this.createImage("tiles/rooms/floor/blood.svg");
+            this.ground = this.createImage("tiles/rooms/floor/bloodfloor.svg");
         },
             visit: function() {
             alertInfo("Be careful, Many people died in this tsunami");
