@@ -404,11 +404,12 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
     },
     visit: function() {
-        if (player.inventory.has('Rocket')) {
-            alertSuccess("You have a Rocket to explore space.");
-            } else {
+         if (player.inventory.has('Rocket')) {
+             alertSuccess("You have a Rocket to explore space.");
+         } 
+         else {
              alertWarning("You can not go to the space without a rocket.");         
-            }
+         }
          this.wallTop.show();
          this.wallRight.show();
          this.ground.show();
@@ -717,6 +718,7 @@ const door = {
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createForestLevel());
+            player.addReachableLevel(createSpaceLevel());
             player.addReachableLevel(createPartyLevel());
             player.addReachableLevel(createSuperheroLevel());
         },
@@ -1722,6 +1724,81 @@ const desert = {
           this.ground = this.createImage("tiles/rooms/floor/lava.svg");
         },
       }),
+};
+const space = {
+    both: OpenDoors,
+    levelCode: 3,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/wallstary.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+             alertInfo("We are in the space now", "Let's explore it");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Forest.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/wallstary.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("title/rooms/floor/Desert.svg");
+        }
+
+    }),
 };
 const party = {
     both: OpenDoors,
