@@ -44,10 +44,7 @@ function choosePlayerCharacter(player) {
             "characters/detective.svg": "Agent X",
             "characters/Geekomoji.svg": "Geekomoji",
             "characters/joker.svg": "Joker",
-
-            //added Character from RuKoBe
             "characters/OwnChar.png": "OwnChar",
-
             "characters/tardis.svg": "TARDIS",
             "characters/ninja.svg": "Ninja",
             "characters/Mr zero.svg": "Mr. Zero",
@@ -59,7 +56,6 @@ function choosePlayerCharacter(player) {
             "characters/pixie.svg": "Forest Spirit",
             "characters/AngryBot.svg": "Angry Bot",
             "characters/deathnote.svg": "Death Note",
-            // added character cowboy
             "characters/cowboy.png": "Cowboy",
             "characters/ant.svg": "The AntMan",
             "characters/fireman.svg": "Fire Man",
@@ -67,7 +63,8 @@ function choosePlayerCharacter(player) {
             "characters/programmer.png": "Programmer",
             "characters/oldman.svg": "oldman.svg",
             "characters/demonknight.png": "Demon Knight",
-            "characters/ironman.svg": "Iron Man"
+            "characters/ironman.svg": "Iron Man",
+            "characters/telebishop.svg": "Telebishop"
         });
     });
     swal({
