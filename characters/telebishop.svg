@@ -1,4 +1,4 @@
-<?xml version='1.0'standalone='no'?>
+<?xml version='1.0'encoding='utf-8'?>
 <svg xmlns:svg='http://www.w3.org/2000/svg'xmlns='http://www.w3.org/2000/svg'width=55 height=60 viewBox='0 0 55 60'>
 <path d='M5 4 Q27 -3 49 4 Q54 5 54 22 Q53 46 44 48 L50 59 L4 59 L9 48 Q1 46 0 22 Q0 5 5 4'fill='#505050'/>
 <path d='M18 1.1 Q33.5 -.95 49 4 Q54 5 54 22 Q53 46 44 48 L50 59 L31 59 L30 48 Q13 32 18 1.1'fill='#777'/>
