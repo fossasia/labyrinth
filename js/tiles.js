@@ -404,12 +404,12 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
     },
     visit: function() {
-        if (player.inventory.has('Rocket')) {
-                alertSuccess("You have a Rocket to explore space.");
-        } 
-        else {
-                alertWarning("You can not go to the space without a rocket.");         
-        }
+         if (player.inventory.has('Rocket')) {
+             alertSuccess("You have a Rocket to explore space.");
+         } 
+         else {
+             alertWarning("You can not go to the space without a rocket.");         
+         }
          this.wallTop.show();
          this.wallRight.show();
          this.ground.show();
