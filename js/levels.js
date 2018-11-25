@@ -21,7 +21,7 @@ function createFirstLevel()
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
-    [door.both, door.boat, door.river, desert.universe, door.cake, door.newYear],
+    [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
     [door.quirky, door.square, door.quake, desert.universe, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],  
   ]);
@@ -85,6 +85,17 @@ function createSuperheroLevel() {
     [Superhero.none, Superhero.first, Superhero.top, Superhero.second, Superhero.top, Superhero.top],
     [Superhero.none, Superhero.first, Superhero.second, Superhero.both, Superhero.both, Superhero.top],
     [NullTile, Superhero.none, Superhero.none, Superhero.none, Superhero.none, Superhero.none],
+  ]);
+}
+function createPartytimeLevel() {
+  return new Level("Partytime", [
+    [partytime.none, partytime.right, partytime.right, partytime.right, partytime.right, partytime.right, partytime.top],
+    [partytime.none, partytime.top, partytime.both, partytime.both, partytime.both, partytime.top, partytime.top],
+    [partytime.none, partytime.top, PlayerStartsAt(partytime.start), partytime.both, partytime.top, partytime.top, partytime.top],
+    [partytime.none, partytime.top, partytime.both, partytime.both, partytime.both, partytime.top, partytime.top],
+    [partytime.none, partytime.top, partytime.top, partytime.both, partytime.top, partytime.top, partytime.top],
+    [partytime.none, partytime.top, partytime.both, partytime.both, partytime.right, partytime.top, partytime.top],
+    [NullTile, partytime.none, partytime.none, partytime.none, partytime.none, partytime.none, partytime.none],
   ]);
 }
 function createGraphicsManiaLevel() {
