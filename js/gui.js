@@ -67,7 +67,8 @@ function choosePlayerCharacter(player) {
             "characters/programmer.png": "Programmer",
             "characters/oldman.svg": "oldman.svg",
             "characters/demonknight.png": "Demon Knight",
-            "characters/ironman.svg": "Iron Man"
+            "characters/ironman.svg": "Iron Man",
+            "characters/star war cat.svg": "STAR WAR CAT"
         });
     });
     swal({
