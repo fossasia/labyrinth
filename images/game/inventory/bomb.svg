@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 1107.75 1107.75"
+   version="1.1"
+   id="svg397"
+   sodipodi:docname="bomb.svg"
+   inkscape:version="0.92.3 (d244b95, 2018-08-02)">
+  <metadata
+     id="metadata401">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>vortex</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="679"
+     inkscape:window-height="729"
+     id="namedview399"
+     showgrid="false"
+     inkscape:zoom="0.21304446"
+     inkscape:cx="725.20074"
+     inkscape:cy="553.875"
+     inkscape:window-x="683"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg397" />
+  <defs
+     id="defs366">
+    <style
+       id="style289">
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #f7f489;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #ffea19;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-9 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        fill: #f7f4c2;
+      }
+
+      .cls-4 {
+        fill: #f7dec2;
+        stroke: #fcd786;
+      }
+
+      .cls-5, .cls-9 {
+        fill: none;
+      }
+
+      .cls-6 {
+        opacity: 0.15;
+        fill: url(#radial-gradient);
+      }
+
+      .cls-6, .cls-7, .cls-8, .cls-9 {
+        mix-blend-mode: screen;
+      }
+
+      .cls-7 {
+        opacity: 0.5;
+        fill: url(#radial-gradient-2);
+      }
+
+      .cls-8 {
+        fill: url(#radial-gradient-3);
+      }
+
+      .cls-9 {
+        stroke: #fff;
+        stroke-width: 2px;
+        opacity: 0.03;
+      }
+    </style>
+    <radialGradient
+       id="radial-gradient"
+       cx="553.88"
+       cy="553.88"
+       r="244.5"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#230000"
+         id="stop291" />
+      <stop
+         offset="0.73"
+         stop-color="#93432a"
+         id="stop293" />
+      <stop
+         offset="1"
+         stop-color="#230000"
+         id="stop295" />
+    </radialGradient>
+    <radialGradient
+       id="radial-gradient-2"
+       cx="553.88"
+       cy="553.88"
+       r="122.25"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.15"
+         stop-color="#fff"
+         id="stop298" />
+      <stop
+         offset="0.21"
+         stop-color="#e2d1d2"
+         id="stop300" />
+      <stop
+         offset="0.29"
+         stop-color="#bf9a9c"
+         id="stop302" />
+      <stop
+         offset="0.36"
+         stop-color="#a67276"
+         id="stop304" />
+      <stop
+         offset="0.42"
+         stop-color="#975a5e"
+         id="stop306" />
+      <stop
+         offset="0.45"
+         stop-color="#915155"
+         id="stop308" />
+      <stop
+         offset="0.56"
+         stop-color="#6c3638"
+         id="stop310" />
+      <stop
+         offset="0.68"
+         stop-color="#44191a"
+         id="stop312" />
+      <stop
+         offset="0.79"
+         stop-color="#2c0707"
+         id="stop314" />
+      <stop
+         offset="0.85"
+         stop-color="#230000"
+         id="stop316" />
+      <stop
+         offset="0.86"
+         stop-color="#270201"
+         id="stop318" />
+      <stop
+         offset="0.86"
+         stop-color="#340805"
+         id="stop320" />
+      <stop
+         offset="0.87"
+         stop-color="#48120b"
+         id="stop322" />
+      <stop
+         offset="0.88"
+         stop-color="#652114"
+         id="stop324" />
+      <stop
+         offset="0.89"
+         stop-color="#8b331f"
+         id="stop326" />
+      <stop
+         offset="0.9"
+         stop-color="#b8492d"
+         id="stop328" />
+      <stop
+         offset="0.9"
+         stop-color="#d65836"
+         id="stop330" />
+      <stop
+         offset="0.9"
+         stop-color="#c95232"
+         id="stop332" />
+      <stop
+         offset="0.91"
+         stop-color="#9d3c25"
+         id="stop334" />
+      <stop
+         offset="0.93"
+         stop-color="#782a1a"
+         id="stop336" />
+      <stop
+         offset="0.94"
+         stop-color="#591b10"
+         id="stop338" />
+      <stop
+         offset="0.95"
+         stop-color="#410f09"
+         id="stop340" />
+      <stop
+         offset="0.97"
+         stop-color="#300604"
+         id="stop342" />
+      <stop
+         offset="0.98"
+         stop-color="#260201"
+         id="stop344" />
+      <stop
+         offset="1"
+         stop-color="#230000"
+         id="stop346" />
+    </radialGradient>
+    <radialGradient
+       id="radial-gradient-3"
+       cx="553.88"
+       cy="553.88"
+       r="101.87"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0.15"
+         stop-color="#fff"
+         id="stop349" />
+      <stop
+         offset="0.28"
+         stop-color="#c2c2c2"
+         id="stop351" />
+      <stop
+         offset="0.43"
+         stop-color="#888"
+         id="stop353" />
+      <stop
+         offset="0.56"
+         stop-color="#575757"
+         id="stop355" />
+      <stop
+         offset="0.69"
+         stop-color="#313131"
+         id="stop357" />
+      <stop
+         offset="0.81"
+         stop-color="#161616"
+         id="stop359" />
+      <stop
+         offset="0.92"
+         stop-color="#060606"
+         id="stop361" />
+      <stop
+         offset="1"
+         id="stop363" />
+    </radialGradient>
+  </defs>
+  <title
+     id="title368">vortex</title>
+  <ellipse
+     style="fill:#000000"
+     id="path422"
+     cx="481.12024"
+     cy="736.93536"
+     rx="307.44757"
+     ry="300.40677" />
+  <path
+     style="fill:#808080;stroke:#000000;stroke-width:0.52722132px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="M 602.44422,516.44694 C 783.23065,244.7918 699.0425,251.78438 699.0425,251.78438 l 8.3134,-6.80096"
+     id="path430"
+     inkscape:connector-curvature="0"
+     inkscape:transform-center-x="18.797353"
+     inkscape:transform-center-y="-122.01126" />
+  <ellipse
+     style="fill:#ff0000"
+     id="path432"
+     cx="724.49255"
+     cy="275.04202"
+     rx="17.136669"
+     ry="30.058607" />
+</svg>

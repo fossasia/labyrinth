@@ -300,6 +300,7 @@ const door = {
         },
         visit: function() {
             playAudio("music/Quirks/My Song .mp3", 1); 
+           
             alertWarning("Quirky", "Everything is crazy!");
             this.wallTop.show();
             this.wallRight.show();
@@ -327,8 +328,12 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/quake.svg");
         },
         visit: function() {
+            if(player.inventory.has("Bomb")){
+                alertWarning("Quake", "The Bomb has blown, the ground is shaking! RUN!"); 
+            }else{
+                alertInfo("Quake", "Earthquake!, the ground is shaking! RUN!"); 
+            }
             
-            alertWarning("Quake", "The ground is shaking! RUN!");
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -347,6 +352,8 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handy.svg");
         },
         visit: function() {
+            alertInfo("Info", "You have the bomb now"); 
+            player.inventory.add(['Bomb','bomb.svg']);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
