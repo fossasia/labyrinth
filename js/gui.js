@@ -70,7 +70,7 @@ function choosePlayerCharacter(player) {
             "characters/demonknight.png": "Demon Knight",
             "characters/ironman.svg": "Iron Man",
             "characters/LittleAlien.png": "Little Alien",
-            "characters/weird.png": "Weird Man"
+            "characters/weird.png": "Weird Man",
         });
     });
     swal({
