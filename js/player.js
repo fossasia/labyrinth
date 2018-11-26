@@ -7,6 +7,9 @@ var NullLevel = {
   hide: function() {},
 };
 
+// Array of tiles that have been discovered
+var seenTiles = [];
+
 function createPlayerPicture() {
   var embed = document.createElement("embed");
   embed.id = "player"; // todo: add style information to css
@@ -30,11 +33,26 @@ function Player() {
     this.currentLevel = NullLevel;
     this.picture = createPlayerPicture();
     this.levels = [];
+	
+	// For Checking whether a tile *object* has been discovered
+	function isTileDiscovered(tile) {
+    for (var i = 0; i < seenTiles.length; i++) {
+        if (seenTiles[i] === tile) {
+            return true;
+        }
+    }
 
+    return false;
+}
+	
     this.enter = function(tile) {
         this.currentTile.playerLeaves(this);
         this.currentTile = tile;
         this.currentTile.playerEnters(this);
+		if (isTileDiscovered(tile) === false){
+			seenTiles.push(tile);
+			$("#discoveryDisplay").html(seenTiles.length);
+		}
         this.moves++;
     };
 
@@ -123,4 +141,7 @@ function Player() {
         }
       });
     };
+	this.numOfDiscoveredTiles = function(){
+		return seenTiles.length;
+	};
 }

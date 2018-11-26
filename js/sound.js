@@ -21,12 +21,27 @@ const backgroundAudio = [
         legalNotice: "Music by bensound.com",
         link: "http://bensound.com/",
     },
+
+    {
+        filename: "audio/background/NCS/bensound-summer.mp3",
+        backgroundSongName: "Summer",
+        author: "bensound.com",
+        legalNotice: "Music by bensound.com",
+        link: "https://www.bensound.com/",
+    },
     {
         filename: "audio/music/Drumplo.m4a",
         backgroundSongName: "Drumplo",
         author: "Samyak Jain",
         legalNotice: "Created by Samyak Jain",
         link: "https://github.com/samyakbvs",
+    },
+    {
+        filename: "audio/background/Janam_janam_guitar.wav",
+        backgroundSongName: "Guitar tune",
+        author: "Sahil Saha",
+        legalNotice: "Created by Sahil Saha",
+        link: "https://github.com/sahilsaha7773/",
     },
     {
         filename: "audio/background/yashkumarverma.github.io/mousePlay.mp3",
@@ -114,6 +129,12 @@ const backgroundAudio = [
         legalNotice: "Sound by Anirudh Chauhan",
     },
     {
+        filename: "audio/background/ChaarKadam.ogg",
+        backgroundSongName: "ChaarKadam",
+        author: "Akshit Goyal",
+        legalNotice: "Sound by Akshit Goyal",
+    },
+    {
         filename: "audio/saarthakchats/SuperFunk007.wav",
         backgroundSongName: "Super Funk",
         author: "Saarthak Chaturvedi",
@@ -127,6 +148,20 @@ const backgroundAudio = [
         legalNotice: "Voice",
         link: "http://github.com/STEdirisuriya",
     },
+	{
+        filename: "audio/background/ExploringThroughout.wav",
+        backgroundSongName: "Exploring Throughout",
+        author: "Hubert Zimny (AppleCat)",
+        legalNotice: "ExploringThroughout",
+        link: "http://github.com/AppleC4T",
+    },
+    {
+        filename: "audio/background/PopRemixed/Remix.mp3",
+        backgroundSongName: "Popping it up!",
+        author: "Arihant Bansal",
+        legalNotice: "It's mine!",
+        link: "http://github.com/arihantbansal",
+    }
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
@@ -162,6 +197,8 @@ function startBackgroundAudio() {
     updateLegalBackground();
     console.log(backgroundPlay);
     backgroundPlay.play();
+    document.getElementById("play").style.display ="none";
+    document.getElementById("pause").style.display ="inline-block";
     document.getElementById("play-pause-float").children[0].classList.remove("fa-play");
     document.getElementById("play-pause-float").children[0].classList.add("fa-pause");
     togglePlay();
@@ -191,6 +228,9 @@ function previousBackgroundAudio() {
 
 function stopBackgroundAudio() {
     backgroundPlay.pause();
+    
+    document.getElementById("play").style.display ="inline-block";
+    document.getElementById("pause").style.display ="none";
     document.getElementById("play-pause-float").children[0].classList.remove("fa-pause");
     document.getElementById("play-pause-float").children[0].classList.add("fa-play");
     togglePause();

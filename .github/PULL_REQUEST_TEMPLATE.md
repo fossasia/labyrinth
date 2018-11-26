@@ -5,7 +5,7 @@
 - [ ] Included a preview link and screenshot showing after and before the changes.
 - [ ] Included a description of change below.
 - [ ] Tried to [squash the commits][squash].
-- [ ] Added Screenshot to Indidate Location of Change in Game
+- [ ] Added Screenshot / Path to tile to Indicate Location of Change in Game
 
 ### Changes done in this Pull Request
 
@@ -28,8 +28,8 @@ If you have not fixed some issue(s) completely but only some of the step(s) in i
 <!-- Please summarize the solution you chose.
      Mention the files changed. Add what changes you have done. -->
 
-### Screenshots, Location of Changes
-<!--Please include a screenshot indicating the location of the change made in the game. i.e. location of new tile, or place where the bug was, or place where the changes are reflected -->
+### Screenshots, Location of Changes, Path to Tile
+<!--Please include way to your tile (like up, up, down, left ...) or  include a screenshot indicating the location of the change made in the game. i.e. location of new tile, or place where the bug was, or place where the changes are reflected -->
 
 
 
