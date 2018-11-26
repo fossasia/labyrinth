@@ -1746,7 +1746,7 @@ const space = {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
-        },
+        }
     }),
     top: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
