@@ -1740,10 +1740,11 @@ const desert = {
             return false;
         },
         visit: function() {
-        alertWarning("The floor is lava!", "Better get outta here!");
-        this.wallTop.show();
-        this.wallRight.show();
-        this.ground.show();
+            playAudio("audio/background/PopRemixed/Remix.mp3");
+            alertWarning("The floor is lava!", "Better get outta here!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
         },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
