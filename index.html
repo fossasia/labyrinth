@@ -118,7 +118,7 @@
           </p>
 		  <p><a class="lang" data-href="discovered">Tiles Discovered :</a>
           	<span id="discoveryDisplay">0</span>
-          </p>
+          </p> 
           <p><a class="lang" data-href="spent">Time spent :</a></p>
             <div class="contTimer">
                <span id="timer">00 : 00 : 00</span>
@@ -158,9 +158,38 @@
               <li><input type="button" value="Save" onClick="saveTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li><input type="button" value="Load last save" onClick="loadTrigger()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li><input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+              <li><input type="button" value="Get Path" onClick="show_p()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+               <p id="pa"></p>  
               <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
             </ul>
           </div>
+         <script type="text/javascript">
+                var key;
+                var path=[];
+                document.onkeydown = function(event) {
+                        switch (event.keyCode) {
+                            case 37:
+                                key = 37;
+                                path.push(" Left");
+                                break;
+                            case 38:
+                                key = 38;
+                                path.push(" Up");
+                                 break;
+                            case 39:
+                                key = 39;
+                                path.push(" Right");
+                                break;
+                            case 40:
+                                key = 40;
+                                path.push(" Down");
+                                break;
+                           }
+                    };
+                     function show_p() {
+                         document.getElementById("pa").innerHTML = path;
+                    } 
+            </script>    
         </div>
         <div class="border1"></div>
         <!-- Audio controls. -->
