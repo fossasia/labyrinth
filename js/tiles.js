@@ -1768,6 +1768,12 @@ const space = {
             this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
              alertInfo("We are in the space now", "Let's explore it");
         },
+        visit: function() {
+        	playAudio("audio/background/Janam_janam_guitar.wav", 1);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
     }),
     top: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
