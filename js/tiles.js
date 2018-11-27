@@ -328,8 +328,9 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/quake.svg");
         },
         visit: function() {
-            if(player.inventory.has("Bomb")){
+            if(player.inventory.has('Bomb')){
                 alertWarning("Quake", "The Bomb has blown, the ground is shaking! RUN!"); 
+                console.log("Lmao")
             }else{
                 alertInfo("Quake", "Earthquake!, the ground is shaking! RUN!"); 
             }
