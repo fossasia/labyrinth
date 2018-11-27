@@ -53,7 +53,17 @@ function createForestLevel() {
     [NullTile, forest.none, forest.none, forest.none, forest.none, forest.none],
   ]);
 }
-
+function createSpaceLevel() {
+  return new Level("Space", [
+    [space.none, space.right, space.right, space.right, space.right, space.none],
+    [space.none, space.top, space.both, space.both, space.both, space.both],
+    [space.none, space.top, PlayerStartsAt(space.start), space.both, space.both, space.top],
+    [space.none, space.top, space.both, space.both, space.both, space.top],
+    [space.none, space.top, space.top, space.both, space.top, space.top],
+    [space.none, space.top, space.both, space.both, space.both, space.top],
+    [NullTile, space.none, space.none, space.none, space.none, space.none],
+  ]);
+}
 function createDesertLevel() {
   return new Level("Desert", [
     [desert.none, desert.right, desert.right, desert.right, desert.right, desert.none],
