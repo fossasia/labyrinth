@@ -1,0 +1,51 @@
+{
+  "name": "gitter-laby-bot",
+  "version": "1.0.0",
+  "description": "A Probot app",
+  "author": "srihari unnikrishnan <srihari.unnikrishnan@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com//gitter-laby-bot.git",
+  "homepage": "https://github.com//gitter-laby-bot",
+  "bugs": "https://github.com//gitter-laby-bot/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+  },
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
