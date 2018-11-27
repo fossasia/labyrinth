@@ -65,6 +65,7 @@ function choosePlayerCharacter(player) {
             "characters/oldman.svg": "oldman.svg",
             "characters/demonknight.png": "Demon Knight",
             "characters/ironman.svg": "Iron Man",
+            "characters/weird.png": "Weird Man",
             "characters/telebishop.svg": "Telebishop",
             "characters/LittleAlien.png": "Little Alien",
             "characters/barbariansword.svg": "Barbarian Sword",
