@@ -464,6 +464,23 @@ const door = {
          }
     }),
     
+    code: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, 
+    canLeaveToTheRight() {return false;},
+        
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/jibberish.svg"); 
+    },
+    visit: function() {
+        alertInfo("Put on your headphones and get coding!");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+    }
+  }),
+    
     mountains: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {return false;},
         canLeaveToTheRight() {return false;},
