@@ -464,15 +464,15 @@ const door = {
     	canLeaveToTheRight() {return false;},
 		
 		createImages: function(){
-			this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
-            this.ground = this.createImage("tiles/rooms/floor/drawnPond.svg");
+		  this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/drawnPond.svg");
 		},
-		visit: function() {
-            alertInfo("Come! Relax by the pond...");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
+	    visit: function() {
+          alertInfo("Come! Relax by the pond...");
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
          }
     }),
     
