@@ -276,37 +276,7 @@ const door = {
             alertInfo("Welcome to the Labyrinth !", "Explore More ! Let's see what can find ...");
         },
     }),
-    quirky: Object.assign({},OpenDoors,{
-        canLeaveToTheTop: function(player) {
-            return false;
-        },
-        CanEnterFromTheRight() {
-            return false;
-        },
-
-        CanLeaveFromTheRight() {
-            return false;
-        },
-        canEnterFromTheTop: function(player) {
-            return false;
-        },
-        createImages: function() {
-            
-            
-            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
-            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
-            
-            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
-        },
-        visit: function() {
-            playAudio("music/Quirks/My Song .mp3", 1); 
-           
-            alertWarning("Quirky", "Everything is crazy!");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
-         },
-    }),
+    
 
     quake: Object.assign({},OpenDoors,{
         canLeaveToTheTop: function(player) {
@@ -759,7 +729,8 @@ const door = {
             player.addReachableLevel(createForestLevel());
             player.addReachableLevel(createSpaceLevel());
             player.addReachableLevel(createPartyLevel());
-	    player.addReachableLevel(createPartytimeLevel());
+            player.addReachableLevel(createPartytimeLevel());
+            player.addReachableLevel(createCrazyLevel());
             player.addReachableLevel(createSuperheroLevel());
         },
     }),
@@ -1753,11 +1724,10 @@ const desert = {
             return false;
         },
         visit: function() {
-            playAudio("audio/background/PopRemixed/Remix.mp3");
-            alertWarning("The floor is lava!", "Better get outta here!");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
+        alertWarning("The floor is lava!", "Better get outta here!");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
         },
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
@@ -1923,7 +1893,135 @@ const party = {
 
     }),
 };
+const crazy ={
+    both:OpenDoors,
+    
+    right: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
 
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+
+        CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            
+            
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/quirky.svg");
+            
+            this.ground = this.createImage("tiles/rooms/floor/quirky.svg");
+        },
+        visit: function() {
+            playAudio("music/Quirks/My Song .mp3", 1); 
+           
+            alertWarning("Quirky", "Everything is crazy!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
+};
 const partytime = {
     both: OpenDoors,
     right: Object.assign({}, OpenDoors, {
