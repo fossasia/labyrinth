@@ -446,6 +446,23 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/caro.svg");
 		},
     }),
+	
+	drawnPond: Object.assign({}, OpenDoors, {
+	    canEnterFromTheRight() {return false;},
+    	canLeaveToTheRight() {return false;},
+		
+		createImages: function(){
+		    this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/drawnPond.svg");
+		},
+	    visit: function() {
+            alertInfo("Come! Relax by the pond...");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         }
+    }),
     
     mountains: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {return false;},
