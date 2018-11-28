@@ -460,7 +460,7 @@ const door = {
     }),
 	
 	drawnPond: Object.assign({}, OpenDoors, {
-		canEnterFromTheRight() {return false;},
+	    canEnterFromTheRight() {return false;},
     	canLeaveToTheRight() {return false;},
 		
 		createImages: function(){
