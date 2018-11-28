@@ -329,6 +329,24 @@ const door = {
             this.ground.show();
          },
     }),
+    drawnbysahil: Object.assign({},OpenDoors,{
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallRight = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/drawnbysahil.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+         },
+    }),
 	dark1: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;}, 
     canLeaveToTheRight() {return false;},
