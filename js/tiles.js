@@ -2263,6 +2263,13 @@ const TileMesh = {
             this.wallRight = this.createImage("tiles/rooms/wall/rightwaves.svg");
             this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
         },
+        visit: function() { 
+            playAudio("music/clapandyell.mp3"); 
+            alertInfo("It's party time"); 
+            this.wallTop.show(); 
+            this.wallRight.show();
+            this.ground.show(); 
+        }, 
     }),
 };
 const dark = {
