@@ -69,7 +69,7 @@ function choosePlayerCharacter(player) {
             "characters/telebishop.svg": "Telebishop",
             "characters/LittleAlien.png": "Little Alien",
             "characters/barbariansword.svg": "Barbarian Sword",
-            "characters/mario.svg": "Super Mario",
+            "characters/ralph.svg": "Wreck It Ralph",
             "characters/rabbit.svg": "Rabbit",
         });
     });
