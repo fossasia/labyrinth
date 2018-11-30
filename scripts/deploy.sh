@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
+
+# install requirements
 npm i -g surge
+pip install path.py --user
+sudo add-apt-repository -y ppa:mc3man/trusty-media
+sudo apt-get update
+sudo apt-get install -y ffmpeg
+ffmpeg -version
 
 #login credentials
 export SURGE_LOGIN=test@example.co.in
@@ -11,12 +18,19 @@ if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
     exit 0
 fi
 
+# download the current code for updating the current live site
+git clone https://github.com/fossasia/labyrinth temp
+
+# clean all the code before deploying
+echo "Running Clean-Deploy..."
+python scripts/clean-deploy.py
+echo "Finished running Clean-Deploy"
+
 # deploy the site for PR
 export DEPLOY_DOMAIN=https://pr-${TRAVIS_PULL_REQUEST}-fossasia-labyrinth.surge.sh
 surge --project ./ --domain $DEPLOY_DOMAIN
 
 # update the current live site with current repo
-git clone https://github.com/fossasia/labyrinth temp
 surge --project temp --domain http://labyrinth-game.surge.sh
 
 # All done folks
