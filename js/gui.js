@@ -70,6 +70,7 @@ function choosePlayerCharacter(player) {
             "characters/LittleAlien.png": "Little Alien",
             "characters/barbariansword.svg": "Barbarian Sword",
             "characters/rabbit.svg": "Rabbit",
+            "characters/ralph.svg": "Wreck It Ralph",
         });
     });
     swal({
