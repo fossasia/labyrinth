@@ -2520,6 +2520,17 @@ const dark = {
 				this.wallTop.show();
             	this.wallRight.show();
             	this.ground.show("tiles/animations/glow.svg");
+                Rajini: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;}, 
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop() {return true;},
+    canLeaveToTheTop() {return true;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/darkdr.svg");  
+      this.wallRight = this.createImage("tiles/rooms/door/darktop.svg");
+      this.ground = this.createImage("tiles/rooms/floor/HandDrawnRajini.svg");
+    },
+  }),
             }
         }
     }),
