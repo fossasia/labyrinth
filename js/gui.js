@@ -72,6 +72,7 @@ function choosePlayerCharacter(player) {
             "characters/larva.svg": "Larva",
             "characters/rabbit.svg": "Rabbit",
             "characters/ralph.svg": "Wreck It Ralph",
+            "characters/Mario.svg": "Mario",
         });
     });
     swal({
