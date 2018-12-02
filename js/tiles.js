@@ -2566,4 +2566,19 @@ const dark = {
             }
         }
     }),
+    Salt: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Salt.svg");
+    },
+    visit: function() {
+        alertNormal("", "Its going to get salty in here!!!!");
+        this.wallTop.show();
+        this.wallRight.show();
+        this.ground.show();
+     },
+  }),
 };
