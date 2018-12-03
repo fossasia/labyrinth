@@ -2569,6 +2569,8 @@ const dark = {
     Salt: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
+    canEnterFromTheTop: function(player) {return false;},
+    canLeaveToTheTop: function(player) {return false;},
     createImages: function() {
       this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
       this.wallRight = this.createImage("tiles/rooms/door/right.svg");
