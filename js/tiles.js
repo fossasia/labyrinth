@@ -2451,7 +2451,7 @@ const TileMesh = {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
             this.wallRight = this.createImage("tiles/rooms/wall/rightwaves.svg");
-            this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
+            this.ground = this.createImage("tiles/rooms/floor/landscape.svg");
         },
         visit: function() { 
             playAudio("music/clapandyell.mp3"); 
