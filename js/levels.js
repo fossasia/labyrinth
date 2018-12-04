@@ -13,8 +13,8 @@ function createFirstLevel()
   return new Level("Starter", [
 
     [door.navypink, door.blood, door.staani, door.treasureKey, door.starywall, door.night],
-    [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
-    [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
+    [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.salt],
+    [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night, door.none],
 
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
     [door.drawnbysahil, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
@@ -22,7 +22,7 @@ function createFirstLevel()
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.rollingball, door.reddish, door.winter1, door.goal, door.none],
     [door.newlines, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
 
-    [door.sea, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale, door.salt],
+    [door.sea, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
