@@ -19,7 +19,7 @@ function createFirstLevel()
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
     [door.drawnbysahil, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
 
-    [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.rollingball, door.reddish, door.winter1, door.goal, door.none],
+    [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.rollingball, door.reddish, door.winter1, door.goal, door.programmer],
     [door.newlines, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
     
     [door.sea, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
