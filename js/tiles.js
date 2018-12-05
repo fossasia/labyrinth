@@ -449,7 +449,12 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
     },
     visit: function() {
-         alertInfo("Let's Head Back To Common Room!!.");
+         if (player.inventory.has('Dog')) {
+             alertSuccess("You have a Dog to explore room.");
+         } 
+         else {
+             alertWarning("You can not go to the room without a pet.");         
+         }
          this.wallTop.show();
          this.wallRight.show();
          this.ground.show();
@@ -586,6 +591,21 @@ const door = {
             this.ground.show();
         }
     }),
+    navypink: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/yellowDoor.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/yellowRight.svg");
+            this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
+          },
+        visit: function() {
+            player.inventory.add(['oldman', 'oldman.svg']);
+            alertInfo("You found a oldman made by Shreesh Jha!", "You can go to Common Room!!!");
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+      
     newlines: Object.assign({}, OpenDoors, {
         createImages: function() {
           this.wallTop = this.createImage("tiles/rooms/door/top.svg"); 
