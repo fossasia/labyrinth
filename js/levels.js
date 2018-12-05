@@ -12,10 +12,10 @@ function createFirstLevel()
 {
   return new Level("Starter", [
 
-    [door.navypink, door.blood, door.marina, door.treasureKey, door.CustomWall,door.starywall, door.night],
+    [door.navypink, door.blood, door.marina, door.treasureKey, door.CustomWall, door.night],
     [door.none, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
 
-    [door.navypink, door.blood, door.staani, door.treasureKey, door.starywall, door.night],
+    [door.navypink, door.blood, door.staani, door.treasureKey, door.CustomWall, door.night],
     [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
     [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
 
