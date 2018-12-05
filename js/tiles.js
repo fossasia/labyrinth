@@ -449,11 +449,11 @@ const door = {
       this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
     },
     visit: function() {
-         if (player.inventory.has('Dog')) {
-             alertSuccess("You have a Dog to explore room.");
+         if (player.inventory.has('oldman.svg')) {
+             alertSuccess("You have a oldman to explore room.");
          } 
          else {
-             alertWarning("You can not go to the room without a pet.");         
+             alertWarning("You can not go to the room without a oldman.");         
          }
          this.wallTop.show();
          this.wallRight.show();
@@ -1874,17 +1874,41 @@ const space = {
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/door/wallstary.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/CustomWall.svg");
             this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
-             alertInfo("We are in the space now", "Let's explore it");
+             alertInfo("We are in the Common Room now", "Let's explore it");
         },
         visit: function() {
-        	playAudio("audio/background/Janam_janam_guitar.wav", 1);
+        	playAudio("audio/shreeshjha/bensound-smile.mp3", 1);
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
         }
     }),
+    const space = {
+    both: OpenDoors,
+    levelCode: 3,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/wallstary.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+             alertInfo("We are in the space now", "Let's explore it");
+        },
+        visit: function() {
+        	playAudio("audio/background/bensound.wav", 1);
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show();
+        }
+    }),
+    
     top: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {
             return false;
