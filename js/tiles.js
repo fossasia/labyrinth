@@ -1385,7 +1385,7 @@ const door = {
             return false;
         },
         canLeaveToTheRight: function(player) {
-            return false;
+            return true;
         },
         canLeaveToTheBottom: function(player) {
             return true;
