@@ -598,7 +598,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
           },
         visit: function() {
-            player.inventory.add(['oldman', 'oldman.svg']);
+            player.inventory.add(['oldman.svg', 'oldman.svg']);
             alertInfo("You found a oldman made by Shreesh Jha!", "You can go to Common Room!!!");
             this.wallTop.show();
             this.wallRight.show();
