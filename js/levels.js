@@ -13,7 +13,7 @@ function createFirstLevel()
   return new Level("Starter", [
 
     [door.navypink, door.blood, door.staani, door.treasureKey, door.starywall, door.night],
-    [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
+    [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.salt],
     [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
 
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
@@ -29,7 +29,6 @@ function createFirstLevel()
     [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
     [door.both, door.square, door.quake, desert.universe, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],
-    [door.salt],
   ]);
 }
 
