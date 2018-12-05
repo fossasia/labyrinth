@@ -392,6 +392,7 @@ const door = {
         },
     }),
   
+
     design: Object.assign({}, OpenDoors, {
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/door/top.svg");
@@ -428,7 +429,34 @@ const door = {
          this.wallRight.show();
          this.ground.show();
         }   
+    }),
+    CustomWall: Object.assign({}, OpenDoors, {
+    canLeaveToTheTop: function(player) {
+            return false;
+        },
+        CanEnterFromTheRight() {
+            return false;
+        },
+         CanLeaveFromTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },    
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); 
+      this.wallRight = this.createImage("tiles/rooms/wall/CustomWall.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+    },
+    visit: function() {
+         alertInfo("Let's Head Back To Common Room!!.");
+         this.wallTop.show();
+         this.wallRight.show();
+         this.ground.show();
+        }   
   }),
+
+
 
     drawnbyme: Object.assign({}, OpenDoors, {
         createImages: function() {
