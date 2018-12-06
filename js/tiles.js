@@ -1451,6 +1451,35 @@ const door = {
 	        this.ground.show();
         }
     }),
+        CustomRoom: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheLeft: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+         createImages: function() {
+    		this.wallTop = this.createImage("tiles/rooms/wall/CustomWall.svg");
+    		this.wallRight = this.createImage("tiles/rooms/door/yellowRight.svg");
+    		this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
+        },
+        visit: function() {
+			alertNormal("You have discovered a mysteriously old room");
+		this.wallTop.show();
+	        this.wallRight.show();
+	        this.ground.show();
+        }
+    }),		
+	        
 };
 
 const night = {

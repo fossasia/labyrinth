@@ -29,6 +29,7 @@ function createFirstLevel()
     [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
     [door.both, door.square, door.quake, desert.universe, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],  
+    [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.CustomRoom],  
   ]);
 }
 
