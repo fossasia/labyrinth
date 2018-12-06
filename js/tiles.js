@@ -1473,7 +1473,7 @@ const door = {
     		this.ground = this.createImage("tiles/rooms/floor/yellowFloor.svg");
         },
         visit: function() {
-			alertNormal("You have discovered a mysteriously old room");
+			alertNormal("You have discovered a Common Room");
 		this.wallTop.show();
 	        this.wallRight.show();
 	        this.ground.show();
