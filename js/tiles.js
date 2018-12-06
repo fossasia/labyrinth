@@ -479,13 +479,6 @@ const door = {
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/programmer.svg");
         },
-        
-        visit: function() {
-            alertNormal("Welcome to the nerd side!");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
-        }
     }),
     
     mountains: Object.assign({}, OpenDoors, {
