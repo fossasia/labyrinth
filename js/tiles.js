@@ -467,8 +467,8 @@ const door = {
     programmer: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() { return true; },
         canLeaveToTheRight() { return true; },
-        canEnterFromTheTop() { return true; },
-        canLeaveToTheTop() { return true; },
+        canEnterFromTheTop() { return false; },
+        canLeaveToTheTop() { return false; },
         canEnterFromTheBottom() { return true; },
         canLeaveToTheBottom() { return true; },
         canEnterFromTheLeft() { return true; },
