@@ -12,18 +12,23 @@ function createFirstLevel()
 {
   return new Level("Starter", [
 
-    [door.navypink, door.blood, door.marina, door.treasureKey, door.starywall, door.night],
-    [door.none, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
+    [door.navypink, door.blood, door.staani, door.treasureKey, door.starywall, door.night],
+    [door.drawnPond, door.minecraftEntry, door.minecraft, door.orange, door.winter1, door.goal, door.none],
     [door.navypink, door.blood, door.marina, door.treasureKey, door.drawnbyhand, door.night],
+
     [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.reddish, door.winter1, door.goal, door.none],
+    [door.drawnbysahil, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
+
+    [door.dark1, door.minecraftEntry, door.minecraft, door.orange, door.rollingball, door.reddish, door.winter1, door.goal, door.none],
     [door.newlines, door.orchestra, door.Forbidden, door.chocolate, door.guitarCase, door.winter2],
+
     [door.sea, door.sofa, door.outdoor, door.chessMate, door.texture, door.chessStale],
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
     [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
-    [door.quirky, door.square, door.quake, desert.universe, door.cake, door.mountains],
-    [door.both, door.boat, door.river, desert.universe, door.cake, door.mountains],  
+    [door.both, door.square, door.quake, desert.universe, door.cake, door.mountains],
+    [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],  
   ]);
 }
 
@@ -62,6 +67,18 @@ function createSpaceLevel() {
     [space.none, space.top, space.top, space.both, space.top, space.top],
     [space.none, space.top, space.both, space.both, space.both, space.top],
     [NullTile, space.none, space.none, space.none, space.none, space.none],
+  ]);
+}
+
+function createCrazyLevel() {
+  return new Level("Crazy", [
+    [crazy.none, crazy.right, crazy.right, crazy.right, crazy.right, crazy.right, crazy.top],
+    [crazy.none, crazy.top, crazy.both, crazy.both, crazy.both, crazy.top, crazy.top],
+    [crazy.none, crazy.top, PlayerStartsAt(crazy.start), crazy.both, crazy.top, crazy.top, crazy.top],
+    [crazy.none, crazy.top, crazy.both, crazy.both, crazy.both, crazy.top, crazy.top],
+    [crazy.none, crazy.top, crazy.top, crazy.both, crazy.top, crazy.top, crazy.top],
+    [crazy.none, crazy.top, crazy.both, crazy.both, crazy.right, crazy.top, crazy.top],
+    [NullTile, crazy.none, crazy.none, crazy.none, crazy.none, crazy.none, crazy.none],
   ]);
 }
 function createDesertLevel() {
@@ -147,7 +164,7 @@ function createDarkLevel() {
     [dark.none, dark.right, dark.cross, dark.right, dark.right, dark.right, dark.cross],
     [dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
     [dark.none, dark.none, dark.top, dark.right, dark.cross, dark.end, dark.top],
-	[dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
+	  [dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
     [dark.none, dark.none, PlayerStartsAt(dark.start), dark.none, dark.top, dark.none, dark.top],
     [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
   ]);

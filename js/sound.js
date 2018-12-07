@@ -37,6 +37,13 @@ const backgroundAudio = [
         link: "https://github.com/samyakbvs",
     },
     {
+        filename: "audio/background/Janam_janam_guitar.wav",
+        backgroundSongName: "Guitar tune",
+        author: "Sahil Saha",
+        legalNotice: "Created by Sahil Saha",
+        link: "https://github.com/sahilsaha7773/",
+    },
+    {
         filename: "audio/background/yashkumarverma.github.io/mousePlay.mp3",
         backgroundSongName: "Mouse Play",
         author: "Yash Kumar Verma",
@@ -154,6 +161,13 @@ const backgroundAudio = [
         author: "Arihant Bansal",
         legalNotice: "It's mine!",
         link: "http://github.com/arihantbansal",
+    },
+    {
+        filename: "audio/background/shreeshjha/bensound-smile.mp3",
+        backgroundSongName: "Smile",
+        author: "ShreeshJha",
+        legalNotice: "Bensound",
+        link: "http://github.com/shreeshjha",
     }
 ];
 /*

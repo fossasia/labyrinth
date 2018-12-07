@@ -23,6 +23,68 @@ function createPlayerPicture() {
   return embed;
 }
 
+/*global runTeleport player:true*/
+/*eslint no-undef: "error"*/
+
+/*global swal*/
+/*eslint no-undef: "error"*/
+
+function runTeleport(){
+	swal("Teleporting...", "", "info");
+	var isPathValid = true;
+	var isTpValid = true;
+	var TpPath = document.querySelector(".pathIn").value.split(",");
+	if(document.querySelector(".pathIn").value === ""){
+		swal("No path", "Please provide a path.", "info");
+	}else{
+	for (var i=0; i < TpPath.length; i++){
+		switch(TpPath[i]){
+			case "UP":
+				if (player.canMoveUp() === true){
+					player.moveUp();
+				}else{
+					isTpValid = false;
+				}
+				break;
+			case "DOWN":
+				if (player.canMoveDown() === true){
+					player.moveDown();
+				}else{
+					isTpValid = false;
+				}
+				break;
+			case "LEFT":
+				if (player.canMoveLeft() === true){
+					player.moveLeft();
+				}else{
+					isTpValid = false;
+				}
+				break;
+			case "RIGHT":
+				if (player.canMoveRight() === true){
+					player.moveRight();
+				}else{
+					isTpValid = false;
+				}
+				break;
+			default:
+				isPathValid = false;
+		}
+	
+	}
+	if (isPathValid === false){
+		swal("Invalid path", "Please provide a valid path (eg. UP,LEFT,DOWN,RIGHT)", "error");
+		document.querySelector(".pathIn").value = "";
+	}else if (isTpValid === false) {
+		swal("Inavlid direction","Teleport unsuccessful. One of the tile can't be accessed from this direction.", "error");
+		document.querySelector(".pathIn").value = "";
+	}else{
+		swal("Done","Teleport successful!", "success");
+		document.querySelector(".pathIn").value = "";
+	}
+  }
+}
+
 function Player() {
     this.currentTile = NullTile;
     this.moves = 0;

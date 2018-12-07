@@ -45,10 +45,7 @@ function choosePlayerCharacter(player) {
             "characters/detective.svg": "Agent X",
             "characters/Geekomoji.svg": "Geekomoji",
             "characters/joker.svg": "Joker",
-
-            //added Character from RuKoBe
             "characters/OwnChar.png": "OwnChar",
-
             "characters/tardis.svg": "TARDIS",
             "characters/ninja.svg": "Ninja",
             "characters/Mr zero.svg": "Mr. Zero",
@@ -60,7 +57,6 @@ function choosePlayerCharacter(player) {
             "characters/pixie.svg": "Forest Spirit",
             "characters/AngryBot.svg": "Angry Bot",
             "characters/deathnote.svg": "Death Note",
-            // added character cowboy
             "characters/cowboy.png": "Cowboy",
             "characters/ant.svg": "The AntMan",
             "characters/fireman.svg": "Fire Man",
@@ -69,12 +65,14 @@ function choosePlayerCharacter(player) {
             "characters/oldman.svg": "oldman.svg",
             "characters/demonknight.png": "Demon Knight",
             "characters/ironman.svg": "Iron Man",
+            "characters/weird.png": "Weird Man",
+            "characters/telebishop.svg": "Telebishop",
             "characters/LittleAlien.png": "Little Alien",
             "characters/barbariansword.svg": "Barbarian Sword",
-            "characters/star war cat.svg": "STAR WAR CAT"
-
-   
-
+            "characters/star war cat.svg": "STAR WAR CAT",
+            "characters/larva.svg": "Larva",
+            "characters/rabbit.svg": "Rabbit",
+            "characters/ralph.svg": "Wreck It Ralph",
         });
     });
     swal({
