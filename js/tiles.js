@@ -2566,4 +2566,15 @@ const dark = {
             }
         }
     }),
+    salt: Object.assign({}, OpenDoors, {
+    canEnterFromTheRight() {return false;},
+    canLeaveToTheRight() {return false;},
+    canEnterFromTheTop() {return true;},
+    canLeaveToTheTop() {return false;},
+    createImages: function() {
+      this.wallTop = this.createImage("tiles/rooms/top.svg");
+      this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+      this.ground = this.createImage("tiles/rooms/floor/Salt.svg");
+    },
+  }),
 };
