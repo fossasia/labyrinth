@@ -2566,7 +2566,7 @@ const dark = {
             }
         }
     }),
-    Salt: Object.assign({}, OpenDoors, {
+    salt: Object.assign({}, OpenDoors, {
     canEnterFromTheRight() {return false;},
     canLeaveToTheRight() {return false;},
     canEnterFromTheTop: function(player) {return false;},
