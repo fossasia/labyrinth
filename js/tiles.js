@@ -1474,7 +1474,7 @@ const door = {
         },
         visit: function() {
 			alertNormal("You have discovered a Common Room");
-		this.wallTop.show();
+		    this.wallTop.show();
 	        this.wallRight.show();
 	        this.ground.show();
         }
