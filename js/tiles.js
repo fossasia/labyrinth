@@ -1409,6 +1409,37 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/staircase.svg");
         },
     }),
+    
+   	oldRoom: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheRight: function(player) {
+            return true;
+        },
+        canLeaveToTheLeft: function(player) {
+            return false;
+        },
+        canLeaveToTheBottom: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+         createImages: function() {
+    		this.wallTop = this.createImage("tiles/rooms/wall/vineStoneTop.svg");
+    		this.wallRight = this.createImage("tiles/rooms/door/vineStoneRight.svg");
+    		this.ground = this.createImage("tiles/rooms/floor/wooden.svg");
+        },
+        visit: function() {
+			alertNormal("You have discovered a mysteriously old room",
+				"The walls are covered with vines, but the floor is suprisingly clean. You wonder what this room was used for in the past.");
+	        this.wallTop.show();
+	        this.wallRight.show();
+	        this.ground.show();
+        }
+    }),
+};
 
 const night = {
     both: OpenDoors,
