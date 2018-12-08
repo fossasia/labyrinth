@@ -161,6 +161,13 @@ const backgroundAudio = [
         author: "Arihant Bansal",
         legalNotice: "It's mine!",
         link: "http://github.com/arihantbansal",
+    },
+    {
+        filename: "audio/background/shreeshjha/bensound-smile.mp3",
+        backgroundSongName: "Smile",
+        author: "ShreeshJha",
+        legalNotice: "Bensound",
+        link: "http://github.com/shreeshjha",
     }
 ];
 /*
