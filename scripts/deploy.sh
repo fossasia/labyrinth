@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-
+# install requirements
 npm i -g surge
 pip install path.py --user
 sudo add-apt-repository -y ppa:mc3man/trusty-media
