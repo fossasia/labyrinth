@@ -75,10 +75,10 @@
                 </div>
                 <div class="item"><a class="translate" id="si">
                     <img src="images/icons/SriLanka.png" alt="" class="translation-flag" /> Sinhala</a>
-                </div>  
+                </div>
                 <div class="item"><a class="translate" id="hi">
                   <img src="images/icons/India.png" alt="" class="translation-flag" /> Hindi</a>
-                </div>  
+                </div>
                 <div class="item"><a class="translate" id="pl">
                   <img src="images/icons/Poland.png" alt="" class="translation-flag" /> Polski</a>
                 </div>
@@ -118,17 +118,17 @@
           </p>
 		  <p><a class="lang" data-href="discovered">Tiles Discovered :</a>
           	<span id="discoveryDisplay">0</span>
-          </p> 
+          </p>
           <p><a class="lang" data-href="spent">Time spent :</a></p>
             <div class="contTimer">
                <span id="timer">00 : 00 : 00</span>
             </div>
-            
-         
+
+
             <script>
                 let eleBtnStart = document.querySelector("#btnStart");
                 let eleTimer = document.querySelector("#timer");
-                
+
                 let timeTicker = (() => {
                   var hours = minutes = seconds = 0;
                   var timerTick;
@@ -161,12 +161,10 @@
               <li><input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li><input type="button" value="Get Path" onClick="show_p()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li> <p id="pa"></p></li>
-			  <li><input placeholder="Path to teleport (for debug purposes)" class="blue-grey darken-2 pathIn"/></li>
-			  <li><input type="button" value="Teleport" onClick="runTeleport()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
-              <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
+	            <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
             </ul>
       </div>
-           
+
          <script type="text/javascript">
                 var key;
                 var path=[];
@@ -192,8 +190,8 @@
                     };
                      function show_p() {
                          document.getElementById("pa").innerHTML = path;
-                    } 
-            </script>    
+                    }
+            </script>
         </div>
         <div class="border1"></div>
         <!-- Audio controls. -->
