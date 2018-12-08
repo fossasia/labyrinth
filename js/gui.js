@@ -72,7 +72,7 @@ function choosePlayerCharacter(player) {
             "characters/larva.svg": "Larva",
             "characters/rabbit.svg": "Rabbit",
             "characters/ralph.svg": "Wreck It Ralph",
-            "characters/StarWarCat.svg": "StarWarCat",
+            "characters/StarWarCat.svg": "Star War Cat",
         });
     });
     swal({
