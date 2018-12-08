@@ -69,7 +69,7 @@ function choosePlayerCharacter(player) {
             "characters/telebishop.svg": "Telebishop",
             "characters/LittleAlien.png": "Little Alien",
             "characters/barbariansword.svg": "Barbarian Sword",
-            "characters/star war cat.svg": "STARWARCAT",
+            "characters/star war cat.svg": "STAR WAR CAT",
             "characters/larva.svg": "Larva",
             "characters/rabbit.svg": "Rabbit",
             "characters/ralph.svg": "Wreck It Ralph",
