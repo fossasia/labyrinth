@@ -698,6 +698,19 @@ const door = {
             this.ground = this.createImage("tiles/animations/rollingball.svg");
         },
     }),
+        staani: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/nighttop.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/nightright.svg");
+            this.ground = this.createImage("tiles/animations/staani.svg");
+        },
+    }),
 
     marina: Object.assign({}, OpenDoors, {
         createImages: function() {
