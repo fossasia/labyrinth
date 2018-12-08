@@ -32,9 +32,6 @@ surge --project ./ --domain $DEPLOY_DOMAIN
 
 # update the current live site with current repo
 
-- git clone https://github.com/fossasia/labyrinth temp
-
-
 surge --project temp --domain http://labyrinth-game.surge.sh
 
 # All done folks
