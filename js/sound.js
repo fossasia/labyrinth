@@ -175,7 +175,7 @@ const backgroundAudio = [
         author: "Nishith P",
         legalNotice: "Music by Nishith P",
         link: "http://github.com/nishithp2004",
-    }
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
