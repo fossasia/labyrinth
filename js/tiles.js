@@ -628,7 +628,7 @@ const door = {
     }),
     green: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/moderWallTop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/live.svg");
         },
@@ -783,7 +783,7 @@ const door = {
     }),
     goal: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/moderWallTop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
         },
@@ -2317,7 +2317,7 @@ const Superhero = {
             return false;
         },
         createImages: function () {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/moderWallTop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/art.svg");
         },
