@@ -169,4 +169,3 @@ function createDarkLevel() {
     [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
   ]);
 }
-

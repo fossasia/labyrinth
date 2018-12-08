@@ -95,7 +95,7 @@ function Player() {
     this.currentLevel = NullLevel;
     this.picture = createPlayerPicture();
     this.levels = [];
-	
+
 	// For Checking whether a tile *object* has been discovered
 	function isTileDiscovered(tile) {
     for (var i = 0; i < seenTiles.length; i++) {
@@ -106,7 +106,7 @@ function Player() {
 
     return false;
 }
-	
+
     this.enter = function(tile) {
         this.currentTile.playerLeaves(this);
         this.currentTile = tile;
