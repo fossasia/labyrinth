@@ -163,7 +163,7 @@ const backgroundAudio = [
         link: "http://github.com/arihantbansal",
     },
     }
-        filename: "audio/background/PopRemixed/w-ride.mp3",
+        filename: "audio/background/w-ride.mp3",
         backgroundSongName: "W-Ride",
         author: "Muhammad Hunaify Mu'izzy",
         legalNotice: "Sound by Zygreion",
