@@ -161,7 +161,14 @@ const backgroundAudio = [
         author: "Arihant Bansal",
         legalNotice: "It's mine!",
         link: "http://github.com/arihantbansal",
+    },
     }
+        filename: "audio/background/PopRemixed/w-ride.mp3",
+        backgroundSongName: "W-Ride",
+        author: "Muhammad Hunaify Mu'izzy",
+        legalNotice: "Sound by Zygreion",
+        link: "http://github.com/zygreion",
+    {
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
