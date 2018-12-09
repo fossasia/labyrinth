@@ -6,6 +6,8 @@ cache:
 rvm:
   - 2.3.3
 install:
+  - bash scripts/check-javascript-syntax-errors.sh
+  - bash scripts/check-html-syntax-errors.sh
   - bundle install
   - bundle exec img_checker
 
@@ -21,7 +23,4 @@ cache:
   directories:
      - node_modules
 script:
-  - scripts/check-javascript-syntax-errors.sh
-  - scripts/check-html-syntax-errors.sh
-after_success:
-  - bash ./scripts/deploy.sh
+   - bash ./scripts/deploy.sh
