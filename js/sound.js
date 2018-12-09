@@ -170,6 +170,13 @@ const backgroundAudio = [
         link: "http://github.com/shreeshjha",
     },
     {
+        filename: "audio/background/piano.mid",
+        backgroundSongName: "Piano",
+        author: "mikolajhojda",
+        legalNotice: "Music by mikolajhojda",
+        link: "https://github.com/mikolajhojda",
+    },
+    {
         filename: "audio/background/Random-guitar-music.mp3",
         backgroundSongName: "Random",
         author: "Nishith P",
