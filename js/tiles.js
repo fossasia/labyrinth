@@ -399,6 +399,24 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/handarjun.svg");
         },
     }),
+    
+    handDrawnCode: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() { return true; },
+        canLeaveToTheRight() { return true; },
+        canEnterFromTheTop() { return true; },
+        canLeaveToTheTop() { return true; },
+        canEnterFromTheBottom() { return true; },
+        canLeaveToTheBottom() { return true; },
+        canEnterFromTheLeft() { return true; },
+        canLeaveToTheLeft() { return true; },
+        
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/handDrawnCode.svg");
+        },
+    }),
+    
     starywall: Object.assign({}, OpenDoors, {
     canLeaveToTheTop: function(player) {
             return false;
