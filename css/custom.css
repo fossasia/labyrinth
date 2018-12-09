@@ -393,6 +393,10 @@ div.swal2-popup.swal2-modal {
   background: none;
 }
 
+div.swal2-container {
+  z-index: -1;
+}
+
 div#swal2-content.swal2-content {
   font-weight: 400 !important;
 }
