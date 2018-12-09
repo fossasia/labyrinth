@@ -1,21 +1,20 @@
 sudo: required
 dist: trusty
-
-language: node_js
-node_js:
-  - "node"
-
-#for faster builds
+language: ruby
 cache:
-    bundler: true
-    directories:
-    - node_modules
+  bundler: true
+  directories:
+     - node_modules
+rvm:
+  - 2.3.3
+install:
+  - bash scripts/check-javascript-syntax-errors.sh
+  - bash scripts/check-html-syntax-errors.sh
+  - bash ./scripts/deploy.sh
+  - bundle install
+  - bundle exec img_checker
 
-#quality checks
-script:
-  - scripts/check-javascript-syntax-errors.sh
-  - scripts/check-html-syntax-errors.sh
-  
-# deploy pr 
-after_success:
-- bash ./scripts/deploy.sh 
+branches:
+  only:
+     - master
+     - /./

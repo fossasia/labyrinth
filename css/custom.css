@@ -393,6 +393,10 @@ div.swal2-popup.swal2-modal {
   background: none;
 }
 
+div.swal2-container {
+  z-index: -1;
+}
+
 div#swal2-content.swal2-content {
   font-weight: 400 !important;
 }
@@ -443,8 +447,8 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   box-sizing: initial;
 }
 
-.stats-btn ul.stats-ul li:hover{
-  background-color: rgba(0,0,0,0.2);
+.stats-btn ul.stats-ul li:hover > i.waves-effect.waves-light.btn.blue-grey.darken-2 {
+  background-color: rgba(0,0,0,0.2) !important;
 }
 
 .statistics .stats-btn .waves-effect.waves-light.btn.blue-grey.darken-2 {
