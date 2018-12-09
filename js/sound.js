@@ -168,7 +168,14 @@ const backgroundAudio = [
         author: "ShreeshJha",
         legalNotice: "Bensound",
         link: "http://github.com/shreeshjha",
-    }
+    },
+    {
+        filename: "audio/background/Random-guitar-music.mp3",
+        backgroundSongName: "Random",
+        author: "Nishith P",
+        legalNotice: "Music by Nishith P",
+        link: "http://github.com/nishithp2004",
+    },
 ];
 /*
 creativeCommonsLicense[0] = Attribution 4.0 International
