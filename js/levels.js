@@ -26,7 +26,7 @@ function createFirstLevel()
     [door.drawnbyme, Superhero.art, PlayerStartsAt(door.black), door.green, door.banner, door.threeHeads],
     [door.fairysWheel, door.design, door.cricketGround, door.treasure, door.yellow, door.red],
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
-    [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
+    [door.handy, door.boat, door.river, door.salt, door.cake, door.newYear],
     [door.both, door.square, door.quake, door.programmer, door.cake, door.mountains],
     [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],  
   ]);
