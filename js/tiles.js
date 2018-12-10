@@ -1657,6 +1657,79 @@ const forest = {
           }
     }),
 };
+const hex = {
+    both: OpenDoors,
+    levelCode: 3,
+    right: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topHexagon.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightHexagon.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    top: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topHexagon.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightHexagon.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topHexagon.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightHexagon.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+    }),
+    start: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/topHexagon.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/rightHexagon.svg");
+            this.ground = this.createImage("tiles/rooms/floor/Desert.svg");
+        },
+        visit: function() {
+            this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("title/rooms/floor/Desert.svg");
+        }
+     }),
+};
 
 const desert = {
     both: OpenDoors,
