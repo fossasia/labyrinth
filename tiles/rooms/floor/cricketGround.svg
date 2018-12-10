@@ -10,12 +10,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="389.73724"
+   height="224.95575"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
-   sodipodi:docname="cricketground.svg">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
+   sodipodi:docname="cricketGround.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -42,16 +42,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="214.63873"
-     inkscape:cy="163.60569"
+     inkscape:cx="183.16372"
+     inkscape:cy="103.03044"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="703"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -68,7 +68,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -76,30 +76,31 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)"
+     transform="translate(-85.118417,-650.18644)"
      style="display:inline">
     <path
        inkscape:connector-curvature="0"
        id="path3908"
-       d="M 474.37627,771.83168 268.91558,649.23729 63.454937,771.83164 268.91563,894.42603 Z"
-       style="fill:#535d6c;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+       d="M 474.3908,762.66434 279.98701,650.65133 85.583268,762.6643 279.98706,874.6773 Z"
+       style="fill:#535d6c;stroke:#000000;stroke-width:0.92979431px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <ellipse
        style="opacity:1;fill:#8dd35f;fill-opacity:0.99721315;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="path2449"
-       cx="-197.97485"
-       cy="814.05188"
-       transform="matrix(0.89073425,-0.45452447,0.54689104,0.83720379,0,0)"
-       rx="107.78889"
-       ry="101.35862" />
-    <circle
-       style="opacity:1;fill:none;fill-opacity:0.99721315;stroke:#ffffff;stroke-width:0.38737646;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+       cx="-197.14749"
+       cy="815.21716"
+       transform="matrix(0.89701165,-0.44200691,0.56030834,0.82828411,0,0)"
+       rx="101.27448"
+       ry="93.607445" />
+    <ellipse
+       style="opacity:1;fill:none;fill-opacity:0.99721315;stroke:#ffffff;stroke-width:0.36018047;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
        id="path2675"
-       cx="268.30081"
-       cy="767.1358"
-       r="57.578693" />
+       cx="279.40533"
+       cy="758.37378"
+       rx="54.480087"
+       ry="52.608952" />
     <g
        id="g2780"
-       transform="matrix(0.76690202,0,0,0.66300747,67.130766,260.77395)"
+       transform="matrix(0.72563105,0,0,0.60578186,89.061281,295.71711)"
        style="stroke-width:1.40239656">
       <rect
          transform="rotate(-60)"

@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="453.14307"
+   height="277.31418"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="drawnPond.svg">
   <defs
      id="defs4">
@@ -27,7 +27,7 @@
        id="perspective2985" />
     <filter
        inkscape:label="Light Eraser"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter1077">
       <feColorMatrix
          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -35.5938 -119.83 -12.0767 145.8 0 "
@@ -38,7 +38,10 @@
          operator="arithmetic"
          k2="1"
          result="fbSourceGraphic"
-         id="feComposite1075" />
+         id="feComposite1075"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -54,11 +57,14 @@
          id="feComposite1083"
          operator="arithmetic"
          k2="1"
-         result="composite" />
+         result="composite"
+         k1="0"
+         k3="0"
+         k4="0" />
     </filter>
     <filter
        inkscape:label="Light Eraser"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter4803">
       <feColorMatrix
          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -35.5938 -119.83 -12.0767 145.8 0 "
@@ -69,7 +75,10 @@
          operator="arithmetic"
          k2="1"
          result="fbSourceGraphic"
-         id="feComposite4801" />
+         id="feComposite4801"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -85,7 +94,10 @@
          id="feComposite4809"
          operator="arithmetic"
          k2="1"
-         result="composite" />
+         result="composite"
+         k1="0"
+         k3="0"
+         k4="0" />
     </filter>
     <filter
        inkscape:label="Light Eraser"
@@ -202,7 +214,7 @@
     </filter>
     <filter
        inkscape:label="Light Eraser"
-       style="color-interpolation-filters:sRGB;"
+       style="color-interpolation-filters:sRGB"
        id="filter5348">
       <feColorMatrix
          values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -82.5775 -278.004 -28.0181 1000 0 "
@@ -213,7 +225,10 @@
          operator="arithmetic"
          k2="1"
          result="fbSourceGraphic"
-         id="feComposite5346" />
+         id="feComposite5346"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -229,7 +244,10 @@
          id="feComposite959"
          operator="arithmetic"
          k2="1"
-         result="fbSourceGraphic" />
+         result="fbSourceGraphic"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -245,7 +263,10 @@
          id="feComposite965"
          operator="arithmetic"
          k2="1"
-         result="fbSourceGraphic" />
+         result="fbSourceGraphic"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -261,7 +282,10 @@
          id="feComposite971"
          operator="arithmetic"
          k2="1"
-         result="fbSourceGraphic" />
+         result="fbSourceGraphic"
+         k1="0"
+         k3="0"
+         k4="0" />
       <feColorMatrix
          result="fbSourceGraphicAlpha"
          in="fbSourceGraphic"
@@ -277,7 +301,10 @@
          id="feComposite1079"
          operator="arithmetic"
          k2="1"
-         result="composite" />
+         result="composite"
+         k1="0"
+         k3="0"
+         k4="0" />
     </filter>
   </defs>
   <sodipodi:namedview
@@ -287,17 +314,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="53.602206"
-     inkscape:cy="247.15291"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="35.923891"
+     inkscape:cy="191.21094"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -322,7 +349,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-71.321726,-602.07008)">
     <image
        y="626.11548"
        x="55.071987"
@@ -331,6 +358,7 @@
        style="filter:url(#filter5348);image-rendering:optimizeSpeed"
        preserveAspectRatio="none"
        height="267.60916"
-       width="430" />
+       width="430"
+       transform="matrix(0.87818426,0,0,0.86355468,60.720297,84.494639)" />
   </g>
 </svg>

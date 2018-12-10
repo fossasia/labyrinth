@@ -11,13 +11,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    style="isolation:isolate"
-   viewBox="0 0 430.544 325.295"
-   width="430.544"
-   height="325.295"
+   viewBox="0 0 370.74893 218.50385"
+   width="370.74893"
+   height="218.50386"
    version="1.1"
    id="svg4548"
-   sodipodi:docname="drawing.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   sodipodi:docname="minecraft.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
      id="metadata4552">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,15 +39,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      id="namedview4550"
      showgrid="false"
      inkscape:zoom="0.6596306"
-     inkscape:cx="215.272"
-     inkscape:cy="162.64751"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:cx="207.98822"
+     inkscape:cy="127.88315"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg4548" />
   <defs
@@ -55,50 +55,52 @@
     <clipPath
        id="_clipPath_B43ttn74QqoR3WZvPVFnC2m9E5oq6Rsv">
       <rect
-         width="430.544"
-         height="325.295"
-         id="rect4526" />
+         width="430.54401"
+         height="325.29501"
+         id="rect4526"
+         x="0"
+         y="0" />
     </clipPath>
     <inkscape:perspective
        id="perspective2985"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09449 : 526.18109 : 1"
+       inkscape:vp_y="0 : 999.99999 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1" />
     <inkscape:perspective
        id="perspective2985-1"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09449 : 526.18109 : 1"
+       inkscape:vp_y="0 : 999.99999 : 0"
        inkscape:vp_x="0 : 526.18109 : 1"
        sodipodi:type="inkscape:persp3d"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 999.99999 : 0"
+       inkscape:vp_z="744.09449 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective10" />
     <inkscape:perspective
        id="perspective2824"
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
        inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_y="0 : 999.99999 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 999.99999 : 0"
+       inkscape:vp_z="744.09449 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective10-8" />
     <inkscape:perspective
        id="perspective2824-9"
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
        inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_y="0 : 999.99999 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
     <linearGradient
@@ -112,15 +114,15 @@
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
        inkscape:vp_x="0 : 526.18109 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
-       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 999.99999 : 0"
+       inkscape:vp_z="744.09449 : 526.18109 : 1"
        inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
        id="perspective10-0" />
     <inkscape:perspective
        id="perspective2824-0"
        inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
        inkscape:vp_z="1 : 0.5 : 1"
-       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_y="0 : 999.99999 : 0"
        inkscape:vp_x="0 : 0.5 : 1"
        sodipodi:type="inkscape:persp3d" />
   </defs>
@@ -128,7 +130,7 @@
      style="display:inline;opacity:1"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="matrix(2.0505569,0,0,2.0105127,0.65660146,71.224676)">
+     transform="matrix(1.7684715,0,0,1.7335033,-0.45189891,-0.67075674)">
     <g
        inkscape:label="Ebene 1"
        id="layer1-3"
