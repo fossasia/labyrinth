@@ -796,6 +796,7 @@ const door = {
             this.ground.show();
             player.addReachableLevel(createForestLevel());
             player.addReachableLevel(createSpaceLevel());
+            player.addReachableLevel(createHexLevel());
             player.addReachableLevel(createPartyLevel());
             player.addReachableLevel(createPartytimeLevel());
             player.addReachableLevel(createCrazyLevel());
