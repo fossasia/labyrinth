@@ -160,7 +160,7 @@ function createNightLevel() {
 }
 function createDarkLevel() {
   return new Level("Dark Realm", [
-    [door.salt, dark.none, dark.top, dark.none, dark.none, dark.none, dark.light],
+    [dark.salt, dark.none, dark.top, dark.none, dark.none, dark.none, dark.light],
     [dark.none, dark.right, dark.cross, dark.right, dark.right, dark.right, dark.cross],
     [dark.none, dark.none, dark.top, dark.none, dark.top, dark.none, dark.top],
     [dark.none, dark.none, dark.top, dark.right, dark.cross, dark.end, dark.top],
