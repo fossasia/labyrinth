@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="349.89429"
+   height="241.26001"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="bloodfloor.svg">
   <defs
      id="defs4">
@@ -75,16 +75,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.9899495"
-     inkscape:cx="40.064186"
-     inkscape:cy="218.10745"
+     inkscape:cx="21.146257"
+     inkscape:cy="186.34343"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="2304"
-     inkscape:window-height="1202"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -101,7 +101,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -109,7 +109,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-72.56134,-621.89612)">
     <path
        style="fill:#ffcc00;stroke-width:0.50507629"
        d=""
@@ -125,7 +125,7 @@
     <g
        id="layer1-7"
        inkscape:label="Layer 1"
-       transform="matrix(3.7795276,0,0,3.7795276,-148.79198,-11.344715)"
+       transform="matrix(3.2779598,0,0,3.3577606,-119.41696,59.320226)"
        clip-path="url(#clipPath307)">
       <g
          style="fill:#f9f9f9"
