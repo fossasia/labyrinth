@@ -70,6 +70,18 @@ function createSpaceLevel() {
   ]);
 }
 
+function createHexLevel() {
+  return new Level("Hex", [
+    [hex.none, hex.right, hex.right, hex.right, hex.right, hex.none],
+    [hex.none, hex.top, hex.both, hex.both, hex.both, hex.both],
+    [hex.none, hex.top, PlayerStartsAt(hex.start), hex.both, hex.both, hex.top],
+    [hex.none, hex.top, hex.both, hex.both, hex.both, hex.top],
+    [hex.none, hex.top, hex.top, hex.both, hex.top, hex.top],
+    [hex.none, hex.top, hex.both, hex.both, hex.both, hex.top],
+    [NullTile, hex.none, hex.none, hex.none, hex.none, hex.none],
+  ]);
+}
+
 function createCrazyLevel() {
   return new Level("Crazy", [
     [crazy.none, crazy.right, crazy.right, crazy.right, crazy.right, crazy.right, crazy.top],
