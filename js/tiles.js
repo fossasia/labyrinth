@@ -464,7 +464,7 @@ const door = {
          }
     }),
 
-    
+
     programmer: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() { return true; },
         canLeaveToTheRight() { return true; },
@@ -474,14 +474,14 @@ const door = {
         canLeaveToTheBottom() { return true; },
         canEnterFromTheLeft() { return true; },
         canLeaveToTheLeft() { return true; },
-        
+
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg"); /* Alter these attributes to specify a custom wall tile for the floor tile.  Do not forget to implement the movements with canEnter/LeaveFromTheRight, ... */
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/programmer.svg");
         },
     }),
-    
+
 
     mountains: Object.assign({}, OpenDoors, {
         canEnterFromTheRight() {return false;},
@@ -628,7 +628,7 @@ const door = {
     }),
     green: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/live.svg");
         },
@@ -783,7 +783,7 @@ const door = {
     }),
     goal: Object.assign({}, OpenDoors, {
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/goal.svg");
         },
@@ -1164,10 +1164,13 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/highLow.svg");
         },
         visit: function() {
-            alertInfo("Everyone has highs and lows that they have to learn from.", "");
-            this.wallTop.show();
-            this.wallRight.show();
-            this.ground.show();
+           alertInfo("You got the sword of Gryffindor!", "Kill monsters with it!");
+
+           player.inventory.add(['Spaceship', 'spaceship.svg']);
+           this.wallTop.show();
+           this.wallRight.show();
+           this.ground.show();
+       }
             playAudio("background/yashkumarverma.github.io/pinballGame.mp3", 1);
         }
     }),
@@ -1441,7 +1444,7 @@ const door = {
             this.ground = this.createImage("tiles/rooms/floor/staircase.svg");
         },
     }),
-    
+
    	oldRoom: Object.assign({}, OpenDoors, {
         canEnterFromTheRight: function(player) {
             return true;
@@ -1750,9 +1753,12 @@ const desert = {
             this.wallRight = this.createImage("tiles/rooms/door/rightDesert.svg");
         },
         visit: function() {
-            alertInfo("You found a Camel !", "Use it whenever you face Storms.");
-            // add item to inventory
-            player.inventory.add(['Camel', 'camel.svg']);
+             if (player.inventory.has('Spaceship')) {
+             alertSuccess("You can travel in space now!");
+             player.inventory.remove('Spaceship');
+            } else {
+                alertNormal("You Need a Spaceship to travel in outer space, if you want to stay alive :)");
+            }
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
@@ -2317,7 +2323,7 @@ const Superhero = {
             return false;
         },
         createImages: function () {
-            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/door/modernTopDoor.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/art.svg");
         },
@@ -2391,7 +2397,7 @@ const TileMesh = {
             return false;
         },
         createImages: function() {
-            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallTop = this.createImage("tiles/rooms/wall/modernWallTop.svg");
             this.wallRight = this.createImage("tiles/rooms/door/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/bubbleMesh.svg");
              alertInfo("Bubbles!", "Bubbly Bumble.");
@@ -2473,13 +2479,13 @@ const TileMesh = {
             this.wallRight = this.createImage("tiles/rooms/wall/rightwaves.svg");
             this.ground = this.createImage("tiles/rooms/floor/landscape.svg");
         },
-        visit: function() { 
-            playAudio("music/clapandyell.mp3"); 
-            alertInfo("It's party time"); 
-            this.wallTop.show(); 
+        visit: function() {
+            playAudio("music/clapandyell.mp3");
+            alertInfo("It's party time");
+            this.wallTop.show();
             this.wallRight.show();
-            this.ground.show(); 
-        }, 
+            this.ground.show();
+        },
     }),
 };
 const dark = {

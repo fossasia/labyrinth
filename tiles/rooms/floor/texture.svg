@@ -10,9 +10,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430"
-   height="325"
-   viewBox="0 0 113.77083 85.989585"
+   width="394.34464"
+   height="238.25713"
+   viewBox="0 0 104.33701 63.038866"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -36,8 +36,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="-68.540226"
-     inkscape:cy="148.16533"
+     inkscape:cx="244.9806"
+     inkscape:cy="99.535876"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,14 +63,14 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-211.01041)">
+     transform="translate(-0.20237619,-228.65411)">
     <rect
-       style="fill:#00ee00;fill-opacity:1;stroke:#0000f8;stroke-width:0.46087512;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#00ee00;fill-opacity:1;stroke:#0000f8;stroke-width:0.42221069;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect815"
-       width="67.389473"
-       height="64.759079"
-       x="-258.16104"
-       y="256.15372"
-       transform="matrix(0.85371863,-0.52073457,0.86269305,0.5057279,0,0)" />
+       width="61.740643"
+       height="59.321693"
+       x="-253.68018"
+       y="251.6581"
+       transform="matrix(0.85142494,-0.52447648,0.8605064,0.50943962,0,0)" />
   </g>
 </svg>

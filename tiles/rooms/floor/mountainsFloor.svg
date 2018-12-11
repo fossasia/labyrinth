@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="375.99246"
+   height="245.16002"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -32,15 +32,15 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="149.91827"
-     inkscape:cy="211.15465"
+     inkscape:zoom="0.9899495"
+     inkscape:cx="78.977147"
+     inkscape:cy="169.73599"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="672"
+     inkscape:window-width="1440"
+     inkscape:window-height="766"
      inkscape:window-x="0"
      inkscape:window-y="1"
      inkscape:window-maximized="1"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,12 +67,12 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-84.178433,-648.74756)">
     <path
        inkscape:connector-curvature="0"
        id="path3908"
-       d="M 474.37627,771.83168 268.91558,649.23729 63.454937,771.83164 268.91563,894.42603 z"
-       style="fill:#0051bf;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;fill-opacity:1" />
+       d="M 459.69421,771.32758 272.17464,649.22426 84.655107,771.32754 272.17469,893.43087 Z"
+       style="fill:#0051bf;fill-opacity:1;stroke:#000000;stroke-width:0.95342684px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <path
        style="fill:#ffcc00;stroke-width:0.50507629"
        d="m 98.198458,149.19278 c 0.171685,-0.2778 0.539439,-0.50508 0.817231,-0.50508 0.277792,0 0.364606,0.22728 0.192922,0.50508 -0.171685,0.27779 -0.539439,0.50507 -0.817231,0.50507 -0.277792,0 -0.364607,-0.22728 -0.192922,-0.50507 z"
