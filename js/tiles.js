@@ -1267,7 +1267,7 @@ const door = {
         },
         createImages: function() {
             this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
-            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/rightSpacer.svg");
             this.ground = this.createImage("tiles/rooms/floor/Cake.svg");
         },
         visit: function() {
