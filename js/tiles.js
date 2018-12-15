@@ -461,6 +461,7 @@ const door = {
             this.wallTop.show();
             this.wallRight.show();
             this.ground.show();
+			player.addReachableLevel(createFoodLevel());
          }
     }),
 
@@ -1171,8 +1172,7 @@ const door = {
            this.wallTop.show();
            this.wallRight.show();
            this.ground.show();
-       }
-            playAudio("background/yashkumarverma.github.io/pinballGame.mp3", 1);
+           playAudio("background/yashkumarverma.github.io/pinballGame.mp3", 1);
         }
     }),
     Forbidden: Object.assign({}, OpenDoors, {
@@ -2666,4 +2666,147 @@ const dark = {
             }
         }
     }),
+};
+const food = {
+	both: OpenDoors,
+    levelCode: 5,
+    pizzaRight: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/pizza.svg");
+        },
+    }),
+	burgerRight: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/burger.svg");
+        },
+    }),
+	friesRight: Object.assign({}, OpenDoors, {
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/fries.svg");
+        },
+    }),
+    pizzaTop: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/pizza.svg");
+        },
+    }),
+    burgerTop: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/burger.svg");
+        },
+    }),
+    friesTop: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/fries.svg");
+        },
+    }),
+	pizzaCross: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/pizza.svg");
+        }}),
+	burgerCross: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/burger.svg");
+        }}),
+	friesCross: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/fries.svg");
+        }}),
+	start: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/burger.svg");
+        },
+        visit: function() {
+            alertInfo("Food Party Time!", "Welcome to the food party level!");
+			this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("tiles/rooms/floor/burger.svg");
+		}}),
+	end: Object.assign({}, OpenDoors, {
+        createImages: function() {
+            this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/pizza.svg");
+        },
+        visit: function() {
+            player.addReachableLevel(createFirstLevel());
+			this.wallTop.show();
+            this.wallRight.show();
+            this.ground.show("tiles/rooms/floor/burger.svg");
+		}}),
+	none: Object.assign({}, OpenDoors, {
+        canEnterFromTheRight() {
+            return false;
+        },
+        canLeaveToTheRight() {
+            return false;
+        },
+        canEnterFromTheTop: function(player) {
+            return false;
+        },
+        canLeaveToTheTop: function(player) {
+            return false;
+        },
+        createImages: function() {
+			this.wallTop = this.createImage("tiles/rooms/wall/top.svg");
+            this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
+            this.ground = this.createImage("tiles/rooms/floor/fries.svg");
+    }}),
+	
 };

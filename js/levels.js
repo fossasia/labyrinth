@@ -181,3 +181,14 @@ function createDarkLevel() {
     [dark.none, dark.none, dark.none, dark.none, dark.cross, dark.right, dark.cross],
   ]);
 }
+function createFoodLevel() {
+  return new Level("Food Party",[
+	[food.none, food.none, food.none, food.none, food.none, food.none, food.none],
+	[food.none, food.burgerCross, food.friesRight, food.pizzaRight, food.pizzaRight, food.friesCross, food.none],
+	[food.none, food.friesTop, food.none, food.none, food.none, food.burgerTop, food.none],
+	[food.none, food.pizzaCross, food.friesRight, food.burgerCross, food.none, food.friesTop, food.none],
+	[food.none, food.none, food.none, food.pizzaTop, food.none, food.burgerTop, food.none],
+	[food.none, PlayerStartsAt(food.start), food.friesRight, food.burgerCross, food.none, food.end, food.none],
+	[food.none, food.none, food.none, food.none, food.none, food.none, food.none],  
+	]);
+}
