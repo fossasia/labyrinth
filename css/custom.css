@@ -62,7 +62,7 @@ div.social-container {
 
 i.fa {background: none !important;}
 
-i.fa.fa-play:hover, i.fa.fa-pause:hover, i.fa.fa-step-forward:hover, i.fa.fa-times:hover, i.fa.fa-step-backward:hover {
+ i.fa.fa-step-forward:hover, i.fa.fa-times:hover, i.fa.fa-step-backward:hover {
   color:#0e8664;
   transition: 0.3s;
 }
@@ -498,4 +498,32 @@ i.fa.fa-thumbs-down.fa-5x:hover{
   border-radius: 4px;
   text-align:center;
   background:rgb(48, 187, 104);
+}
+#changeTrackParent{
+  width: 25vw;
+  height: 70vh;
+  overflow-y: scroll;
+}
+.track{
+  padding:20px;
+  display: flex;
+  transition: all .2s ease-in-out;
+  justify-content: space-between;
+  border:solid 1px #f4f0ed;
+  background-color: #82b75b;
+}
+#track-head{
+  padding-bottom:20px;
+}
+#artist{
+  font-size: 80%;
+}
+.fa-caret-down{
+  cursor: pointer;
+}
+.track:hover{
+  background-color: #82b70a;
+}
+.fa-play{
+  cursor: pointer;
 }
