@@ -161,8 +161,7 @@
               <li><input type="button" value="Change character" onClick="choosePlayerCharacter(player)" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li><input type="button" value="Get Path" onClick="show_p()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
               <li> <p id="pa"></p></li>
-              <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
-
+	            <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
             </ul>
       </div>
 
@@ -210,6 +209,15 @@
           <p class="range-field">
             <input type="range" onchange="setVolume()" id='volume1' min=0 max=1 step=0.1 value='1'>
           </p>
+          <h4 id="track-head" onclick="$('#changeTrackParent').fadeToggle();">Change Track  <span><i class="fa fa-caret-down"></i></span></h4>
+          <div id="changeTrackParent">
+          </div>
+          <script>
+          const ParentElement = document.getElementById("changeTrackParent")
+          backgroundAudio.forEach(function(element,index) {
+              ParentElement.innerHTML+=`<div class="track"><div><p>`+ element.backgroundSongName +`</p><p id="artist">`+element.author+`</p></div><div><a class="waves-effect waves-light btn blue-grey darken-2" onclick="playBgAudio('`+element.filename+`',`+index+`);"><i id='changeTrack`+index+`' class="fa fa-play"></i></a></div></div>`
+          });
+          </script>
           <div id="tileLicense"></div>
         </div>
         <div class="border1"></div>
