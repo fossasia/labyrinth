@@ -7,11 +7,9 @@
   "private": false,
   "author": "FOSSASIA Labyrinth Team",
   "devDependencies": {
-    "mocha":"2.2.5",
     "surge": "latest"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha",
     "compile": "echo \"If you’re using a static site generator or other compilation step, you could run it here!\""
   }
 }
