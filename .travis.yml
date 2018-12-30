@@ -17,4 +17,4 @@ install:
 branches:
   only:
      - master
-- /./
+     - /./
