@@ -317,7 +317,6 @@ Here is what you can do to add an animation:
 </p>
 </td>
 
-
 <td>
      <img src="https://avatars1.githubusercontent.com/u/14032427?s=150" />
 
@@ -332,7 +331,6 @@ Here is what you can do to add an animation:
 </p>
 </td>
 
-
 <td>
      <img src="https://avatars1.githubusercontent.com/u/8947010?s=150&v=4" />
 
@@ -345,8 +343,6 @@ Here is what you can do to add an animation:
 <a href = "https://stackoverflow.com/users/4861361/abishek-v-ashok"><img src = "http://www.iconninja.com/files/1024/340/40/overflow-stackoverflow-stack-icon.svg" width="36" height="36"/></a>
 </p>
 </td>
-
-
 
 <td>
      <img src="https://avatars0.githubusercontent.com/u/24372680?s=150&v=4" />
