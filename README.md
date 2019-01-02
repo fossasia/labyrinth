@@ -317,7 +317,6 @@ Here is what you can do to add an animation:
 </p>
 </td>
 
-
 <td>
      <img src="https://avatars1.githubusercontent.com/u/14032427?s=150" />
 
@@ -329,6 +328,31 @@ Here is what you can do to add an animation:
 <a href = "https://stackoverflow.com/users/5131640/yash-kumar-verma?tab=profile"><img src = "http://www.iconninja.com/files/1024/340/40/overflow-stackoverflow-stack-icon.svg" width="36" height="36"/></a>
 <a href = "https://www.linkedin.com/in/yash-kumar-verma/"><img src = "http://www.iconninja.com/files/863/607/751/network-linkedin-social-connection-circular-circle-media-icon.svg" width="36" height="36"/></a>
 <a href = "https://twitter.com/yash_kr_verma"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
+</p>
+</td>
+
+<td>
+     <img src="https://avatars1.githubusercontent.com/u/8947010?s=150&v=4" />
+
+     Abishek V Ashok
+
+<p align="center">
+<a href = "https://github.com/abishekvashok"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://twitter.com/_abishekvashok"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
+<a href = "mailto:abishekvashok@gmail.com"><img src = "http://www.iconninja.com/files/827/990/382/gmail-mail-google-icon.svg" width="36" height="36"/></a>
+<a href = "https://stackoverflow.com/users/4861361/abishek-v-ashok"><img src = "http://www.iconninja.com/files/1024/340/40/overflow-stackoverflow-stack-icon.svg" width="36" height="36"/></a>
+</p>
+</td>
+
+<td>
+     <img src="https://avatars0.githubusercontent.com/u/24372680?s=150&v=4" />
+
+     Saarthak Chaturvedi
+
+<p align="center">
+<a href = "https://github.com/saarthakchats"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
+<a href = "https://twitter.com/SaarthakChats41"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
+<a href = "mailto:saarthakchats05@gmail.com"><img src = "http://www.iconninja.com/files/827/990/382/gmail-mail-google-icon.svg" width="36" height="36"/></a>
 </p>
 </td>
 
