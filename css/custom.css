@@ -41,7 +41,7 @@ h1, h2, h3 {
 }
 
 .overlay {
-	position: fixed;
+  position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
@@ -53,35 +53,35 @@ h1, h2, h3 {
 }
 
 .overlay #select-language {
-	width: 30%;
-	margin: 0;
-	position: absolute;
+  width: 30%;
+  margin: 0;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);	
 }
 
 .overlay #select-language .title {
-	background-color: white;
-	padding: 5%;
-	border-bottom: 1px solid #ccc;
-	color: #333;
+  background-color: white;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
+  color: #333;
 }
 
 .overlay #select-language .item {
-	background-color: white;
-	padding: 5%;
-	border-bottom: 1px solid #ccc;
+  background-color: white;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
   cursor: pointer;
-	color: #333;
+  color: #333;
 }
 
 .overlay #select-language .item:hover {
-	background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 .overlay #select-language .item a{
-	color: #333;
+  color: #333;
 }
 
 p {
