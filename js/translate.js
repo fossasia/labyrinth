@@ -218,3 +218,14 @@ $(function () {
     });
   });
 });
+
+$(function () {
+  $('#select-language .item').click(function () {
+    var lang = $(this).find('.translate').attr('id');
+	lang = lang.split('-')[1];
+    $('.lang').each(function (index, element) {
+      $(this).text(arrlang[lang][$(this).attr('data-href')]);
+    });
+	$('.overlay').css({"display":'none'});		
+  });
+});

@@ -40,6 +40,50 @@ h1, h2, h3 {
   text-transform: capitalize;
 }
 
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1600;
+}
+
+.overlay #select-language {
+  width: 30%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);	
+}
+
+.overlay #select-language .title {
+  background-color: white;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+}
+
+.overlay #select-language .item {
+  background-color: white;
+  padding: 5%;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  color: #333;
+}
+
+.overlay #select-language .item:hover {
+  background-color: whitesmoke;
+}
+
+.overlay #select-language .item a{
+  color: #333;
+}
+
 p {
   font-size: 20px;
   font-family: 'Quicksand';
