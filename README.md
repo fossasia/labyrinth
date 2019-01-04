@@ -340,7 +340,6 @@ Here is what you can do to add an animation:
 <a href = "https://github.com/abishekvashok"><img src = "http://www.iconninja.com/files/241/825/211/round-collaboration-social-github-code-circle-network-icon.svg" width="36" height = "36"/></a>
 <a href = "https://twitter.com/_abishekvashok"><img src = "https://www.shareicon.net/download/2016/07/06/107115_media.svg" width="36" height="36"/></a>
 <a href = "mailto:abishekvashok@gmail.com"><img src = "http://www.iconninja.com/files/827/990/382/gmail-mail-google-icon.svg" width="36" height="36"/></a>
-<a href = "https://stackoverflow.com/users/4861361/abishek-v-ashok"><img src = "http://www.iconninja.com/files/1024/340/40/overflow-stackoverflow-stack-icon.svg" width="36" height="36"/></a>
 </p>
 </td>
 
