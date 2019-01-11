@@ -216,7 +216,7 @@ Labyrinth needs your translations for make the game famous world-wide.
 - Change `en` to two or three letters related for your language. Those two or three letters must be not used earlier for any translate.
       Ex:- For Sinhala use `si`, for Polski use `pl`
 - Translate all the strings to your language and save it.
-- Add flag that realated to the laguage in icons(You can find flag from this place https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags). The flag must be 255 X 128 pixels and it must be png file. 
+- Add flag that realated to the language in icons(You can find flag from this place https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags). The flag must be 255 X 128 pixels and it must be png file. 
 - Go to HTML files(index.html, howtoplay.html, credits.html, contributors.html) from your code editor.
 - Then find following code from all the HTML files given and copy and past it after last language.
 
