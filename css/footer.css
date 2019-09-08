@@ -83,10 +83,6 @@ ul {
   background-color: #1DA1F2 !important;
 }
 
-.social-icons a.googleplus:hover {
-  background-color: #DB4437 !important;
-}
-
 .social-icons a.linkedin:hover {
   background-color: #0077B5 !important;
 }
@@ -157,19 +153,6 @@ ul {
 
 .fa-linkedin:hover {
   background-color: #0073a4;
-}
-
-.fa-google-plus {
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: #322f30;
-}
-
-.fa-google-plus:hover {
-  background-color: #e25714;
 }
 
 input[type="range"] {
