@@ -15,6 +15,13 @@
 			"slug" : "API-Adding-New-Tile" 			
 		},
 		{
+			"itemName":"Adding New Characters",
+			"author" : "Labyrinth Team",
+			"github" : "fossasia/labyrinth/",
+			"file" : "adding-new-characters.html",
+			"slug" : "API-Adding-New-Characters" 			
+		},
+		{
 			"itemName":"Adding New Music",
 			"author" : "Labyrinth Team",
 			"github" : "fossasia/labyrinth/",
