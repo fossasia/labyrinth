@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adding New Character</title>
+</head>
+<body>
+<h4>How to add new Characters</h4>
+<p>Labyrinth allows you to add your characters by customizing the required javascript and svg files.</p><p>Currently the characters are svg images which are embedded into a div via javascript. Characters have a dimension of about 55 x 60 px (wxh)
+Characters are present in the <code>characters</code> folder.</p><p>To create a character you may use an svg editor such as inkscape. However other photo editors and formats do work if they are imported into the editor
+and saved as a svg file with the specified dimensions.</p><p>After creating characters add them to the <code>characters</code> folder.</p><p>Now, we will move on to the javascript part.
+Each character has only difference in it's appearance and hence can be injected via putting its name and location to the svg file in <code>gui.js</code>.
+Follow the format while adding to gui.js (To be precise add it to the swal box input values collection i.e, into the <code>inputOptionsPromise</code> variable
+under the <code>resolve</code> sub class.)</p>
+<pre><code>
+  "character_src": "character_name",
+</code></pre>
+</body>
+</html>
