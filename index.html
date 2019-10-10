@@ -30,6 +30,7 @@
     <script type="text/javascript" src="js/rate-game.js"></script>
     <script type="text/javascript" src="js/gui.js"></script>
     <script type="text/javascript" src="js/toggle_play_pause.js"></script>
+     <script type="text/javascript" src="js/sweetalert.min.js"></script>
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/logos/favicon.png" />
@@ -83,6 +84,8 @@
             <li class="menu">
               <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
             </li>
+            
+            
             <li id="lan">
               <div class="languagepicker roundborders large">
                 <div id="select">
@@ -109,6 +112,10 @@
                 <!-- When you add more languages do it in the above format-->
               </div>
             </li>
+             <li >
+              <a href="" onclick="event.preventDefault()" class="lang waves-effect waves-light btn blue-grey darken-2" id="Milestone" style="vertical-align: center;transform: translateY(20px);">Milestone Reached</a>
+            </li>
+
           </ul>
         </div>
       </nav>
@@ -187,6 +194,7 @@
 	            <li><input type="button" value="Restart" onClick="reset()" class="waves-effect waves-light btn blue-grey darken-2"/></li>
             </ul>
       </div>
+     
 
          <script type="text/javascript">
                 var key;
@@ -214,6 +222,25 @@
                      function show_p() {
                          document.getElementById("pa").innerHTML = path;
                     }
+                       var clickmilestone_event=document.getElementById('Milestone');
+        clickmilestone_event.addEventListener('click',function(){
+          
+            const wrapper = document.createElement('div');
+wrapper.innerHTML = "<img src='https://previews.123rf.com/images/betka82/betka821710/betka82171000014/88096156-flame-icon-vector-fire-vector-fire-on-a-white-background.jpg' style='width:55px;style='float:left;display:flex;flex-direction:row;'><span style='color:black;font-size:30px;'><b style=''>1000</b></span><img src='https://previews.123rf.com/images/betka82/betka821710/betka82171000014/88096156-flame-icon-vector-fire-vector-fire-on-a-white-background.jpg' style='width:55px;'>"
+            swal({
+ 
+  html:true,
+  title:"We've just reached the 1000 milestone!",
+  content:wrapper,
+        
+ 
+  icon: "success",
+button:false
+}); 
+        
+
+
+        });
             </script>
         </div>
         <div class="border1"></div>
