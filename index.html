@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="description" content="Labyrinth | Game ">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="google-signin-client_id" content="<use your own API key and remove this rotated triangle brackets while filling api>">
 
+    
     <!-- UI Sheets -->
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
@@ -14,6 +16,8 @@
     <link rel="stylesheet" type="text/css" href="css/tiles.css">
 
     <!-- Engine Scripts -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script type="text/javascript" src="js/Oauth.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/sweetalert2.min.js"></script>
     <script type="text/javascript" src="js/translate.js"></script>
@@ -76,21 +80,21 @@
           <!-- Nav tabs on right. -->
           <ul class="right hide-on-med-and-down">
             <li class="menu">
-              <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how">How to Play</a>
+              <a href="howtoplay.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="how" style="transform: translate(50px,-0px);font-size: 18px;">How to Play</a>
             </li>
             <li class="menu">
-              <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit">Credits</a>
+              <a href="credits.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="credit" style="transform: translate(20px,-0px);font-size: 18px;">Credits</a>
             </li>
             <li class="menu">
-              <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute">Contributors</a>
+              <a href="contributors.html" class="lang waves-effect waves-light btn blue-grey darken-2" data-href="contribute" style="transform: translateX(-50px,-30px);font-size: 18px;padding-left: -10px;">Contributors</a>
             </li>
-            
+  
             
             <li id="lan">
               <div class="languagepicker roundborders large">
                 <div id="select">
                   <a class="waves-effect waves-light btn blue-grey darken-2">
-                    <div class="lang" data-href="language">Select your language</div>
+                    <div class="lang" data-href="language" style="font-size: 18px;transform: translate(-40px,-10px);padding-left: 10px;">Select your language</div>
                   </a>
                 </div>
                 <div class="item"><a class="translate" id="en">
@@ -113,8 +117,22 @@
               </div>
             </li>
              <li >
-              <a href="" onclick="event.preventDefault()" class="lang waves-effect waves-light btn blue-grey darken-2" id="Milestone" style="vertical-align: center;transform: translateY(20px);">Milestone Reached</a>
+              <a href="" onclick="event.preventDefault()" class="lang waves-effect waves-light btn blue-grey darken-2" id="Milestone" style="vertical-align: center;transform: translate(-100px,10px);font-size: 18px;">Milestone Reached</a>
             </li>
+            <style>
+                  .profile-pic{
+                        display: none;
+                  }
+                  .username{
+                    display: none;
+                  }
+                  .signout{
+                    display: none;
+                  }
+                  
+            </style>
+            <li><div class="g-signin2" data-onsuccess="onSignIn" style="transform: translate(-60px,30px);"></div><img class="profile-pic"  src="" style="border-radius: 50%;height: 30px;width: 30px;transform: translate(-40px,20px);"><button class="signout btn btn-active" onclick="signout()" style="cursor:pointer;transform:  translate(0px,-10px);margin-right: 5px;font-size: 10px;" >signout</button><div class="username" style="transform: translate(-40px,-30px);"></div>
+              </li>
 
           </ul>
         </div>
