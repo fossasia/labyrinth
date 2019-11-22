@@ -3,6 +3,16 @@
 body {
   background: #d5dbdb !important;
 }
+ .profile-pic{
+                        display: none;
+                  }
+                  .username{
+                    display: none;
+                  }
+                  .signout{
+                    display: none;
+                  }
+                  
 
 .nav-wrapper {
   background-color: #60A550;
