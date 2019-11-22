@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="Labyrinth | Game ">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="google-signin-client_id" content="810089794288-qd9dii5peafrboqfmgbqqsk6f81eh89s.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="<use your own API key and remove this rotated triangle brackets while filling api>">
 
     
     <!-- UI Sheets -->
@@ -119,7 +119,19 @@
              <li >
               <a href="" onclick="event.preventDefault()" class="lang waves-effect waves-light btn blue-grey darken-2" id="Milestone" style="vertical-align: center;transform: translate(-100px,10px);font-size: 18px;">Milestone Reached</a>
             </li>
-           <li><div class="g-signin2" data-onsuccess="onSignIn" style="transform: translate(-60px,30px);"></div><img class="profile-pic"  src="" style="border-radius: 50%;height: 30px;width: 30px;transform: translate(-40px,20px);"><button class="signout btn btn-active" onclick="signout()" style="cursor:pointer;transform:  translate(0px,-10px);margin-right: 5px;font-size: 10px;" >signout</button><div class="username" style="transform: translate(-40px,-30px);"></div>
+            <style>
+                  .profile-pic{
+                        display: none;
+                  }
+                  .username{
+                    display: none;
+                  }
+                  .signout{
+                    display: none;
+                  }
+                  
+            </style>
+            <li><div class="g-signin2" data-onsuccess="onSignIn" style="transform: translate(-60px,30px);"></div><img class="profile-pic"  src="" style="border-radius: 50%;height: 30px;width: 30px;transform: translate(-40px,20px);"><button class="signout btn btn-active" onclick="signout()" style="cursor:pointer;transform:  translate(0px,-10px);margin-right: 5px;font-size: 10px;" >signout</button><div class="username" style="transform: translate(-40px,-30px);"></div>
               </li>
 
           </ul>
