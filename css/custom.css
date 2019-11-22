@@ -112,8 +112,10 @@ i.fa {background: none !important;}
 }
 
 .right.hide-on-med-and-down li[class="menu"]{
-    padding-top: 20px;
+    padding-top: 10px;
     height: 100px;
+   
+   
 }
 
 .right.hide-on-med-and-down li[class="menu"],.stats-ul li[class="menu"],.hover-black{
