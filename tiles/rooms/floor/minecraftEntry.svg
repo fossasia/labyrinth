@@ -11,13 +11,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    style="isolation:isolate"
-   viewBox="0 0 430.544 325.295"
-   width="430.544"
-   height="325.295"
+   viewBox="0 0 428.544 255.99999"
+   width="428.54401"
+   height="256"
    version="1.1"
    id="svg4548"
    sodipodi:docname="minecraftEntry.svg"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
      id="metadata4552">
     <rdf:RDF>
@@ -39,15 +39,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1017"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
      id="namedview4550"
      showgrid="false"
      inkscape:zoom="0.6596306"
      inkscape:cx="95.340603"
      inkscape:cy="-156.35354"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -55,9 +55,11 @@
     <clipPath
        id="_clipPath_B43ttn74QqoR3WZvPVFnC2m9E5oq6Rsv">
       <rect
-         width="430.544"
-         height="325.295"
-         id="rect4526" />
+         width="430.54401"
+         height="325.29501"
+         id="rect4526"
+         x="0"
+         y="0" />
     </clipPath>
     <inkscape:perspective
        id="perspective2985"
@@ -128,7 +130,7 @@
      style="display:inline;opacity:1"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="matrix(2.0505569,0,0,2.0105127,0.65660146,71.224676)">
+     transform="matrix(2.0505569,0,0,2.0105127,0.65660146,1.9296626)">
     <g
        inkscape:label="Ebene 1"
        id="layer1-3"
@@ -213,7 +215,7 @@
        id="g3829"
        style="fill:#5a9a30;fill-opacity:1">
       <path
-         style="fill:#5a9a30;stroke-width:1.94652653;fill-opacity:1"
+         style="fill:#5a9a30;fill-opacity:1;stroke-width:1.94652653"
          id="path3908"
          inkscape:connector-curvature="0"
          d="M 617.0035,202.69953 216.07957,-35.345643 -184.8385,202.69953 216.08348,440.74664 Z" />
