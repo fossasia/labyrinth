@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="428.54434"
+   height="256"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -39,10 +39,10 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="709"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
      inkscape:window-x="0"
-     inkscape:window-y="1"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -59,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -67,11 +67,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-53.643411,-638.92014)">
     <path
        inkscape:connector-curvature="0"
        id="path3908"
-       d="M 474.37627,771.83168 268.91558,649.23729 63.454937,771.83164 268.91563,894.42603 z"
+       d="M 474.37627,771.83168 268.91558,649.23729 63.454937,771.83164 268.91563,894.42603 Z"
        style="fill:#ffcc00;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <path
        style="fill:#ffcc00;stroke-width:0.50507629"

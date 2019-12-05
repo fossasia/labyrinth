@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="428.54434"
+   height="256"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="handDrawnBoxes.svg">
   <defs
      id="defs4">
@@ -40,10 +40,10 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="768"
-     inkscape:window-x="4"
-     inkscape:window-y="44"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -68,7 +68,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-53.643411,-638.92014)">
     <text
        id="text418"
        style="line-height:0%">xml:space=&quot;preserve&quot; style=&quot;font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none&quot; x=&quot;176.81064&quot; y=&quot;781.44983&quot; id=&quot;text1093&quot;&gt;<tspan

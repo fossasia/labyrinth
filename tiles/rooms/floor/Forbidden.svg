@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="428.54434"
+   height="256"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="Forbidden.svg">
   <defs
      id="defs4">
@@ -39,10 +39,10 @@
      inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1018"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -69,7 +69,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)"
+     transform="translate(-53.643411,-638.92014)"
      sodipodi:insensitive="true">
     <path
        inkscape:connector-curvature="0"
@@ -98,7 +98,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer3"
-     inkscape:label="Layer 3">
+     inkscape:label="Layer 3"
+     transform="translate(0,-69.295135)">
     <rect
        style="fill:#673e0d;fill-opacity:1;stroke-width:0.04013202;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect3964"
@@ -127,7 +128,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Layer 2">
+     inkscape:label="Layer 2"
+     transform="translate(0,-69.295135)">
     <path
        id="path858-8"
        style="fill:#000000;stroke-width:0.16262242"

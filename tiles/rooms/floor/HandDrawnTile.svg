@@ -10,11 +10,11 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="430.54434"
-   height="325.29514"
+   width="428.54434"
+   height="256"
    id="svg2"
    version="1.1"
-   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06"
    sodipodi:docname="HandDrawnTile.svg">
   <defs
      id="defs4">
@@ -40,10 +40,10 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:object-nodes="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -60,7 +60,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -68,7 +68,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-53.643411,-569.625)">
+     transform="translate(-53.643411,-638.92014)">
     <path
        style="fill:#ffcc00;stroke-width:0.50507629"
        d="m 98.198458,149.19278 c 0.171685,-0.2778 0.539439,-0.50508 0.817231,-0.50508 0.277792,0 0.364606,0.22728 0.192922,0.50508 -0.171685,0.27779 -0.539439,0.50507 -0.817231,0.50507 -0.277792,0 -0.364607,-0.22728 -0.192922,-0.50507 z"

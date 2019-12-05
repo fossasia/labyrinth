@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="429.544"
-   height="256.314"
+   width="428.54401"
+   height="255.314"
    id="svg2"
    version="1.1"
    inkscape:version="0.92.2 5c3e80d, 2017-08-06"
@@ -40,9 +40,9 @@
      showgrid="false"
      inkscape:object-nodes="true"
      inkscape:window-width="1440"
-     inkscape:window-height="766"
+     inkscape:window-height="792"
      inkscape:window-x="0"
-     inkscape:window-y="1"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -67,11 +67,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-86.211154,-648.75996)">
+     transform="translate(-86.211154,-649.75995)">
     <path
        inkscape:connector-curvature="0"
        id="path3908"
-       d="M 466.76206,761.71738 274.44542,649.22334 82.128809,761.71734 274.44546,874.21138 Z"
+       d="M 485.95496,778.88997 293.63832,666.39593 101.32171,778.88993 293.63836,891.38397 Z"
        style="fill:#ff0000;stroke:#000000;stroke-width:0.92677325px;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
     <path
        style="fill:#ffcc00;stroke-width:0.50507629"
