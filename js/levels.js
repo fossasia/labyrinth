@@ -28,7 +28,7 @@ function createFirstLevel()
     [door.both, door.blood, door.marina, door.treasureKey, door.drawn, door.night],
     [door.handy, door.boat, door.river, desert.universe, door.cake, door.newYear],
     [door.both, door.square, door.quake, door.programmer, door.cake, door.mountains],
-    [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],  
+    [door.both, door.boat, door.river, desert.universe, door.oldRoom, door.mountains],
   ]);
 }
 
@@ -44,6 +44,18 @@ function createAdvancedLevel() {
     [door.none, door.none, door.none, door.none, door.none, door.none, door.both, door.right, door.top, door.none],
     [door.left, door.top, door.none, door.right, door.none, door.wheel, door.none, door.none, door.none],
     [NullTile, door.none, door.none, door.none, door.none, door.none, door.left, door.top, door.right, door.top],
+  ]);
+}
+
+function createMarvelLevel() {
+  return new Level("marvel", [
+    [marvel.none, marvel.right, marvel.right, marvel.right, marvel.right, marvel.none],
+    [marvel.none, marvel.tesseract, marvel.both, marvel.both, marvel.both, marvel.both],
+    [marvel.none, marvel.top, PlayerStartsAt(marvel.start), marvel.both, marvel.both, marvel.soul],
+    [marvel.none, marvel.top, marvel.both, marvel.mind, marvel.both, marvel.top],
+    [marvel.none, marvel.power, marvel.top, marvel.both, marvel.time, marvel.top],
+    [marvel.none, marvel.infinity, marvel.both, marvel.both, marvel.both, marvel.aether],
+    [NullTile, marvel.none, marvel.none, marvel.none, marvel.none, marvel.none],
   ]);
 }
 
@@ -189,6 +201,6 @@ function createFoodLevel() {
 	[food.none, food.pizzaCross, food.friesRight, food.burgerCross, food.none, food.friesTop, food.none],
 	[food.none, food.none, food.none, food.pizzaTop, food.none, food.burgerTop, food.none],
 	[food.none, PlayerStartsAt(food.start), food.friesRight, food.burgerCross, food.none, food.end, food.none],
-	[food.none, food.none, food.none, food.none, food.none, food.none, food.none],  
+	[food.none, food.none, food.none, food.none, food.none, food.none, food.none],
 	]);
 }
