@@ -796,6 +796,7 @@ const door = {
             this.wallRight.show();
             this.ground.show();
             player.addReachableLevel(createForestLevel());
+            player.addReachableLevel(createMarvelLevel());
             player.addReachableLevel(createSpaceLevel());
             player.addReachableLevel(createHexLevel());
             player.addReachableLevel(createPartyLevel());
@@ -1535,6 +1536,239 @@ const night = {
             alertWarning("Be alert!!!", "You have entered to the night!");
         }
     }),
+
+};
+const marvel = {
+  both: Object.assign({}, OpenDoors, {
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+      },
+  }),
+
+  right: Object.assign({}, OpenDoors, {
+      canEnterFromTheTop: function(player) {
+          return false;
+      },
+      canLeaveToTheTop: function(player) {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/lighttop.svg");
+          this.wallRight = this.createImage("tiles/rooms/door/right.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+      },
+  }),
+
+  top: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+      },
+  }),
+
+  soul: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/soul.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the soul stone!");
+        player.inventory.add(['Soul','soul.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  mind: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/mind.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the mind stone!");
+        player.inventory.add(['Mind','mind.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  power: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orb.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the power stone!");
+        player.inventory.add(['Power','orb.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  time: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/time.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the time stone!");
+        player.inventory.add(['Time','time.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  tesseract: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/tesseract.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the space stone!");
+        player.inventory.add(['Space','tesseract.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  aether: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/aether.svg");
+      },
+
+      visit: function() {
+        alertInfo("You have stumbled upon the reality stone!");
+        player.inventory.add(['Reality','aether.svg']);
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  infinity: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/door/top.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/gaunlet.svg");
+      },
+
+      visit: function() {
+
+        if (player.inventory.itemCollision.indexOf("Space") > -1 && player.inventory.itemCollision.indexOf("Power") > -1 && player.inventory.itemCollision.indexOf("Mind") > -1 && player.inventory.itemCollision.indexOf("Soul") > -1 && player.inventory.itemCollision.indexOf("Reality") > -1 && player.inventory.itemCollision.indexOf("Time") > -1) {
+        player.addReachableLevel(createFirstLevel());
+       } else {
+           alertInfo("Get all the six infinity stones to advance to the next level...");
+       }
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
+  none: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      canEnterFromTheTop: function(player) {
+          return false;
+      },
+      canLeaveToTheTop: function(player) {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/lighttop.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+      },
+  }),
+  start: Object.assign({}, OpenDoors, {
+      canEnterFromTheRight() {
+          return false;
+      },
+      canLeaveToTheRight() {
+          return false;
+      },
+      canEnterFromTheTop: function(player) {
+          return false;
+      },
+      canLeaveToTheTop: function(player) {
+          return false;
+      },
+      createImages: function() {
+          this.wallTop = this.createImage("tiles/rooms/wall/lighttop.svg");
+          this.wallRight = this.createImage("tiles/rooms/wall/lightright.svg");
+          this.ground = this.createImage("tiles/rooms/floor/orangeFloor.svg");
+      },
+      visit: function() {
+          this.wallTop.show();
+          this.wallRight.show();
+          this.ground.show();
+      }
+  }),
 
 };
 const forest = {
@@ -2808,5 +3042,5 @@ const food = {
             this.wallRight = this.createImage("tiles/rooms/wall/right.svg");
             this.ground = this.createImage("tiles/rooms/floor/fries.svg");
     }}),
-	
+
 };
