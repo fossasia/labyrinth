@@ -1,3 +1,4 @@
+var lang;
 var arrlang = {
   'en': {
     'how': 'How to play',
@@ -211,18 +212,26 @@ var arrlang = {
 
 $(function () {
   $('.translate').click(function () {
-    var lang = $(this).attr('id');
-
+    lang = $(this).attr('id');
+    localStorage.setItem('lang',lang);
     $('.lang').each(function (index, element) {
       $(this).text(arrlang[lang][$(this).attr('data-href')]);
     });
   });
 });
-
+$(document).ready(function() {
+    if (localStorage.getItem("lang") != null) {
+      lang = localStorage.getItem("lang");
+      $(".lang").each(function(index, element) {
+          $(this).text(arrlang[lang][$(this).attr("data-href")]);
+      });
+    } 
+});
 $(function () {
   $('#select-language .item').click(function () {
-    var lang = $(this).find('.translate').attr('id');
-	lang = lang.split('-')[1];
+     lang = $(this).find('.translate').attr('id');
+    localStorage.setItem('lang',lang.split('-')[1]);
+    lang =localStorage.getItem('lang');
     $('.lang').each(function (index, element) {
       $(this).text(arrlang[lang][$(this).attr('data-href')]);
     });
