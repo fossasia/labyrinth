@@ -9,6 +9,7 @@
   filter: grayscale(0%);
 }
 .tileContainer {
+  z-index: -1;
   position: absolute;
 }
 .tile {
