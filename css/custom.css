@@ -209,6 +209,7 @@ div.swal2-content {
   font-size: 25px !important;
   font-family: 'quicksand';
   font-weight: bold !important;
+  z-index: 1;
 }
 
 .waves-effect.waves-light.btn.blue-grey.darken-2 {
