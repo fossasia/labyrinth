@@ -11,13 +11,13 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    style="isolation:isolate"
-   viewBox="0 0 430.544 325.295"
-   width="430.544"
-   height="325.295"
+   viewBox="0 0 428.544 255.99999"
+   width="428.54401"
+   height="256"
    version="1.1"
    id="svg4548"
-   sodipodi:docname="floor.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   sodipodi:docname="wooden.svg"
+   inkscape:version="0.92.2 5c3e80d, 2017-08-06">
   <metadata
      id="metadata4552">
     <rdf:RDF>
@@ -26,7 +26,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -39,15 +39,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1005"
+     inkscape:window-width="1440"
+     inkscape:window-height="792"
      id="namedview4550"
      showgrid="false"
      inkscape:zoom="1.8657171"
      inkscape:cx="205.60244"
      inkscape:cy="98.500344"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
@@ -55,9 +55,11 @@
     <clipPath
        id="_clipPath_B43ttn74QqoR3WZvPVFnC2m9E5oq6Rsv">
       <rect
-         width="430.544"
-         height="325.295"
-         id="rect4526" />
+         width="430.54401"
+         height="325.29501"
+         id="rect4526"
+         x="0"
+         y="0" />
     </clipPath>
     <inkscape:perspective
        id="perspective2985"
@@ -128,7 +130,7 @@
      style="display:inline;opacity:1"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="matrix(2.0505569,0,0,2.0105127,0.65660146,71.224676)">
+     transform="matrix(2.0505569,0,0,2.0105127,0.65660146,1.9296626)">
     <g
        inkscape:label="Ebene 1"
        id="layer1-3"
@@ -560,7 +562,7 @@
        id="path4938-78-2-83-3"
        inkscape:connector-curvature="0" />
     <path
-       style="display:inline;opacity:1;isolation:isolate;fill:#ecdf79;stroke:#000000;stroke-width:0.44412839px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="display:inline;opacity:1;isolation:isolate;fill:#ecdf79;fill-opacity:1;stroke:#000000;stroke-width:0.44412839px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 179.50756,54.627809 -2.51171,1.957092"
        id="path4938-78-2-3-0"
        inkscape:connector-curvature="0" />
@@ -655,7 +657,7 @@
        id="path4938-78-1"
        inkscape:connector-curvature="0" />
     <path
-       style="display:inline;opacity:1;isolation:isolate;fill:#ecdfa0;stroke:#000000;stroke-width:0.54719728px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="display:inline;opacity:1;isolation:isolate;fill:#ecdfa0;fill-opacity:1;stroke:#000000;stroke-width:0.54719728px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 89.396362,35.187562 -2.803342,2.25436"
        id="path4894-3"
        inkscape:connector-curvature="0" />
@@ -670,7 +672,7 @@
        id="path4938-78-20"
        inkscape:connector-curvature="0" />
     <path
-       style="display:inline;opacity:1;isolation:isolate;fill:#ecdfa0;stroke:#000000;stroke-width:0.55780554px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       style="display:inline;opacity:1;isolation:isolate;fill:#ecdfa0;fill-opacity:1;stroke:#000000;stroke-width:0.55780554px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 89.025987,26.857913 -2.598545,2.52724"
        id="path4894-30"
        inkscape:connector-curvature="0" />
@@ -1286,5 +1288,6 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 1"
-     style="display:inline" />
+     style="display:inline"
+     transform="translate(0,-69.295013)" />
 </svg>
