@@ -74,6 +74,7 @@ function choosePlayerCharacter(player) {
             "characters/ralph.svg": "Wreck It Ralph",
             "characters/nerd.svg": "Programmer",
             "characters/pacman.svg": "Pacman",
+            "characters/watermellon.svg": "Watermellon",
         });
     });
     swal({
