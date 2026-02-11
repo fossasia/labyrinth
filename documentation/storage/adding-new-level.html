@@ -1,0 +1,73 @@
+<h1>Adding and Switching Levels</h1>
+
+<p>
+This document explains how to add a new level in Labyrinth
+and how to switch between different levels during the game.
+</p>
+
+<h2>Understanding Levels</h2>
+<p>
+Levels in Labyrinth are defined inside <code>/js/levels.js</code>.
+Each level is created using the <code>new Level("LevelName", [...])</code> constructor,
+where the second argument is a two-dimensional array representing the layout of tiles.
+</p>
+
+<p>
+Each row in the array represents a row of tiles in the level.
+Each element inside the row refers to a specific tile definition
+(such as <code>door.goal</code>, <code>forest.top</code>, etc.).
+</p>
+
+<h2>Adding a New Level</h2>
+<ul>
+  <li>Open <code>/js/levels.js</code>.</li>
+  <li>Locate an existing level function such as <code>createFirstLevel()</code> or <code>createAdvancedLevel()</code>.</li>
+  <li>Copy an existing level function and rename it (for example, <code>createMyNewLevel()</code>).</li>
+  <li>Modify the 2D tile array to design your new level layout.</li>
+  <li>Ensure that a starting tile is defined using <code>PlayerStartsAt(theme.start)</code> or a similar start tile.</li>
+  <li>Save the file after making changes.</li>
+</ul>
+
+<h2>Switching Between Levels</h2>
+<p>
+To switch between levels, update the level creation reference used when initializing the game.
+Levels are loaded through functions defined in <code>/js/levels.js</code>.
+</p>
+
+<p>
+For example, if the game currently uses:
+</p>
+
+<pre>
+createFirstLevel()
+</pre>
+
+<p>
+You can switch to another level by replacing it with:
+</p>
+
+<pre>
+createAdvancedLevel()
+</pre>
+
+<p>
+This change is typically done in the game initialization logic
+(for example, inside <code>/js/gui.js</code>).
+The selected level function determines which tile configuration
+is loaded when the game starts.
+</p>
+
+<h2>Adding a Goal Tile</h2>
+<ul>
+  <li>Goal tiles are defined inside <code>/js/levels.js</code> as part of the level’s 2D array.</li>
+  <li>Depending on the theme, a goal tile may appear as <code>door.goal</code>, <code>food.end</code>, <code>dark.end</code>, or similar.</li>
+  <li>Place the goal tile at the desired position inside the level array.</li>
+  <li>The level is considered complete when the player reaches the goal tile.</li>
+</ul>
+
+<p>
+The engine does not strictly enforce having exactly one goal tile.
+If multiple goal tiles are added, all of them will be placed in the level.
+If no goal tile is defined, the level may not complete as expected.
+Therefore, it is recommended to include exactly one goal tile per level.
+</p>

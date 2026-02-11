@@ -34,6 +34,14 @@
 			"github" : "fossasia/labyrinth/",
 			"file" : "adding-new-badge.html",
 			"slug" : "API-Adding-New-Badge" 			
-		}
+		},
+		{
+           "itemName":"Adding and Switching Levels",
+           "author" : "Labyrinth Team",
+           "github" : "fossasia/labyrinth/",
+           "file" : "adding-new-level.html",
+           "slug" : "API-Adding-New-Level"
+        }
+
 	]
 }
